@@ -1,0 +1,47 @@
+#wphead {
+	display: none;
+}
+
+#adminmenu {
+	display: none;
+}
+
+#wpbody {
+	margin-left: 0px;
+}
+
+#screen-meta {
+	display: none;
+}
+
+#update-nag {
+	display: none;
+}
+
+div.printicon {
+	display: none;
+}
+
+a.backlink {
+	display: none;
+}
+
+div.clear {
+	display: none;
+}
+
+#jobman-jobman_comments form * {
+	display: none;
+}
+
+#jobman-jobman_application_email_form {
+	display: none;
+}
+
+#ui-datepicker-div {
+	display: none;
+}
+
+#footer {
+	display: none;
+}

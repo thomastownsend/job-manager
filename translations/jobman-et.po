@@ -1,0 +1,2086 @@
+# Translation of the WordPress plugin Job Manager 0.7 by Gary Pendergast.
+# Copyright (C) 2010 Gary Pendergast
+# This file is distributed under the same license as the Job Manager package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Job Manager 0.7\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/job-manager\n"
+"POT-Creation-Date: 2010-04-21 20:31+0000\n"
+"PO-Revision-Date: 2010-08-20 11:26+1000\n"
+"Last-Translator: Gary Pendergast <gary@pento.net>\n"
+"Language-Team: Viking Window <robert@viking.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Estonian\n"
+"X-Poedit-Country: ESTONIA\n"
+
+#: admin-application-form.php:11
+#: admin-jobs-settings.php:11
+msgid "Text Input"
+msgstr "Teksti sisestamine"
+
+#: admin-application-form.php:12
+#: admin-jobs-settings.php:12
+msgid "Radio Buttons"
+msgstr "Raadionupud"
+
+#: admin-application-form.php:13
+msgid "Select Dropdown"
+msgstr "Valige menüü"
+
+#: admin-application-form.php:14
+#: admin-jobs-settings.php:13
+msgid "Checkboxes"
+msgstr "Linnukesekast"
+
+#: admin-application-form.php:15
+#: admin-jobs-settings.php:14
+msgid "Large Text Input (textarea)"
+msgstr "Suure teksti sisestamine (teksti ala)"
+
+#: admin-application-form.php:16
+#: admin-jobs-settings.php:15
+msgid "Date Selector"
+msgstr "Kuupäeva valija"
+
+#: admin-application-form.php:17
+#: admin-jobs-settings.php:16
+msgid "File Upload"
+msgstr "Faili üleslaadimine"
+
+#: admin-application-form.php:18
+msgid "Geolocation"
+msgstr "Geolokatsioon"
+
+#: admin-application-form.php:19
+#: admin-jobs-settings.php:17
+msgid "Heading"
+msgstr "Pealkiri"
+
+#: admin-application-form.php:20
+#: admin-jobs-settings.php:18
+msgid "HTML Code"
+msgstr "HTML kood"
+
+#: admin-application-form.php:21
+#: admin-jobs-settings.php:19
+msgid "Blank Space"
+msgstr "Tühi koht"
+
+#: admin-application-form.php:39
+#: admin-jobs-settings.php:37
+msgid "Field Label/Type"
+msgstr "Välja silt/tüüp"
+
+#: admin-application-form.php:40
+#: admin-applications.php:67
+#: admin-applications.php:204
+#: admin-applications.php:240
+#: admin-frontend-settings.php:217
+#: admin-jobs.php:69
+#: admin-jobs.php:288
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin-settings.php:601
+#: setup.php:90
+#: widgets.php:138
+msgid "Categories"
+msgstr "Kategooriad"
+
+#: admin-application-form.php:41
+#: admin-jobs-settings.php:38
+msgid "Data"
+msgstr "Andmed"
+
+#: admin-application-form.php:42
+msgid "Submit Filter/Filter Error Message"
+msgstr "Sisestage filter/filtri veateade"
+
+#: admin-application-form.php:43
+#: admin-frontend-settings.php:131
+#: admin-jobs-settings.php:39
+msgid "Sort Order"
+msgstr "Järjestage "
+
+#: admin-application-form.php:44
+#: admin-application-form.php:113
+#: admin-application-form.php:141
+#: admin-applications.php:565
+#: admin-jobs-settings.php:40
+#: admin-jobs-settings.php:78
+#: admin-jobs-settings.php:95
+#: admin-jobs.php:112
+#: admin-settings.php:160
+#: admin-settings.php:178
+#: admin-settings.php:189
+#: admin-settings.php:239
+#: admin-settings.php:256
+#: admin-settings.php:265
+msgid "Delete"
+msgstr "Kustutage"
+
+#: admin-application-form.php:77
+#: admin-application-form.php:127
+msgid "Show this field in the Application List?"
+msgstr "Näita seda välja avalduse nimekirjas?"
+
+#: admin-application-form.php:84
+#: admin-application-form.php:128
+msgid "Block this field from application emails?"
+msgstr "Blokeerige see väli avalduse e-postidest?"
+
+#: admin-application-form.php:108
+#: admin-application-form.php:137
+msgid "Mandatory field?"
+msgstr "Kohustuslik väli?"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Up"
+msgstr "Üles"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Down"
+msgstr "Alla"
+
+#: admin-application-form.php:155
+#: admin-jobs-settings.php:106
+msgid "Add New Field"
+msgstr "Lisage uus väli"
+
+#: admin-application-form.php:159
+msgid "Update Application Form"
+msgstr "Uuendage avalduse vormi"
+
+#: admin-applications.php:36
+#: admin-applications.php:750
+msgid "Job Manager: Applications"
+msgstr "Tööjõu Haldaja: Avaldused"
+
+#: admin-applications.php:39
+msgid "Selected applications have been deleted."
+msgstr "Valitud avaldused on kustutatud"
+
+#: admin-applications.php:41
+msgid "The mailout has been sent."
+msgstr "Sõnum on saadetud"
+
+#: admin-applications.php:50
+msgid "Standard Filters"
+msgstr "Standardite kohased filtrid"
+
+#: admin-applications.php:53
+#: admin-jobs.php:283
+msgid "Job ID"
+msgstr "Töökoha ID"
+
+#: admin-applications.php:60
+msgid "Registered Applicant"
+msgstr "Registreeritud kandidaat"
+
+#: admin-applications.php:90
+msgid "Minimum Rating"
+msgstr "Minimaalne reiting"
+
+#: admin-applications.php:100
+msgid "Custom Filters"
+msgstr "Erifiltrid"
+
+#: admin-applications.php:155
+#, php-format
+msgid "Up to %1s km from %2s"
+msgstr "Kuni 1%s km %2s-st"
+
+#: admin-applications.php:166
+msgid "Please enter a Google Maps API key in your Admin Settings."
+msgstr "Palun sisestage Google Maps API võti oma adminstratiivsetest seadetest"
+
+#: admin-applications.php:171
+msgid "This field cannot be filtered."
+msgstr "Seda välja ei saa filtreerida"
+
+#: admin-applications.php:181
+msgid "Filter Applications"
+msgstr "Filtreeri avaldusi"
+
+#: admin-applications.php:185
+msgid "Show Filter Options"
+msgstr "Näita filtri valikuid"
+
+#: admin-applications.php:186
+msgid "Hide Filter Options"
+msgstr "Varja filtri valikuid"
+
+#: admin-applications.php:196
+#: admin-applications.php:232
+#: admin-applications.php:665
+#: frontend-application.php:875
+#: setup.php:74
+#: setup.php:246
+msgid "Job"
+msgstr "Töökoht"
+
+#: admin-applications.php:200
+#: admin-applications.php:236
+msgid "User"
+msgstr "Kasutaja"
+
+#: admin-applications.php:216
+#: admin-applications.php:252
+#: admin-applications.php:514
+msgid "View Details"
+msgstr "Vaadake detaile"
+
+#: admin-applications.php:217
+#: admin-applications.php:253
+#: admin-emails.php:120
+#: admin.php:31
+msgid "Emails"
+msgstr "E-mailid"
+
+#: admin-applications.php:221
+#: admin-applications.php:257
+#: admin-applications.php:621
+#: admin.php:34
+msgid "Interviews"
+msgstr "Intervjuud"
+
+#: admin-applications.php:225
+#: admin-applications.php:261
+#: admin-applications.php:673
+msgid "Rating"
+msgstr "Reiting"
+
+#: admin-applications.php:457
+msgid "No job"
+msgstr "Ei ole töökohti"
+
+#: admin-applications.php:464
+msgid "Unregistered Applicant"
+msgstr "Registreerimata kandidaat"
+
+#: admin-applications.php:500
+#: admin-applications.php:707
+#: admin-jobs.php:192
+#: admin-settings.php:523
+#: admin-settings.php:554
+#: frontend-shortcodes.php:169
+#: frontend-shortcodes.php:367
+msgid "Download"
+msgstr "Lae alla"
+
+#: admin-applications.php:547
+msgid "There were no applications that matched your search."
+msgstr "Ei ole avaldusi  mis vastaks teie otsingule"
+
+#: admin-applications.php:549
+msgid "There are currently no applications in the system."
+msgstr "Praegusel hetkel puuduvad süsteemis avaldused"
+
+#: admin-applications.php:563
+#: admin-jobs.php:111
+msgid "Bulk Actions"
+msgstr "Hulgale mõeldud tegevused"
+
+#: admin-applications.php:564
+#: admin-applications.php:734
+#: admin-settings.php:145
+#: admin-settings.php:158
+msgid "Email"
+msgstr "E-mail"
+
+#: admin-applications.php:566
+msgid "Export as CSV file"
+msgstr "Ekspordi CSV failina"
+
+#: admin-applications.php:568
+#: admin-jobs.php:116
+msgid "Apply"
+msgstr "Saada avaldus"
+
+#: admin-applications.php:600
+msgid "Job Manager: Application Details"
+msgstr "Tööjõu Haldaja: Rakenduse Detailid"
+
+#: admin-applications.php:602
+#: admin-applications.php:626
+msgid "Back to Application List"
+msgstr "Tagasi avalduste nimekirja"
+
+#: admin-applications.php:611
+#: admin-interviews.php:316
+#: db.php:487
+#: frontend-application.php:515
+msgid "Application"
+msgstr "Avaldus"
+
+#: admin-applications.php:612
+#: admin-interviews.php:317
+msgid "Application Comments"
+msgstr "Avalduse kommentaarid"
+
+#: admin-applications.php:612
+msgid "Share Application"
+msgstr "Jaga avaldust"
+
+#: admin-applications.php:667
+#: admin-settings.php:591
+#: admin.php:29
+msgid "Jobs"
+msgstr "Töökohad"
+
+#: admin-applications.php:671
+#: frontend-application.php:881
+msgid "Timestamp"
+msgstr "Ajaline tempel"
+
+#: admin-applications.php:728
+msgid "Use this form to email the application to a new email address."
+msgstr "Kasutage seda vormi saatmaks avalduse uuele e-posti aadressile."
+
+#: admin-applications.php:751
+msgid "This will permanently delete all of the selected applications. Please confirm that you want to continue."
+msgstr "See kustutab jäädavalt kõik valitud avaldused. Palun kinnitage et soovite jätkata."
+
+#: admin-applications.php:752
+msgid "Delete Applications"
+msgstr "Kustuta avaldused"
+
+#: admin-comments.php:8
+msgid "Comment"
+msgstr "Kommenteerige"
+
+#: admin-comments.php:19
+msgid "No comments found"
+msgstr "Kommentaare ei leitud"
+
+#: admin-emails.php:10
+msgid "Job Manager: Emails"
+msgstr "Tööjõu Haldaja: E-mailid"
+
+#: admin-emails.php:12
+msgid "In the \"Applications Sent To\" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "\"Avaldused saadetud järgnevatele\" veerus, vajutage numbrile et minna sellele avaldusele või vajutage tärnile (*) selle kõrval et näha teisi e-maile saadetud sellele avaldusele"
+
+#: admin-emails.php:17
+#: admin-emails.php:25
+msgid "Date"
+msgstr "Kuupäev"
+
+#: admin-emails.php:18
+#: admin-emails.php:26
+#: admin-emails.php:96
+#: admin-emails.php:177
+#: admin-settings.php:381
+msgid "Subject"
+msgstr "Teema"
+
+#: admin-emails.php:19
+#: admin-emails.php:27
+msgid "Applications Sent To"
+msgstr "Avaldused saadetud järgnevatele"
+
+#: admin-emails.php:68
+msgid "There are currently no emails in the system."
+msgstr "Praegusel hetkel ei ole ühtegi e-maili süsteemis"
+
+#: admin-emails.php:85
+msgid "No such email."
+msgstr "Ei ühtegi säärast e-maili"
+
+#: admin-emails.php:90
+msgid "Job Manager: Email"
+msgstr "Tööjõu Haldaja: E-mail"
+
+#: admin-emails.php:92
+msgid "In the \"Applications\" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "\"Avaldused\" väljal, vajutage numbrile et minna sellele avaldusele või vajutage tärnile (*) selle kõrval et näha teisi e-maile saadetud sellele avaldusele"
+
+#: admin-emails.php:112
+#: admin-jobs.php:84
+#: admin-settings.php:596
+#: admin.php:30
+msgid "Applications"
+msgstr "Avaldused"
+
+#: admin-emails.php:128
+#: admin-emails.php:181
+msgid "Message"
+msgstr "Sõnum"
+
+#: admin-emails.php:159
+msgid "Job Manager: Application Email"
+msgstr "Tööjõu Haldaja: Avalduse E-mail"
+
+#: admin-emails.php:169
+msgid "From"
+msgstr "Kellelt"
+
+#: admin-emails.php:173
+msgid "To"
+msgstr "Kellele"
+
+#: admin-emails.php:186
+msgid "Send Email"
+msgstr "Saatke e-mail"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+#: admin.php:168
+msgid "Display Settings"
+msgstr "Akna seaded"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job List Sorting"
+msgstr "Töökohtade nimekirjade järjekorrastamine"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job Templates"
+msgstr "Töökoha mallid"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Settings"
+msgstr "Avalduse vormi seaded"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Template"
+msgstr "Avalduse vormi mall"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Miscellaneous Text"
+msgstr "Mitmesugune tekst"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Page Text"
+msgstr "Lehe tekst"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "Donate"
+msgstr "Annetage"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "About This Plugin"
+msgstr "Teave selle lisandi kohta"
+
+#: admin-frontend-settings.php:71
+msgid "Job Manager Page Template"
+msgstr "Tööjõu Haldaja lehe mall"
+
+#: admin-frontend-settings.php:72
+#, php-format
+msgid "You can edit the page template used by Job Manager, by editing the Template Attribute of <a href=\"%s\">this page</a>."
+msgstr "Te võite toimetada malli mida Tööjõu Haldaja kasutab, toimetades selle lehe omadusi: <a href=\"%s\">this page</a>."
+
+#: admin-frontend-settings.php:75
+msgid "Jobs Per Page"
+msgstr "Töökohti lehe kaupa"
+
+#: admin-frontend-settings.php:77
+msgid "The number of jobs to display per page in the main and category jobs lists. For no limit, set this to 0."
+msgstr "Töökohtade arv, mida näidata lehe kaupa peamisel ja  kategooria töökohtade nimekirjas. Piiritlemata väärtuseks on 0"
+
+#: admin-frontend-settings.php:80
+msgid "Date Format"
+msgstr "Kuupäeva formaat"
+
+#: admin-frontend-settings.php:82
+#, php-format
+msgid "The format to use for Job date fields. Leave blank to use the dates as they're entered. See the <a href='%1s'>documentation on date formatting</a> for further details."
+msgstr "Formaat mida kasutada Töökoha kuupäeva väljadel. Jätke see tühjaks selleks et kasutada kuupäevi nagu nad on sisestatud. Vaadake <a href='%1s'>dokumentatsiooni kuupäevade formaatide kohta</a> lisaks ."
+
+#: admin-frontend-settings.php:88
+msgid "Hide \"Powered By\" link?"
+msgstr "Varjake  \"Powered By\" viide?"
+
+#: admin-frontend-settings.php:90
+msgid "If you're unable to donate, I would appreciate it if you left this unchecked."
+msgstr "Kui te ei ole võimelised annetama, hindaksin kui jättaksite siia linnukese tegemata"
+
+#: admin-frontend-settings.php:97
+msgid "Update Display Settings"
+msgstr "Värskendage akna seadeid"
+
+#: admin-frontend-settings.php:112
+msgid "Sort By:"
+msgstr "Sorteerige selle järgi:"
+
+#: admin-frontend-settings.php:114
+#: admin-frontend-settings.php:133
+msgid "Default"
+msgstr "Vaikimisi valik"
+
+#: admin-frontend-settings.php:115
+msgid "Job Title"
+msgstr "Töökoha nimetus"
+
+#: admin-frontend-settings.php:116
+msgid "Date Posted"
+msgstr "Postitamise kuupäev"
+
+#: admin-frontend-settings.php:117
+msgid "Closing Date"
+msgstr "Sulgemise päev"
+
+#: admin-frontend-settings.php:123
+#, php-format
+msgid "Custom Field: %1s"
+msgstr "Lisaväljad: %1s"
+
+#: admin-frontend-settings.php:128
+msgid "Select the criteria you'd like to have job lists sorted by."
+msgstr "Valige kriteerium mille kohaselt töökohtade nimekirja järjestatakse."
+
+#: admin-frontend-settings.php:134
+msgid "Ascending"
+msgstr "Kasvav"
+
+#: admin-frontend-settings.php:135
+msgid "Descending"
+msgstr "Kahanev"
+
+#: admin-frontend-settings.php:138
+msgid "Ascending: Lowest value to highest value, alphabetical or chronological order"
+msgstr "Kasvav: Väiksemast väärtusest kõrgema väärtusen, tähestikuline või ajaline järjestus"
+
+#: admin-frontend-settings.php:139
+msgid "Descending: Highest value to lowest value, reverse alphabetical or chronological order"
+msgstr "Kahanev: Kõrgemast väärtusest madalamale, tagurpidi tähestikuline või ajaline järjestus"
+
+#: admin-frontend-settings.php:143
+msgid "Highlighted jobs behaviour"
+msgstr "Esile tõstetud töökohtade käitumine"
+
+#: admin-frontend-settings.php:145
+msgid "Sticky"
+msgstr "Kleepuv"
+
+#: admin-frontend-settings.php:146
+msgid "Inline"
+msgstr "Sisene"
+
+#: admin-frontend-settings.php:149
+msgid "Sticky: Put highlighted jobs at the top of the jobs list."
+msgstr "Kleepuv: Pange esiletõstetud töökohad nimekirja tippu"
+
+#: admin-frontend-settings.php:150
+msgid "Inline: Leave highlighted jobs in their normal place in the jobs list."
+msgstr "Sisene: Jätke esile tõstetud töökohad oma tavapärasesse kohta nimekirjas"
+
+#: admin-frontend-settings.php:155
+msgid "Update Sort Settings"
+msgstr "Värskendage järjekorrastamise seadeid"
+
+#: admin-frontend-settings.php:163
+msgid "These settings allow you to define the templates for displaying lists of jobs, and individual jobs. To do this, you will need to make use of the available shortcodes."
+msgstr "Need seaded lubavad defineerida malli töökohtade nimekirjade ning üksikute töökohtade näitamiseks. Selleks läheb vaja olemasolevaid lühendeid:"
+
+#: admin-frontend-settings.php:165
+#: db.php:243
+#: db.php:692
+msgid "Job Information"
+msgstr "Töökoha informatsioon"
+
+#: admin-frontend-settings.php:166
+msgid "This will loop over a list of all the Jobs, and display the contained HTML and shortcodes for each."
+msgstr "See kammib läbi nimekirja kõikidest töökohtadest ning näitab kontrollitava HTMLi ning lühendeid igale töökohale"
+
+#: admin-frontend-settings.php:167
+msgid "This will display the ID of the Job currently being displayed, either in a <tt>[job_loop]</tt> or on an Individual Job page."
+msgstr "See näitab praegu kuvatava töökoha ID, kas <tt>[job_loop]</tt> või üksikul töökoha lehel"
+
+#: admin-frontend-settings.php:168
+msgid "This will display the Title of the current Job."
+msgstr "See näitab praeguse töökoha pealkirja"
+
+#: admin-frontend-settings.php:169
+msgid "While inside a <tt>[job_loop]</tt>, this will display the row number of the job currently being displayed."
+msgstr "Olles <tt>[job_loop]</tt> sees, näitab see  praegu kuvatava töökoha rea numbrit."
+
+#: admin-frontend-settings.php:170
+msgid "While inside a <tt>[job_loop]</tt>, this will display \"odd\", if the current <tt>[job_row_number]</tt> is odd, or \"even\" if <tt>[job_row_number]</tt> is even."
+msgstr "Olles  <tt>[job_loop]</tt> sees, näitab  \"odd\", kui praegune <tt>[job_row_number]</tt> on paaritu või  \"even\" kui <tt>[job_row_number]</tt> on paaris arv."
+
+#: admin-frontend-settings.php:171
+msgid "If the current Job has been marked as highlighted, this will display the word \"highlighted\"."
+msgstr "Kui praegune töökoht on esile tõstetud, see näitab sõnu \"esile tõstetud\"."
+
+#: admin-frontend-settings.php:172
+msgid "If the current Job has an icon assigned to it, this will display the icon."
+msgstr "Kui praegusel töökohal on ikoon küljes, see näitab ikooni "
+
+#: admin-frontend-settings.php:173
+msgid "This will display a link to the current Job, with the contained text as the link text."
+msgstr "See näitab viidet praegusele töökohale, kus kontrollitav tekst on viite tekstiks."
+
+#: admin-frontend-settings.php:174
+msgid "This will display a link to the Application Form for the current Job, with the contained text as the link text. If it is used outside of the <tt>[job_loop]</tt>, it will display a link to the main Application Form."
+msgstr "See näitab viidet praeguse töökoha avalduse vormile, milles kontrollitud tekst on viite tekstis. Kui kasutatud väljaspool <tt>[job_loop]</tt>, siis näidatakse viidet põhilisele avalduse vormile"
+
+#: admin-frontend-settings.php:176
+msgid "Job Category Information"
+msgstr "Töökoha kategooria informatsioon"
+
+#: admin-frontend-settings.php:177
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles."
+msgstr "Kui praegune töökoht on paigutatud mingisse kategooriasse, siis näitab see  komaga eraldatud nimekirja kategooriate pealkirjadest. "
+
+#: admin-frontend-settings.php:178
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles, with each Title as a link to that Category."
+msgstr "Kui praegune töökoht on paigutatud mingisse kategooriasse, siis see näitab komaga eraldatud nimekirja kategooriate pealkirjadest, kus iga pealkiri on viide sellele kategooriale"
+
+#: admin-frontend-settings.php:179
+msgid "This will display the category name, if the current job list is a category."
+msgstr "See näitab kategooria nime, kui praegu kuvatav töökohtade nimekiri on kategooria."
+
+#: admin-frontend-settings.php:180
+msgid "This will display a link to the current category, with the contained text as the link text."
+msgstr "See näitab viidet praegusele kategooriale, kus kontrollitud tekst on viite tekstiks."
+
+#: admin-frontend-settings.php:182
+msgid "Page Navigation"
+msgstr "Lehe navigatsioon"
+
+#: admin-frontend-settings.php:183
+msgid "Returns the number of jobs that are being shown per page, or 0 for all of them."
+msgstr "Näitab iga lehekülje kohta kuvatavate töökohtade arv või 0 kõigi nende kohta."
+
+#: admin-frontend-settings.php:184
+msgid "This will display a link to the previous page, with the contained text as the link text. If the user is on the first page, it will display nothing."
+msgstr "See näitab viidet eelmisele lehele, kus kontrollitud tekst on viite tekstiks. Kui kasutaja on esimesel lehel, ei näita midagi."
+
+#: admin-frontend-settings.php:185
+msgid "Returns the page number of the previous page."
+msgstr "Näitab lehe numbrit eelmisele lehele"
+
+#: admin-frontend-settings.php:186
+msgid "This will display a link to the next page, with the contained text as the link text. If the user is on the last page, it will display nothing."
+msgstr "See näitab viited järgmisele leheküljele, milles kontrollitud tekst on viite tekst.Kui kasutaja on viimasel lehel, ei näita midagi."
+
+#: admin-frontend-settings.php:187
+msgid "Returns the page number of the next page."
+msgstr "Näitab lehe numbri järgmisele lehele"
+
+#: admin-frontend-settings.php:188
+msgid "Returns the page number of the current page."
+msgstr "Näitab lehe numbrit praegusele lehele"
+
+#: admin-frontend-settings.php:189
+msgid "The job number of the first job being displayed on the current page."
+msgstr "Töökoha number esimesele töökohale mida näidatakse praegusel lehel"
+
+#: admin-frontend-settings.php:190
+msgid "The job number of the last job being displayed on the current page."
+msgstr "Töökoha number viimasele töökohale mida näidatakse praegusel lehl"
+
+#: admin-frontend-settings.php:191
+msgid "The total number of jobs over all pages of this list."
+msgstr "Kõigi selles nimekirjas olevate töökohtade arv läbi lehekülgede"
+
+#: admin-frontend-settings.php:193
+msgid "Job Field Information"
+msgstr "Töökoha välja informatsioon"
+
+#: admin-frontend-settings.php:194
+msgid "This will loop over all of the defined Job Fields, and display the contained HTML and shortcodes for each. This can be used inside a <tt>[job_loop]</tt>, or on an Individual Job page."
+msgstr "Seee kammib läbi kõik määratletud töökoha väljad ning näitab kontrollitud HTML-i ning lühendeid iga ühe kohta. Seda saab kasutada <tt>[job_loop]</tt> siseselt, või üksikutelt töökoha lehtedel"
+
+#: admin-frontend-settings.php:195
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the label of the current field being displayed."
+msgstr "Olles <tt>[job_field_loop]</tt>, see näitab praegu kuvatava välja silti."
+
+#: admin-frontend-settings.php:196
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the data associated with the current field and Job being displayed. If the field is a file, it will obey the <tt>type=\"url\"</tt> attribute, to only return the URL, instead of a link to the file, or the <tt>type=\"image\"</tt> attribute, to return an image. If the field is a large text field, it will obey the <tt>length=\"<em>n</em>\"</tt> attribute, to restrict the output to <em>n</em> characters."
+msgstr "Olles  <tt>[job_field_loop]</tt>, see näitab andmeid seotud praeguse välja ning töökohaga. Kui väli on fail see allub <tt>type=\"url\"</tt> attribuuudile, näidates vaid aadressi, URLi ning mitte viidet failile või <tt>type=\"image\"</tt> attriibuut, et näidata pilti. Kui väli on suure teksti väli siis ta allub <tt>length=\"<em>n</em>\"</tt> attribuudile, piirates väljundit <em>n</em> tähemärkide arvu."
+
+#: admin-frontend-settings.php:198
+msgid "Custom Job Field Information"
+msgstr "Erilise Töökoha Välja Informatsioon"
+
+#: admin-frontend-settings.php:199
+msgid "For each of the Custom Job Fields defined, there are two shortcodes defined, one for the Label and one for the Data. Note that these numbers won't change, even if you re-order, add or delete Job Fields."
+msgstr "Igale Erilisele Töökha Väljale, mis on määratletud on ka defineeritud kaks lühendit üks Sildile ning teine Andmetele. Märgake, et need arvud ei muuti isegi kui järjestate ümber, lisate või kustutate Töökoha välju. "
+
+#: admin-frontend-settings.php:206
+msgid "As a file field, the <tt>type=\"(url|image)\"</tt> attribute can be used."
+msgstr "Faili väljana  <tt>type=\"(url|image)\"</tt>  attribuuti võib kasutada"
+
+#: admin-frontend-settings.php:208
+msgid "As a large text field, the <tt>length=\"<em>n</em>\"</tt> attribute can be used."
+msgstr "Suure teksti väljana <tt>length=\"<em>n</em>\"</tt> attriibuti saab kasutada"
+
+#: admin-frontend-settings.php:214
+#: admin-frontend-settings.php:330
+msgid "Conditionals"
+msgstr "Konditionaalid"
+
+#: admin-frontend-settings.php:215
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display the text \"Categories: \", and then a list of the Categories a job is in, but you don't want to display it if there are no categories, you could put in the template:"
+msgstr "Kõikidele eelnevalt määratletud lühenditele võib ette liita <tt>if_</tt>, muutes nad tingivates lauseteks. Näiteks kui soovita näidata teksti  \"Kategooriad: \", ning siis näidata nimekirja Kategooriatest miles töökoht on aga ei soovi et seda näidatakse kui kategooriad puuduvad, siis paneksite järgneva oma malli:"
+
+#: admin-frontend-settings.php:221
+msgid "Multi-Applications"
+msgstr "Multi-avaldused"
+
+#: admin-frontend-settings.php:222
+msgid "These shortcodes are only valid if the \"Allow Multi-Applications\" option is checked under Admin Options. If it is not checked, they will not display."
+msgstr "Need töökohad on ainult õiged kui  \"Luba Multi-Avaldusi\" valik on tähistatud adminstratiivsetes valikutes. Kui ei ole valitud, seda ei kuvata "
+
+#: admin-frontend-settings.php:223
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display a checkbox associated with the current job."
+msgstr "Olles <tt>[job_field_loop]</tt>, sees see näitab linnikusega tähistavat kastikest seotud antud töökohaga"
+
+#: admin-frontend-settings.php:224
+msgid "This will display a button to allow the applicant to apply for all checked jobs, with the contained text as the button text."
+msgstr "See näitab nupu, mis lubab tööotsijal esitada avaldus kõigile valitud töökohtadele, milles kontrollitav tekst on nupu tekst."
+
+#: admin-frontend-settings.php:233
+msgid "Job List Template"
+msgstr "Töökoha nimekirja mall"
+
+#: admin-frontend-settings.php:237
+msgid "Individual Job Template"
+msgstr "Üksiku töökoha mall"
+
+#: admin-frontend-settings.php:241
+#: admin-frontend-settings.php:340
+msgid "Update Template Settings"
+msgstr "Uuenda malli seadeid"
+
+#: admin-frontend-settings.php:256
+msgid "Category Selector"
+msgstr "Kategooria valik"
+
+#: admin-frontend-settings.php:258
+#: admin-frontend-settings.php:273
+msgid "Don't Display"
+msgstr "Ei näita"
+
+#: admin-frontend-settings.php:259
+#: admin-frontend-settings.php:274
+msgid "Dropdown"
+msgstr "Drop Down"
+
+#: admin-frontend-settings.php:260
+#: admin-frontend-settings.php:275
+msgid "HTML List"
+msgstr "HTML List"
+
+#: admin-frontend-settings.php:261
+#: admin-frontend-settings.php:276
+msgid "Popout"
+msgstr "Popout"
+
+#: admin-frontend-settings.php:264
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job."
+msgstr "Lubab tööotsijal valida kategooria või kategoorijad millele avaldus esitada. Seda näidatakse vaid siis kui tööotsija konkreetsele töökohale ei kandideeri"
+
+#: admin-frontend-settings.php:265
+#: admin-frontend-settings.php:280
+msgid "Dropdown: Shows a normal selector"
+msgstr "Dropdown: Näitab tavalist valikut"
+
+#: admin-frontend-settings.php:266
+msgid "HTML List: Shows a list of checkboxes"
+msgstr "HTML List: Näitab linnukestega tähistavaid kastikesi"
+
+#: admin-frontend-settings.php:267
+msgid "Popout: Shows a list of checkboxes when the list is clicked on"
+msgstr "Popout: Näitab linnukestega tähistavaid kastikesti kui nimekirjale vajutatakse"
+
+#: admin-frontend-settings.php:271
+msgid "Job Selector"
+msgstr "Töökoha valija"
+
+#: admin-frontend-settings.php:279
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job. On category application forms, it will only list jobs from that category."
+msgstr "Lubab tööotsijal valida kategooria või kategoorijad millesse avaldusi esitada. Seda näidatakse vaid siis kui tööotsija ei esita avaldust konkreetsele töökohale. Kategooria avalduse vormides näitab vaid töökohti sellest kategooriast."
+
+#: admin-frontend-settings.php:281
+msgid "HTML List: Shows a list of radio buttons or checkboxes"
+msgstr "HTM List: Näitab nimekirja raadionupukustest või linnukestega tähistavatest kastikestest"
+
+#: admin-frontend-settings.php:282
+msgid "Popout: Shows a list of radio buttons or checkboxes when the list is clicked on"
+msgstr "Popout: Näitab radionupukuste või linnukesega tähistavate kastikeste nimekirja kui nimekiri on sisselülitatud"
+
+#: admin-frontend-settings.php:287
+msgid "Update Application Form Options"
+msgstr "Avalduse vormi uuendamise seaded"
+
+#: admin-frontend-settings.php:295
+msgid "This setting allows you to define the template for displaying the application form. If you're happy with the current application form, just leave this blank, as you'll need to update it each time you add a new field to the application form."
+msgstr "See seade lubab määratleda malli millega kuvada avalduse vormi. Kui te olete rahul  praeguse avalduse vormiga, jätke see tühjaks, sest te peate seda uuendama igakord kui lisate uue välja avalduse vormile."
+
+#: admin-frontend-settings.php:296
+msgid "If you do want to do this, you will need to make use of the available shortcodes."
+msgstr "Kui te ei soovi seda teha, siis peate kasutama võimalike lühendeid"
+
+#: admin-frontend-settings.php:298
+msgid "Application Form"
+msgstr "Avalduse vorm"
+
+#: admin-frontend-settings.php:299
+msgid "Display a list of links to the jobs being applied for."
+msgstr "Näita nimekirja viidetest töökohtadele milllele kandideeritakse."
+
+#: admin-frontend-settings.php:300
+msgid "This will display a list of jobs to select from. If a category application form is being used, it will display all the jobs in that category. Otherwise, it will display all jobs. It has one optional attribute:"
+msgstr "See näitab töökohtade nimekirja millest valida. Kui kategooria avaludse vormi kasutatakse, siis see näitab kõiki töökohti selles kategoorias. Muidu näitab kõiki töökohti. Sellel on üks võimalik väärtus."
+
+#: admin-frontend-settings.php:301
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with radio buttons or checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Võib seda kas: \"select\", \"individual\" või \"popout\".\"select\" näitab menüü kastikest. , \"individual\"  näitab nimekirja raadionupukestest või linnikustega tähistavatest kastikestest.\"popout\" on sama mis \"individual\", aga ainult kuvab nimekirja kui sellele vajutada"
+
+#: admin-frontend-settings.php:302
+msgid "This will display a list of categories to select from. It has one optional attribute:"
+msgstr "See näitab kategooriate nimekirja, millest valida. Sellel on vaid üks võimalik valik"
+
+#: admin-frontend-settings.php:303
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Võib valida : \"select\", \"individual\" või  \"popout\". \"select\" näitab menüü kastikest.  \"individual\"  näitab linnukustega tähistavaid kaste,  \"popout\" sama mis  \"individual\", aga ainult siis kuvab nimekirja kui sellele on vajutatud"
+
+#: admin-frontend-settings.php:304
+msgid "Display a submit button for the application form, with the contained text as the button text."
+msgstr "Näidake saatmise nupu avaldamise vormis, milles kontrollitav tekst on nupu tekstiks."
+
+#: admin-frontend-settings.php:306
+msgid "Custom Application Field Information"
+msgstr "Erilise avalduse välja informatsioon"
+
+#: admin-frontend-settings.php:307
+msgid "For each of the Custom Job Fields defined, there are several shortcodes defined. Note that the numbers ('n' in the samples) won't change, even if you re-order, add or delete Application Fields."
+msgstr "Kõigile määratletud erilistele töökoha väljadele on mitmeid lühendeid defineeritud. Märgakse, et numbrid  ('n' näidetes) ei muutu, isegi kui te uuesti järjestate, lisate või kustutate avalduse välju."
+
+#: admin-frontend-settings.php:308
+msgid "Display the field label"
+msgstr "Näita välja silti"
+
+#: admin-frontend-settings.php:309
+msgid "Display the field input element. "
+msgstr "Näita välja sisendi elementi"
+
+#: admin-frontend-settings.php:310
+msgid "If the field has been marked as mandatory, this will display the word \"mandatory\"."
+msgstr "Kui välja on tähistatud kohustuslikuna, see kuvab sõna \"kohustuslik\"."
+
+#: admin-frontend-settings.php:312
+msgid "Custom Application Fields"
+msgstr "Erilised avalduse väljad"
+
+#: admin-frontend-settings.php:323
+msgid "No Label"
+msgstr "Ei mingit silti"
+
+#: admin-frontend-settings.php:331
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display an asterisk \"*\" next to the label of a mandatory field, you could put in the template:"
+msgstr "Kõigile neile üleval määratud lühenditele võib ette liita <tt>if_</tt> et muuta neid konditionaalseteks lauseteks. Näiteks, kui soovita näidata tärni (*) kohustuslike väljade kõrval sisestaksite järgneva oma malli:"
+
+#: admin-frontend-settings.php:348
+msgid "These text options will be displayed in various places around your job listings."
+msgstr "Neid teksti seadeid näidatakse erinevates kohtades teie töökohtade loetelus"
+
+#: admin-frontend-settings.php:356
+msgid "Job Title Prefix"
+msgstr "Töökoha pealkirja eesliide"
+
+#: admin-frontend-settings.php:357
+msgid "text"
+msgstr "tekst"
+
+#: admin-frontend-settings.php:358
+msgid "This text is displayed before the Job Name in the page title."
+msgstr "Seda teksti näidatakse enne töökoha nime lehe pealkirjas"
+
+#: admin-frontend-settings.php:361
+msgid "Application Acceptance"
+msgstr "Avalduse vastuvõtmine"
+
+#: admin-frontend-settings.php:363
+msgid "This text is displayed after an application has been accepted. If it is not filled in, the default text will be used."
+msgstr "Seda teksti näidatakse pärast avalduse vastuvõtmist. Kui see pole täidetud, siis kasutatakse vaikimisi valitud teksti. "
+
+#: admin-frontend-settings.php:366
+#: admin-frontend-settings.php:405
+msgid "Update Text Settings"
+msgstr "Uuenda teksti seadeid"
+
+#: admin-frontend-settings.php:374
+msgid "This text will be displayed before or after the lists/job/forms on the respective pages. You can enter HTML in these boxes."
+msgstr "Seda teksti näidatakse enne või pärast nimekirjasi/töökohta/vorme antud lehtedel. Te võita sisestada HTMLi nendesse kastidesse"
+
+#: admin-frontend-settings.php:383
+msgid "Before the Main Jobs List"
+msgstr "Enne peamist töökohtade loetelut"
+
+#: admin-frontend-settings.php:383
+msgid "After the Main Jobs List"
+msgstr "Pärast peamist töökohtade loetelut"
+
+#: admin-frontend-settings.php:384
+msgid "Before any Category Jobs Lists"
+msgstr "Enne töökohtade kategooriate loetelusi"
+
+#: admin-frontend-settings.php:384
+msgid "After any Category Jobs Lists"
+msgstr "Pärast töökohtade kategooriate loetelusi"
+
+#: admin-frontend-settings.php:385
+msgid "Before a Job"
+msgstr "Enne töökohta"
+
+#: admin-frontend-settings.php:385
+msgid "After a Job"
+msgstr "Peale töökohta"
+
+#: admin-frontend-settings.php:386
+msgid "Before the Application Form"
+msgstr "Enne avalduse vormi"
+
+#: admin-frontend-settings.php:386
+msgid "After the Application Form"
+msgstr "Pärast avalduse vormi"
+
+#: admin-frontend-settings.php:387
+msgid "Before the Registration Form"
+msgstr "Enne registreerimise vormi"
+
+#: admin-frontend-settings.php:387
+msgid "After the Registration Form"
+msgstr "Pärast registreerimise vormi"
+
+#: admin-interviews.php:70
+#: admin-interviews.php:161
+#: admin-interviews.php:226
+#, php-format
+msgid "Job Manager: %1s Interviews"
+msgstr "Tööjõu Haldaja: %1s Intervjuud"
+
+#: admin-interviews.php:98
+#: admin-interviews.php:176
+#: admin-interviews.php:265
+msgid "Go"
+msgstr "Mine"
+
+#: admin-interviews.php:277
+msgid "Interview Time"
+msgstr "Intervjuu aeg"
+
+#: admin-interviews.php:278
+#: admin-interviews.php:376
+msgid "Interview Rating"
+msgstr "Intervjuu reiting"
+
+#: admin-interviews.php:279
+#: admin-interviews.php:377
+#: admin-interviews.php:388
+msgid "Interview Details"
+msgstr "Intervjuu detailid"
+
+#: admin-interviews.php:296
+msgid "No applications scheduled for this day."
+msgstr "Selleks päevaks pole ühtegi avaldust ajastatud"
+
+#: admin-interviews.php:307
+msgid "Job Manager: Interview Details"
+msgstr "Tööjõu Haldaja: Intervjuu detailid"
+
+#: admin-interviews.php:317
+msgid "Interview Comments"
+msgstr "Intervjuu kommentaarid"
+
+#: admin-interviews.php:317
+msgid "Previous Interview Comments"
+msgstr "Eelnevad intervjuu kommentaarid"
+
+#: admin-interviews.php:367
+msgid "Job Manager: Application Interview Summary"
+msgstr "Tööjõu Haldaja: Avalduse intervjuu kokkuvõte"
+
+#: admin-interviews.php:375
+msgid "Interview Date"
+msgstr "Intervjuu kuupäev"
+
+#: admin-interviews.php:396
+msgid "There are no interviews for this application."
+msgstr "Intervjuud sellele avaldusele puuduvad"
+
+#: admin-interviews.php:439
+msgid "New Interview"
+msgstr "Uus intervjuu"
+
+#: admin-interviews.php:468
+msgid "Interview"
+msgstr "Intervjuu"
+
+#: admin-jobs-settings.php:73
+#: admin-jobs-settings.php:92
+msgid "Show this field in the Admin Job List?"
+msgstr "Näita seda välja töökoha adminstreerimise loetelus?"
+
+#: admin-jobs-settings.php:110
+msgid "Update Jobs Form"
+msgstr "Uuenda töökoha vormi"
+
+#: admin-jobs.php:37
+msgid "Job Manager: Jobs List"
+msgstr "Tööjõu Haldaja: Töökohtade loetelu"
+
+#: admin-jobs.php:40
+msgid "New Job"
+msgstr "Uus töökoht"
+
+#: admin-jobs.php:45
+msgid "There is no job associated with that Job ID"
+msgstr "Puuduvad töökohad mis oleksid seotud selle Töökoha ID-ga"
+
+#: admin-jobs.php:48
+msgid "New job created"
+msgstr "Uus töökoht loodud"
+
+#: admin-jobs.php:51
+msgid "Job updated"
+msgstr "Töökoht uuendatud"
+
+#: admin-jobs.php:54
+msgid "You do not have permission to edit that Job"
+msgstr "Teil puuduvad õigused antud töökoha muutmiseks"
+
+#: admin-jobs.php:68
+#: admin-jobs.php:340
+#: admin-settings.php:143
+#: admin-settings.php:156
+#: admin-settings.php:225
+#: admin-settings.php:237
+#: admin-settings.php:448
+#: frontend-application.php:153
+#: setup.php:89
+#: widgets.php:99
+#: widgets.php:276
+#: widgets.php:379
+#: widgets.php:445
+msgid "Title"
+msgstr "Pealkiri"
+
+#: admin-jobs.php:83
+msgid "Display Dates"
+msgstr "Näitamise kuupäevad"
+
+#: admin-jobs.php:93
+msgid "Expired jobs"
+msgstr "Aegunud töökohad"
+
+#: admin-jobs.php:103
+msgid "There are currently no jobs in the system."
+msgstr "Praegusel hetkel töökohad süsteemis puuduvad"
+
+#: admin-jobs.php:113
+msgid "Archive"
+msgstr "Arhiveeri"
+
+#: admin-jobs.php:114
+msgid "Unarchive"
+msgstr "Võtta arhiivist välja"
+
+#: admin-jobs.php:179
+msgid "Edit"
+msgstr "Toimeta"
+
+#: admin-jobs.php:183
+msgid "View"
+msgstr "Vaata"
+
+#: admin-jobs.php:203
+msgid "End of Time"
+msgstr "Ajalõpp"
+
+#: admin-jobs.php:204
+msgid "Future"
+msgstr "Tulevik"
+
+#: admin-jobs.php:204
+msgid "Live"
+msgstr "Otse"
+
+#: admin-jobs.php:204
+msgid "Expired"
+msgstr "Aegunud"
+
+#: admin-jobs.php:233
+msgid "Job Manager: New Job"
+msgstr "Tööjõu Haldaja: Uus Töökoht"
+
+#: admin-jobs.php:234
+msgid "Create Job"
+msgstr "Loo töökoht"
+
+#: admin-jobs.php:236
+msgid "New"
+msgstr "Uus"
+
+#: admin-jobs.php:239
+msgid "Job Manager: Edit Job"
+msgstr "Tööjõu Haldaja: Toimeta töökohta"
+
+#: admin-jobs.php:240
+msgid "Update Job"
+msgstr "Uuenda töökohta"
+
+#: admin-jobs.php:310
+msgid "Categories that this job belongs to. It will be displayed in the job list for each category selected."
+msgstr "Kategooriad millesse see töökoht kuulub. Seda näidatakse töökohtade loetelus iga valitud kategooria kohta"
+
+#: admin-jobs.php:313
+#: admin-settings.php:224
+#: admin-settings.php:236
+msgid "Icon"
+msgstr "Ikoon"
+
+#: admin-jobs.php:335
+msgid "No Icon"
+msgstr "Ei mingit ikooni"
+
+#: admin-jobs.php:337
+msgid "Icon to display for this job in the Job List"
+msgstr "Ikoon, mida näidata selle töökoha kohta töökohtade loetelus"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "HTML"
+msgstr "HTML"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "Visual"
+msgstr "Visuaalne"
+
+#: admin-jobs.php:455
+msgid "Delete File?"
+msgstr "Kustuta fail?"
+
+#: admin-jobs.php:484
+msgid "Display Start Date"
+msgstr "Näita algus kuupäeva"
+
+#: admin-jobs.php:486
+msgid "The date this job should start being displayed on the site. To start displaying immediately, leave blank."
+msgstr "Kuupäev millest alates seda töökohta peaks näitama lehel. Et näidata koheselt, jätke väli tühjaks"
+
+#: admin-jobs.php:489
+msgid "Display End Date"
+msgstr "Näita lõpp kuupäeva"
+
+#: admin-jobs.php:491
+msgid "The date this job should stop being displayed on the site. To display indefinitely, leave blank."
+msgstr "Kuupäev, millest alates töökohta enam lehel ei kuvata. Et lõpmatuseni näidata, jätke väli tühjaks"
+
+#: admin-jobs.php:494
+msgid "Application Email"
+msgstr "Avalduse e-mail"
+
+#: admin-jobs.php:496
+msgid "The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank."
+msgstr "E-maili aadress, millele teatada kui avaldus on saadetud sellele töökohale. Vaikimis valitud käitumise jaoks (kategooria e-maill või üldine e-mail) jätke tühjaks"
+
+#: admin-jobs.php:504
+msgid "Highlighted?"
+msgstr "Esile tõstetud?"
+
+#: admin-jobs.php:506
+msgid "Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page."
+msgstr "Tõstke see töökoht esile? Et muuta esile tõstetud töökohtade käitumist, vaadake Kuvamise Seadeid adminstratiivselt lehelt"
+
+#: admin-jobs.php:678
+msgid "Job Manager: Jobs"
+msgstr "Tööjõu Haldaja: Töökohad"
+
+#: admin-jobs.php:679
+msgid "This will permanently delete all of the selected jobs. Please confirm that you want to continue."
+msgstr "See kustutab jäädavalt kõik valitud töökohad. Palun kinnitage et soovite jätkata"
+
+#: admin-jobs.php:680
+msgid "Delete Jobs"
+msgstr "Kustuta töökohad"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin.php:27
+msgid "Settings"
+msgstr "Seaded"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Icons"
+msgstr "Ikoonid"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "User Settings"
+msgstr "Kasutaja seaded"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Application Email Settings"
+msgstr "Avalduse e-maili seaded"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "API Keys"
+msgstr "APi võtmed"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "Other Plugins"
+msgstr "Teised lisandid"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Uninstall Settings"
+msgstr "Maha installeerimise seaded"
+
+#: admin-settings.php:71
+msgid "Translators"
+msgstr "Tõlkijad"
+
+#: admin-settings.php:76
+#: admin-settings.php:92
+msgid "Interview Settings"
+msgstr "Intervjuu seaded"
+
+#: admin-settings.php:111
+msgid "URL path"
+msgstr "URLi rada"
+
+#: admin-settings.php:114
+msgid "edit"
+msgstr "toimeta"
+
+#: admin-settings.php:118
+msgid "Allow Multi-Applications"
+msgstr "Luba multi-avaldused"
+
+#: admin-settings.php:120
+msgid "This will allow applicants to send through a single application for multiple jobs."
+msgstr "See lubab tööotsijatel saata ainsa vormi kaudu avaldus mitmele kohale"
+
+#: admin-settings.php:123
+msgid "Enable Interview Scheduling"
+msgstr "Lubage intervjuu ajakava loomist"
+
+#: admin-settings.php:125
+msgid "This will enable interview scheduling functionality."
+msgstr "See lubab intervjuu ajakava loomise funktsionaalsust"
+
+#: admin-settings.php:128
+msgid "Default email"
+msgstr "Vaikimis valitud e-mail"
+
+#: admin-settings.php:133
+msgid "Update Settings"
+msgstr "Uuenda seadeid"
+
+#: admin-settings.php:141
+msgid "Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories."
+msgstr "Sarnaselt tavalistele WordPressi kategooriatele, Job Manageri kategooriaid saab kasutada et jagada pakutavaid töökohti erinevatesse kohtadesse. Neid võib kasutada ka oma avalduse vormi kohandemiseks mida näidatakse töökohtadele erinevates kategooriates"
+
+#: admin-settings.php:143
+msgid "The display name of the category"
+msgstr "Näidatav kategooria nimi"
+
+#: admin-settings.php:144
+#: admin-settings.php:157
+msgid "Slug"
+msgstr "Slug"
+
+#: admin-settings.php:144
+msgid "The URL of the category"
+msgstr "Kategooria aadress (URL)"
+
+#: admin-settings.php:145
+msgid "The address to notify when new applications are submitted in this category"
+msgstr "Aadress millele teatada kui uusi avaldus on saadetud kategooriasse"
+
+#: admin-settings.php:146
+#: admin-settings.php:159
+#: admin-settings.php:177
+msgid "Link"
+msgstr "Viide"
+
+#: admin-settings.php:146
+msgid "The URL of the list of jobs in this category"
+msgstr "Selles kategoorias asuvate töökohtade loetelu aadress (URL)"
+
+#: admin-settings.php:198
+msgid "Add New Category"
+msgstr "Lisage uus kategooria"
+
+#: admin-settings.php:204
+msgid "Show related categories?"
+msgstr "Näidake sarnaseid kategooriaid?"
+
+#: admin-settings.php:206
+msgid "This will show a list of categories that any jobs in a given job list belong to."
+msgstr "See näitab loatelu kategooriatest millesse iga töökoht antud töökohtade loetelus kuulub"
+
+#: admin-settings.php:209
+msgid "Update Categories"
+msgstr "Uuendage kategooriaid"
+
+#: admin-settings.php:222
+msgid "Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the \"Summary\" jobs list type."
+msgstr "Ikoone saab kinnitada töökohtadele millele te tahate tähelepanu pöörata. Neid ikoone nädiatakse vaid siis kui \"Kokkuvõte\" töökohtade loetelu tüüpi kasutate "
+
+#: admin-settings.php:224
+msgid "The current icon"
+msgstr "Praegune ikoon"
+
+#: admin-settings.php:225
+msgid "The display name of the icon"
+msgstr "Näidatav ikooni nimi"
+
+#: admin-settings.php:226
+#: admin-settings.php:238
+msgid "File"
+msgstr "Fail"
+
+#: admin-settings.php:226
+msgid "The icon file"
+msgstr "Ikooni fail"
+
+#: admin-settings.php:272
+msgid "Add New Icon"
+msgstr "Lisage uus ikoon"
+
+#: admin-settings.php:275
+msgid "Update Icons"
+msgstr "Uuendage ikoone"
+
+#: admin-settings.php:288
+msgid "Allowing users to register means that they and you can more easily keep track of jobs they've applied for."
+msgstr "Lubada kasutajatel registreerida  tähendab et teie ja nemad saate paremini jälgida mis töökohtadele nad kandideerinud on."
+
+#: admin-settings.php:296
+msgid "Enable User Registration"
+msgstr "Lülitage kasutajate registreerimine sisse"
+
+#: admin-settings.php:298
+msgid "This will allow users to register for the Jobs system, even if user registration is disabled for your blog."
+msgstr "See lubab kasutajatel registreerida Tööjõu süsteemi, isegi kui kasutajate registreerimine kodulehel eneses on keelatud"
+
+#: admin-settings.php:301
+msgid "Require User Registration"
+msgstr "Nõuab kasutaja registreerimist"
+
+#: admin-settings.php:303
+msgid "If the previous option is checked, this option will require users to login before they can complete the application form."
+msgstr "Kui eelmine valik on linnuksega tähistatud siis see valik nõuab kasutajatelt sisse logimist ennem kui saad lõplikult valmis teha oma avalduse"
+
+#: admin-settings.php:306
+msgid "Which pages should the login form be displayed on?"
+msgstr "Millistel lehtedel sisse logimise vormi peab näitama?"
+
+#: admin-settings.php:308
+msgid "The main jobs list"
+msgstr "Peamine töökohtade loetelu"
+
+#: admin-settings.php:309
+msgid "Category jobs lists"
+msgstr "Kategooria töökohtade loetelu"
+
+#: admin-settings.php:310
+msgid "Individual jobs"
+msgstr "Üksikud töökohad"
+
+#: admin-settings.php:311
+msgid "The application form"
+msgstr "Avalduse vorm"
+
+#: admin-settings.php:315
+msgid "Update User Settings"
+msgstr "Uuendage kasutajate seadeid"
+
+#: admin-settings.php:325
+msgid "When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email."
+msgstr "Kui tööotsija on edukalt avalduse saatnud siis saadetakse valitud kasutajale teadaanne. Need valikud lubavad teadaande e-maili kohandada"
+
+#: admin-settings.php:333
+#: db.php:43
+#: frontend-user.php:104
+msgid "Email Address"
+msgstr "E-maili aadress"
+
+#: admin-settings.php:335
+#: admin-settings.php:359
+#: admin-settings.php:385
+#: admin-settings.php:452
+#: frontend-application.php:342
+#: frontend-application.php:388
+msgid "None"
+msgstr "Ei ühtegi"
+
+#: admin-settings.php:353
+msgid "The application field to use as the email address. This will be the \"From\" address in the initial application, and the field used for emailing applicants."
+msgstr "Avalduse väli mida kasutada emaili aadressina  Seda kasutatakse \"From\" aadressina esimesel avaldusel ning kasutatakse tööotsijatega suhtlemiseks."
+
+#: admin-settings.php:356
+msgid "From Name"
+msgstr "Vormi nimi"
+
+#: admin-settings.php:378
+msgid "The name that will appear with the \"From\" email address."
+msgstr "Niumi "
+
+#: admin-settings.php:404
+msgid "The email subject, and any fields to include in the subject."
+msgstr "E-maili pealkiri ning need väljad mida soovite pealkirja lisada"
+
+#: admin-settings.php:408
+msgid "Update Email Settings"
+msgstr "Uuendage oma emaili seadeid"
+
+#: admin-settings.php:425
+msgid "Default View"
+msgstr "Vaikimis valitud vaade"
+
+#: admin-settings.php:430
+msgid "Day"
+msgstr "Päev"
+
+#: admin-settings.php:431
+msgid "Month"
+msgstr "Kuu"
+
+#: admin-settings.php:432
+msgid "Year"
+msgstr "Aasta"
+
+#: admin-settings.php:445
+msgid "The default calendar view on the \"Interviews\" page."
+msgstr "Vaikimsi valitud kalendri vaade  \"Intervjuud\" lehel"
+
+#: admin-settings.php:471
+msgid "The Interview title, and any fields to include in the title, as displayed on the \"Interviews\" page."
+msgstr "Intervjuu pealkiri ning need väljad, mida lisada pealkirja, nagu näidatud  \"Intevjuud\" lehel"
+
+#: admin-settings.php:475
+msgid "Update Interview Settings"
+msgstr "Uuendage Intervjuu seadeid"
+
+#: admin-settings.php:490
+msgid "Google Maps API"
+msgstr "Google Maps API"
+
+#: admin-settings.php:492
+#, php-format
+msgid "Job Manager uses Google Maps for the Geolocation application field. Functionality of this field will be severely hampered without a Google Maps key. You can register for a Google Maps key <a href=\"%1s\">here</a>."
+msgstr "Tööjõu Haldaja kasutab Google Mapsi geolokatsiooniks avalduse väljades. Selle välja funktsionaalsus on tugevalt kahjustatud ilma Google Maps võtmeta. Te võte registreerida Google Maps võtme jaoks <a href=\"%1s\">siin</a>."
+
+#: admin-settings.php:496
+msgid "Update API Keys"
+msgstr "Uuendage API võtmeid"
+
+#: admin-settings.php:504
+msgid "Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements."
+msgstr "Tööjõu Haldaja pakub lisa võimalusi läbi teiste WordPressi lisandite kasutamise. Need lisandid ei ole nõutud Tööjõu Haldaja töötamiseks aga nad lisavad väärtuslike omadusil"
+
+#: admin-settings.php:512
+#: admin-settings.php:543
+#: admin-settings.php:548
+msgid "Installed"
+msgstr "Installeeritud"
+
+#: admin-settings.php:517
+msgid "Not Installed"
+msgstr "Ei ole installeeritud"
+
+#: admin-settings.php:520
+msgid "Google XML Sitemaps"
+msgstr "Google XML sisukaardid"
+
+#: admin-settings.php:521
+msgid "Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added."
+msgstr "Lubab automaatselt lisada kõik teie töökohtade loetelud ning töökohtade detailsed lehed teie sisukaarti. Vaikimisi valikuna, vaid põhiline töökohtade nimekiri on lisatud."
+
+#: admin-settings.php:524
+#: admin-settings.php:555
+msgid "Status"
+msgstr "Staatus"
+
+#: admin-settings.php:525
+msgid "Version"
+msgstr "Versioon"
+
+#: admin-settings.php:526
+msgid "Job Manager requires Google XML Sitemaps version 3.2 or later."
+msgstr "Tööjõu Haldaja nõuab Google XML Sitemap versiooni 3.2 või hilisem"
+
+#: admin-settings.php:531
+#: admin-settings.php:560
+#: admin-settings.php:586
+msgid "Options"
+msgstr "Valikud"
+
+#: admin-settings.php:534
+msgid "Add Job pages to your Sitemap?"
+msgstr "Lisa Töökohtade lehed teie sisukaarti?"
+
+#: admin-settings.php:551
+msgid "SI Captcha"
+msgstr "SI Captcha"
+
+#: admin-settings.php:552
+msgid "Allows you to add a Captcha to your Application submission form."
+msgstr "Lubab lisada Captcha avalduse saatmise vormile"
+
+#: admin-settings.php:563
+msgid "Add a captcha to the application form?"
+msgstr "Lisa captcha avalduse vormile?"
+
+#: admin-settings.php:570
+msgid "Update Plugin Settings"
+msgstr "Uuendage lisandi seadeid"
+
+#: admin-settings.php:578
+msgid "If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database."
+msgstr "Kui soovite maha installerida Tööjõu Haldaja, palun valige osad mida tuleks andmeladudest ära kustutada"
+
+#: admin-settings.php:588
+msgid "The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded."
+msgstr "Seaded valitud Adminstratiivsetest Seadetest ning Akna Kuvamise lehtedelt. Sisaldab kõiki üleslaetud ikoone"
+
+#: admin-settings.php:593
+msgid "Jobs that have been created."
+msgstr "Töökohad, mis on loodud"
+
+#: admin-settings.php:598
+msgid "Applications that have been submitted. This includes any files uploaded (resumes, etc)."
+msgstr "Avaldused mis on saadetud. Sisaldades kõiki üleslaetud faile (resümeed jne)."
+
+#: admin-settings.php:603
+msgid "Job Manager Categories that have been created."
+msgstr "Tööjõu Haldaja kategooriad mis on loodud"
+
+#: admin-settings.php:606
+msgid "Update Uninstall Settings"
+msgstr "Uuendage maha installeerimise seadeid"
+
+#. #-#-#-#-#  plugin.pot (Job Manager 0.7)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin.php:26
+#: admin.php:27
+#: admin.php:28
+#: admin.php:29
+#: admin.php:30
+#: admin.php:31
+#: admin.php:34
+msgid "Job Manager"
+msgstr "Tõõjõu Haldaja"
+
+#: admin.php:28
+msgid "Add Job"
+msgstr "Lisage töökoht"
+
+#: admin.php:46
+#: admin.php:193
+msgid "My Amazon Wish List"
+msgstr "Minu Amazoni soovide nimekiri"
+
+#: admin.php:47
+#: admin.php:194
+msgid "Donate with PayPal"
+msgstr "Annetage PayPaliga"
+
+#: admin.php:167
+msgid "Admin Settings"
+msgstr "Adminstratiivsed seaded"
+
+#: admin.php:169
+msgid "App. Form Settings"
+msgstr "Avalduse vormi seaded"
+
+#: admin.php:170
+msgid "Job Form Settings"
+msgstr "Töökoha vormi seaded"
+
+#: admin.php:191
+msgid "If this plugin helps you find that perfect new employee, I'd appreciate it if you shared the love, by way of my Donate or Amazon Wish List links below."
+msgstr "Kui see lisand aitab teil leida uue täiusliku töötaja, hindaksin ma väga kui te jagaksite armastust väikese annetuse või Amazoni soovinimekirjaga tutvumisega all pool"
+
+#: admin.php:202
+msgid "Gary Pendergast's Blog"
+msgstr "Gary Pendergasti blogi"
+
+#: admin.php:203
+msgid "Follow me on Twitter!"
+msgstr "Järgige mind Twitteris"
+
+#: admin.php:204
+msgid "Plugin Homepage"
+msgstr "Lisandi koduleht"
+
+#: admin.php:205
+msgid "Submit a Bug/Feature Request"
+msgstr "Saatke veateade"
+
+#: admin.php:212
+msgid "If you're using Job Manager in a language other than English, you have some of my wonderful translators to thank for it!"
+msgstr "Kui kasutate Tööjõu Haldajat teises keeles peale inglise keele, võite tänada minu imelisi tõlkijaid selle eest!"
+
+#: admin.php:213
+#, php-format
+msgid "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact me</a>!"
+msgstr "Kui te oskate keeli mida ei ole siia lisatud ning soovite et sisalduks nimekirjas palun <a href='%1s'>võtke minuga ühendust</a>!"
+
+#: admin.php:215
+msgid "Dutch"
+msgstr "Hollandi"
+
+#: admin.php:216
+msgid "French"
+msgstr "Prantsuse"
+
+#: admin.php:217
+msgid "German"
+msgstr "Saksa"
+
+#: admin.php:218
+msgid "Spanish"
+msgstr "Hispaania"
+
+#: db.php:10
+msgid "Personal Details"
+msgstr "Isiklikud üksikasjad"
+
+#: db.php:21
+msgid "Name"
+msgstr "Nimi"
+
+#: db.php:32
+msgid "Surname"
+msgstr "Perekonnanimi"
+
+#: db.php:54
+msgid "Contact Details"
+msgstr "Kontaktid"
+
+#: db.php:65
+msgid "Address"
+msgstr "Aadress"
+
+#: db.php:76
+msgid "City"
+msgstr "Linn"
+
+#: db.php:87
+msgid "Post code"
+msgstr "Postikood"
+
+#: db.php:98
+msgid "Country"
+msgstr "Riik"
+
+#: db.php:109
+msgid "Telephone"
+msgstr "Telefon"
+
+#: db.php:120
+msgid "Cell phone"
+msgstr "Mobiili number"
+
+#: db.php:131
+msgid "Qualifications"
+msgstr "Kvailifikatsioonid"
+
+#: db.php:142
+msgid "Do you have a degree?"
+msgstr "Kas teil on kõrgharidus"
+
+#: db.php:145
+msgid "Yes"
+msgstr "Ja"
+
+#: db.php:145
+msgid "No"
+msgstr "Ei"
+
+#: db.php:153
+msgid "Where did you complete your degree?"
+msgstr "Kus te lõpetasite kõrghariduse?"
+
+#: db.php:164
+msgid "Title of your degree"
+msgstr "Teie kõrghariduse nimetus"
+
+#: db.php:175
+msgid "Upload your CV"
+msgstr "Laadige üles oma CV"
+
+#: db.php:200
+#: db.php:202
+msgid "I have read and understood the privacy policy."
+msgstr "Olen lugenud ning nõustun tingimustega"
+
+#: db.php:203
+msgid "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept."
+msgstr "Te peate lugema ning nõustuma meie tingimustega enne kui aksepteerime teie avaldust. Palun liikuge tagasi eelmisele lehele oma brauseris, lugega tingimused läbi ning kinnitage oma nõusolekut"
+
+#: db.php:211
+#: db.php:660
+msgid "Salary"
+msgstr "Palk"
+
+#: db.php:219
+#: db.php:668
+msgid "Start Date"
+msgstr "Alguse kuupäev"
+
+#: db.php:223
+#: db.php:672
+msgid "The date that the job starts. For positions available immediately, leave blank."
+msgstr "Kuupäev, mil töö algab. Kohtadele, kus alustatakse koheselt, jätke väli tühjaks"
+
+#: db.php:227
+#: db.php:676
+msgid "End Date"
+msgstr "Viimane kuupäev"
+
+#: db.php:231
+#: db.php:680
+msgid "The date that the job finishes. For ongoing positions, leave blank."
+msgstr "Kuupäev millal töökoht ammendub. Püsivate kohtade jaoks jätke tühjaks"
+
+#: db.php:235
+#: db.php:684
+msgid "Location"
+msgstr "Asukoht"
+
+#: db.php:258
+#: db.php:332
+#: frontend-jobs.php:14
+msgid "Jobs Listing"
+msgstr "Töökohtade loetelu"
+
+#: db.php:259
+#: db.php:333
+msgid "Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site."
+msgstr "Tere, seda lehte kasutab Tööjõu Haldaja oma alusena. Võite vabalt muuta seadeid siin aga ärge iialgi mingil juhul seda lehte kustutage. Palun pange tähele ka et sisu mida te siia panete ei näidata kui seda lehte kuvatakse teie kodulehel."
+
+#: db.php:274
+#: db.php:545
+#: frontend-application.php:53
+#: frontend-application.php:85
+#: frontend-application.php:97
+#: frontend-application.php:864
+#: frontend.php:368
+#: setup.php:41
+msgid "Job Application"
+msgstr "Tööavaldus"
+
+#: db.php:288
+#: db.php:605
+#: frontend-user.php:32
+#: frontend-user.php:109
+msgid "Register"
+msgstr "Registreeri"
+
+#: frontend-application.php:35
+msgid "It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly."
+msgstr "Süsteemi kohaselt olete hiljuti saatnud avalduse. Kui soovite saada teavet oma avalduse kohta, palun võtke meiega otse ühendust."
+
+#: frontend-application.php:39
+msgid "There was an error uploading your application. Please contact us directly, and quote the information below:"
+msgstr "Ilmnes viga teie avalduse üleslaadimisel. Palun võtke meiega otse ühendust ning tsiteerige all pool olevat informatsiooni:"
+
+#: frontend-application.php:48
+msgid "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available."
+msgstr "Täname teid teie avalduse eest. Kuigi teie avaldus ei täida nõutud tingimusi, palun võtke meiega siiski ühendust et näha muid vabu kohti."
+
+#: frontend-application.php:65
+msgid "Before completing your application, please login using the form above, or register using the form below."
+msgstr "Enne oma avalduse lõpetamist, palun logige sisse kasutades üleval pool toodud vormi, või registreerige all pool toodud vormi kasutades."
+
+#: frontend-application.php:157
+msgid "Select the jobs you would like to apply for"
+msgstr "Valige töökohad millele soovite kandideerida"
+
+#: frontend-application.php:159
+msgid "Select the categories that you are interested in"
+msgstr "Valige kategooriad mille kohta tunnete huvi"
+
+#: frontend-application.php:166
+msgid "Fields marked with an asterisk (*) must be filled out before submitting."
+msgstr "Väljad, mida on tähistatud tärniga (*), tuleb kindlasti täita enne saatmist"
+
+#: frontend-application.php:250
+msgid "Submit Your Application"
+msgstr "Saatke oma avaldus"
+
+#: frontend-application.php:868
+msgid "Application Link"
+msgstr "Avalduse viide"
+
+#: frontend-jobs.php:108
+#: frontend-shortcodes.php:128
+#, php-format
+msgid "Jobs for %s"
+msgstr "Töökohad %s-le"
+
+#: frontend-jobs.php:111
+msgid "Related Categories"
+msgstr "Sarnased kategooriad"
+
+#: frontend-jobs.php:150
+#, php-format
+msgid "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file."
+msgstr "Praegusel hetkel meil ei ole ühtegi vaba töökohta. Palun külastage seda lehte aeg-ajalt sest me lisame tööpakkumisi sagedasti. Samas, võite <a href='%s'>saata meile oma resümee</a>, mille hoiame alles."
+
+#: frontend-jobs.php:164
+#, php-format
+msgid "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>."
+msgstr "Praegusel hetkel puuduvad meil antud piirkonnas tööpakkumised. Palun vaadake aeg-ajalt uuesti.  Niikaua võite <a href='%s'>saate oma resumee</a>, mille hoiame alles ja võite vaadata <a href='%s'>töökohti mida pakkume teistes piirkondades</a>."
+
+#: frontend-jobs.php:223
+msgid "This job doesn't exist"
+msgstr "Sellist töökohta ei eksisteeri"
+
+#: frontend-jobs.php:225
+#, php-format
+msgid "Perhaps you followed an out-of-date link? Please check out the <a href=\"%s\">jobs we have currently available</a>."
+msgstr "Võib-olla järgisite aegunud viidet? Palun vaadake  <a href=\"%s\">praegu pakutavaid töökohti</a>."
+
+#: frontend-shortcodes.php:157
+#: frontend-shortcodes.php:355
+msgid "more"
+msgstr "veel"
+
+#: frontend-user.php:15
+#, php-format
+msgid "Welcome, %1s!"
+msgstr "Tere tulemast, %1s!"
+
+#: frontend-user.php:25
+msgid "If you've registered with us previously, please login now. If you'd like to register, please click the 'Register' link below."
+msgstr "Kui te olete eelnevalt registreerinud ennast, palun logige sisse. Kui soovite registreeruda, palun vajutage \"Registreeri\" viitele"
+
+#: frontend-user.php:27
+#: frontend-user.php:87
+msgid "Username"
+msgstr "Kasutajanimi"
+
+#: frontend-user.php:29
+#: frontend-user.php:95
+msgid "Password"
+msgstr "Salasõna"
+
+#: frontend-user.php:31
+msgid "Login"
+msgstr "Logige sisse"
+
+#: frontend-user.php:32
+msgid "Forgot your password?"
+msgstr "Unustasite oma salasõna?"
+
+#: frontend-user.php:82
+msgid "Please fill in all fields."
+msgstr "Palun täitke kõik väljad"
+
+#: frontend-user.php:85
+msgid "This username has already been registered."
+msgstr "See kasutajanimi on juba registreeritud"
+
+#: frontend-user.php:93
+msgid "Passwords do not match."
+msgstr "Salasõnad ei klappi"
+
+#: frontend-user.php:98
+msgid "Password Again"
+msgstr "Salasõna uuesti"
+
+#: frontend-user.php:102
+#, php-format
+msgid "This email address has already been registered. If you've previously registered but don't remember your password, please visit the <a href='%1s'>password reset page</a>."
+msgstr "Antud e-maili aadress on juba registreeritud. Kui te olete varem registreerinud aga ei mäleta oma salasõna, palun külastage <a href='%1s'>salasõna seadistuse lehte</a>."
+
+#: frontend.php:277
+#, php-format
+msgid "This job listing was created using <a href=\"%s\" title=\"%s\">Job Manager</a> for WordPress, by <a href=\"%s\">Gary Pendergast</a>."
+msgstr "See töökohtade loetelu loodi kasutades<a href=\"%s\" title=\"%s\">Tööjõu Haldajat</a> WordPressile, <a href=\"%s\">Gary Pendergasti poolt</a>."
+
+#: frontend.php:277
+msgid "WordPress Job Manager"
+msgstr "WordPressi Tööjõu Haldaja"
+
+#: frontend.php:371
+#: frontend.php:374
+msgid "Job Listing"
+msgstr "Töökohtade loetelu"
+
+#: frontend.php:418
+msgid "Latest Jobs"
+msgstr "Viimati avaldatud töökohad"
+
+#: frontend.php:494
+msgid "The following fields must be filled out before submitting"
+msgstr "Järgnevad väljad tuleb ätita ennem avalduse saatmist"
+
+#: frontend.php:495
+#: frontend.php:496
+msgid "click to select"
+msgstr "Vajutage valimiseks"
+
+#: functions.php:37
+msgid "Click to toggle"
+msgstr "Vajutage sisse/välja lülitamiseks"
+
+#: functions.php:62
+msgid "No rating"
+msgstr "Reiting puudub"
+
+#: functions.php:98
+msgid "Category"
+msgstr "Kategooria"
+
+#: setup.php:75
+#: setup.php:247
+msgid "Thank you for your application! We'll check it out, and get back to you soon!"
+msgstr "Täname kandideerimise eest. Teie avaldus vaadatakse läbi ning teiega võetakse kiiresti ühendust!"
+
+#: setup.php:91
+msgid "Apply Now"
+msgstr "Kandideerige kohe"
+
+#: setup.php:93
+#: setup.php:94
+#: setup.php:353
+#: setup.php:354
+#, php-format
+msgid "Page %1s"
+msgstr "Leht %1s"
+
+#: setup.php:95
+#: setup.php:355
+#, php-format
+msgid "Jobs %1s-%2s of %3s"
+msgstr "Töökohad %1s-%2s of %3s"
+
+#: widgets.php:5
+msgid "Job Manager: Recent Jobs"
+msgstr "Tööjõu Haldaja: Hiljutised töökohad"
+
+#: widgets.php:6
+msgid "A list of the most recent jobs posted to your site"
+msgstr "Nimekiri kõige hiljutisematest töökohtadest mis postitatud teie lehele"
+
+#: widgets.php:68
+#: widgets.php:363
+#: widgets.php:429
+msgid "There are no jobs to display at this time."
+msgstr "Praegu puuduvad töökohad mida näidata"
+
+#: widgets.php:110
+msgid "Number of Jobs to show"
+msgstr "Töökohtade arv mida näidata"
+
+#: widgets.php:113
+msgid "at most 15"
+msgstr "kõige enam 15"
+
+#: widgets.php:122
+msgid "Show Jobs From"
+msgstr "Näita töökohti kohast"
+
+#: widgets.php:124
+msgid "All Categories"
+msgstr "Kõik kategooriad"
+
+#: widgets.php:125
+msgid "Selected Categories"
+msgstr "Valitud kategooriad"
+
+#: widgets.php:149
+msgid "No categories defined."
+msgstr "Ühtegi kategooriat ei ole defineeritud"
+
+#: widgets.php:162
+msgid "Job Manager: Categories"
+msgstr "Tööjõu Haldaja: Kategooriad"
+
+#: widgets.php:163
+msgid "A list or dropdown of Job Manager categories"
+msgstr "Nimekiri või menüü Tööjõu Haldaja kategooriatest"
+
+#: widgets.php:195
+msgid "Select Category"
+msgstr "Valige kategooria"
+
+#: widgets.php:260
+msgid "There are no categories to display at this time."
+msgstr "Praegu puuduvad kategooriad mida näitata"
+
+#: widgets.php:294
+msgid "Show as dropdown"
+msgstr "Näita menüüna"
+
+#: widgets.php:295
+msgid "Show job counts"
+msgstr "Näita töökohtade üldarvu"
+
+#: widgets.php:296
+msgid "Hide empty categories"
+msgstr "Vajra tühjad kategooriad"
+
+#: widgets.php:307
+msgid "Job Manager: Highlighted Jobs"
+msgstr "Tööjõu Haldaja: Esile tõstetud töökohad"
+
+#: widgets.php:308
+msgid "A list jobs that have been marked as highlighted"
+msgstr "Töökohad, mida on esile tõstetud"
+
+#: widgets.php:392
+msgid "Job Manager: Selected Jobs"
+msgstr "Tööjõu Haldaja: Valitud töökohad"
+
+#: widgets.php:393
+msgid "A customizable list jobs posted to your site"
+msgstr "Kohandatav nimekiri töökohtadest postitatud teie lehel"
+
+#: widgets.php:453
+msgid "Comma separated list of Job IDs"
+msgstr "Komaga eraldatud loetelu Töökoha ID-st"
+
+#. Plugin URI of the plugin/theme
+msgid "http://pento.net/projects/wordpress-job-manager-plugin/"
+msgstr "http://pento.net/projects/wordpress-job-manager-plugin/"
+
+#. Description of the plugin/theme
+msgid "A job listing and job application management plugin for WordPress."
+msgstr "Töökohtade loetelu ning tööavalduste haldamise lisand WordPressile"
+
+#. Author of the plugin/theme
+msgid "Gary Pendergast"
+msgstr "Gary Pendergast"
+
+#. Author URI of the plugin/theme
+msgid "http://pento.net/"
+msgstr "http://pento.net"
+
+#. Tags of the plugin/theme
+msgid "job, jobs, manager, list, listing, employment, employer, career"
+msgstr "töökoht, töökohad, haldaja, nimekiri, loetelu, tööle võtmine, tööandja, karjäär"
+

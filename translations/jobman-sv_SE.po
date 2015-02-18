@@ -1,0 +1,2059 @@
+# Translation of 0.7 Series in Swedish
+# This file is distributed under the same license as the 0.7 Series package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2010-09-01 10:14+1000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: 0.7 Series\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Gary Pendergast <gary@pento.net>\n"
+"Language-Team: \n"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "HTML"
+msgstr "HTML"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "Visual"
+msgstr "Synlig"
+
+#: admin-jobs.php:54
+msgid "You do not have permission to edit that Job"
+msgstr "Du har inte behörighet att ändra det jobbet "
+
+#: admin-applications.php:612
+msgid "Share Application"
+msgstr "Dela applikation"
+
+#: db.php:145
+msgid "No"
+msgstr "Nej"
+
+#: admin-jobs.php:236
+msgid "New"
+msgstr "Ny"
+
+#: db.php:145
+msgid "Yes"
+msgstr "Ja"
+
+#: db.php:235
+#: db.php:684
+msgid "Location"
+msgstr "Plats"
+
+#: db.php:227
+#: db.php:676
+msgid "End Date"
+msgstr "Slutdatum"
+
+#: db.php:219
+#: db.php:668
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: db.php:211
+#: db.php:660
+msgid "Salary"
+msgstr "Lön"
+
+#: db.php:203
+msgid "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept."
+msgstr "Du måste läsa och godkänna våra villkor angående personuppgifter innan vi kan acceptera din ansökan. Klicka på 'bakåt' knappen i din webbläsare, läs våra villkor angående personuppgifter och bekräfta att du accepterar villkoren."
+
+#: db.php:200
+#: db.php:202
+msgid "I have read and understood the privacy policy."
+msgstr "Jag har läst och förstått villkoren angående personuppgifter."
+
+#: db.php:175
+msgid "Upload your CV"
+msgstr "Ladda upp ditt CV"
+
+#: db.php:164
+msgid "Title of your degree"
+msgstr "Namnet på din examen"
+
+#: db.php:153
+msgid "Where did you complete your degree?"
+msgstr "Var tog du din examen?"
+
+#: db.php:142
+msgid "Do you have a degree?"
+msgstr "Har du en examen?"
+
+#: db.php:131
+msgid "Qualifications"
+msgstr "Kvalifikationer"
+
+#: db.php:120
+msgid "Cell phone"
+msgstr "Mobiltelefon"
+
+#: db.php:109
+msgid "Telephone"
+msgstr "Telefon"
+
+#: db.php:98
+msgid "Country"
+msgstr "Land"
+
+#: db.php:87
+msgid "Post code"
+msgstr "Postkod"
+
+#: db.php:76
+msgid "City"
+msgstr "Stad"
+
+#: db.php:65
+msgid "Address"
+msgstr "Adress"
+
+#: db.php:54
+msgid "Contact Details"
+msgstr "Kontaktuppgifter"
+
+#: db.php:32
+msgid "Surname"
+msgstr "Efternamn"
+
+#: db.php:21
+msgid "Name"
+msgstr "Namn"
+
+#: db.php:10
+msgid "Personal Details"
+msgstr "Personuppgifter"
+
+#: admin.php:218
+msgid "Spanish"
+msgstr "Spanska"
+
+#: admin-application-form.php:11
+#: admin-jobs-settings.php:11
+msgid "Text Input"
+msgstr "Skriv in text"
+
+#: admin-application-form.php:12
+#: admin-jobs-settings.php:12
+msgid "Radio Buttons"
+msgstr "Radioknappar"
+
+#: admin-application-form.php:13
+msgid "Select Dropdown"
+msgstr "Välj Rullgardinsmeny"
+
+#: admin-application-form.php:14
+#: admin-jobs-settings.php:13
+msgid "Checkboxes"
+msgstr "Checkboxes"
+
+#: admin-application-form.php:15
+#: admin-jobs-settings.php:14
+msgid "Large Text Input (textarea)"
+msgstr "Stor textinmatning (textarea)"
+
+#: admin-application-form.php:16
+#: admin-jobs-settings.php:15
+msgid "Date Selector"
+msgstr "Datumväljare"
+
+#: admin-application-form.php:17
+#: admin-jobs-settings.php:16
+msgid "File Upload"
+msgstr "Ladda upp fil"
+
+#: admin-application-form.php:18
+msgid "Geolocation"
+msgstr "Geografisk plats"
+
+#: admin-application-form.php:19
+#: admin-jobs-settings.php:17
+msgid "Heading"
+msgstr "Rubrik"
+
+#: admin-application-form.php:20
+#: admin-jobs-settings.php:18
+msgid "HTML Code"
+msgstr "HTML-kod"
+
+#: admin-application-form.php:21
+#: admin-jobs-settings.php:19
+msgid "Blank Space"
+msgstr "Mellanslag"
+
+#: admin-application-form.php:39
+#: admin-jobs-settings.php:37
+msgid "Field Label/Type"
+msgstr "Fält Etikett/Typ"
+
+#: admin-application-form.php:40
+#: admin-applications.php:67
+#: admin-applications.php:204
+#: admin-applications.php:240
+#: admin-frontend-settings.php:217
+#: admin-jobs.php:69
+#: admin-jobs.php:288
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin-settings.php:601
+#: setup.php:90
+#: widgets.php:138
+msgid "Categories"
+msgstr "Kategorier"
+
+#: admin-application-form.php:41
+#: admin-jobs-settings.php:38
+msgid "Data"
+msgstr "Data"
+
+#: admin-application-form.php:42
+msgid "Submit Filter/Filter Error Message"
+msgstr "Skicka Filter/Filter felmeddelande"
+
+#: admin-application-form.php:43
+#: admin-frontend-settings.php:131
+#: admin-jobs-settings.php:39
+msgid "Sort Order"
+msgstr "Sorteringsordning"
+
+#: admin-application-form.php:44
+#: admin-application-form.php:113
+#: admin-application-form.php:141
+#: admin-applications.php:565
+#: admin-jobs-settings.php:40
+#: admin-jobs-settings.php:78
+#: admin-jobs-settings.php:95
+#: admin-jobs.php:112
+#: admin-settings.php:160
+#: admin-settings.php:178
+#: admin-settings.php:189
+#: admin-settings.php:239
+#: admin-settings.php:256
+#: admin-settings.php:265
+msgid "Delete"
+msgstr "Ta bort"
+
+#: admin-application-form.php:77
+#: admin-application-form.php:127
+msgid "Show this field in the Application List?"
+msgstr "Visa detta fält i listan med ansökningar?"
+
+#: admin-application-form.php:84
+#: admin-application-form.php:128
+msgid "Block this field from application emails?"
+msgstr "Spärra fältet från ansökningar via e-post?"
+
+#: admin-application-form.php:108
+#: admin-application-form.php:137
+msgid "Mandatory field?"
+msgstr "Obligatoriskt fält?"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Up"
+msgstr "Upp"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Down"
+msgstr "Ner"
+
+#: admin-application-form.php:155
+#: admin-jobs-settings.php:106
+msgid "Add New Field"
+msgstr "Lägg till ett nytt fält"
+
+#: admin-application-form.php:159
+msgid "Update Application Form"
+msgstr "Uppdatera ansökningsformuläret"
+
+#: admin-applications.php:36
+#: admin-applications.php:750
+msgid "Job Manager: Applications"
+msgstr "Job Manager: Ansökningar"
+
+#: admin-applications.php:39
+msgid "Selected applications have been deleted."
+msgstr "Utvalda ansökningar har tagits bort."
+
+#: admin-applications.php:41
+msgid "The mailout has been sent."
+msgstr "Mailet har skickats."
+
+#: admin-applications.php:50
+msgid "Standard Filters"
+msgstr "Standard filter"
+
+#: admin-applications.php:53
+#: admin-jobs.php:283
+msgid "Job ID"
+msgstr "Jobb-ID"
+
+#: admin-applications.php:60
+msgid "Registered Applicant"
+msgstr "Registrerad sökande"
+
+#: admin-applications.php:90
+msgid "Minimum Rating"
+msgstr "Lägsta Betyg"
+
+#: admin-applications.php:100
+msgid "Custom Filters"
+msgstr "Användardefinierade filter"
+
+#: admin-applications.php:155
+msgid "Up to %1s km from %2s"
+msgstr "Upp till %1s km från %2s"
+
+#: admin-applications.php:166
+msgid "Please enter a Google Maps API key in your Admin Settings."
+msgstr "Ange en Google Maps API nyckel i dina Admin inställningar. "
+
+#: admin-applications.php:171
+msgid "This field cannot be filtered."
+msgstr "Detta fält kan inte filtreras."
+
+#: admin-applications.php:181
+msgid "Filter Applications"
+msgstr "Filtrera ansökningarna"
+
+#: admin-applications.php:185
+msgid "Show Filter Options"
+msgstr "Visa filteralternativ"
+
+#: admin-applications.php:186
+msgid "Hide Filter Options"
+msgstr "Dölj filterinställningar"
+
+#: admin-applications.php:196
+#: admin-applications.php:232
+#: admin-applications.php:665
+#: frontend-application.php:875
+#: setup.php:74
+#: setup.php:246
+msgid "Job"
+msgstr "Jobb"
+
+#: admin-applications.php:200
+#: admin-applications.php:236
+msgid "User"
+msgstr "Användare"
+
+#: admin-applications.php:216
+#: admin-applications.php:252
+#: admin-applications.php:514
+msgid "View Details"
+msgstr "Visa detaljer"
+
+#: admin-applications.php:217
+#: admin-applications.php:253
+#: admin-emails.php:120
+#: admin.php:31
+msgid "Emails"
+msgstr "E-post"
+
+#: admin-applications.php:221
+#: admin-applications.php:257
+#: admin-applications.php:621
+#: admin.php:34
+msgid "Interviews"
+msgstr "Intervjuer"
+
+#: admin-applications.php:225
+#: admin-applications.php:261
+#: admin-applications.php:673
+msgid "Rating"
+msgstr "Betyg"
+
+#: admin-applications.php:457
+msgid "No job"
+msgstr "Inget jobb"
+
+#: admin-applications.php:464
+msgid "Unregistered Applicant"
+msgstr "Oregistrerad Sökande"
+
+#: admin-applications.php:500
+#: admin-applications.php:707
+#: admin-jobs.php:192
+#: admin-settings.php:523
+#: admin-settings.php:554
+#: frontend-shortcodes.php:169
+#: frontend-shortcodes.php:367
+msgid "Download"
+msgstr "Ladda ner"
+
+#: admin-applications.php:547
+msgid "There were no applications that matched your search."
+msgstr "Det finns inga ansökningar som matchar din sökning."
+
+#: admin-applications.php:549
+msgid "There are currently no applications in the system."
+msgstr "Det finns för närvarande inga ansökningar i systemet."
+
+#: admin-applications.php:563
+#: admin-jobs.php:111
+msgid "Bulk Actions"
+msgstr "Massåtgärder"
+
+#: admin-applications.php:564
+#: admin-applications.php:734
+#: admin-settings.php:145
+#: admin-settings.php:158
+msgid "Email"
+msgstr "E-post"
+
+#: admin-applications.php:566
+msgid "Export as CSV file"
+msgstr "Exportera som CSV-fil"
+
+#: admin-applications.php:568
+#: admin-jobs.php:116
+msgid "Apply"
+msgstr "Ansök"
+
+#: admin-applications.php:600
+msgid "Job Manager: Application Details"
+msgstr "Job Manager: Ansökningsdetaljer"
+
+#: admin-applications.php:602
+#: admin-applications.php:626
+msgid "Back to Application List"
+msgstr "Tillbaka till listan med sökta jobb"
+
+#: admin-applications.php:611
+#: admin-interviews.php:316
+#: db.php:487
+#: frontend-application.php:515
+msgid "Application"
+msgstr "Ansökan"
+
+#: admin-applications.php:612
+#: admin-interviews.php:317
+msgid "Application Comments"
+msgstr "Kommentarer till ansökan"
+
+#: admin-applications.php:667
+#: admin-settings.php:591
+#: admin.php:29
+msgid "Jobs"
+msgstr "Jobb"
+
+#: admin-applications.php:671
+#: frontend-application.php:881
+msgid "Timestamp"
+msgstr "Tidsstämpel"
+
+#: admin-applications.php:728
+msgid "Use this form to email the application to a new email address."
+msgstr "Använd detta formulär för att e-posta ansökan till en ny e-postadress."
+
+#: admin-applications.php:751
+msgid "This will permanently delete all of the selected applications. Please confirm that you want to continue."
+msgstr "Detta kommer att permanent ta bort alla valda ansökningar. Bekräfta att du vill fortsätta."
+
+#: admin-applications.php:752
+msgid "Delete Applications"
+msgstr "Radera ansökningar"
+
+#: admin-comments.php:8
+msgid "Comment"
+msgstr "Kommentar"
+
+#: admin-comments.php:19
+msgid "No comments found"
+msgstr "Inga kommentarer finns"
+
+#: admin-emails.php:10
+msgid "Job Manager: Emails"
+msgstr "Job Manager: E-post"
+
+#: admin-emails.php:12
+msgid "In the \"Applications Sent To\" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "I \"Skickats in till\" kolumnen, klickar du på numret för att gå till denna ansökan, eller klicka på asterisk (*) bredvid den för att se andra e-postmeddelanden som skickas till denna ansökan."
+
+#: admin-emails.php:17
+#: admin-emails.php:25
+msgid "Date"
+msgstr "Datum"
+
+#: admin-emails.php:18
+#: admin-emails.php:26
+#: admin-emails.php:96
+#: admin-emails.php:177
+#: admin-settings.php:381
+msgid "Subject"
+msgstr "Ämne"
+
+#: admin-emails.php:19
+#: admin-emails.php:27
+msgid "Applications Sent To"
+msgstr "Ansökningar skickade till"
+
+#: admin-emails.php:68
+msgid "There are currently no emails in the system."
+msgstr "För närvarande finns inga e-postmeddelanden i systemet."
+
+#: admin-emails.php:85
+msgid "No such email."
+msgstr "Ingen sådan e-post."
+
+#: admin-emails.php:90
+msgid "Job Manager: Email"
+msgstr "Job Manager: E-post"
+
+#: admin-emails.php:92
+msgid "In the \"Applications\" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "I \"Ansökningsfältet\" klickar du på siffran för att gå till denna ansökan, eller klicka på asterisken (*) bredvid för att se andra e-postmeddelanden som skickas till denna ansökan."
+
+#: admin-emails.php:112
+#: admin-jobs.php:84
+#: admin-settings.php:596
+#: admin.php:30
+msgid "Applications"
+msgstr "Ansökningar"
+
+#: admin-emails.php:128
+#: admin-emails.php:181
+msgid "Message"
+msgstr "Meddelande"
+
+#: admin-emails.php:159
+msgid "Job Manager: Application Email"
+msgstr "Job Manager: Ansökan E-post"
+
+#: admin-emails.php:169
+msgid "From"
+msgstr "Från"
+
+#: admin-emails.php:173
+msgid "To"
+msgstr "Till"
+
+#: admin-emails.php:186
+msgid "Send Email"
+msgstr "Skicka e-post"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+#: admin.php:168
+msgid "Display Settings"
+msgstr "Visa inställningar"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job List Sorting"
+msgstr "Sortera jobblista"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job Templates"
+msgstr "Jobb Mallar"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Settings"
+msgstr "Inställningar ansökningsformulär"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Template"
+msgstr "Mall ansökningsformulär"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Miscellaneous Text"
+msgstr "Övrig text"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Page Text"
+msgstr "Sidtext"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "Donate"
+msgstr "Donera"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "About This Plugin"
+msgstr "Information om denna plugin"
+
+#: admin-frontend-settings.php:71
+msgid "Job Manager Page Template"
+msgstr "Job Manager Page Template"
+
+#: admin-frontend-settings.php:72
+msgid "You can edit the page template used by Job Manager, by editing the Template Attribute of <a href=\"%s\">this page</a>."
+msgstr "Du kan redigera sidmallen används av Job Manager, genom att redigera mallens attribut <a href=\"%s\">denna sida</a>."
+
+#: admin-frontend-settings.php:75
+msgid "Jobs Per Page"
+msgstr "Antal tjänster per sida"
+
+#: admin-frontend-settings.php:77
+msgid "The number of jobs to display per page in the main and category jobs lists. For no limit, set this to 0."
+msgstr "Antalet jobb som ska visas per sida i huvud- och kategori-jobblistorna. För obegränsat, sätt den till 0."
+
+#: admin-frontend-settings.php:80
+msgid "Date Format"
+msgstr "Datumformat"
+
+#: admin-frontend-settings.php:82
+msgid "The format to use for Job date fields. Leave blank to use the dates as they're entered. See the <a href='%1s'>documentation on date formatting</a> for further details."
+msgstr "Formatet för datum fält. Lämna tomt för att använda datum som de är inmatade. Se dokumentationen <a href='%1s'>datumformatering</a> för mer information."
+
+#: admin-frontend-settings.php:88
+msgid "Hide \"Powered By\" link?"
+msgstr "Göm länken \"Powered by\"?"
+
+#: admin-frontend-settings.php:90
+msgid "If you're unable to donate, I would appreciate it if you left this unchecked."
+msgstr "Om du inte har möjlighet att lämna en donation, skulle jag uppskatta om du lämnade rutan omarkerad."
+
+#: admin-frontend-settings.php:97
+msgid "Update Display Settings"
+msgstr "Uppdatera inställningar för utseende"
+
+#: admin-frontend-settings.php:112
+msgid "Sort By:"
+msgstr "Sortera efter:"
+
+#: admin-frontend-settings.php:114
+#: admin-frontend-settings.php:133
+msgid "Default"
+msgstr "Standard"
+
+#: admin-frontend-settings.php:115
+msgid "Job Title"
+msgstr "Jobbtitel"
+
+#: admin-frontend-settings.php:116
+msgid "Date Posted"
+msgstr "Datum skickat "
+
+#: admin-frontend-settings.php:117
+msgid "Closing Date"
+msgstr "Avslutsdatum"
+
+#: admin-frontend-settings.php:123
+msgid "Custom Field: %1s"
+msgstr "Användardefinierade fält: %1s"
+
+#: admin-frontend-settings.php:128
+msgid "Select the criteria you'd like to have job lists sorted by."
+msgstr "Välj kriterier som du vill ha jobblistorna sorterade efter."
+
+#: admin-frontend-settings.php:134
+msgid "Ascending"
+msgstr "Stigande"
+
+#: admin-frontend-settings.php:135
+msgid "Descending"
+msgstr "Fallande"
+
+#: admin-frontend-settings.php:138
+msgid "Ascending: Lowest value to highest value, alphabetical or chronological order"
+msgstr "Stigande: Lägsta värde till högsta värde, alfabetisk eller kronologisk ordning"
+
+#: admin-frontend-settings.php:139
+msgid "Descending: Highest value to lowest value, reverse alphabetical or chronological order"
+msgstr "Fallande: Högsta värde till lägsta värde, omvänd alfabetisk eller kronologisk ordning"
+
+#: admin-frontend-settings.php:143
+msgid "Highlighted jobs behaviour"
+msgstr "Markerat jobb beteende"
+
+#: admin-frontend-settings.php:145
+msgid "Sticky"
+msgstr "Viktigt"
+
+#: admin-frontend-settings.php:146
+msgid "Inline"
+msgstr "Inline"
+
+#: admin-frontend-settings.php:149
+msgid "Sticky: Put highlighted jobs at the top of the jobs list."
+msgstr "Viktigt: Sätt markerade tjänster överst på jobblistan."
+
+#: admin-frontend-settings.php:150
+msgid "Inline: Leave highlighted jobs in their normal place in the jobs list."
+msgstr "Inline: Lämna markerad tjänst på sin normala plats i jobb listan."
+
+#: admin-frontend-settings.php:155
+msgid "Update Sort Settings"
+msgstr "Uppdatera Sortera Inställningar"
+
+#: admin-frontend-settings.php:163
+msgid "These settings allow you to define the templates for displaying lists of jobs, and individual jobs. To do this, you will need to make use of the available shortcodes."
+msgstr "Med dessa inställningar kan du definiera mallar för att visa listor över tjänster och enskilda tjänster. För att göra detta måste du använda tillgängliga kortkoder."
+
+#: admin-frontend-settings.php:165
+#: db.php:243
+#: db.php:692
+msgid "Job Information"
+msgstr "Jobbinformation"
+
+#: admin-frontend-settings.php:166
+msgid "This will loop over a list of all the Jobs, and display the contained HTML and shortcodes for each."
+msgstr "Detta kommer att löpa över en lista med alla jobb, och visa HTML och kortkoder för varje."
+
+#: admin-frontend-settings.php:167
+msgid "This will display the ID of the Job currently being displayed, either in a <tt>[job_loop]</tt> or on an Individual Job page."
+msgstr "ID för det jobb som för närvarande visas, antingen i en <tt>[job_loop]</tt> eller på en enskild jobbsida."
+
+#: admin-frontend-settings.php:168
+msgid "This will display the Title of the current Job."
+msgstr "Detta kommer att visa titeln på det aktuella jobbet."
+
+#: admin-frontend-settings.php:169
+msgid "While inside a <tt>[job_loop]</tt>, this will display the row number of the job currently being displayed."
+msgstr "Inne i en <tt>[job_loop]</tt> kommer denna visa radnumret för det jobb som för närvarande visas."
+
+#: admin-frontend-settings.php:170
+msgid "While inside a <tt>[job_loop]</tt>, this will display \"odd\", if the current <tt>[job_row_number]</tt> is odd, or \"even\" if <tt>[job_row_number]</tt> is even."
+msgstr "Inne i en <tt>[job_loop]</tt>,  kommer detta att visa \"udda\", om den nuvarande <tt>[job_row_number]</tt> är udda, eller \"jämn\" om <tt>[job_row_number]</tt> är jämn."
+
+#: admin-frontend-settings.php:171
+msgid "If the current Job has been marked as highlighted, this will display the word \"highlighted\"."
+msgstr "Om det aktuella tjänsten har markerats, kommer ordet \"markerad\" att visas ."
+
+#: admin-frontend-settings.php:172
+msgid "If the current Job has an icon assigned to it, this will display the icon."
+msgstr "Om den aktuella tjänsten har en ikon tilldelad så kommer ikonen att visas ."
+
+#: admin-frontend-settings.php:173
+msgid "This will display a link to the current Job, with the contained text as the link text."
+msgstr "En länk till aktuell tjänst visas, med den inneslutna texten som länktext."
+
+#: admin-frontend-settings.php:174
+msgid "This will display a link to the Application Form for the current Job, with the contained text as the link text. If it is used outside of the <tt>[job_loop]</tt>, it will display a link to the main Application Form."
+msgstr "En länk till ansökningsformuläret visas för om nuvarande tjänst med den inneslutna texten som länktext. Om den används utanför <tt>[job_loop]</tt>, kommer en länk till huvudansökningsformuläret att visas."
+
+#: admin-frontend-settings.php:176
+msgid "Job Category Information"
+msgstr "Information om jobbkategori"
+
+#: admin-frontend-settings.php:177
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles."
+msgstr "Om den aktuella tjänsten är tilldelad någon kategori kommer detta att visa en kommaseparerad lista av kategorititlarna."
+
+#: admin-frontend-settings.php:178
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles, with each Title as a link to that Category."
+msgstr "Om den aktuella tjänsten tilldelats någon kategori kommer detta att visa en kommaseparerad lista av kategorititlarna, med varje titel som en länk till den kategorin."
+
+#: admin-frontend-settings.php:179
+msgid "This will display the category name, if the current job list is a category."
+msgstr "Kommer att visa kategorinamn, om den aktuella jobblistan är en kategori."
+
+#: admin-frontend-settings.php:180
+msgid "This will display a link to the current category, with the contained text as the link text."
+msgstr "Detta visar en länk till den aktuella kategorin med den textinnehållet som länktext."
+
+#: admin-frontend-settings.php:182
+msgid "Page Navigation"
+msgstr "Sidnavigering"
+
+#: admin-frontend-settings.php:183
+msgid "Returns the number of jobs that are being shown per page, or 0 for all of them."
+msgstr "Returnerar antalet tjänster som visas per sida, eller 0 för alla."
+
+#: admin-frontend-settings.php:184
+msgid "This will display a link to the previous page, with the contained text as the link text. If the user is on the first page, it will display nothing."
+msgstr "En länk till föregående sida visas, med den inneslutna texten som länktext. Om användaren är på första sidan visas ingenting."
+
+#: admin-frontend-settings.php:185
+msgid "Returns the page number of the previous page."
+msgstr "Returnerar sidnumret för föregående sida."
+
+#: admin-frontend-settings.php:186
+msgid "This will display a link to the next page, with the contained text as the link text. If the user is on the last page, it will display nothing."
+msgstr "En länk till nästa sida visas, med den inneslutna texten som länktext. Om användaren är på sista sidan visas ingenting."
+
+#: admin-frontend-settings.php:187
+msgid "Returns the page number of the next page."
+msgstr "Returnerar sidnummer på nästa sida."
+
+#: admin-frontend-settings.php:188
+msgid "Returns the page number of the current page."
+msgstr "Returnerar sidnumret för den aktuella sidan."
+
+#: admin-frontend-settings.php:189
+msgid "The job number of the first job being displayed on the current page."
+msgstr "Numret på det på det första jobbet som visas på den aktuella sidan."
+
+#: admin-frontend-settings.php:190
+msgid "The job number of the last job being displayed on the current page."
+msgstr "Numret på det sista jobbet som visas på den aktuella sidan."
+
+#: admin-frontend-settings.php:191
+msgid "The total number of jobs over all pages of this list."
+msgstr "Det totala antalet tjänster över alla sidor i denna lista."
+
+#: admin-frontend-settings.php:193
+msgid "Job Field Information"
+msgstr "Information om jobbfält"
+
+#: admin-frontend-settings.php:194
+msgid "This will loop over all of the defined Job Fields, and display the contained HTML and shortcodes for each. This can be used inside a <tt>[job_loop]</tt>, or on an Individual Job page."
+msgstr "Detta kommer att löpa över alla definierade fält och visa innehåll HTML och kortkoder för varje. Detta kan användas inuti en <tt>[job_loop]</tt>, eller på en enskild jobb sida."
+
+#: admin-frontend-settings.php:195
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the label of the current field being displayed."
+msgstr "Inne i en <tt>[job_field_loop]</tt>,  kommer detta visa en etikett på det aktuella fältet som visas."
+
+#: admin-frontend-settings.php:196
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the data associated with the current field and Job being displayed. If the field is a file, it will obey the <tt>type=\"url\"</tt> attribute, to only return the URL, instead of a link to the file, or the <tt>type=\"image\"</tt> attribute, to return an image. If the field is a large text field, it will obey the <tt>length=\"<em>n</em>\"</tt> attribute, to restrict the output to <em>n</em> characters."
+msgstr "Medan inne i en <tt>[job_field_loop]</tt> kommer detta att visa data kopplat till det aktuella fältet och det jobb som visas. Om fältet är en fil kommer den att följa <tt>type=\"url\"</tt> attributet och bara returnera webbadressen i stället för en länk till filen, eller <tt>type=\"image\"</tt> attribut, för att returnera en bild. Om fältet är ett stort textfält kommer den att följa<tt>length=\"<em>n</em>\"</tt> attributet, och begränsa antal tecken till <em>n</em>."
+
+#: admin-frontend-settings.php:198
+msgid "Custom Job Field Information"
+msgstr "Användardefinierad jobbfältsinformation"
+
+#: admin-frontend-settings.php:199
+msgid "For each of the Custom Job Fields defined, there are two shortcodes defined, one for the Label and one for the Data. Note that these numbers won't change, even if you re-order, add or delete Job Fields."
+msgstr "För varje användardefinierat fält finns det två definierade kortkoder, en för etiketten och en för data. Observera att dessa siffror inte kommer att förändras, även om du ändrar ordningen, lägger till eller tar bort jobbfält."
+
+#: admin-frontend-settings.php:206
+msgid "As a file field, the <tt>type=\"(url|image)\"</tt> attribute can be used."
+msgstr "Som ett filfält, kan attributet <tt>type=\"(url|image)\"</tt> användas."
+
+#: admin-frontend-settings.php:208
+msgid "As a large text field, the <tt>length=\"<em>n</em>\"</tt> attribute can be used."
+msgstr "Som ett stort textfält, kan attributet <tt>length=\"<em>n</em>\"</tt> användas. "
+
+#: admin-frontend-settings.php:214
+#: admin-frontend-settings.php:330
+msgid "Conditionals"
+msgstr "Villkor"
+
+#: admin-frontend-settings.php:215
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display the text \"Categories: \", and then a list of the Categories a job is in, but you don't want to display it if there are no categories, you could put in the template:"
+msgstr "Alla kortkommando enligt ovan, kan föregås av <tt>if_</tt> för att göra dem till en villkorlig uttryck. Till exempel, om du ville visa texten \"Kategorier\" och sedan en förteckning över de kategorier ett jobb är med i, men du vill inte visa om det inte finns några kategorier, kan du använda mallen:"
+
+#: admin-frontend-settings.php:221
+msgid "Multi-Applications"
+msgstr "Flera ansökningar"
+
+#: admin-frontend-settings.php:222
+msgid "These shortcodes are only valid if the \"Allow Multi-Applications\" option is checked under Admin Options. If it is not checked, they will not display."
+msgstr "Dessa kortkoder gäller endast om \"Tillåt Multi-program\" är markerat under Admin-alternativ. Om den inte är markerad, kommer de inte att visas."
+
+#: admin-frontend-settings.php:223
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display a checkbox associated with the current job."
+msgstr "Inne i en <tt>[job_field_loop]</tt> kommer detta att visa en checkbox i samband med det aktuella jobbet."
+
+#: admin-frontend-settings.php:224
+msgid "This will display a button to allow the applicant to apply for all checked jobs, with the contained text as the button text."
+msgstr "Detta visar en knapp för att möjliggöra för sökanden att ansöka om alla markerade jobb, med texten som knapptext."
+
+#: admin-frontend-settings.php:233
+msgid "Job List Template"
+msgstr "Mall Jobblista"
+
+#: admin-frontend-settings.php:237
+msgid "Individual Job Template"
+msgstr "Individuell jobbmall"
+
+#: admin-frontend-settings.php:241
+#: admin-frontend-settings.php:340
+msgid "Update Template Settings"
+msgstr "Uppdatera mallinställningar"
+
+#: admin-frontend-settings.php:256
+msgid "Category Selector"
+msgstr "Kategoriväljare"
+
+#: admin-frontend-settings.php:258
+#: admin-frontend-settings.php:273
+msgid "Don't Display"
+msgstr "Visa inte"
+
+#: admin-frontend-settings.php:259
+#: admin-frontend-settings.php:274
+msgid "Dropdown"
+msgstr "Rullgardinsmeny"
+
+#: admin-frontend-settings.php:260
+#: admin-frontend-settings.php:275
+msgid "HTML List"
+msgstr "HTML Lista"
+
+#: admin-frontend-settings.php:261
+#: admin-frontend-settings.php:276
+msgid "Popout"
+msgstr "Popout"
+
+#: admin-frontend-settings.php:264
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job."
+msgstr "Låter en sökande välja en kategori eller flera kategorier att söka. Detta kommer endast att visas om den sökande inte ansöker om en specifik tjänst."
+
+#: admin-frontend-settings.php:265
+#: admin-frontend-settings.php:280
+msgid "Dropdown: Shows a normal selector"
+msgstr "Rullgardinsmeny: Visar ett normalt val"
+
+#: admin-frontend-settings.php:266
+msgid "HTML List: Shows a list of checkboxes"
+msgstr "HTML Lista: Visar en lista med kryssrutor"
+
+#: admin-frontend-settings.php:267
+msgid "Popout: Shows a list of checkboxes when the list is clicked on"
+msgstr "Popout: Visar en lista med kryssrutor när du klickar på listan"
+
+#: admin-frontend-settings.php:271
+msgid "Job Selector"
+msgstr "Jobbväljare"
+
+#: admin-frontend-settings.php:279
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job. On category application forms, it will only list jobs from that category."
+msgstr "Låter en sökande att välja en kategori eller flera kategorier att söka. Detta kommer endast att visas om den sökande inte ansöker om en specifik tjänst. På kategori ansökningsformulär kommer det att endast listas jobb från den kategorin."
+
+#: admin-frontend-settings.php:281
+msgid "HTML List: Shows a list of radio buttons or checkboxes"
+msgstr "HTML-lista: visar en lista med radioknappar och kryssrutor"
+
+#: admin-frontend-settings.php:282
+msgid "Popout: Shows a list of radio buttons or checkboxes when the list is clicked on"
+msgstr "Popout: Visar en lista med radioknappar eller kryssrutor när du klickar på listan"
+
+#: admin-frontend-settings.php:287
+msgid "Update Application Form Options"
+msgstr "Uppdatera ansökningsblankettens egenskaper"
+
+#: admin-frontend-settings.php:295
+msgid "This setting allows you to define the template for displaying the application form. If you're happy with the current application form, just leave this blank, as you'll need to update it each time you add a new field to the application form."
+msgstr "Den här inställningen ger dig möjlighet att definiera en mall för visning av ansökan. Om du är nöjd med det nuvarande ansökningsformuläret lämna fältet tomt, eftersom du måste uppdatera den varje gång du lägger till ett nytt fält i ansökningsformuläret."
+
+#: admin-frontend-settings.php:296
+msgid "If you do want to do this, you will need to make use of the available shortcodes."
+msgstr "Om du vill göra detta, måste du använda de tillgängliga kortkoderna."
+
+#: admin-frontend-settings.php:298
+msgid "Application Form"
+msgstr "Ansökningsformulär"
+
+#: admin-frontend-settings.php:299
+msgid "Display a list of links to the jobs being applied for."
+msgstr "Visa en lista med länkar till de jobb som du sökt."
+
+#: admin-frontend-settings.php:300
+msgid "This will display a list of jobs to select from. If a category application form is being used, it will display all the jobs in that category. Otherwise, it will display all jobs. It has one optional attribute:"
+msgstr "En lista med jobb att välja mellan visas. Om en kategori \"ansökningsblankett\" används, kommer den att visa alla jobb i den kategorin. Annars kommer den att visa alla jobb. Den har ett valfritt attribut:"
+
+#: admin-frontend-settings.php:301
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with radio buttons or checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Kan ställas in på ett av följande sätt: \"välj\", \"individuellt\" eller \"popout\". \"Välj\" kommer att visa ett dropdown fönster, \"individuellt\" kommer att visa en lista med radioknappar eller checkboxar, \"popout\" är detsamma som \"individuellt\", men visar bara listan när du klickar på den. "
+
+#: admin-frontend-settings.php:302
+msgid "This will display a list of categories to select from. It has one optional attribute:"
+msgstr "Detta visar en lista med kategorier att välja mellan. Den har ett valfritt attribut:"
+
+#: admin-frontend-settings.php:303
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Kan ställas in på ett av följande sätt: \"välj\", \"individuellt\" eller \"popout\". \"Välj\" kommer att visa ett dropdown fönster, \"individuellt\" kommer att visa en lista med checkboxar, \"popout\" är detsamma som \"individuellt\", men visar bara  listan när du klickar på den."
+
+#: admin-frontend-settings.php:304
+msgid "Display a submit button for the application form, with the contained text as the button text."
+msgstr "Visa ett skicka knapp för ansökan, med den innehållna texten som knapptext."
+
+#: admin-frontend-settings.php:306
+msgid "Custom Application Field Information"
+msgstr "Användardefinierad information i ansökningsfältet"
+
+#: admin-frontend-settings.php:307
+msgid "For each of the Custom Job Fields defined, there are several shortcodes defined. Note that the numbers ('n' in the samples) won't change, even if you re-order, add or delete Application Fields."
+msgstr "För varje Jobbfält som definieras, finns det flera definierade kortkoder. Observera att antalet (\"n\" i exemplen) kommer inte att förändras, även om du ändrar ordningen, lägger till eller tar bort ansökningsfält."
+
+#: admin-frontend-settings.php:308
+msgid "Display the field label"
+msgstr "Visa fältetiketten"
+
+#: admin-frontend-settings.php:309
+msgid "Display the field input element. "
+msgstr "Visa elementet för fältingång."
+
+#: admin-frontend-settings.php:310
+msgid "If the field has been marked as mandatory, this will display the word \"mandatory\"."
+msgstr "Om fältet har markerats som obligatorisk, kommer detta att visa ordet \"obligatorisk\"."
+
+#: admin-frontend-settings.php:312
+msgid "Custom Application Fields"
+msgstr "Användardefinierade ansökningsfält"
+
+#: admin-frontend-settings.php:323
+msgid "No Label"
+msgstr "Ingen etikett"
+
+#: admin-frontend-settings.php:331
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display an asterisk \"*\" next to the label of a mandatory field, you could put in the template:"
+msgstr "Alla kortkoder som anges ovan, kan föregås <tt>if_</tt> för att göra dem till en villkorligt uttryck. Till exempel, om du vill visa en asterisk \"*\" bredvid etiketten till ett obligatoriskt fält kan du sätta i mallen:"
+
+#: admin-frontend-settings.php:348
+msgid "These text options will be displayed in various places around your job listings."
+msgstr "Dessa textalternativ kommer att visas på olika platser runt dina lediga jobb."
+
+#: admin-frontend-settings.php:356
+msgid "Job Title Prefix"
+msgstr "Jobbtitel Prefix"
+
+#: admin-frontend-settings.php:357
+msgid "text"
+msgstr "text"
+
+#: admin-frontend-settings.php:358
+msgid "This text is displayed before the Job Name in the page title."
+msgstr "Denna text visas innan Jobbnamn i sidans titel."
+
+#: admin-frontend-settings.php:361
+msgid "Application Acceptance"
+msgstr "Godkännade av ansökan"
+
+#: admin-frontend-settings.php:363
+msgid "This text is displayed after an application has been accepted. If it is not filled in, the default text will be used."
+msgstr "Denna text visas efter en ansökan har godkänts. Om det inte är ifyllt, kommer den förvalda texten användas."
+
+#: admin-frontend-settings.php:366
+#: admin-frontend-settings.php:405
+msgid "Update Text Settings"
+msgstr "Uppdatera inställningar för Text"
+
+#: admin-frontend-settings.php:374
+msgid "This text will be displayed before or after the lists/job/forms on the respective pages. You can enter HTML in these boxes."
+msgstr "Denna text kommer att visas före eller efter listor/jobb/formulär på respektive sidor. Du kan skriva HTML-kod i dessa."
+
+#: admin-frontend-settings.php:383
+msgid "Before the Main Jobs List"
+msgstr "Före huvudjobblistan"
+
+#: admin-frontend-settings.php:383
+msgid "After the Main Jobs List"
+msgstr "Efter huvud jobblistan"
+
+#: admin-frontend-settings.php:384
+msgid "Before any Category Jobs Lists"
+msgstr "Före varje kategorilista "
+
+#: admin-frontend-settings.php:384
+msgid "After any Category Jobs Lists"
+msgstr "Efter varje jobblist kategori "
+
+#: admin-frontend-settings.php:385
+msgid "Before a Job"
+msgstr "Före ett jobb"
+
+#: admin-frontend-settings.php:385
+msgid "After a Job"
+msgstr "Efter ett jobb"
+
+#: admin-frontend-settings.php:386
+msgid "Before the Application Form"
+msgstr "Före ansökningsformuläret"
+
+#: admin-frontend-settings.php:386
+msgid "After the Application Form"
+msgstr "Efter ansökningsformuläret"
+
+#: admin-frontend-settings.php:387
+msgid "Before the Registration Form"
+msgstr "Före registreringsformuläret"
+
+#: admin-frontend-settings.php:387
+msgid "After the Registration Form"
+msgstr "Efter registreringsformuläret"
+
+#: admin-interviews.php:70
+#: admin-interviews.php:161
+#: admin-interviews.php:226
+msgid "Job Manager: %1s Interviews"
+msgstr "Job Manager:%1s Intervjuer"
+
+#: admin-interviews.php:98
+#: admin-interviews.php:176
+#: admin-interviews.php:265
+msgid "Go"
+msgstr "Kör"
+
+#: admin-interviews.php:277
+msgid "Interview Time"
+msgstr "Tid för intervju"
+
+#: admin-interviews.php:278
+#: admin-interviews.php:376
+msgid "Interview Rating"
+msgstr "Intervjuomdöme"
+
+#: admin-interviews.php:279
+#: admin-interviews.php:377
+#: admin-interviews.php:388
+msgid "Interview Details"
+msgstr "Intervjudetaljer"
+
+#: admin-interviews.php:296
+msgid "No applications scheduled for this day."
+msgstr "Inga ansökningar planerade till denna dag."
+
+#: admin-interviews.php:307
+msgid "Job Manager: Interview Details"
+msgstr "Job Manager: Intervjudetaljer"
+
+#: admin-interviews.php:317
+msgid "Interview Comments"
+msgstr "Intervjukommentarer"
+
+#: admin-interviews.php:317
+msgid "Previous Interview Comments"
+msgstr "Föregående intervjukommentarer"
+
+#: admin-interviews.php:367
+msgid "Job Manager: Application Interview Summary"
+msgstr "Job Manager: Sammanfattning Ansökningsintervju "
+
+#: admin-interviews.php:375
+msgid "Interview Date"
+msgstr "Intervjudatum"
+
+#: admin-interviews.php:396
+msgid "There are no interviews for this application."
+msgstr "Det finns inga intervjuer för denna ansökan."
+
+#: admin-interviews.php:439
+msgid "New Interview"
+msgstr "Ny intervju"
+
+#: admin-interviews.php:468
+msgid "Interview"
+msgstr "Intervju"
+
+#: admin-jobs-settings.php:73
+#: admin-jobs-settings.php:92
+msgid "Show this field in the Admin Job List?"
+msgstr "Visa detta fält i Admin jobblista?"
+
+#: admin-jobs-settings.php:110
+msgid "Update Jobs Form"
+msgstr "Uppdatera jobbformulär"
+
+#: admin-jobs.php:37
+msgid "Job Manager: Jobs List"
+msgstr "Job Manager: Jobb Lista"
+
+#: admin-jobs.php:40
+msgid "New Job"
+msgstr "Nya jobb"
+
+#: admin-jobs.php:45
+msgid "There is no job associated with that Job ID"
+msgstr "Det finns inget jobb i samband med detta Jobb ID"
+
+#: admin-jobs.php:48
+msgid "New job created"
+msgstr "Nytt jobb skapat"
+
+#: admin-jobs.php:51
+msgid "Job updated"
+msgstr "Jobb är uppdaterade"
+
+#: admin-jobs.php:68
+#: admin-jobs.php:340
+#: admin-settings.php:143
+#: admin-settings.php:156
+#: admin-settings.php:225
+#: admin-settings.php:237
+#: admin-settings.php:448
+#: frontend-application.php:153
+#: setup.php:89
+#: widgets.php:99
+#: widgets.php:276
+#: widgets.php:379
+#: widgets.php:445
+msgid "Title"
+msgstr "Titel"
+
+#: admin-jobs.php:83
+msgid "Display Dates"
+msgstr "Visa datum"
+
+#: admin-jobs.php:93
+msgid "Expired jobs"
+msgstr "Utgångna jobb"
+
+#: admin-jobs.php:103
+msgid "There are currently no jobs in the system."
+msgstr "Det finns inga jobb i systemet."
+
+#: admin-jobs.php:113
+msgid "Archive"
+msgstr "Arkiv"
+
+#: admin-jobs.php:114
+msgid "Unarchive"
+msgstr "Arkivera inte"
+
+#: admin-jobs.php:179
+msgid "Edit"
+msgstr "Editera"
+
+#: admin-jobs.php:183
+msgid "View"
+msgstr "Visa"
+
+#: admin-jobs.php:203
+msgid "End of Time"
+msgstr "Sluttid"
+
+#: admin-jobs.php:204
+msgid "Future"
+msgstr "Framtida"
+
+#: admin-jobs.php:204
+msgid "Live"
+msgstr "Direkt"
+
+#: admin-jobs.php:204
+msgid "Expired"
+msgstr "Utgått"
+
+#: admin-jobs.php:233
+msgid "Job Manager: New Job"
+msgstr "Job Manager: Nytt jobb"
+
+#: admin-jobs.php:234
+msgid "Create Job"
+msgstr "Skapa tjänst"
+
+#: admin-jobs.php:239
+msgid "Job Manager: Edit Job"
+msgstr "Job Manager: Redigera Jobb"
+
+#: admin-jobs.php:240
+msgid "Update Job"
+msgstr "Uppdatera jobb"
+
+#: admin-jobs.php:310
+msgid "Categories that this job belongs to. It will be displayed in the job list for each category selected."
+msgstr "Kategorier som detta jobb tillhör. Det kommer att visas i jobblistan för varje vald kategori."
+
+#: admin-jobs.php:313
+#: admin-settings.php:224
+#: admin-settings.php:236
+msgid "Icon"
+msgstr "Ikon"
+
+#: admin-jobs.php:335
+msgid "No Icon"
+msgstr "Ingen ikon"
+
+#: admin-jobs.php:337
+msgid "Icon to display for this job in the Job List"
+msgstr "Ikon för att visa för detta jobb i Job List"
+
+#: admin-jobs.php:455
+msgid "Delete File?"
+msgstr "Radera fil?"
+
+#: admin-jobs.php:484
+msgid "Display Start Date"
+msgstr "Visa startdatum"
+
+#: admin-jobs.php:486
+msgid "The date this job should start being displayed on the site. To start displaying immediately, leave blank."
+msgstr "Den dag den här annonsen skall börja visas på webbplatsen. För att börja visa direkt, lämna tomt."
+
+#: admin-jobs.php:489
+msgid "Display End Date"
+msgstr "Visa slutdatum"
+
+#: admin-jobs.php:491
+msgid "The date this job should stop being displayed on the site. To display indefinitely, leave blank."
+msgstr "Den dag den här annonsen ska sluta visas på webbplatsen. För att visa på obestämd tid, lämna tomt."
+
+#: admin-jobs.php:494
+msgid "Application Email"
+msgstr "E-post ansökan"
+
+#: admin-jobs.php:496
+msgid "The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank."
+msgstr "Den e-postadress som skall användas för att anmäla när en ansökan har lämnats in för denna tjänst. För standardbeteende (kategori e-post eller global e-post), lämna tomt."
+
+#: admin-jobs.php:504
+msgid "Highlighted?"
+msgstr "Markerad?"
+
+#: admin-jobs.php:506
+msgid "Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page."
+msgstr "Markera det här jobbet som betonat? För beteende av markerade jobb, se inställningar display admin sida."
+
+#: admin-jobs.php:678
+msgid "Job Manager: Jobs"
+msgstr "Job Manager: Jobb"
+
+#: admin-jobs.php:679
+msgid "This will permanently delete all of the selected jobs. Please confirm that you want to continue."
+msgstr "Detta kommer att permanent ta bort alla utvalda jobb. Bekräfta att du vill fortsätta."
+
+#: admin-jobs.php:680
+msgid "Delete Jobs"
+msgstr "Radera jobb"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin.php:27
+msgid "Settings"
+msgstr "Inställningar"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Icons"
+msgstr "Ikoner"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "User Settings"
+msgstr "Användarinställningar"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Application Email Settings"
+msgstr "Inställningar för ansökan e-post"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "API Keys"
+msgstr "API nycklar"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "Other Plugins"
+msgstr "Andra plugin"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Uninstall Settings"
+msgstr "Avinstallera Inställningar"
+
+#: admin-settings.php:71
+msgid "Translators"
+msgstr "Översättare"
+
+#: admin-settings.php:76
+#: admin-settings.php:92
+msgid "Interview Settings"
+msgstr "Inställningar för intervju"
+
+#: admin-settings.php:111
+msgid "URL path"
+msgstr "URL path"
+
+#: admin-settings.php:114
+msgid "edit"
+msgstr "editera"
+
+#: admin-settings.php:118
+msgid "Allow Multi-Applications"
+msgstr "Tillåt flera ansökningar"
+
+#: admin-settings.php:120
+msgid "This will allow applicants to send through a single application for multiple jobs."
+msgstr "Detta kommer att ge sökandena möjlighet att skicka en enda ansökan för flera jobb."
+
+#: admin-settings.php:123
+msgid "Enable Interview Scheduling"
+msgstr "Aktivera planering av intervjuer"
+
+#: admin-settings.php:125
+msgid "This will enable interview scheduling functionality."
+msgstr "Detta kommer att möjliggöra schemaläggning av intervjuer."
+
+#: admin-settings.php:128
+msgid "Default email"
+msgstr "Standard e-post"
+
+#: admin-settings.php:133
+msgid "Update Settings"
+msgstr "Uppdatera inställningar"
+
+#: admin-settings.php:141
+msgid "Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories."
+msgstr "I likhet med normala WordPress kategorier kan Job Manager kategorier användas för att dela upp jobb i olika grupper. De kan också användas för att anpassa hur ansökningsformuläret visas för jobb i olika kategorier."
+
+#: admin-settings.php:143
+msgid "The display name of the category"
+msgstr "Namnet som skall visas för denna kategori"
+
+#: admin-settings.php:144
+#: admin-settings.php:157
+msgid "Slug"
+msgstr "Kula"
+
+#: admin-settings.php:144
+msgid "The URL of the category"
+msgstr "Webbadressen till den kategorin"
+
+#: admin-settings.php:145
+msgid "The address to notify when new applications are submitted in this category"
+msgstr "Adressen att meddela när nya ansökningar läggs upp i denna kategori"
+
+#: admin-settings.php:146
+#: admin-settings.php:159
+#: admin-settings.php:177
+msgid "Link"
+msgstr "Länk"
+
+#: admin-settings.php:146
+msgid "The URL of the list of jobs in this category"
+msgstr "Webbadressen till listan med jobb i denna kategori"
+
+#: admin-settings.php:198
+msgid "Add New Category"
+msgstr "Lägg till en ny kategori"
+
+#: admin-settings.php:204
+msgid "Show related categories?"
+msgstr "Visa relaterade kategorier?"
+
+#: admin-settings.php:206
+msgid "This will show a list of categories that any jobs in a given job list belong to."
+msgstr "Detta kommer att visa en lista med kategorier som varje jobb i en viss jobblista tillhör."
+
+#: admin-settings.php:209
+msgid "Update Categories"
+msgstr "Uppdatera kategorier"
+
+#: admin-settings.php:222
+msgid "Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the \"Summary\" jobs list type."
+msgstr "Du kan tilldela en ikon de jobb som du vill uppmärksamma. Dessa ikoner visas bara när du använder jobblista av typ \"Sammanfattning\" ."
+
+#: admin-settings.php:224
+msgid "The current icon"
+msgstr "Nuvarande ikon"
+
+#: admin-settings.php:225
+msgid "The display name of the icon"
+msgstr "Namnet som skall visas för denna ikon"
+
+#: admin-settings.php:226
+#: admin-settings.php:238
+msgid "File"
+msgstr "Fil"
+
+#: admin-settings.php:226
+msgid "The icon file"
+msgstr "Ikon filen"
+
+#: admin-settings.php:272
+msgid "Add New Icon"
+msgstr "Lägg till en ny ikon"
+
+#: admin-settings.php:275
+msgid "Update Icons"
+msgstr "Uppdatera ikoner"
+
+#: admin-settings.php:288
+msgid "Allowing users to register means that they and you can more easily keep track of jobs they've applied for."
+msgstr "Genom att göra det möjligt för användarna att registrera sig innebär att de och du lättare kan hålla reda på jobb de har sökt."
+
+#: admin-settings.php:296
+msgid "Enable User Registration"
+msgstr "Aktivera användarregistrering"
+
+#: admin-settings.php:298
+msgid "This will allow users to register for the Jobs system, even if user registration is disabled for your blog."
+msgstr "Detta kommer att tillåta användare att registrera sig i Jobb Manager, även om användaregistreringen är avstängd för din blogg."
+
+#: admin-settings.php:301
+msgid "Require User Registration"
+msgstr "Kräver användarregistrering"
+
+#: admin-settings.php:303
+msgid "If the previous option is checked, this option will require users to login before they can complete the application form."
+msgstr "Om det tidigare alternativet är markerat, kommer detta alternativ kräva att användarna loggar in innan de kan fylla i ansökningsformuläret."
+
+#: admin-settings.php:306
+msgid "Which pages should the login form be displayed on?"
+msgstr "Vilka sidor skall inloggningsformuläret att visas på?"
+
+#: admin-settings.php:308
+msgid "The main jobs list"
+msgstr "Huvudjobblista"
+
+#: admin-settings.php:309
+msgid "Category jobs lists"
+msgstr "Kategori jobblistor"
+
+#: admin-settings.php:310
+msgid "Individual jobs"
+msgstr "Enskilda tjänster"
+
+#: admin-settings.php:311
+msgid "The application form"
+msgstr "Ansökningsformuläret"
+
+#: admin-settings.php:315
+msgid "Update User Settings"
+msgstr "Uppdatera Användarinställningar"
+
+#: admin-settings.php:325
+msgid "When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email."
+msgstr "När en sökande lämnar in en ansökan, kommer ett mail att skickas till den aktuella användaren. Dessa alternativ gör att du kan anpassa e-postmeddelandet."
+
+#: admin-settings.php:333
+#: db.php:43
+#: frontend-user.php:104
+msgid "Email Address"
+msgstr "E-postadress"
+
+#: admin-settings.php:335
+#: admin-settings.php:359
+#: admin-settings.php:385
+#: admin-settings.php:452
+#: frontend-application.php:342
+#: frontend-application.php:388
+msgid "None"
+msgstr "Ingen"
+
+#: admin-settings.php:353
+msgid "The application field to use as the email address. This will be the \"From\" address in the initial application, and the field used for emailing applicants."
+msgstr "Ansökningsfält som skall användas som e-postadress. Detta kommer att vara \"Från\"-adressen i den ursprungliga ansökan, och fältet som används för e-post till sökande."
+
+#: admin-settings.php:356
+msgid "From Name"
+msgstr "Från namn"
+
+#: admin-settings.php:378
+msgid "The name that will appear with the \"From\" email address."
+msgstr "Det namn som visas med \"Från\"-e-postadress."
+
+#: admin-settings.php:404
+msgid "The email subject, and any fields to include in the subject."
+msgstr "E-postens ämne och varje fält som skall inkluderas i ämnet."
+
+#: admin-settings.php:408
+msgid "Update Email Settings"
+msgstr "Uppdatera e-postinställningar"
+
+#: admin-settings.php:425
+msgid "Default View"
+msgstr "Standard vy"
+
+#: admin-settings.php:430
+msgid "Day"
+msgstr "Dag"
+
+#: admin-settings.php:431
+msgid "Month"
+msgstr "Månad"
+
+#: admin-settings.php:432
+msgid "Year"
+msgstr "År"
+
+#: admin-settings.php:445
+msgid "The default calendar view on the \"Interviews\" page."
+msgstr "Standardvyn för kalendern på \"Intervju\" sidan."
+
+#: admin-settings.php:471
+msgid "The Interview title, and any fields to include in the title, as displayed on the \"Interviews\" page."
+msgstr "Intervjutitel och alla fält för att inkludera i titeln som visas på Intervjusidan."
+
+#: admin-settings.php:475
+msgid "Update Interview Settings"
+msgstr "Uppdatera Intervjuinställningar"
+
+#: admin-settings.php:490
+msgid "Google Maps API"
+msgstr "Google Maps API"
+
+#: admin-settings.php:492
+msgid "Job Manager uses Google Maps for the Geolocation application field. Functionality of this field will be severely hampered without a Google Maps key. You can register for a Google Maps key <a href=\"%1s\">here</a>."
+msgstr "Job Manager använder Google Maps för fältet Geografiskt område. Funktionerna i detta område kommer att försvåras utan en Google Maps nyckel. Du kan registrera ett Google Maps nyckel <a href=\"%1s\">här</a>."
+
+#: admin-settings.php:496
+msgid "Update API Keys"
+msgstr "Uppdatera API Keys"
+
+#: admin-settings.php:504
+msgid "Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements."
+msgstr "Job Manager ger extra funktionalitet genom att använda andra tillgängliga plugins för WordPress. Dessa plugins behövs inte för Job Manager att fungera, men de ger användaren förbättringar."
+
+#: admin-settings.php:512
+#: admin-settings.php:543
+#: admin-settings.php:548
+msgid "Installed"
+msgstr "Installerad"
+
+#: admin-settings.php:517
+msgid "Not Installed"
+msgstr "Inte installerad"
+
+#: admin-settings.php:520
+msgid "Google XML Sitemaps"
+msgstr "Google XML Sitemaps"
+
+#: admin-settings.php:521
+msgid "Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added."
+msgstr "Gör det möjligt att automatiskt lägga till alla dina jobblistor och detaljerade jobbsidor till din webbplatskarta. Som standard läggs endast huvudjobblistan till."
+
+#: admin-settings.php:524
+#: admin-settings.php:555
+msgid "Status"
+msgstr "Status"
+
+#: admin-settings.php:525
+msgid "Version"
+msgstr "Version"
+
+#: admin-settings.php:526
+msgid "Job Manager requires Google XML Sitemaps version 3.2 or later."
+msgstr "Job Manager kräver Google XML Sitemaps version 3.2 eller senare."
+
+#: admin-settings.php:531
+#: admin-settings.php:560
+#: admin-settings.php:586
+msgid "Options"
+msgstr "Alternativ"
+
+#: admin-settings.php:534
+msgid "Add Job pages to your Sitemap?"
+msgstr "Lägg till Jobbsidor till din sitemap?"
+
+#: admin-settings.php:551
+msgid "SI Captcha"
+msgstr "SI Captcha"
+
+#: admin-settings.php:552
+msgid "Allows you to add a Captcha to your Application submission form."
+msgstr "Tillåter dig att lägga till Captcha i ansökningsformuläret."
+
+#: admin-settings.php:563
+msgid "Add a captcha to the application form?"
+msgstr "Lägga till captcha till ansökningsformuläret?"
+
+#: admin-settings.php:570
+msgid "Update Plugin Settings"
+msgstr "Uppdatera inställningar för plugin"
+
+#: admin-settings.php:578
+msgid "If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database."
+msgstr "Om du någon gång väljer att avinstallera Job Manager kan du välja vilka delar som skall tas bort från databasen."
+
+#: admin-settings.php:588
+msgid "The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded."
+msgstr "Valda alternativ på sidorna admininställningar och displayinställningar. Detta inkluderar alla ikoner som laddats upp."
+
+#: admin-settings.php:593
+msgid "Jobs that have been created."
+msgstr "Skapade tjänster"
+
+#: admin-settings.php:598
+msgid "Applications that have been submitted. This includes any files uploaded (resumes, etc)."
+msgstr "Ansökningar som har skickats in. Detta inkluderar alla filer som laddats upp."
+
+#: admin-settings.php:603
+msgid "Job Manager Categories that have been created."
+msgstr "Job Manager kategorier som skapats."
+
+#: admin-settings.php:606
+msgid "Update Uninstall Settings"
+msgstr "Uppdatera Avinstallera Inställningar"
+
+#: admin.php:26
+#: admin.php:27
+#: admin.php:28
+#: admin.php:29
+#: admin.php:30
+#: admin.php:31
+#: admin.php:34
+msgid "Job Manager"
+msgstr "Job Manager"
+
+#: admin.php:167
+msgid "Admin Settings"
+msgstr "Admin inställningar"
+
+#: admin.php:169
+msgid "App. Form Settings"
+msgstr "Inställningar för ansökningsformulär"
+
+#: admin.php:170
+msgid "Job Form Settings"
+msgstr "Inställningar jobbformulär"
+
+#: admin.php:28
+msgid "Add Job"
+msgstr "Lägg till jobb"
+
+#: admin.php:46
+#: admin.php:193
+msgid "My Amazon Wish List"
+msgstr "Min önskelista på Amazon "
+
+#: admin.php:47
+#: admin.php:194
+msgid "Donate with PayPal"
+msgstr "Donera via PayPal"
+
+#: admin.php:191
+msgid "If this plugin helps you find that perfect new employee, I'd appreciate it if you shared the love, by way of my Donate or Amazon Wish List links below."
+msgstr "Om denna plugin hjälper dig att hitta en nyanställd, skulle jag uppskatta om du donerade via länkarna my Donate eller Amazon Wish nedan."
+
+#: admin.php:202
+msgid "Gary Pendergast's Blog"
+msgstr "Gary Pendergast's Blog"
+
+#: admin.php:203
+msgid "Follow me on Twitter!"
+msgstr "Följ mig på Twitter!"
+
+#: admin.php:204
+msgid "Plugin Homepage"
+msgstr "Plugin hemsida"
+
+#: admin.php:205
+msgid "Submit a Bug/Feature Request"
+msgstr "Skicka en bug du hittat/förfrågan om ny funktion"
+
+#: admin.php:212
+msgid "If you're using Job Manager in a language other than English, you have some of my wonderful translators to thank for it!"
+msgstr "Om du använder Job Manager på ett annat språk än engelska, har du några av mina underbara översättare att tacka för det!"
+
+#: admin.php:213
+msgid "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact me</a>!"
+msgstr "Om du talar ett språk flytande som inte listas här, och vill att  det skall finnas på listan, kontakta <a href='%1s'>contact me</a>!"
+
+#: admin.php:215
+msgid "Dutch"
+msgstr "Nederländska"
+
+#: admin.php:216
+msgid "French"
+msgstr "Franska"
+
+#: admin.php:217
+msgid "German"
+msgstr "Tysk"
+
+#: db.php:223
+#: db.php:672
+msgid "The date that the job starts. For positions available immediately, leave blank."
+msgstr "Det datum då jobbannonsen börjar. För tillgänglig omedelbart, lämna tomt."
+
+#: db.php:231
+#: db.php:680
+msgid "The date that the job finishes. For ongoing positions, leave blank."
+msgstr "Datumet då jobbet är slut. För pågående positioner, lämna tomt."
+
+#: db.php:258
+#: db.php:332
+#: frontend-jobs.php:14
+msgid "Jobs Listing"
+msgstr "Jobblista"
+
+#: db.php:259
+#: db.php:333
+msgid "Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site."
+msgstr "Hej! Denna sida används av Job Manager plugin som bas. Känn dig fri att ändra inställningar här, men ska du inte ta bort den här sidan. Observera även att allt innehåll du skriver in här inte kommer att dyka upp när sidan visas på din webbplats."
+
+#: db.php:274
+#: db.php:545
+#: frontend-application.php:53
+#: frontend-application.php:85
+#: frontend-application.php:97
+#: frontend-application.php:864
+#: frontend.php:368
+#: setup.php:41
+msgid "Job Application"
+msgstr "Jobbansökan"
+
+#: db.php:288
+#: db.php:605
+#: frontend-user.php:32
+#: frontend-user.php:109
+msgid "Register"
+msgstr "Registrera"
+
+#: frontend-application.php:35
+msgid "It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly."
+msgstr "Det verkar som du nyligen sökt detta jobbet. Om du vill lägga till ytterligare information till din ansökan, vänligen kontakta oss direkt."
+
+#: frontend-application.php:39
+msgid "There was an error uploading your application. Please contact us directly, and quote the information below:"
+msgstr "Det uppstod ett fel vid uppladdning av din ansökan. Kontakta oss direkt och ange informationen nedan:"
+
+#: frontend-application.php:48
+msgid "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available."
+msgstr "Tack för din ansökan. Även om din ansökan inte passar våra nuvarande behov, kontakta oss direkt för att se om vi har andra lediga tjänster."
+
+#: frontend-application.php:65
+msgid "Before completing your application, please login using the form above, or register using the form below."
+msgstr "Innan du fyller i din ansökan, vänligen logga in via formuläret ovan, eller registrera dig via formuläret nedan."
+
+#: frontend-application.php:157
+msgid "Select the jobs you would like to apply for"
+msgstr "Välj det jobb du vill söka"
+
+#: frontend-application.php:159
+msgid "Select the categories that you are interested in"
+msgstr "Välj de kategorier som du är intresserad av "
+
+#: frontend-application.php:166
+msgid "Fields marked with an asterisk (*) must be filled out before submitting."
+msgstr "Fält markerade med en asterisk (*) måste fyllas i innan du skickar ansökan."
+
+#: frontend-application.php:250
+msgid "Submit Your Application"
+msgstr "Skicka din ansökan"
+
+#: frontend-application.php:868
+msgid "Application Link"
+msgstr "Länk till ansökan"
+
+#: frontend-jobs.php:108
+#: frontend-shortcodes.php:128
+msgid "Jobs for %s"
+msgstr "Jobb för %s"
+
+#: frontend-jobs.php:111
+msgid "Related Categories"
+msgstr "Relaterade kategorier"
+
+#: frontend-jobs.php:150
+msgid "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file."
+msgstr "Vi har för närvarande inga lediga tjänster. Kom tillbaka regelbundet, då vi ofta lägger upp nya jobb. Under tiden kan du <a href='%s'>skicka ditt CV</a>."
+
+#: frontend-jobs.php:164
+msgid "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>."
+msgstr "Vi har för närvarande inga lediga jobb inom detta område. Kom tillbaka regelbundet, eftersom vi ofta lägger upp nya jobb. Under tiden kan du <a href='%s'>skicka ditt CV</a>, och du kan kolla in <a href='%s'>jobb vi har tillgänglig på andra områden</a>."
+
+#: frontend-jobs.php:223
+msgid "This job doesn't exist"
+msgstr "Det här jobbet finns inte"
+
+#: frontend-jobs.php:225
+msgid "Perhaps you followed an out-of-date link? Please check out the <a href=\"%s\">jobs we have currently available</a>."
+msgstr "Kanske följde ni en out-of-date länk? Kolla på <a href=\"%s\">jobb vi har tillgängliga </a>."
+
+#: frontend-shortcodes.php:157
+#: frontend-shortcodes.php:355
+msgid "more"
+msgstr "mer"
+
+#: frontend-user.php:15
+msgid "Welcome, %1s!"
+msgstr "Välkommen,%1s!"
+
+#: frontend-user.php:25
+msgid "If you've registered with us previously, please login now. If you'd like to register, please click the 'Register' link below."
+msgstr "Om du har registrerat dig hos oss tidigare, vänligen logga in nu. Om du vill registrera dig, klicka på länken \"Registrera\" nedan."
+
+#: frontend-user.php:27
+#: frontend-user.php:87
+msgid "Username"
+msgstr "Användarnamn"
+
+#: frontend-user.php:29
+#: frontend-user.php:95
+msgid "Password"
+msgstr "Lösenord"
+
+#: frontend-user.php:31
+msgid "Login"
+msgstr "Inloggning"
+
+#: frontend-user.php:32
+msgid "Forgot your password?"
+msgstr "Har du glömt ditt lösenord?"
+
+#: frontend-user.php:82
+msgid "Please fill in all fields."
+msgstr "Vänligen fyll i alla fält"
+
+#: frontend-user.php:85
+msgid "This username has already been registered."
+msgstr "Användarnamnet har redan registrerats."
+
+#: frontend-user.php:93
+msgid "Passwords do not match."
+msgstr "Lösenorden matchar inte."
+
+#: frontend-user.php:98
+msgid "Password Again"
+msgstr "Lösenordet en gång till"
+
+#: frontend-user.php:102
+msgid "This email address has already been registered. If you've previously registered but don't remember your password, please visit the <a href='%1s'>password reset page</a>."
+msgstr "Denna e-postadress redan har registrerats. Om du tidigare har registrerat men inte kommer ihåg ditt lösenord kan du gå till <a href='%1s'>återställ lösenord</a>."
+
+#: frontend.php:277
+msgid "This job listing was created using <a href=\"%s\" title=\"%s\">Job Manager</a> for WordPress, by <a href=\"%s\">Gary Pendergast</a>."
+msgstr "Det här jobblistan är skapad av <a href=\"%s\" title=\"%s\">Job Manager</a> för WordPress, genom <a href=\"%s\">Gary Pendergast</a>."
+
+#: frontend.php:277
+msgid "WordPress Job Manager"
+msgstr "WordPress Job Manager"
+
+#: frontend.php:371
+#: frontend.php:374
+msgid "Job Listing"
+msgstr "Jobböversikt"
+
+#: frontend.php:418
+msgid "Latest Jobs"
+msgstr "Senaste jobben"
+
+#: frontend.php:494
+msgid "The following fields must be filled out before submitting"
+msgstr "Följande fält måste fyllas i innan du skickar"
+
+#: frontend.php:495
+#: frontend.php:496
+msgid "click to select"
+msgstr "Klicka för att välja"
+
+#: functions.php:37
+msgid "Click to toggle"
+msgstr "Klicka för att växla"
+
+#: functions.php:62
+msgid "No rating"
+msgstr "Inget betyg"
+
+#: functions.php:98
+msgid "Category"
+msgstr "Kategori"
+
+#: setup.php:75
+#: setup.php:247
+msgid "Thank you for your application! We'll check it out, and get back to you soon!"
+msgstr "Tack för din ansökan! Vi kommer att läsa den, och komma tillbaka till dig så snart vi kan!"
+
+#: setup.php:91
+msgid "Apply Now"
+msgstr "Ansök nu"
+
+#: setup.php:93
+#: setup.php:94
+#: setup.php:353
+#: setup.php:354
+msgid "Page %1s"
+msgstr "Sida %1s"
+
+#: setup.php:95
+#: setup.php:355
+msgid "Jobs %1s-%2s of %3s"
+msgstr "Jobb %1s-%2s av %3s"
+
+#: widgets.php:5
+msgid "Job Manager: Recent Jobs"
+msgstr "Job Manager: Senaste tjänster"
+
+#: widgets.php:6
+msgid "A list of the most recent jobs posted to your site"
+msgstr "En lista över de senaste jobben som skickats till din webbplats"
+
+#: widgets.php:68
+#: widgets.php:363
+#: widgets.php:429
+msgid "There are no jobs to display at this time."
+msgstr "Det finns inga jobb att visa just nu."
+
+#: widgets.php:110
+msgid "Number of Jobs to show"
+msgstr "Antalet tjänster att visa"
+
+#: widgets.php:113
+msgid "at most 15"
+msgstr "högst 15"
+
+#: widgets.php:122
+msgid "Show Jobs From"
+msgstr "Visa jobb från"
+
+#: widgets.php:124
+msgid "All Categories"
+msgstr "Alla kategorier"
+
+#: widgets.php:125
+msgid "Selected Categories"
+msgstr "Utvalda kategorier"
+
+#: widgets.php:149
+msgid "No categories defined."
+msgstr "Inga kategorier definierade."
+
+#: widgets.php:162
+msgid "Job Manager: Categories"
+msgstr "Job Manager: Kategorier"
+
+#: widgets.php:163
+msgid "A list or dropdown of Job Manager categories"
+msgstr "En lista eller rullgardinsmeny av Job Manager kategorier"
+
+#: widgets.php:195
+msgid "Select Category"
+msgstr "Välj kategori"
+
+#: widgets.php:260
+msgid "There are no categories to display at this time."
+msgstr "Det finns inga kategorier att visa just nu."
+
+#: widgets.php:294
+msgid "Show as dropdown"
+msgstr "Visa som rullgardinsmeny"
+
+#: widgets.php:295
+msgid "Show job counts"
+msgstr "Visa antal jobb"
+
+#: widgets.php:296
+msgid "Hide empty categories"
+msgstr "Göm tomma kategorier"
+
+#: widgets.php:307
+msgid "Job Manager: Highlighted Jobs"
+msgstr "Job Manager: Markerade jobb"
+
+#: widgets.php:308
+msgid "A list jobs that have been marked as highlighted"
+msgstr "En lista med markerade tjänster"
+
+#: widgets.php:392
+msgid "Job Manager: Selected Jobs"
+msgstr "Job Manager: Utvalda jobb"
+
+#: widgets.php:393
+msgid "A customizable list jobs posted to your site"
+msgstr "En anpassningsbar lista med jobb som skickats till din webbplats"
+
+#: widgets.php:453
+msgid "Comma separated list of Job IDs"
+msgstr "Kommaseparerad lista av Jobb-ID"
+
+msgid "http://pento.net/projects/wordpress-job-manager-plugin/"
+msgstr "http://pento.net/projects/wordpress-job-manager-plugin/"
+
+msgid "A job listing and job application management plugin for WordPress."
+msgstr "En jobbnotering och jobbansöknings plugin för WordPress."
+
+msgid "Gary Pendergast"
+msgstr "Gary Pendergast"
+
+msgid "http://pento.net/"
+msgstr "http://pento.net/"
+
+msgid "job, jobs, manager, list, listing, employment, employer, career"
+msgstr "jobb, chef, förteckning, lista, anställning, arbetsgivare, karriär"
+

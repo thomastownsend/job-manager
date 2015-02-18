@@ -1,0 +1,2059 @@
+# Translation of 0.7 Series in Arabic
+# This file is distributed under the same license as the 0.7 Series package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2011-02-01 15:14+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: 0.7 Series\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Ali M. Ghaleb <ghalebi@msn.com>\n"
+"Language-Team: \n"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "HTML"
+msgstr "هتمل"
+
+#: admin-jobs.php:424
+#: admin-jobs.php:430
+msgid "Visual"
+msgstr "المرئى"
+
+#: admin-jobs.php:54
+msgid "You do not have permission to edit that Job"
+msgstr "ليس لديك الصلاحية لتعديل هذه الوظيفة"
+
+#: admin-applications.php:612
+msgid "Share Application"
+msgstr "شارك "
+
+#: db.php:145
+msgid "No"
+msgstr "لا"
+
+#: admin-jobs.php:236
+msgid "New"
+msgstr "جديد"
+
+#: db.php:145
+msgid "Yes"
+msgstr "نعم"
+
+#: db.php:235
+#: db.php:684
+msgid "Location"
+msgstr "الموقع"
+
+#: db.php:227
+#: db.php:676
+msgid "End Date"
+msgstr "تاريح الانتهاء"
+
+#: db.php:219
+#: db.php:668
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#: db.php:211
+#: db.php:660
+msgid "Salary"
+msgstr "الراتب"
+
+#: db.php:203
+msgid "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept."
+msgstr "يتوجب عليك قراءة و قبول سياسة الخصوصية لموقعنا قبل أن نقوم بقبول طلبك. الرجاء النقر على زر \"رجوع\" في متصفحك، اقرأ سياسة الخصوصية، و أكد قبولك بها."
+
+#: db.php:200
+#: db.php:202
+msgid "I have read and understood the privacy policy."
+msgstr "لقد قرأت و فهمت سياسة الخصوصية."
+
+#: db.php:175
+msgid "Upload your CV"
+msgstr "قم بتحميل سيرتك الذاتية"
+
+#: db.php:164
+msgid "Title of your degree"
+msgstr "مسمى الدرجة العلمية"
+
+#: db.php:153
+msgid "Where did you complete your degree?"
+msgstr "أين أتممت درجتك العلمية؟"
+
+#: db.php:142
+msgid "Do you have a degree?"
+msgstr "هل لديك درجة علمية؟"
+
+#: db.php:131
+msgid "Qualifications"
+msgstr "المؤهلات"
+
+#: db.php:120
+msgid "Cell phone"
+msgstr "الهاتف المحمول"
+
+#: db.php:109
+msgid "Telephone"
+msgstr "الهاتف الثابت"
+
+#: db.php:98
+msgid "Country"
+msgstr "الدولة"
+
+#: db.php:87
+msgid "Post code"
+msgstr "الرمز البريدي"
+
+#: db.php:76
+msgid "City"
+msgstr "المدينة"
+
+#: db.php:65
+msgid "Address"
+msgstr "العنوان"
+
+#: db.php:54
+msgid "Contact Details"
+msgstr "بيانات التواصل"
+
+#: db.php:32
+msgid "Surname"
+msgstr "اللقب"
+
+#: db.php:21
+msgid "Name"
+msgstr "الاسم"
+
+#: db.php:10
+msgid "Personal Details"
+msgstr "البيانات الشخصية"
+
+#: admin.php:218
+msgid "Spanish"
+msgstr "الإسبانية"
+
+#: admin-application-form.php:11
+#: admin-jobs-settings.php:11
+msgid "Text Input"
+msgstr "إدخال نص"
+
+#: admin-application-form.php:12
+#: admin-jobs-settings.php:12
+msgid "Radio Buttons"
+msgstr "أزرار الراديو"
+
+#: admin-application-form.php:13
+msgid "Select Dropdown"
+msgstr "اختر من القائمة"
+
+#: admin-application-form.php:14
+#: admin-jobs-settings.php:13
+msgid "Checkboxes"
+msgstr "خانات الاختيار"
+
+#: admin-application-form.php:15
+#: admin-jobs-settings.php:14
+msgid "Large Text Input (textarea)"
+msgstr "إدخال نص كبير (منطقة نصية*"
+
+#: admin-application-form.php:16
+#: admin-jobs-settings.php:15
+msgid "Date Selector"
+msgstr "محدد تاريخ"
+
+#: admin-application-form.php:17
+#: admin-jobs-settings.php:16
+msgid "File Upload"
+msgstr "رفع ملف"
+
+#: admin-application-form.php:18
+msgid "Geolocation"
+msgstr "الموقع الجغرافي"
+
+#: admin-application-form.php:19
+#: admin-jobs-settings.php:17
+msgid "Heading"
+msgstr "الرئيسى"
+
+#: admin-application-form.php:20
+#: admin-jobs-settings.php:18
+msgid "HTML Code"
+msgstr "كود هتمل"
+
+#: admin-application-form.php:21
+#: admin-jobs-settings.php:19
+msgid "Blank Space"
+msgstr "مساحة فارغة"
+
+#: admin-application-form.php:39
+#: admin-jobs-settings.php:37
+msgid "Field Label/Type"
+msgstr "عنوان الخانة/النوع"
+
+#: admin-application-form.php:40
+#: admin-applications.php:67
+#: admin-applications.php:204
+#: admin-applications.php:240
+#: admin-frontend-settings.php:217
+#: admin-jobs.php:69
+#: admin-jobs.php:288
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin-settings.php:601
+#: setup.php:90
+#: widgets.php:138
+msgid "Categories"
+msgstr "تصنيفات"
+
+#: admin-application-form.php:41
+#: admin-jobs-settings.php:38
+msgid "Data"
+msgstr "بيانات"
+
+#: admin-application-form.php:42
+msgid "Submit Filter/Filter Error Message"
+msgstr "تقديم فلتر / فلتر رسالة خطأ"
+
+#: admin-application-form.php:43
+#: admin-frontend-settings.php:131
+#: admin-jobs-settings.php:39
+msgid "Sort Order"
+msgstr "ترتيب الفرز"
+
+#: admin-application-form.php:44
+#: admin-application-form.php:113
+#: admin-application-form.php:141
+#: admin-applications.php:565
+#: admin-jobs-settings.php:40
+#: admin-jobs-settings.php:78
+#: admin-jobs-settings.php:95
+#: admin-jobs.php:112
+#: admin-settings.php:160
+#: admin-settings.php:178
+#: admin-settings.php:189
+#: admin-settings.php:239
+#: admin-settings.php:256
+#: admin-settings.php:265
+msgid "Delete"
+msgstr "حذف"
+
+#: admin-application-form.php:77
+#: admin-application-form.php:127
+msgid "Show this field in the Application List?"
+msgstr "أظهر هذا الحقل فى قائمة التقديمات"
+
+#: admin-application-form.php:84
+#: admin-application-form.php:128
+msgid "Block this field from application emails?"
+msgstr "عدم تضمين هذا الحقل في المراسلات؟"
+
+#: admin-application-form.php:108
+#: admin-application-form.php:137
+msgid "Mandatory field?"
+msgstr "حقل مستوفي؟"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Up"
+msgstr "أعلى"
+
+#: admin-application-form.php:112
+#: admin-application-form.php:140
+#: admin-jobs-settings.php:77
+#: admin-jobs-settings.php:94
+msgid "Down"
+msgstr "أسفل"
+
+#: admin-application-form.php:155
+#: admin-jobs-settings.php:106
+msgid "Add New Field"
+msgstr "أضف حقل جديد"
+
+#: admin-application-form.php:159
+msgid "Update Application Form"
+msgstr "تحديث الاستمارة"
+
+#: admin-applications.php:36
+#: admin-applications.php:750
+msgid "Job Manager: Applications"
+msgstr "مدير الوظائف: استمارات"
+
+#: admin-applications.php:39
+msgid "Selected applications have been deleted."
+msgstr "تم حذف الاستمارات المختارة"
+
+#: admin-applications.php:41
+msgid "The mailout has been sent."
+msgstr "تم ارسال البريد"
+
+#: admin-applications.php:50
+msgid "Standard Filters"
+msgstr "فلاتر مبدئية"
+
+#: admin-applications.php:53
+#: admin-jobs.php:283
+msgid "Job ID"
+msgstr "معرف الوظيفة"
+
+#: admin-applications.php:60
+msgid "Registered Applicant"
+msgstr "طلب مسجل"
+
+#: admin-applications.php:90
+msgid "Minimum Rating"
+msgstr "الحد الأدنى للتقييم"
+
+#: admin-applications.php:100
+msgid "Custom Filters"
+msgstr "فلاتر معرفة"
+
+#: admin-applications.php:155
+msgid "Up to %1s km from %2s"
+msgstr "من %1s و حتى %2s"
+
+#: admin-applications.php:166
+msgid "Please enter a Google Maps API key in your Admin Settings."
+msgstr "الرجاء إدخال مفتاح خرائط جوجل في صفحة الاعدادات الخاصة بك"
+
+#: admin-applications.php:171
+msgid "This field cannot be filtered."
+msgstr "هذا المجال لا يمكن أن تتم تصفيته."
+
+#: admin-applications.php:181
+msgid "Filter Applications"
+msgstr "فلتر الاستمارات"
+
+#: admin-applications.php:185
+msgid "Show Filter Options"
+msgstr "أظهر خيارات الفلتر"
+
+#: admin-applications.php:186
+msgid "Hide Filter Options"
+msgstr "أخفى خيارات الفلتر"
+
+#: admin-applications.php:196
+#: admin-applications.php:232
+#: admin-applications.php:665
+#: frontend-application.php:875
+#: setup.php:74
+#: setup.php:246
+msgid "Job"
+msgstr "وظيفة"
+
+#: admin-applications.php:200
+#: admin-applications.php:236
+msgid "User"
+msgstr "مستخدم"
+
+#: admin-applications.php:216
+#: admin-applications.php:252
+#: admin-applications.php:514
+msgid "View Details"
+msgstr "شاهد التفاصيل"
+
+#: admin-applications.php:217
+#: admin-applications.php:253
+#: admin-emails.php:120
+#: admin.php:31
+msgid "Emails"
+msgstr "البريد الالكترونى"
+
+#: admin-applications.php:221
+#: admin-applications.php:257
+#: admin-applications.php:621
+#: admin.php:34
+msgid "Interviews"
+msgstr "مقابلات"
+
+#: admin-applications.php:225
+#: admin-applications.php:261
+#: admin-applications.php:673
+msgid "Rating"
+msgstr "التقييم"
+
+#: admin-applications.php:457
+msgid "No job"
+msgstr "لا وظائف"
+
+#: admin-applications.php:464
+msgid "Unregistered Applicant"
+msgstr "تقديم غير مسجل"
+
+#: admin-applications.php:500
+#: admin-applications.php:707
+#: admin-jobs.php:192
+#: admin-settings.php:523
+#: admin-settings.php:554
+#: frontend-shortcodes.php:169
+#: frontend-shortcodes.php:367
+msgid "Download"
+msgstr "تحميل"
+
+#: admin-applications.php:547
+msgid "There were no applications that matched your search."
+msgstr "لا توجد التطبيقات التي تطابق بحثك."
+
+#: admin-applications.php:549
+msgid "There are currently no applications in the system."
+msgstr "لا يوجد حاليا أي طلبات في هذا النظام."
+
+#: admin-applications.php:563
+#: admin-jobs.php:111
+msgid "Bulk Actions"
+msgstr "Bulk Actions"
+
+#: admin-applications.php:564
+#: admin-applications.php:734
+#: admin-settings.php:145
+#: admin-settings.php:158
+msgid "Email"
+msgstr "البريد الالكترونى"
+
+#: admin-applications.php:566
+msgid "Export as CSV file"
+msgstr "تصدير كملف سيرة ذاتية"
+
+#: admin-applications.php:568
+#: admin-jobs.php:116
+msgid "Apply"
+msgstr "تقديم"
+
+#: admin-applications.php:600
+msgid "Job Manager: Application Details"
+msgstr "مدير الوظائف: تفاصيل الاستمارات"
+
+#: admin-applications.php:602
+#: admin-applications.php:626
+msgid "Back to Application List"
+msgstr "العودة إلى قائمة الاستمارات"
+
+#: admin-applications.php:611
+#: admin-interviews.php:316
+#: db.php:487
+#: frontend-application.php:515
+msgid "Application"
+msgstr "تطبيق"
+
+#: admin-applications.php:612
+#: admin-interviews.php:317
+msgid "Application Comments"
+msgstr "التعليقات على التطبيق"
+
+#: admin-applications.php:667
+#: admin-settings.php:591
+#: admin.php:29
+msgid "Jobs"
+msgstr "الوظائف"
+
+#: admin-applications.php:671
+#: frontend-application.php:881
+msgid "Timestamp"
+msgstr "الطابع الزمني"
+
+#: admin-applications.php:728
+msgid "Use this form to email the application to a new email address."
+msgstr "استخدام هذا النموذج لإرسال الاستمارة إلى عنوان بريد إلكتروني جديد."
+
+#: admin-applications.php:751
+msgid "This will permanently delete all of the selected applications. Please confirm that you want to continue."
+msgstr "هذا الاختيار سوف يحذف جميع الاستمارات أبدياً. من فضلك تأكد من أنك تريد المتابعة."
+
+#: admin-applications.php:752
+msgid "Delete Applications"
+msgstr "احذف الاستمارات"
+
+#: admin-comments.php:8
+msgid "Comment"
+msgstr "التعليقات"
+
+#: admin-comments.php:19
+msgid "No comments found"
+msgstr "لا توجد تعليقات"
+
+#: admin-emails.php:10
+msgid "Job Manager: Emails"
+msgstr "مدير الوظائف: البريد الالكترونى"
+
+#: admin-emails.php:12
+msgid "In the \"Applications Sent To\" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "فى عمود \"الاستمارات المرسلة\"، أدخل رقم الاستمارة للدخول إليها، أو أدخل النجمة (*) بجانبها لعرض الرسائل الالكترونية الأخرى المرسلة لهذه الاستمارة."
+
+#: admin-emails.php:17
+#: admin-emails.php:25
+msgid "Date"
+msgstr "التاريخ"
+
+#: admin-emails.php:18
+#: admin-emails.php:26
+#: admin-emails.php:96
+#: admin-emails.php:177
+#: admin-settings.php:381
+msgid "Subject"
+msgstr "العنوان"
+
+#: admin-emails.php:19
+#: admin-emails.php:27
+msgid "Applications Sent To"
+msgstr "الاستمارات مرسلة إلى"
+
+#: admin-emails.php:68
+msgid "There are currently no emails in the system."
+msgstr "لا توجد حاليا أية رسائل البريد الإلكتروني في النظام."
+
+#: admin-emails.php:85
+msgid "No such email."
+msgstr "لا يوجد أي بريد إلكتروني من هذا القبيل."
+
+#: admin-emails.php:90
+msgid "Job Manager: Email"
+msgstr "مدير الوظائف: البريد الإلكترونى"
+
+#: admin-emails.php:92
+msgid "In the \"Applications\" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "فى حقل \"الاستمارات\"، أدخل الرقم للذهاب للاستمارة، أو أدخل رمز النجمة (*) بجانبها لعرض البريد الإلكترونى المرسل لهذه الاستمارة"
+
+#: admin-emails.php:112
+#: admin-jobs.php:84
+#: admin-settings.php:596
+#: admin.php:30
+msgid "Applications"
+msgstr "الاستمارات"
+
+#: admin-emails.php:128
+#: admin-emails.php:181
+msgid "Message"
+msgstr "رسالة"
+
+#: admin-emails.php:159
+msgid "Job Manager: Application Email"
+msgstr "مدير الوظائف: البريد الإلكترونى للاستمارة"
+
+#: admin-emails.php:169
+msgid "From"
+msgstr "من"
+
+#: admin-emails.php:173
+msgid "To"
+msgstr "إلى"
+
+#: admin-emails.php:186
+msgid "Send Email"
+msgstr "ارسال بريد الكتروني"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+#: admin.php:168
+msgid "Display Settings"
+msgstr "إعدادات العرض"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job List Sorting"
+msgstr "فرز قائمة الوظائف"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Job Templates"
+msgstr "قوالب الوظائف"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Settings"
+msgstr "اعدادات نموذج التطبيق"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:55
+msgid "Application Form Template"
+msgstr "تصميم نمودج التطبيق"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Miscellaneous Text"
+msgstr "نصوص متفرقة"
+
+#: admin-frontend-settings.php:43
+#: admin-frontend-settings.php:54
+msgid "Page Text"
+msgstr "نص الصفحة"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "Donate"
+msgstr "تبرع"
+
+#: admin-frontend-settings.php:44
+#: admin-settings.php:71
+msgid "About This Plugin"
+msgstr "حول هذا البرنامج المساعد"
+
+#: admin-frontend-settings.php:71
+msgid "Job Manager Page Template"
+msgstr "قالب صفحة مدير الوظائف"
+
+#: admin-frontend-settings.php:72
+msgid "You can edit the page template used by Job Manager, by editing the Template Attribute of <a href=\"%s\">this page</a>."
+msgstr "يمكنك التعديل على القالب المستخدم بصفحة مدير الوظائف، بالتعديل على إعدادات القالب من خلال <a href=\"%s\"> هذه الصفحة </a>."
+
+#: admin-frontend-settings.php:75
+msgid "Jobs Per Page"
+msgstr "عدد الوظائف في الصفحة"
+
+#: admin-frontend-settings.php:77
+msgid "The number of jobs to display per page in the main and category jobs lists. For no limit, set this to 0."
+msgstr "عدد الوظائف لعرض فى كل من الصفحة الاساسية و قوائم الوظائف .اكتب 0 فى حالة عدم تحديد العدد "
+
+#: admin-frontend-settings.php:80
+msgid "Date Format"
+msgstr "تنسق التاريخ"
+
+#: admin-frontend-settings.php:82
+msgid "The format to use for Job date fields. Leave blank to use the dates as they're entered. See the <a href='%1s'>documentation on date formatting</a> for further details."
+msgstr "التنسيق المستخدم لحقول تواريخ الوظيفة. لا تقم بإدخال شئ هنا إذا أردت استخدام التواريخ كما يتم إدخالها. راجع <a href='%1s'>تعليمات حول تنسيق التواريخ</a> لمزيد من المعلومات."
+
+#: admin-frontend-settings.php:88
+msgid "Hide \"Powered By\" link?"
+msgstr "إخفاء رابط الحقوق"
+
+#: admin-frontend-settings.php:90
+msgid "If you're unable to donate, I would appreciate it if you left this unchecked."
+msgstr "إذا كنت لا تستطيع التبرع، من فضلك اترك الخيار الحالى بدون تحديد."
+
+#: admin-frontend-settings.php:97
+msgid "Update Display Settings"
+msgstr "تحديث إعدادات العرض"
+
+#: admin-frontend-settings.php:112
+msgid "Sort By:"
+msgstr "ترتيب حسب :"
+
+#: admin-frontend-settings.php:114
+#: admin-frontend-settings.php:133
+msgid "Default"
+msgstr "افتراضي"
+
+#: admin-frontend-settings.php:115
+msgid "Job Title"
+msgstr "عنوان الوظيفة"
+
+#: admin-frontend-settings.php:116
+msgid "Date Posted"
+msgstr "تاريخ النشر"
+
+#: admin-frontend-settings.php:117
+msgid "Closing Date"
+msgstr "تاريخ الإقفال"
+
+#: admin-frontend-settings.php:123
+msgid "Custom Field: %1s"
+msgstr "حقل مخصص: %1s"
+
+#: admin-frontend-settings.php:128
+msgid "Select the criteria you'd like to have job lists sorted by."
+msgstr "تحديد المعايير التي ترغب في فرز قائمة الوظائف من خلالها."
+
+#: admin-frontend-settings.php:134
+msgid "Ascending"
+msgstr "تصاعدي"
+
+#: admin-frontend-settings.php:135
+msgid "Descending"
+msgstr "تنازلي"
+
+#: admin-frontend-settings.php:138
+msgid "Ascending: Lowest value to highest value, alphabetical or chronological order"
+msgstr "تصاعدي : أقل قيمة لأعلى قيمة ، أو ترتيب زمني أو النظام الأبجدي"
+
+#: admin-frontend-settings.php:139
+msgid "Descending: Highest value to lowest value, reverse alphabetical or chronological order"
+msgstr "تنازلي : اعلى قيمة إلى أدنى قيمة ، عكس الترتيب الأبجدي أو ترتيب زمني"
+
+#: admin-frontend-settings.php:143
+msgid "Highlighted jobs behaviour"
+msgstr "سلوك الوظائف المميزة"
+
+#: admin-frontend-settings.php:145
+msgid "Sticky"
+msgstr "مثبت"
+
+#: admin-frontend-settings.php:146
+msgid "Inline"
+msgstr "مضمنة"
+
+#: admin-frontend-settings.php:149
+msgid "Sticky: Put highlighted jobs at the top of the jobs list."
+msgstr "لزجة : ضع الضوء على فرص العمل في الجزء العلوي من قائمة الوظائف."
+
+#: admin-frontend-settings.php:150
+msgid "Inline: Leave highlighted jobs in their normal place in the jobs list."
+msgstr "سطري : اترك الضوء على فرص العمل في مكانها الطبيعي في قائمة الوظائف."
+
+#: admin-frontend-settings.php:155
+msgid "Update Sort Settings"
+msgstr "تحديث إعدادات الترتيب"
+
+#: admin-frontend-settings.php:163
+msgid "These settings allow you to define the templates for displaying lists of jobs, and individual jobs. To do this, you will need to make use of the available shortcodes."
+msgstr "تسمح لك هذه الإعدادات للتعديل على القوالب لعرض قوائم الوظائف، والوظائف الفردية. لعمل ذلك، تحتاج إلى استخدام الأكواد المختصرة المتاحة."
+
+#: admin-frontend-settings.php:165
+#: db.php:243
+#: db.php:692
+msgid "Job Information"
+msgstr "معلومات الوظيفة."
+
+#: admin-frontend-settings.php:166
+msgid "This will loop over a list of all the Jobs, and display the contained HTML and shortcodes for each."
+msgstr "هذه سوف تشكل حلقة من جميع الوظائف، وعرض أكواد هتمل والأكواد المختصرة لكل منها."
+
+#: admin-frontend-settings.php:167
+msgid "This will display the ID of the Job currently being displayed, either in a <tt>[job_loop]</tt> or on an Individual Job page."
+msgstr "  \t This will display the ID of the Job currently being displayed, either in a <tt>[job_loop]</tt> or on an Individual Job page. "
+
+#: admin-frontend-settings.php:168
+msgid "This will display the Title of the current Job."
+msgstr "تستخدم لعرض العنوان للوظيفة الحالية."
+
+#: admin-frontend-settings.php:169
+msgid "While inside a <tt>[job_loop]</tt>, this will display the row number of the job currently being displayed."
+msgstr "While inside a <tt>[job_loop]</tt>, this will display the row number of the job currently being displayed."
+
+#: admin-frontend-settings.php:170
+msgid "While inside a <tt>[job_loop]</tt>, this will display \"odd\", if the current <tt>[job_row_number]</tt> is odd, or \"even\" if <tt>[job_row_number]</tt> is even."
+msgstr "While inside a <tt>[job_loop]</tt>, this will display \"odd\", if the current <tt>[job_row_number]</tt> is odd, or \"even\" if <tt>[job_row_number]</tt> is even."
+
+#: admin-frontend-settings.php:171
+msgid "If the current Job has been marked as highlighted, this will display the word \"highlighted\"."
+msgstr "إذا تم تحديد الوظيفة الحالية بمميز، سوف يتم عرض هذه الكلمة \"مميز\" للوظيفة الحالية."
+
+#: admin-frontend-settings.php:172
+msgid "If the current Job has an icon assigned to it, this will display the icon."
+msgstr "إذا تم تحديد أيقونة للوظيفة الحالية، هذا الاختيار سوف يسمح بعرض هذه الأيقونة."
+
+#: admin-frontend-settings.php:173
+msgid "This will display a link to the current Job, with the contained text as the link text."
+msgstr "فى هذا الاختيار سوف يتم عرض رابط للوظيفة الحالية."
+
+#: admin-frontend-settings.php:174
+msgid "This will display a link to the Application Form for the current Job, with the contained text as the link text. If it is used outside of the <tt>[job_loop]</tt>, it will display a link to the main Application Form."
+msgstr "This will display a link to the Application Form for the current Job, with the contained text as the link text. If it is used outside of the <tt>[job_loop]</tt>, it will display a link to the main Application Form. "
+
+#: admin-frontend-settings.php:176
+msgid "Job Category Information"
+msgstr "معلومات عن تصنيفات الوظيفة"
+
+#: admin-frontend-settings.php:177
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles."
+msgstr "إذا تم إضافة تصنيفات للوظيفة الحالية، يسمح هذا الاختيار بعرض التصنيفات مقسمة بالفاصلة فيما بينها."
+
+#: admin-frontend-settings.php:178
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles, with each Title as a link to that Category."
+msgstr "إذا دخلت الوظيفة تحت أى تصنيف، يسمح هذا الخيار بعرض التصنيفات مقسمةً بفواصل مع ظهور عنوان التصنيف كرابط لهذا التصنيف."
+
+#: admin-frontend-settings.php:179
+msgid "This will display the category name, if the current job list is a category."
+msgstr "هذا سيعرض اسم الفئة ، إذا كانت قائمة الوظائف الحالية هي الفئة."
+
+#: admin-frontend-settings.php:180
+msgid "This will display a link to the current category, with the contained text as the link text."
+msgstr "هذا سيعرض وصلة إلى الفئة الحالية ، مع النص على النحو الوارد كنص ارتباط."
+
+#: admin-frontend-settings.php:182
+msgid "Page Navigation"
+msgstr "التصفح"
+
+#: admin-frontend-settings.php:183
+msgid "Returns the number of jobs that are being shown per page, or 0 for all of them."
+msgstr "لتحديد عدد الوظائف للمعروضة في الصفحة الواحدة، ادخل 0 لعرض جميع الوظائف."
+
+#: admin-frontend-settings.php:184
+msgid "This will display a link to the previous page, with the contained text as the link text. If the user is on the first page, it will display nothing."
+msgstr "لعرض رابط للصفحة السابقة، مع النص المحتوى كنص للرابط. إذا كان المستخدم في الصفحة الأولى لن يتم عرض شئ."
+
+#: admin-frontend-settings.php:185
+msgid "Returns the page number of the previous page."
+msgstr "لعرض رقم الصفحة الصفحة السابقة."
+
+#: admin-frontend-settings.php:186
+msgid "This will display a link to the next page, with the contained text as the link text. If the user is on the last page, it will display nothing."
+msgstr "لعرض رابط للصفحة التالية، مع النص المحتوى كنص للرابط. إذا كان المستخدم في الصفحة الأولى لن يتم عرض شئ."
+
+#: admin-frontend-settings.php:187
+msgid "Returns the page number of the next page."
+msgstr "لعرض رقم الصفحة التالية."
+
+#: admin-frontend-settings.php:188
+msgid "Returns the page number of the current page."
+msgstr "لعرض رقم الصفحة الحالية."
+
+#: admin-frontend-settings.php:189
+msgid "The job number of the first job being displayed on the current page."
+msgstr "رقم أول وظيفة تعرض في الصفحة الحالية."
+
+#: admin-frontend-settings.php:190
+msgid "The job number of the last job being displayed on the current page."
+msgstr "رقم آخر وظيفة تعرض في الصفحة الحالية."
+
+#: admin-frontend-settings.php:191
+msgid "The total number of jobs over all pages of this list."
+msgstr "إجمالي عدد الوظائف لكل الوظائف في هذه القائمة."
+
+#: admin-frontend-settings.php:193
+msgid "Job Field Information"
+msgstr "معلومات عن مجال الوظيفة"
+
+#: admin-frontend-settings.php:194
+msgid "This will loop over all of the defined Job Fields, and display the contained HTML and shortcodes for each. This can be used inside a <tt>[job_loop]</tt>, or on an Individual Job page."
+msgstr "This will loop over all of the defined Job Fields, and display the contained HTML and shortcodes for each. This can be used inside a <tt>[job_loop]</tt>, or on an Individual Job page."
+
+#: admin-frontend-settings.php:195
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the label of the current field being displayed."
+msgstr "While inside a <tt>[job_field_loop]</tt>, this will display the label of the current field being displayed."
+
+#: admin-frontend-settings.php:196
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the data associated with the current field and Job being displayed. If the field is a file, it will obey the <tt>type=\"url\"</tt> attribute, to only return the URL, instead of a link to the file, or the <tt>type=\"image\"</tt> attribute, to return an image. If the field is a large text field, it will obey the <tt>length=\"<em>n</em>\"</tt> attribute, to restrict the output to <em>n</em> characters."
+msgstr "أثناء العمل في إطار<tt>[job_field_loop]</tt>، سيتم عبر هذا الخيار عرض البيانات المتعلقة بالحقل الحالي و الوظيفة الجاري عرضها. إذا كان الحقل من نوع (ملف)، ستتم الاستجابة للخاصية <tt>type=\"url\"</tt>، لإعطاء الرابط، بدلاً عن وصلة للملف، أو خاصية <tt>type=\"image\"</tt>، لإعطاء . إذا كان الحقل هو حقل نصي كبير، ستتم الاستجابة لخاصية <tt>length=\"<em>n</em>\"</tt>، لتقنين النص المخرج إلى <em>n</em> حرف."
+
+#: admin-frontend-settings.php:198
+msgid "Custom Job Field Information"
+msgstr "معلومات ميدانية عن وظيفة مخصصة"
+
+#: admin-frontend-settings.php:199
+msgid "For each of the Custom Job Fields defined, there are two shortcodes defined, one for the Label and one for the Data. Note that these numbers won't change, even if you re-order, add or delete Job Fields."
+msgstr "لكل وظيفة مخصصة يوجد 2 من الأكواد المخصصة، واحد للعنوان والثانى للبيانات. مع ملاحظة بأن هذه الأرقام لن تتغير، حتى لو عاودت طلب أى مجال بالوظيفة أو حاولت الإضافة أو المسح"
+
+#: admin-frontend-settings.php:206
+msgid "As a file field, the <tt>type=\"(url|image)\"</tt> attribute can be used."
+msgstr "كحقل من نوع ملف، بالإمكان استخدام الخاصية<tt>type=\"(url|image)\"</tt>."
+
+#: admin-frontend-settings.php:208
+msgid "As a large text field, the <tt>length=\"<em>n</em>\"</tt> attribute can be used."
+msgstr "كحقل نصي كبير، بالإمكان استخدام الخاصية <tt>length=\"<em>n</em>\"</tt>."
+
+#: admin-frontend-settings.php:214
+#: admin-frontend-settings.php:330
+msgid "Conditionals"
+msgstr "الشروط"
+
+#: admin-frontend-settings.php:215
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display the text \"Categories: \", and then a list of the Categories a job is in, but you don't want to display it if there are no categories, you could put in the template:"
+msgstr "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display the text \"Categories: \", and then a list of the Categories a job is in, but you don't want to display it if there are no categories, you could put in the template:"
+
+#: admin-frontend-settings.php:221
+msgid "Multi-Applications"
+msgstr "تقدم لعدة وظائف"
+
+#: admin-frontend-settings.php:222
+msgid "These shortcodes are only valid if the \"Allow Multi-Applications\" option is checked under Admin Options. If it is not checked, they will not display."
+msgstr "بالإمكان استعمال هذه الأكواد المختصرة فقط في حال أن الخيار \"إتاحة التقدم لعدة وظائف\"تم تفعيله في صفحة خيارات المدير."
+
+#: admin-frontend-settings.php:223
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display a checkbox associated with the current job."
+msgstr "أثناء العمل في إطار <tt>[job_field_loop]</tt>، سيقوم هذا الخيار بعرض مربع خيارات متعق بالوظيفة الحالية."
+
+#: admin-frontend-settings.php:224
+msgid "This will display a button to allow the applicant to apply for all checked jobs, with the contained text as the button text."
+msgstr "سيقوم هذا الخيار بعرض زر للسماح للمتقدم بالتقدم لكل الوظائف التي تم اختيارها، مع النص المتضمن كنص للزر."
+
+#: admin-frontend-settings.php:233
+msgid "Job List Template"
+msgstr "قالب قائمة الوظائف"
+
+#: admin-frontend-settings.php:237
+msgid "Individual Job Template"
+msgstr "قالب الوظيفة فردياً"
+
+#: admin-frontend-settings.php:241
+#: admin-frontend-settings.php:340
+msgid "Update Template Settings"
+msgstr "تحديث إعدادات القالب"
+
+#: admin-frontend-settings.php:256
+msgid "Category Selector"
+msgstr "اختيار تصنيف"
+
+#: admin-frontend-settings.php:258
+#: admin-frontend-settings.php:273
+msgid "Don't Display"
+msgstr "عدم عرض"
+
+#: admin-frontend-settings.php:259
+#: admin-frontend-settings.php:274
+msgid "Dropdown"
+msgstr "قائمة منسدلة"
+
+#: admin-frontend-settings.php:260
+#: admin-frontend-settings.php:275
+msgid "HTML List"
+msgstr "قائمة هتمل"
+
+#: admin-frontend-settings.php:261
+#: admin-frontend-settings.php:276
+msgid "Popout"
+msgstr "نافذة منبثقة"
+
+#: admin-frontend-settings.php:264
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job."
+msgstr "للسماح للمتقدم أن يختار تصنيف واحد أو عدة تصانيف للتقدم فيها. هذا الخيار سيُعرض فقط إذا لم المتقدم يتقدم لوظيفة محددة. "
+
+#: admin-frontend-settings.php:265
+#: admin-frontend-settings.php:280
+msgid "Dropdown: Shows a normal selector"
+msgstr "منسدل: لعرض اختيار اعتيادي"
+
+#: admin-frontend-settings.php:266
+msgid "HTML List: Shows a list of checkboxes"
+msgstr "قائمة هتمل: لعرض قائمة من مربعات الخيارات"
+
+#: admin-frontend-settings.php:267
+msgid "Popout: Shows a list of checkboxes when the list is clicked on"
+msgstr "منبثقة:لعرض قائمة من مربعات الخيارات عند النقر على القائمة"
+
+#: admin-frontend-settings.php:271
+msgid "Job Selector"
+msgstr "محدد وظائف"
+
+#: admin-frontend-settings.php:279
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job. On category application forms, it will only list jobs from that category."
+msgstr "هذا الخيار يتيح للمتقدم اختيار تصنيف أو أكثر لتقديم طلب التوظيف. هذا الخيار سيُعرض فقط إذا كان المتقدم"
+
+#: admin-frontend-settings.php:281
+msgid "HTML List: Shows a list of radio buttons or checkboxes"
+msgstr "قائمة هتمل: لعرض قائمة من أزرار الراديو أو مربعات الخيارات"
+
+#: admin-frontend-settings.php:282
+msgid "Popout: Shows a list of radio buttons or checkboxes when the list is clicked on"
+msgstr "منبثقة: لعرض قائمة من أزرار الراديو أو مربعات الخيارات عند النقر على القائمة"
+
+#: admin-frontend-settings.php:287
+msgid "Update Application Form Options"
+msgstr "تحديث خيارات استمارة التوظيف"
+
+#: admin-frontend-settings.php:295
+msgid "This setting allows you to define the template for displaying the application form. If you're happy with the current application form, just leave this blank, as you'll need to update it each time you add a new field to the application form."
+msgstr "هذا الخيار يتيح لك تحديد القالب لعرض استمارة التقدم. إذا كنت راضٍ عن العرض الحالي لاستمارة التقدم أترك هذا الخيار فارغاً. سيتوجب عليك تحديث هذا الخيار في كل مرة تقوم فيها بإضافة حقل جديد لاستمارة التقدم."
+
+#: admin-frontend-settings.php:296
+msgid "If you do want to do this, you will need to make use of the available shortcodes."
+msgstr "إذا كنت تريد عمل هذا، سيتوجب عليك الاستفادة من الأكواد المختصرة."
+
+#: admin-frontend-settings.php:298
+msgid "Application Form"
+msgstr "استمارة توظيف"
+
+#: admin-frontend-settings.php:299
+msgid "Display a list of links to the jobs being applied for."
+msgstr "لعرض قائمة لروابط الوظائف التي يتم التقدم لها."
+
+#: admin-frontend-settings.php:300
+msgid "This will display a list of jobs to select from. If a category application form is being used, it will display all the jobs in that category. Otherwise, it will display all jobs. It has one optional attribute:"
+msgstr "هذا الخيار سيقوم بعرض قائمة من الوظائف للاختيار منها. إذا تم تحديد تصنيف معين، سيتم عرض الوظائف من هذا التصنيف. غير ذلك، سيتم عرض جميع الوظائف. هناك خاصية اختيارية متعلقة بهذذا الخيار:"
+
+#: admin-frontend-settings.php:301
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with radio buttons or checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "بإلإمكان اختيار أحد الخيارات التالية: \"اختيار\", \"فردي\" أو \"منبثق\". \"اختيار\" سيعرض صندوق قائمة منسدلة, \"فردي\" سيعرض قائمة من مربعات الاختيار أو أزرار راديو, \"منبثق\" يقوم بنفس عمل \"فردي\"،لكنه يقوم بعرض القائمة فقط عند النقر عليها."
+
+#: admin-frontend-settings.php:302
+msgid "This will display a list of categories to select from. It has one optional attribute:"
+msgstr "هذا الخيار سيعرض قائمة من اتصنيفات الوظائف للاختيار منها. هناك خاصية متعلقة بهذا الخيار:"
+
+#: admin-frontend-settings.php:303
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "بإلإمكان اختيار أحد الخيارات التالية: \"اختيار\", \"فردي\" أو \"منبثق\". \"اختيار\" سيعرض صندوق قائمة منسدلة, \"فردي\" سيعرض قائمة من مربعات الاختيار أو أزرار راديو, \"منبثق\" يقوم بنفس عمل \"فردي\"،لكنه يقوم بعرض القائمة فقط عند النقر عليها."
+
+#: admin-frontend-settings.php:304
+msgid "Display a submit button for the application form, with the contained text as the button text."
+msgstr "لعرض زر \"تنفيذ\" لاستمارة التقدم، مع إدراج النص المدخل هنا كنص للزر."
+
+#: admin-frontend-settings.php:306
+msgid "Custom Application Field Information"
+msgstr "معلومات حقل توظيف مخصص"
+
+#: admin-frontend-settings.php:307
+msgid "For each of the Custom Job Fields defined, there are several shortcodes defined. Note that the numbers ('n' in the samples) won't change, even if you re-order, add or delete Application Fields."
+msgstr "لكل الحقول المخصصة التي تم عملها، هناك أكواد مختصرة تم عملها بشكل آلي. لاحظ أن الأرقام('n' في النماذج) لن تتغير، حتى إن أعدت الترتيب، أضفت، أو حذفت حقول التطبيقات."
+
+#: admin-frontend-settings.php:308
+msgid "Display the field label"
+msgstr "عرض عنوان الحقل"
+
+#: admin-frontend-settings.php:309
+msgid "Display the field input element. "
+msgstr "عرض عنصر إدخال الحقل"
+
+#: admin-frontend-settings.php:310
+msgid "If the field has been marked as mandatory, this will display the word \"mandatory\"."
+msgstr "إذا تم تعليم الحقل كـ (إجباري)، سيقوم هذا الخيار بعرض الكلمة \"إجباري\"."
+
+#: admin-frontend-settings.php:312
+msgid "Custom Application Fields"
+msgstr "حقول توظيف مخصصة"
+
+#: admin-frontend-settings.php:323
+msgid "No Label"
+msgstr "بدون عنوان"
+
+#: admin-frontend-settings.php:331
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display an asterisk \"*\" next to the label of a mandatory field, you could put in the template:"
+msgstr "بلإمكان جعل جميع الأكواد المختصرة أعلاه شَرطية و ذلك عبر إضافة السابقة <tt>if_</tt>. مثلا، لو أردت عرض رمز النجمة \"*\" بجانب أحد عنوان أحد الحقول الإجبارية، بإمكانك أن تكتب في القالب:"
+
+#: admin-frontend-settings.php:348
+msgid "These text options will be displayed in various places around your job listings."
+msgstr "سيتم عرض اختيارات النصوص فى أماكن متفرقة حول قائمة الوظائف"
+
+#: admin-frontend-settings.php:356
+msgid "Job Title Prefix"
+msgstr "بادئة عنوان الوظيفة"
+
+#: admin-frontend-settings.php:357
+msgid "text"
+msgstr "النص"
+
+#: admin-frontend-settings.php:358
+msgid "This text is displayed before the Job Name in the page title."
+msgstr "يتم عرض هذا النص قبل اسم الوظيفة في عنوان الصفحة."
+
+#: admin-frontend-settings.php:361
+msgid "Application Acceptance"
+msgstr "قبول الاستمارة"
+
+#: admin-frontend-settings.php:363
+msgid "This text is displayed after an application has been accepted. If it is not filled in, the default text will be used."
+msgstr "يتم عرض هذا النص بعد قبول أحد الاستمارات. إذا لم يتم شغلها سيتم عرض النص الافتراضى."
+
+#: admin-frontend-settings.php:366
+#: admin-frontend-settings.php:405
+msgid "Update Text Settings"
+msgstr "تحديث إعدادات النص"
+
+#: admin-frontend-settings.php:374
+msgid "This text will be displayed before or after the lists/job/forms on the respective pages. You can enter HTML in these boxes."
+msgstr "وسوف يتم عرض هذا النص قبل أو بعد القوائم / الوظيفة / الأشكال على صفحات كل منها. ويمكنك إدخال أكواد هتمل فى هذه الصناديق."
+
+#: admin-frontend-settings.php:383
+msgid "Before the Main Jobs List"
+msgstr "قبل قائمة الوظائف الرئيسية"
+
+#: admin-frontend-settings.php:383
+msgid "After the Main Jobs List"
+msgstr "بعد قائمة الوظائف الرئيسية"
+
+#: admin-frontend-settings.php:384
+msgid "Before any Category Jobs Lists"
+msgstr "قبل أي تصنيف لقوائم الوظائف"
+
+#: admin-frontend-settings.php:384
+msgid "After any Category Jobs Lists"
+msgstr "بعد أى تصنيف لقوائم الوظائف"
+
+#: admin-frontend-settings.php:385
+msgid "Before a Job"
+msgstr "قبل الوظيفة"
+
+#: admin-frontend-settings.php:385
+msgid "After a Job"
+msgstr "بعد الوظيفة"
+
+#: admin-frontend-settings.php:386
+msgid "Before the Application Form"
+msgstr "قبل نموذج الاستمارة"
+
+#: admin-frontend-settings.php:386
+msgid "After the Application Form"
+msgstr "بعد نموذج الاستمارة"
+
+#: admin-frontend-settings.php:387
+msgid "Before the Registration Form"
+msgstr "قبل استمارة التوظيف"
+
+#: admin-frontend-settings.php:387
+msgid "After the Registration Form"
+msgstr "بعد استمارة التوظيف"
+
+#: admin-interviews.php:70
+#: admin-interviews.php:161
+#: admin-interviews.php:226
+msgid "Job Manager: %1s Interviews"
+msgstr "مدير الوظائف: %1s مقابلات"
+
+#: admin-interviews.php:98
+#: admin-interviews.php:176
+#: admin-interviews.php:265
+msgid "Go"
+msgstr "تنفيذ"
+
+#: admin-interviews.php:277
+msgid "Interview Time"
+msgstr "وقت المقابلة"
+
+#: admin-interviews.php:278
+#: admin-interviews.php:376
+msgid "Interview Rating"
+msgstr "رتبة المقابلة"
+
+#: admin-interviews.php:279
+#: admin-interviews.php:377
+#: admin-interviews.php:388
+msgid "Interview Details"
+msgstr "تفاصيل المقابلة"
+
+#: admin-interviews.php:296
+msgid "No applications scheduled for this day."
+msgstr "لا توجد طلبات توظيف لهذا اليوم."
+
+#: admin-interviews.php:307
+msgid "Job Manager: Interview Details"
+msgstr "مدير الوظائف: تفاصيل المقابلة"
+
+#: admin-interviews.php:317
+msgid "Interview Comments"
+msgstr "ملاحظات حول المقابلة"
+
+#: admin-interviews.php:317
+msgid "Previous Interview Comments"
+msgstr "ملاحظات الوظيفة السابقة"
+
+#: admin-interviews.php:367
+msgid "Job Manager: Application Interview Summary"
+msgstr "مدير الوظائف: نبذة عن المقابلة"
+
+#: admin-interviews.php:375
+msgid "Interview Date"
+msgstr "تاريخ المقابلة"
+
+#: admin-interviews.php:396
+msgid "There are no interviews for this application."
+msgstr "لا توجد مقابلات لهذه الوظيفة."
+
+#: admin-interviews.php:439
+msgid "New Interview"
+msgstr "مقابلة جديدة"
+
+#: admin-interviews.php:468
+msgid "Interview"
+msgstr "مقابلة"
+
+#: admin-jobs-settings.php:73
+#: admin-jobs-settings.php:92
+msgid "Show this field in the Admin Job List?"
+msgstr "عرض هذا الحقل في قائمة الوظائف في لوحة التحكم؟"
+
+#: admin-jobs-settings.php:110
+msgid "Update Jobs Form"
+msgstr "تحديث نموذج الاستمارة"
+
+#: admin-jobs.php:37
+msgid "Job Manager: Jobs List"
+msgstr "مدير الوظائف: قائمة الوظائف"
+
+#: admin-jobs.php:40
+msgid "New Job"
+msgstr "وظيفة جديدة"
+
+#: admin-jobs.php:45
+msgid "There is no job associated with that Job ID"
+msgstr "لا توجد وظيفة مرتبطة بذلك المعرف الوظيفى"
+
+#: admin-jobs.php:48
+msgid "New job created"
+msgstr "تم إنشاء الوظيفة"
+
+#: admin-jobs.php:51
+msgid "Job updated"
+msgstr "تم تحديث الوظيفة"
+
+#: admin-jobs.php:68
+#: admin-jobs.php:340
+#: admin-settings.php:143
+#: admin-settings.php:156
+#: admin-settings.php:225
+#: admin-settings.php:237
+#: admin-settings.php:448
+#: frontend-application.php:153
+#: setup.php:89
+#: widgets.php:99
+#: widgets.php:276
+#: widgets.php:379
+#: widgets.php:445
+msgid "Title"
+msgstr "المسمى الوظيفي"
+
+#: admin-jobs.php:83
+msgid "Display Dates"
+msgstr "عرض التواريخ"
+
+#: admin-jobs.php:93
+msgid "Expired jobs"
+msgstr "الوظائف المنتهية"
+
+#: admin-jobs.php:103
+msgid "There are currently no jobs in the system."
+msgstr "لا توجد أي وظائف متاحة في الوقت الحالي"
+
+#: admin-jobs.php:113
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: admin-jobs.php:114
+msgid "Unarchive"
+msgstr "إزالة من الأرشيف"
+
+#: admin-jobs.php:179
+msgid "Edit"
+msgstr "تحرير"
+
+#: admin-jobs.php:183
+msgid "View"
+msgstr "عرض"
+
+#: admin-jobs.php:203
+msgid "End of Time"
+msgstr "انتهاء الوقت"
+
+#: admin-jobs.php:204
+msgid "Future"
+msgstr "المستقبل"
+
+#: admin-jobs.php:204
+msgid "Live"
+msgstr "متاح"
+
+#: admin-jobs.php:204
+msgid "Expired"
+msgstr "انتهت"
+
+#: admin-jobs.php:233
+msgid "Job Manager: New Job"
+msgstr "مدير الوظائف: وظيفة جديدة"
+
+#: admin-jobs.php:234
+msgid "Create Job"
+msgstr "إنشاء وظيفة"
+
+#: admin-jobs.php:239
+msgid "Job Manager: Edit Job"
+msgstr "إنشاء وظيفة"
+
+#: admin-jobs.php:240
+msgid "Update Job"
+msgstr "تحديث الوظيفة"
+
+#: admin-jobs.php:310
+msgid "Categories that this job belongs to. It will be displayed in the job list for each category selected."
+msgstr "التنصنيفات التي تنتمي لها هذه الوظيفة. سيتم عرضها في قائمة الوظائف لكل تصنيف يتم اختياره."
+
+#: admin-jobs.php:313
+#: admin-settings.php:224
+#: admin-settings.php:236
+msgid "Icon"
+msgstr "أيقونة"
+
+#: admin-jobs.php:335
+msgid "No Icon"
+msgstr "بدون أيقونة"
+
+#: admin-jobs.php:337
+msgid "Icon to display for this job in the Job List"
+msgstr "الأيقونة التي سيتم عرضها لهذه الوظيفة في قائمة الوظائف"
+
+#: admin-jobs.php:455
+msgid "Delete File?"
+msgstr "هل تريد حذف الملف؟"
+
+#: admin-jobs.php:484
+msgid "Display Start Date"
+msgstr "عرض تاريخ البدء"
+
+#: admin-jobs.php:486
+msgid "The date this job should start being displayed on the site. To start displaying immediately, leave blank."
+msgstr "تاريخ بدء عرض هذه الوظيفة على الموقع. اترك الحقل فارغاً لعرض الوظيفة آنياً."
+
+#: admin-jobs.php:489
+msgid "Display End Date"
+msgstr "عرض تاريخ الانتهاء"
+
+#: admin-jobs.php:491
+msgid "The date this job should stop being displayed on the site. To display indefinitely, leave blank."
+msgstr "تاريخ إيقاف عرض الوظيفة على الموقع. اترك الحقل فارغاً لعرض الوظيفة بشكل دائم."
+
+#: admin-jobs.php:494
+msgid "Application Email"
+msgstr "بريد الوظيفة"
+
+#: admin-jobs.php:496
+msgid "The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank."
+msgstr "حدد البريد الإلكتروني الذي سيتم إخطاره حول أية وظيفة جديدة يتم التقدم لها. لاستخدام البريد الإلكتروني الافتراضي (بريد التصنيف أو البريد العام)، أترك الحقل فارغاً."
+
+#: admin-jobs.php:504
+msgid "Highlighted?"
+msgstr "وظيفة مميزة؟"
+
+#: admin-jobs.php:506
+msgid "Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page."
+msgstr "حدد هذه الوظيفة كوظيفة مميزة؟ لمعرفة مزايا الوظائف المميزة، راجع صفحة إعدادات العرض في لوحة التحكم."
+
+#: admin-jobs.php:678
+msgid "Job Manager: Jobs"
+msgstr "مدير الوظائف: جميع الوظائف"
+
+#: admin-jobs.php:679
+msgid "This will permanently delete all of the selected jobs. Please confirm that you want to continue."
+msgstr "يرجى تأكيد حذف جميع الوظائف التي تم اختيارها نهائياً!"
+
+#: admin-jobs.php:680
+msgid "Delete Jobs"
+msgstr "حذف وظائف"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+#: admin.php:27
+msgid "Settings"
+msgstr "إعدادات"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Icons"
+msgstr "أيقونات"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "User Settings"
+msgstr "إعدادات المستخدم"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Application Email Settings"
+msgstr "إعدادات بريد الوظيفة"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "API Keys"
+msgstr "مفاتيح دوال تطبيق برمجية"
+
+#: admin-settings.php:70
+#: admin-settings.php:86
+msgid "Other Plugins"
+msgstr "إضافات أخرى"
+
+#: admin-settings.php:70
+#: admin-settings.php:87
+msgid "Uninstall Settings"
+msgstr "إعدادات إزالة التنصيب"
+
+#: admin-settings.php:71
+msgid "Translators"
+msgstr "المترجمين"
+
+#: admin-settings.php:76
+#: admin-settings.php:92
+msgid "Interview Settings"
+msgstr "إعدادات المقابلات"
+
+#: admin-settings.php:111
+msgid "URL path"
+msgstr "مسار الرابط"
+
+#: admin-settings.php:114
+msgid "edit"
+msgstr "تحرير"
+
+#: admin-settings.php:118
+msgid "Allow Multi-Applications"
+msgstr "إتاحة التقدم لعدة وظائف"
+
+#: admin-settings.php:120
+msgid "This will allow applicants to send through a single application for multiple jobs."
+msgstr "يتيح هذا الخيار للمتقدمين إرسال طلب توظيف واحد لعدة وظائف."
+
+#: admin-settings.php:123
+msgid "Enable Interview Scheduling"
+msgstr "تفعيل تحديد مواعيد المقابلة"
+
+#: admin-settings.php:125
+msgid "This will enable interview scheduling functionality."
+msgstr "هنا يتم تفعيل خاصية تحديد موايد المقابلة."
+
+#: admin-settings.php:128
+msgid "Default email"
+msgstr "البريد الافتراضي"
+
+#: admin-settings.php:133
+msgid "Update Settings"
+msgstr "تحديث الإعدادات"
+
+#: admin-settings.php:141
+msgid "Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories."
+msgstr "تماماً مثل تصنيفات ووردبرس الاعتيادية، تصنيفات مدير الوظائف بالإمكان استخدامها لتقسيم الوظائف تحت عدة تصنيفات. بالإمكان أيضاً استخدامها لتخصيص ظهور استمارات التقدم للوظائف تحت عدة تصنيفات."
+
+#: admin-settings.php:143
+msgid "The display name of the category"
+msgstr "اسم العرض لهذا التصنيف"
+
+#: admin-settings.php:144
+#: admin-settings.php:157
+msgid "Slug"
+msgstr "سلاج"
+
+#: admin-settings.php:144
+msgid "The URL of the category"
+msgstr "رابط التصنيف"
+
+#: admin-settings.php:145
+msgid "The address to notify when new applications are submitted in this category"
+msgstr "البريد الإلكتروني الذي سيتم تنبيهه عندما يتم ارسال طلبات توظيف تحت هذا التصنيف"
+
+#: admin-settings.php:146
+#: admin-settings.php:159
+#: admin-settings.php:177
+msgid "Link"
+msgstr "رابط"
+
+#: admin-settings.php:146
+msgid "The URL of the list of jobs in this category"
+msgstr "رابط بقائمة الوظائف تحت هذا التصنيف"
+
+#: admin-settings.php:198
+msgid "Add New Category"
+msgstr "إضافة تصنيف جديد"
+
+#: admin-settings.php:204
+msgid "Show related categories?"
+msgstr "هل تريد عرض تصنيفات متعلقة؟"
+
+#: admin-settings.php:206
+msgid "This will show a list of categories that any jobs in a given job list belong to."
+msgstr "سيتيح هذا الخيار اظهار قائمة بالتصنيفات التي تنتمي إليها أية وظيفة ضمن قائمة الوظائف المحددة."
+
+#: admin-settings.php:209
+msgid "Update Categories"
+msgstr "تحديث التصنيفات"
+
+#: admin-settings.php:222
+msgid "Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the \"Summary\" jobs list type."
+msgstr "بالإمكان إسناد أيقونة إلى وظيفة معينة. هذه الأيقونات ستظهر فقط عند عرض قائمة وظائف من نوع \"Summary\" "
+
+#: admin-settings.php:224
+msgid "The current icon"
+msgstr "الرمز الحالي"
+
+#: admin-settings.php:225
+msgid "The display name of the icon"
+msgstr "عرض الاسم الرمزى"
+
+#: admin-settings.php:226
+#: admin-settings.php:238
+msgid "File"
+msgstr "ملف"
+
+#: admin-settings.php:226
+msgid "The icon file"
+msgstr "رمز الملف"
+
+#: admin-settings.php:272
+msgid "Add New Icon"
+msgstr "إضافة رمز جديد"
+
+#: admin-settings.php:275
+msgid "Update Icons"
+msgstr "تحديث الأيقونات"
+
+#: admin-settings.php:288
+msgid "Allowing users to register means that they and you can more easily keep track of jobs they've applied for."
+msgstr "السماح للأعضاء بالتسجيل ما معناه أن الأعضاء و أنت ستستطيعون تعقب الوظائف الذين قاموا بالتقدم لها بسهولة."
+
+#: admin-settings.php:296
+msgid "Enable User Registration"
+msgstr "تفعيل خاصية اشتراك المستخدمين في الموقع."
+
+#: admin-settings.php:298
+msgid "This will allow users to register for the Jobs system, even if user registration is disabled for your blog."
+msgstr "لإتاحة اشتراك الأعضاء في نظام الوظائف، حتى لو كانت خاصية الاشتراك غير مفعلة في مدونتك."
+
+#: admin-settings.php:301
+msgid "Require User Registration"
+msgstr "يتطلب التسجيل في الموقع"
+
+#: admin-settings.php:303
+msgid "If the previous option is checked, this option will require users to login before they can complete the application form."
+msgstr "إذا كان الخيار السابق مفعلاً، هذا الخيار سيطلب من المستخدمين تسجيل الدخول قبل أن يستطيعوا إتمام طلب التقدم للوظيفة."
+
+#: admin-settings.php:306
+msgid "Which pages should the login form be displayed on?"
+msgstr "في أي من الصفحات يجب إظهار فورم تسجيل الدخول؟"
+
+#: admin-settings.php:308
+msgid "The main jobs list"
+msgstr "قائمة الوظائف الرئيسية"
+
+#: admin-settings.php:309
+msgid "Category jobs lists"
+msgstr "قوائم فئات الوظائف"
+
+#: admin-settings.php:310
+msgid "Individual jobs"
+msgstr "وظائف فردية"
+
+#: admin-settings.php:311
+msgid "The application form"
+msgstr "تطبيق نموذج"
+
+#: admin-settings.php:315
+msgid "Update User Settings"
+msgstr "تحديث إعدادات المستخدم"
+
+#: admin-settings.php:325
+msgid "When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email."
+msgstr "عندما يقوم المتقدم تقديم الطلب بنجاح، سيتم إرسال بريد إلكتروني له بذلك. الخيارات التالية تتيح لك تخصيص هذا البريد الإلكتروني:"
+
+#: admin-settings.php:333
+#: db.php:43
+#: frontend-user.php:104
+msgid "Email Address"
+msgstr "بريد إلكتروني"
+
+#: admin-settings.php:335
+#: admin-settings.php:359
+#: admin-settings.php:385
+#: admin-settings.php:452
+#: frontend-application.php:342
+#: frontend-application.php:388
+msgid "None"
+msgstr "لا شيء"
+
+#: admin-settings.php:353
+msgid "The application field to use as the email address. This will be the \"From\" address in the initial application, and the field used for emailing applicants."
+msgstr "الحقل المستخدم لإدخال البريد الإلكتروني في استمارة التقدم. سيمثل هذا البريد بريد \"المرسِل\" في طلب التقدم الأولي، أيضاً سيُستخدم هذا البريد لمراسلة المتقدمين."
+
+#: admin-settings.php:356
+msgid "From Name"
+msgstr "من الاسم"
+
+#: admin-settings.php:378
+msgid "The name that will appear with the \"From\" email address."
+msgstr "الاسم الذي سوف يظهر مع \"من\" عنوان البريد الإلكتروني."
+
+#: admin-settings.php:404
+msgid "The email subject, and any fields to include in the subject."
+msgstr "موضوع البريد الإلكتروني ، واى حقول تدرج في هذا الموضوع."
+
+#: admin-settings.php:408
+msgid "Update Email Settings"
+msgstr "تحديث إعدادات البريد الإلكتروني"
+
+#: admin-settings.php:425
+msgid "Default View"
+msgstr "عرض افتراضي"
+
+#: admin-settings.php:430
+msgid "Day"
+msgstr "يوم"
+
+#: admin-settings.php:431
+msgid "Month"
+msgstr "شهر"
+
+#: admin-settings.php:432
+msgid "Year"
+msgstr "عام"
+
+#: admin-settings.php:445
+msgid "The default calendar view on the \"Interviews\" page."
+msgstr "العرض الافتراضي للتقويم في صفحة \"المقابلات\"."
+
+#: admin-settings.php:471
+msgid "The Interview title, and any fields to include in the title, as displayed on the \"Interviews\" page."
+msgstr "عنوان المقابلة، و أية حقول لتضمينها في العنوان، كما هور معروض في صفحة \"المقابلات\"."
+
+#: admin-settings.php:475
+msgid "Update Interview Settings"
+msgstr "تحديث إعدادات المقابلة"
+
+#: admin-settings.php:490
+msgid "Google Maps API"
+msgstr "دالة خرائط جوجل"
+
+#: admin-settings.php:492
+msgid "Job Manager uses Google Maps for the Geolocation application field. Functionality of this field will be severely hampered without a Google Maps key. You can register for a Google Maps key <a href=\"%1s\">here</a>."
+msgstr "مدير الوظائف يستخدم خرائط جوجل لتحديد الموقع الجغرافي في استمارة التقدم. هذه الخاصية لا يمكن استخدامها بدون مفتاح خرائط جوجل. تستطيع الحصول على مفتاح خرائط جوجل <a href=\"%1s\">من هنا</a>.."
+
+#: admin-settings.php:496
+msgid "Update API Keys"
+msgstr "تحديث مفاتيح الدوال"
+
+#: admin-settings.php:504
+msgid "Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements."
+msgstr "بالإمكان الحصول على ميزات أكثر من مدير الوظائف عبر تنصيب إضافات ووردبرس أخرى. هذه الإضافات غير ضرورية لمدير الوظائف ليعمل، لكنها تضيف بعض التحسينات إليه."
+
+#: admin-settings.php:512
+#: admin-settings.php:543
+#: admin-settings.php:548
+msgid "Installed"
+msgstr "مُنصب"
+
+#: admin-settings.php:517
+msgid "Not Installed"
+msgstr "غير منصب"
+
+#: admin-settings.php:520
+msgid "Google XML Sitemaps"
+msgstr "خرائط موقع من جوجل"
+
+#: admin-settings.php:521
+msgid "Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added."
+msgstr "يتيح لك هذا الخيار و بصورة آلية إضافة قائمة الوظائف و تفاصيلها إلى خريطة موقعك. بصورة افتراضية، فقط قائمة الوظائف الرئيسية يتم إضافتها."
+
+#: admin-settings.php:524
+#: admin-settings.php:555
+msgid "Status"
+msgstr "الحالة"
+
+#: admin-settings.php:525
+msgid "Version"
+msgstr "الإصدار"
+
+#: admin-settings.php:526
+msgid "Job Manager requires Google XML Sitemaps version 3.2 or later."
+msgstr "مدير الوظائف يتطلب تنصيب خرائط-مواقع جوجل إكس-إم-إل الإصدارة 3.2 على الأقل."
+
+#: admin-settings.php:531
+#: admin-settings.php:560
+#: admin-settings.php:586
+msgid "Options"
+msgstr "خيارات"
+
+#: admin-settings.php:534
+msgid "Add Job pages to your Sitemap?"
+msgstr "إضافة صفحات وظيفة على خريطة الموقع الخاص بك"
+
+#: admin-settings.php:551
+msgid "SI Captcha"
+msgstr " كلمة التحقق"
+
+#: admin-settings.php:552
+msgid "Allows you to add a Captcha to your Application submission form."
+msgstr "يسمح لك بإضافة كلمة التحقق على النموذج الخاص بك تقديم الطلب."
+
+#: admin-settings.php:563
+msgid "Add a captcha to the application form?"
+msgstr "إضافة إلى كلمة التحقق استمارة الطلب؟"
+
+#: admin-settings.php:570
+msgid "Update Plugin Settings"
+msgstr "ضبط تحديث الاضافة"
+
+#: admin-settings.php:578
+msgid "If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database."
+msgstr "إذا اخترت من أي وقت إلغاء اضافة مدير الوظائف  ، يمكنك تحديد ما ينبغي حذفه من قاعدة البيانات"
+
+#: admin-settings.php:588
+msgid "The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded."
+msgstr "الخيارات التي تم اختيارها في صفحات إعدادات المدير و إعدادات العرض. بما فيها أية أيقونات تم رفعها."
+
+#: admin-settings.php:593
+msgid "Jobs that have been created."
+msgstr "الوظائف التي تم إنشائها"
+
+#: admin-settings.php:598
+msgid "Applications that have been submitted. This includes any files uploaded (resumes, etc)."
+msgstr "طلبات التقدم للوظائف التي تم تقديمها مع مرفقاتها (مثلاً: سير ذاتية) إن وجدت."
+
+#: admin-settings.php:603
+msgid "Job Manager Categories that have been created."
+msgstr "تصنيفات مدير الوظائف التي تم إنشائها."
+
+#: admin-settings.php:606
+msgid "Update Uninstall Settings"
+msgstr "تحديث إعدادات إزالة التنصيب"
+
+#: admin.php:26
+#: admin.php:27
+#: admin.php:28
+#: admin.php:29
+#: admin.php:30
+#: admin.php:31
+#: admin.php:34
+msgid "Job Manager"
+msgstr "مدير الوظائف"
+
+#: admin.php:167
+msgid "Admin Settings"
+msgstr "إعدادات إدارية"
+
+#: admin.php:169
+msgid "App. Form Settings"
+msgstr "إعدادات استمارة التوظيف"
+
+#: admin.php:170
+msgid "Job Form Settings"
+msgstr "اعدادات نموذج الوظيفة"
+
+#: admin.php:28
+msgid "Add Job"
+msgstr "اضف وظيفة"
+
+#: admin.php:46
+#: admin.php:193
+msgid "My Amazon Wish List"
+msgstr " قائمة أمنيات بأمازون"
+
+#: admin.php:47
+#: admin.php:194
+msgid "Donate with PayPal"
+msgstr "تبرع عن طريق باي بال"
+
+#: admin.php:191
+msgid "If this plugin helps you find that perfect new employee, I'd appreciate it if you shared the love, by way of my Donate or Amazon Wish List links below."
+msgstr "وإذا ساعدكتك الاضافة على العثور على الموظف المطلوب ، اكون ممنون بالتبرع لي أو اهدائى اى مما فى قائمة أمنيات أمازون أدناه."
+
+#: admin.php:202
+msgid "Gary Pendergast's Blog"
+msgstr "مدونة غاري بندرغست "
+
+#: admin.php:203
+msgid "Follow me on Twitter!"
+msgstr "تابعنى على تويتر"
+
+#: admin.php:204
+msgid "Plugin Homepage"
+msgstr "الصفحة الرئييسية للاضافة"
+
+#: admin.php:205
+msgid "Submit a Bug/Feature Request"
+msgstr "راسلنا حول أية عيب برمجي أو طلب خاصية إضافية"
+
+#: admin.php:212
+msgid "If you're using Job Manager in a language other than English, you have some of my wonderful translators to thank for it!"
+msgstr "اذا كنت تستخدم مدير الوظائف بلغة أخرى غير اللغة الإنجليزية ، هناك بعض المترجمين الرائعينن لتشكرهم على جهودهم !"
+
+#: admin.php:213
+msgid "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact me</a>!"
+msgstr "إذا كنت تتقن لغة أخرى غير مذكورة هنا و ترغب في ترجمة لغة هذا السكريبت، أرجو أن تقوم <a href='%1s'>بالتواصل معي</a>! "
+
+#: admin.php:215
+msgid "Dutch"
+msgstr "الهولندية"
+
+#: admin.php:216
+msgid "French"
+msgstr "الفرنسية"
+
+#: admin.php:217
+msgid "German"
+msgstr "اللغة الألمانية"
+
+#: db.php:223
+#: db.php:672
+msgid "The date that the job starts. For positions available immediately, leave blank."
+msgstr "تاريخ بدء عرض الوظيفة. لجعل الوظيفة تعرض فوراً، أترك الحقل فارغاً."
+
+#: db.php:231
+#: db.php:680
+msgid "The date that the job finishes. For ongoing positions, leave blank."
+msgstr "تاريخ انتهاء الوظيفة. لجعل الوظيفة غير منتهية أترك الحقل فارغاً."
+
+#: db.php:258
+#: db.php:332
+#: frontend-jobs.php:14
+msgid "Jobs Listing"
+msgstr "قوائم الوظائف "
+
+#: db.php:259
+#: db.php:333
+msgid "Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site."
+msgstr "مرحبا! تستخدم هذه الصفحة كقاعدة لاضافة مدير الوظائف. لا تتردد في تغيير إعدادات هنا ، ولكن من فضلك لا تحذف هذه الصفحة. لاحظ أيضا أن أي محتوى التي تدخله هنا لن يظهر عند عرض هذه الصفحة على موقع الويب الخاص بك."
+
+#: db.php:274
+#: db.php:545
+#: frontend-application.php:53
+#: frontend-application.php:85
+#: frontend-application.php:97
+#: frontend-application.php:864
+#: frontend.php:368
+#: setup.php:41
+msgid "Job Application"
+msgstr "طلب التوظيف"
+
+#: db.php:288
+#: db.php:605
+#: frontend-user.php:32
+#: frontend-user.php:109
+msgid "Register"
+msgstr "سجل"
+
+#: frontend-application.php:35
+msgid "It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly."
+msgstr "يبدو انك قمت بالتقديم  مؤخرا لهذه الوظيفة. إذا كنت ترغب في إضافة مزيد من المعلومات إلى الطلب الخاص بك ، الرجاء الاتصال بنا مباشرة."
+
+#: frontend-application.php:39
+msgid "There was an error uploading your application. Please contact us directly, and quote the information below:"
+msgstr "هناك خطأ بتحميل الطلب الخاص بك. الرجاء الاتصال بنا مباشرة ، وأبلغنا بالمعلومات الواردة أدناه :"
+
+#: frontend-application.php:48
+msgid "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available."
+msgstr "شكرا لك على طلبك. فى حالة ا طلبك لا يتناسب مع الاحتياجات الحالية لدينا ، يرجى الاتصال بنا مباشرة لمعرفة ما اذا كان لدينا وظائف أخرى متاحة."
+
+#: frontend-application.php:65
+msgid "Before completing your application, please login using the form above, or register using the form below."
+msgstr "قبل الانتهاء من الطلب الخاص بك ، الرجاء الدخول باستخدام النموذج اعلاه ، أو التسجيل باستخدام النموذج أدناه."
+
+#: frontend-application.php:157
+msgid "Select the jobs you would like to apply for"
+msgstr "حدد الوظيفة التى ترغب في التقدم بطلب للحصول عليها"
+
+#: frontend-application.php:159
+msgid "Select the categories that you are interested in"
+msgstr "حدد الفئات التي ترغب في"
+
+#: frontend-application.php:166
+msgid "Fields marked with an asterisk (*) must be filled out before submitting."
+msgstr "الحقول التي عليها علامة (*) يجب ملء قبل تقديمه."
+
+#: frontend-application.php:250
+msgid "Submit Your Application"
+msgstr "تقديم طلبك"
+
+#: frontend-application.php:868
+msgid "Application Link"
+msgstr "رابط التطبيق"
+
+#: frontend-jobs.php:108
+#: frontend-shortcodes.php:128
+msgid "Jobs for %s"
+msgstr "وظائف لـ%s"
+
+#: frontend-jobs.php:111
+msgid "Related Categories"
+msgstr "فئات ذات صل"
+
+#: frontend-jobs.php:150
+msgid "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file."
+msgstr "لا توجد أية وظيفة متاحة لدينا في الوقت الحالي. يرجى معاودة زيارة هذه الصفحة لاحقاً، حيث أننا نقوم بوضع وظائف جديدة بشكل دوري. في الوقت الحالي، بإمكانك <a href='%s'>إرسال سيرتك الذاتية</a> و التي سنقوم بحفظها في موقعنا بحيث يمكنك استخدامها لاحقاً."
+
+#: frontend-jobs.php:164
+msgid "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>."
+msgstr "لا توجد وظائف متتاحة تحت هذا التصنيف في الوقت الحالي. يرجى معاودة زيارة هذه الصفحة لاحقاً حيث إننا نقوم بإضافى وظائف جديدة دورياً. في الوقت الحالي تستطيع <a href='%s'>إرسال سيرتك الذاتية</a>, و التي سنقوم بحفظها في موقعنا بحيث يمكنك استخدامها لاحقاً. كما يمكنك أيضاً الاطلاع على <a href='%s'>الوظائف المتاحة تحت تصنيفات أخرى</a>."
+
+#: frontend-jobs.php:223
+msgid "This job doesn't exist"
+msgstr "هذه الوظيفة غير موجودة"
+
+#: frontend-jobs.php:225
+msgid "Perhaps you followed an out-of-date link? Please check out the <a href=\"%s\">jobs we have currently available</a>."
+msgstr "Perhaps you followed an out-of-date link? Please check out the <a href=\"%s\">jobs we have currently available</a>."
+
+#: frontend-shortcodes.php:157
+#: frontend-shortcodes.php:355
+msgid "more"
+msgstr "اكثر"
+
+#: frontend-user.php:15
+msgid "Welcome, %1s!"
+msgstr "مرحباً، %1s!"
+
+#: frontend-user.php:25
+msgid "If you've registered with us previously, please login now. If you'd like to register, please click the 'Register' link below."
+msgstr "إذا كنت مسجل لدينا بالفعل، من فضلك سجل دخول. وإذا كنت ترغب بالتسجيل، من فضلك اضغط الرابط 'تسجيل جديد' أدناه."
+
+#: frontend-user.php:27
+#: frontend-user.php:87
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: frontend-user.php:29
+#: frontend-user.php:95
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: frontend-user.php:31
+msgid "Login"
+msgstr "تسجيل دخول"
+
+#: frontend-user.php:32
+msgid "Forgot your password?"
+msgstr "نسيت كلمة المرور؟"
+
+#: frontend-user.php:82
+msgid "Please fill in all fields."
+msgstr "من فضلك املأ جميع الخانات."
+
+#: frontend-user.php:85
+msgid "This username has already been registered."
+msgstr "اسم المستخدم الذى أدخلته موجود بالفعل."
+
+#: frontend-user.php:93
+msgid "Passwords do not match."
+msgstr "مشكلة فى تطابق كلمتى المرور."
+
+#: frontend-user.php:98
+msgid "Password Again"
+msgstr "أعد كتابة كلمة المرور"
+
+#: frontend-user.php:102
+msgid "This email address has already been registered. If you've previously registered but don't remember your password, please visit the <a href='%1s'>password reset page</a>."
+msgstr "البريد الذى أدخلته مسجل بالفعل، إذا كنت تملك هذا البريد ولا تتذكر كلمة المرور، قم بزيارة <a href='%1s'>صفحة استرجاع كلمة المرور</a>."
+
+#: frontend.php:277
+msgid "This job listing was created using <a href=\"%s\" title=\"%s\">Job Manager</a> for WordPress, by <a href=\"%s\">Gary Pendergast</a>."
+msgstr "هذه القائمة من الوظائف تمت بواسطة <a href=\"%s\" title=\"%s\">مدير الوظائف</a> للورد بريس, بواسطة <a href=\"%s\">Gary Pendergast</a>."
+
+#: frontend.php:277
+msgid "WordPress Job Manager"
+msgstr "مدير الوظائف ورد بريس"
+
+#: frontend.php:371
+#: frontend.php:374
+msgid "Job Listing"
+msgstr "قائمة الوظائف"
+
+#: frontend.php:418
+msgid "Latest Jobs"
+msgstr "آخر الوظائف"
+
+#: frontend.php:494
+msgid "The following fields must be filled out before submitting"
+msgstr "يجب ملأ الخانات التالية قبل الإرسال"
+
+#: frontend.php:495
+#: frontend.php:496
+msgid "click to select"
+msgstr "انقر لتحدي"
+
+#: functions.php:37
+msgid "Click to toggle"
+msgstr "انقر للتبديل"
+
+#: functions.php:62
+msgid "No rating"
+msgstr "لا تقييم"
+
+#: functions.php:98
+msgid "Category"
+msgstr "تصنيف"
+
+#: setup.php:75
+#: setup.php:247
+msgid "Thank you for your application! We'll check it out, and get back to you soon!"
+msgstr "شكراً لك على طلبك! سوف تتم مراجعته، ثم نعود إليك قريباً!"
+
+#: setup.php:91
+msgid "Apply Now"
+msgstr "تقديم الطلب الآن"
+
+#: setup.php:93
+#: setup.php:94
+#: setup.php:353
+#: setup.php:354
+msgid "Page %1s"
+msgstr "%1sصفحة"
+
+#: setup.php:95
+#: setup.php:355
+msgid "Jobs %1s-%2s of %3s"
+msgstr "وظائف %1s-%2s من %3s"
+
+#: widgets.php:5
+msgid "Job Manager: Recent Jobs"
+msgstr "مدير الوظائف : آخر الوظائف"
+
+#: widgets.php:6
+msgid "A list of the most recent jobs posted to your site"
+msgstr "قائمة بآخر الوظائف المنشورة"
+
+#: widgets.php:68
+#: widgets.php:363
+#: widgets.php:429
+msgid "There are no jobs to display at this time."
+msgstr "لا يوجد وظائف للعرض"
+
+#: widgets.php:110
+msgid "Number of Jobs to show"
+msgstr "عدد الوظائف للعرض"
+
+#: widgets.php:113
+msgid "at most 15"
+msgstr "15 على الأكثر"
+
+#: widgets.php:122
+msgid "Show Jobs From"
+msgstr "عرض شكل الوظائف"
+
+#: widgets.php:124
+msgid "All Categories"
+msgstr "جميع التصنيفات"
+
+#: widgets.php:125
+msgid "Selected Categories"
+msgstr "التصنيفات المحددة"
+
+#: widgets.php:149
+msgid "No categories defined."
+msgstr "لا تصنيفات"
+
+#: widgets.php:162
+msgid "Job Manager: Categories"
+msgstr "مدير الوظائف: تصنيفات"
+
+#: widgets.php:163
+msgid "A list or dropdown of Job Manager categories"
+msgstr " قائمة منسدلة من تصنيفات مدير الوظائف"
+
+#: widgets.php:195
+msgid "Select Category"
+msgstr "حدد تصنيف"
+
+#: widgets.php:260
+msgid "There are no categories to display at this time."
+msgstr "ليست هناك تصنيفات لعرضها في هذا الوقت."
+
+#: widgets.php:294
+msgid "Show as dropdown"
+msgstr "اعرض كقائمة منسدلة"
+
+#: widgets.php:295
+msgid "Show job counts"
+msgstr "اظهر عدد الوظائف"
+
+#: widgets.php:296
+msgid "Hide empty categories"
+msgstr "إخفاء الفئات فارغة"
+
+#: widgets.php:307
+msgid "Job Manager: Highlighted Jobs"
+msgstr "مدير الوظائف: وظائف مميزة"
+
+#: widgets.php:308
+msgid "A list jobs that have been marked as highlighted"
+msgstr "قائمة من الوظائف تم تحديدها كمميز"
+
+#: widgets.php:392
+msgid "Job Manager: Selected Jobs"
+msgstr "مدير الوظائف : وظائف مختارة"
+
+#: widgets.php:393
+msgid "A customizable list jobs posted to your site"
+msgstr "تخصيص قائمةوظائف تنشر على موقعك"
+
+#: widgets.php:453
+msgid "Comma separated list of Job IDs"
+msgstr "فصلة تفصل بين تعريف كل وظيفة"
+
+msgid "http://pento.net/projects/wordpress-job-manager-plugin/"
+msgstr "http://pento.net/projects/wordpress-job-manager-plugin/"
+
+msgid "A job listing and job application management plugin for WordPress."
+msgstr "اضافة لقوائم الوظائف و تطبيقات الوظائف للورد بريس."
+
+msgid "Gary Pendergast"
+msgstr "Gary Pendergast"
+
+msgid "http://pento.net/"
+msgstr "http://pento.net/"
+
+msgid "job, jobs, manager, list, listing, employment, employer, career"
+msgstr "وظيفة ، والوظائف ، مدير ، القائمة ، قائمة ، والعمالة ، رب العمل ، والحياة المهنية"
+

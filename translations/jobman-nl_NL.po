@@ -1,0 +1,2069 @@
+# Translation of 0.7 Series in Dutch
+# This file is distributed under the same license as the 0.7 Series package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2010-04-20 15:27+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: 0.7 Series\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Gary Pendergast <gary@pento.net>\n"
+"Language-Team: \n"
+
+#: db.php:145
+msgid "No"
+msgstr ""
+
+#: admin-jobs.php:218
+msgid "New"
+msgstr ""
+
+#: db.php:145
+msgid "Yes"
+msgstr ""
+
+#: db.php:235
+#: db.php:684
+msgid "Location"
+msgstr ""
+
+#: db.php:227
+#: db.php:676
+msgid "End Date"
+msgstr ""
+
+#: db.php:219
+#: db.php:668
+msgid "Start Date"
+msgstr ""
+
+#: db.php:211
+#: db.php:660
+msgid "Salary"
+msgstr ""
+
+#: db.php:203
+msgid "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept."
+msgstr ""
+
+#: db.php:200
+#: db.php:202
+msgid "I have read and understood the privacy policy."
+msgstr ""
+
+#: db.php:175
+msgid "Upload your CV"
+msgstr ""
+
+#: db.php:164
+msgid "Title of your degree"
+msgstr ""
+
+#: db.php:153
+msgid "Where did you complete your degree?"
+msgstr ""
+
+#: db.php:142
+msgid "Do you have a degree?"
+msgstr ""
+
+#: db.php:131
+msgid "Qualifications"
+msgstr ""
+
+#: db.php:120
+msgid "Cell phone"
+msgstr ""
+
+#: db.php:109
+msgid "Telephone"
+msgstr ""
+
+#: db.php:98
+msgid "Country"
+msgstr ""
+
+#: db.php:87
+msgid "Post code"
+msgstr ""
+
+#: db.php:76
+msgid "City"
+msgstr ""
+
+#: db.php:65
+msgid "Address"
+msgstr ""
+
+#: db.php:54
+msgid "Contact Details"
+msgstr ""
+
+#: db.php:32
+msgid "Surname"
+msgstr ""
+
+#: db.php:21
+msgid "Name"
+msgstr ""
+
+#: db.php:10
+msgid "Personal Details"
+msgstr ""
+
+#: admin.php:164
+msgid "Spanish"
+msgstr ""
+
+#: admin-application-form.php:11
+#: admin-jobs-settings.php:11
+msgid "Text Input"
+msgstr "Tekstveld"
+
+#: admin-application-form.php:12
+#: admin-jobs-settings.php:12
+msgid "Radio Buttons"
+msgstr "Keuzerondjes"
+
+#: admin-application-form.php:13
+msgid "Select Dropdown"
+msgstr "Selecteer Dropdown"
+
+#: admin-application-form.php:14
+#: admin-jobs-settings.php:13
+msgid "Checkboxes"
+msgstr "Selectievakjes"
+
+#: admin-application-form.php:15
+#: admin-jobs-settings.php:14
+msgid "Large Text Input (textarea)"
+msgstr "Groot tekstveld (textarea)"
+
+#: admin-application-form.php:16
+#: admin-jobs-settings.php:15
+msgid "Date Selector"
+msgstr "Datum selecteren"
+
+#: admin-application-form.php:17
+#: admin-jobs-settings.php:16
+msgid "File Upload"
+msgstr "Bestanden uploaden"
+
+#: admin-application-form.php:18
+msgid "Geolocation"
+msgstr "Geolocatie"
+
+#: admin-application-form.php:19
+#: admin-jobs-settings.php:17
+msgid "Heading"
+msgstr "Koppen"
+
+#: admin-application-form.php:20
+#: admin-jobs-settings.php:18
+msgid "HTML Code"
+msgstr "HTML code"
+
+#: admin-application-form.php:21
+#: admin-jobs-settings.php:19
+msgid "Blank Space"
+msgstr "Lege ruimte"
+
+#: admin-application-form.php:32
+#: admin-jobs-settings.php:30
+msgid "Job Manager: Application Setup"
+msgstr "Job Manager: Sollicitatieformulieren maken"
+
+#: admin-application-form.php:36
+#: admin-jobs-settings.php:34
+msgid "Field Label/Type"
+msgstr "Veld label/type"
+
+#: admin-application-form.php:37
+#: admin-applications.php:67
+#: admin-applications.php:204
+#: admin-applications.php:240
+#: admin-frontend-settings.php:216
+#: admin-jobs.php:66
+#: admin-jobs.php:267
+#: admin-settings.php:55
+#: admin-settings.php:71
+#: admin-settings.php:586
+#: setup.php:90
+#: widgets.php:138
+msgid "Categories"
+msgstr "Categorieën"
+
+#: admin-application-form.php:38
+#: admin-jobs-settings.php:35
+msgid "Data"
+msgstr "Datums"
+
+#: admin-application-form.php:39
+msgid "Submit Filter/Filter Error Message"
+msgstr "Filter versturen/Filter foutmelding"
+
+#: admin-application-form.php:40
+#: admin-frontend-settings.php:130
+#: admin-jobs-settings.php:36
+msgid "Sort Order"
+msgstr "Sorteervolgorde"
+
+#: admin-application-form.php:41
+#: admin-application-form.php:110
+#: admin-application-form.php:138
+#: admin-applications.php:565
+#: admin-jobs-settings.php:37
+#: admin-jobs-settings.php:75
+#: admin-jobs-settings.php:92
+#: admin-jobs.php:109
+#: admin-settings.php:145
+#: admin-settings.php:163
+#: admin-settings.php:174
+#: admin-settings.php:224
+#: admin-settings.php:241
+#: admin-settings.php:250
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: admin-application-form.php:74
+#: admin-application-form.php:124
+msgid "Show this field in the Application List?"
+msgstr "Dit veld weergeven in de Sollicitatielijst"
+
+#: admin-application-form.php:81
+#: admin-application-form.php:125
+msgid "Block this field from application emails?"
+msgstr "Blokkeer dit veld van sollicitatie e-mails?"
+
+#: admin-application-form.php:105
+#: admin-application-form.php:134
+msgid "Mandatory field?"
+msgstr "Verplicht veld?"
+
+#: admin-application-form.php:109
+#: admin-application-form.php:137
+#: admin-jobs-settings.php:74
+#: admin-jobs-settings.php:91
+msgid "Up"
+msgstr "Omhoog"
+
+#: admin-application-form.php:109
+#: admin-application-form.php:137
+#: admin-jobs-settings.php:74
+#: admin-jobs-settings.php:91
+msgid "Down"
+msgstr "Omlaag"
+
+#: admin-application-form.php:151
+#: admin-jobs-settings.php:102
+msgid "Add New Field"
+msgstr "Nieuw veld toevoegen"
+
+#: admin-application-form.php:155
+msgid "Update Application Form"
+msgstr "Sollicitatieformulier toevoegen"
+
+#: admin-applications.php:36
+#: admin-applications.php:742
+msgid "Job Manager: Applications"
+msgstr "Job Manager: Sollicitaties"
+
+#: admin-applications.php:39
+msgid "Selected applications have been deleted."
+msgstr "De geselecteerde sollicitaties zijn verwijderd."
+
+#: admin-applications.php:41
+msgid "The mailout has been sent."
+msgstr "De mailing is verstuurd."
+
+#: admin-applications.php:50
+msgid "Standard Filters"
+msgstr "Standaard filters"
+
+#: admin-applications.php:53
+#: admin-jobs.php:262
+msgid "Job ID"
+msgstr "Vacature-ID"
+
+#: admin-applications.php:60
+msgid "Registered Applicant"
+msgstr "Geregistreerde sollicitant"
+
+#: admin-applications.php:90
+msgid "Minimum Rating"
+msgstr "Minimale beoordeling"
+
+#: admin-applications.php:100
+msgid "Custom Filters"
+msgstr "Aangepaste filters"
+
+#: admin-applications.php:155
+msgid "Up to %1s km from %2s"
+msgstr "Tot %1s km van %2s"
+
+#: admin-applications.php:166
+msgid "Please enter a Google Maps API key in your Admin Settings."
+msgstr "Voer een Google Maps API-sleutel in je admin-instellingen in."
+
+#: admin-applications.php:171
+msgid "This field cannot be filtered."
+msgstr "Dit veld kan niet gefilterd worden."
+
+#: admin-applications.php:181
+msgid "Filter Applications"
+msgstr "Sollicitaties filteren"
+
+#: admin-applications.php:185
+msgid "Show Filter Options"
+msgstr "Filteropties weergeven"
+
+#: admin-applications.php:186
+msgid "Hide Filter Options"
+msgstr "Filteropies verbergen"
+
+#: admin-applications.php:196
+#: admin-applications.php:232
+#: admin-applications.php:658
+#: frontend-application.php:872
+#: setup.php:74
+#: setup.php:246
+msgid "Job"
+msgstr "vacature"
+
+#: admin-applications.php:200
+#: admin-applications.php:236
+msgid "User"
+msgstr "Gebruiker"
+
+#: admin-applications.php:216
+#: admin-applications.php:252
+#: admin-applications.php:514
+msgid "View Details"
+msgstr "Details weergeven"
+
+#: admin-applications.php:217
+#: admin-applications.php:253
+#: admin-emails.php:120
+msgid "Emails"
+msgstr "E-mails"
+
+#: admin-applications.php:221
+#: admin-applications.php:257
+#: admin-applications.php:621
+#: admin.php:37
+msgid "Interviews"
+msgstr "Intake gesprekken"
+
+#: admin-applications.php:225
+#: admin-applications.php:261
+#: admin-applications.php:665
+msgid "Rating"
+msgstr "Beoordeling"
+
+#: admin-applications.php:457
+msgid "No job"
+msgstr "Geen vacature"
+
+#: admin-applications.php:464
+msgid "Unregistered Applicant"
+msgstr "Ongeregistreerde sollicitant"
+
+#: admin-applications.php:500
+#: admin-applications.php:699
+#: admin-jobs.php:177
+#: admin-settings.php:508
+#: admin-settings.php:539
+#: frontend-shortcodes.php:169
+#: frontend-shortcodes.php:363
+msgid "Download"
+msgstr "Downloaden"
+
+#: admin-applications.php:547
+msgid "There were no applications that matched your search."
+msgstr "Er zijn geen sollicitaties gevonden met uw zoekopdracht."
+
+#: admin-applications.php:549
+msgid "There are currently no applications in the system."
+msgstr "Er zijn op dit moment geen sollicitaties in het systeem."
+
+#: admin-applications.php:563
+#: admin-jobs.php:108
+msgid "Bulk Actions"
+msgstr "Acties"
+
+#: admin-applications.php:564
+#: admin-applications.php:726
+#: admin-settings.php:130
+#: admin-settings.php:143
+msgid "Email"
+msgstr "E-mail"
+
+#: admin-applications.php:566
+msgid "Export as CSV file"
+msgstr "Exporteren als CSV bestand"
+
+#: admin-applications.php:568
+#: admin-jobs.php:113
+msgid "Apply"
+msgstr "Toepassen"
+
+#: admin-applications.php:600
+msgid "Job Manager: Application Details"
+msgstr "Job Manager: Sollicitatie details"
+
+#: admin-applications.php:602
+#: admin-applications.php:626
+msgid "Back to Application List"
+msgstr "Terug naar de sollicitatielijst"
+
+#: admin-applications.php:611
+#: admin-interviews.php:316
+#: db.php:487
+#: frontend-application.php:512
+msgid "Application"
+msgstr "Sollicitatie"
+
+#: admin-applications.php:612
+#: admin-interviews.php:317
+msgid "Application Comments"
+msgstr "Sollicitatie Notities"
+
+#: admin-applications.php:612
+msgid "Email Application"
+msgstr "Sollicitatie versturen via e-mail"
+
+#: admin-applications.php:660
+#: admin-settings.php:576
+msgid "Jobs"
+msgstr "Vacatures"
+
+#: admin-applications.php:663
+#: frontend-application.php:878
+msgid "Timestamp"
+msgstr "Tijdsstempel"
+
+#: admin-applications.php:720
+msgid "Use this form to email the application to a new email address."
+msgstr "Gebruik dit formulier om de sollicitatie te versturen naar een nieuw e-mailadres."
+
+#: admin-applications.php:743
+msgid "This will permanently delete all of the selected applications. Please confirm that you want to continue."
+msgstr "Alle geselecteerde sollicitaties zullen permanent worden verwijderd. Bevestig alstublieft dat u wilt doorgaan"
+
+#: admin-applications.php:744
+msgid "Delete Applications"
+msgstr "Sollicitatie verwijderen"
+
+#: admin-comments.php:8
+msgid "Comment"
+msgstr "Notitie"
+
+#: admin-comments.php:19
+msgid "No comments found"
+msgstr "Geen notities gevonden"
+
+#: admin-emails.php:10
+msgid "Job Manager: Emails"
+msgstr "Job manager: E-mails"
+
+#: admin-emails.php:12
+msgid "In the \"Applications Sent To\" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "Klik in de \"Sollicitaties versturen naar\" kolom op het nummer in baar de sollicitatie te gaan, Of klik op het sterretje (*) ernaast om andere verstuurde e-mails naar de sollicitatie te gaan."
+
+#: admin-emails.php:17
+#: admin-emails.php:25
+msgid "Date"
+msgstr "Datum"
+
+#: admin-emails.php:18
+#: admin-emails.php:26
+#: admin-emails.php:96
+#: admin-emails.php:177
+#: admin-settings.php:366
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: admin-emails.php:19
+#: admin-emails.php:27
+msgid "Applications Sent To"
+msgstr "Sollicitaties versturen naar"
+
+#: admin-emails.php:68
+msgid "There are currently no emails in the system."
+msgstr "Momenteel geen e-mails in het systeem"
+
+#: admin-emails.php:85
+msgid "No such email."
+msgstr "Geen e-mail."
+
+#: admin-emails.php:90
+msgid "Job Manager: Email"
+msgstr "Job Manager: E-mail"
+
+#: admin-emails.php:92
+msgid "In the \"Applications\" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application."
+msgstr "Klik in het \"Sollicitaties\" veld op het nummer om naar de sollicitatie te gaan, Of klik op het sterretje (*) ernaast om andere verstuurde e-mails naar de sollicitatie te gaan."
+
+#: admin-emails.php:112
+#: admin-jobs.php:81
+#: admin-settings.php:581
+msgid "Applications"
+msgstr "Sollicitaties"
+
+#: admin-emails.php:128
+#: admin-emails.php:181
+msgid "Message"
+msgstr "Bericht"
+
+#: admin-emails.php:159
+msgid "Job Manager: Application Email"
+msgstr "Job Manager: Sollicitatie e-mail"
+
+#: admin-emails.php:169
+msgid "From"
+msgstr "Van"
+
+#: admin-emails.php:173
+msgid "To"
+msgstr "Aan"
+
+#: admin-emails.php:186
+msgid "Send Email"
+msgstr "E-mail verzenden"
+
+#: admin-frontend-settings.php:33
+msgid "Job Manager: Display Settings"
+msgstr "Job Manager: Weergave instellingen"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:53
+#: admin.php:28
+msgid "Display Settings"
+msgstr "Weergave instellingen"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:54
+msgid "Job List Sorting"
+msgstr "Vacaturelijst sorteren"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:54
+msgid "Job Templates"
+msgstr "Vacature templates"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:54
+msgid "Application Form Settings"
+msgstr "Sollicitatie Formulier Instellingen"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:54
+msgid "Application Form Template"
+msgstr "Sollicitatie Formulier Sjabloon"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:53
+msgid "Miscellaneous Text"
+msgstr "Diverse tekst"
+
+#: admin-frontend-settings.php:42
+#: admin-frontend-settings.php:53
+msgid "Page Text"
+msgstr "Pagina tekst"
+
+#: admin-frontend-settings.php:43
+#: admin-settings.php:56
+msgid "Donate"
+msgstr "Doneren"
+
+#: admin-frontend-settings.php:43
+#: admin-settings.php:56
+msgid "About This Plugin"
+msgstr "Over deze plugin"
+
+#: admin-frontend-settings.php:70
+msgid "Job Manager Page Template"
+msgstr "Job Manager pagina sjabloon"
+
+#: admin-frontend-settings.php:71
+msgid "You can edit the page template used by Job Manager, by editing the Template Attribute of <a href=\"%s\">this page</a>."
+msgstr "U kunt het sjabloon bewerken wat gebruikt wordt door Job Manager, door het bewerken van het sjabloon Eigenschappen voor <a href=\"%s\">deze pagina</a>."
+
+#: admin-frontend-settings.php:74
+msgid "Jobs Per Page"
+msgstr "Vacatures Per Pagina"
+
+#: admin-frontend-settings.php:76
+msgid "The number of jobs to display per page in the main and category jobs lists. For no limit, set this to 0."
+msgstr "Het aantal vacatures om te laten zien per pagina in de hoofd en categorie vacaturen lijsten. Voor geen limiet, zet dit op 0."
+
+#: admin-frontend-settings.php:79
+msgid "Date Format"
+msgstr "Datumnotatie"
+
+#: admin-frontend-settings.php:81
+msgid "The format to use for Job date fields. Leave blank to use the dates as they're entered. See the <a href='%1s'>documentation on date formatting</a> for further details."
+msgstr "De opmaak om te gebruiken voor vacature datum velden. Laat leeg om de data te gebruiken als ze zijn opgenomen. Zie de documentatie over <a href='%1s'> datum opmaak </a> voor meer informatie."
+
+#: admin-frontend-settings.php:87
+msgid "Hide \"Powered By\" link?"
+msgstr " \"Powered By\" link verbergen?"
+
+#: admin-frontend-settings.php:89
+msgid "If you're unable to donate, I would appreciate it if you left this unchecked."
+msgstr "Als u niet in staat bent om te doneren, ik zou het waarderen als u deze uitgevinkt laat."
+
+#: admin-frontend-settings.php:96
+msgid "Update Display Settings"
+msgstr "Weergave instellingen bijwerken"
+
+#: admin-frontend-settings.php:111
+msgid "Sort By:"
+msgstr "Sorteren op:"
+
+#: admin-frontend-settings.php:113
+#: admin-frontend-settings.php:132
+msgid "Default"
+msgstr "Standaard"
+
+#: admin-frontend-settings.php:114
+msgid "Job Title"
+msgstr "Vacature naam"
+
+#: admin-frontend-settings.php:115
+msgid "Date Posted"
+msgstr "Plaatsingsdatum"
+
+#: admin-frontend-settings.php:116
+msgid "Closing Date"
+msgstr "Sluitingsdatum"
+
+#: admin-frontend-settings.php:122
+msgid "Custom Field: %1s"
+msgstr "Aangepast Veld: %1s"
+
+#: admin-frontend-settings.php:127
+msgid "Select the criteria you'd like to have job lists sorted by."
+msgstr "Selecteer de voorwaarden waarop u de vacaturelijst wilt sorteren"
+
+#: admin-frontend-settings.php:133
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: admin-frontend-settings.php:134
+msgid "Descending"
+msgstr "Aflopend"
+
+#: admin-frontend-settings.php:137
+msgid "Ascending: Lowest value to highest value, alphabetical or chronological order"
+msgstr "Oplopend: Laag naar hoog, alfabetisch of chronologische volgorde"
+
+#: admin-frontend-settings.php:138
+msgid "Descending: Highest value to lowest value, reverse alphabetical or chronological order"
+msgstr "Aflopend: Hoog naar laag, omgekeerde alfabetische of chronologische volgorde"
+
+#: admin-frontend-settings.php:142
+msgid "Highlighted jobs behaviour"
+msgstr "Instelling geaccentueerde vacatures"
+
+#: admin-frontend-settings.php:144
+msgid "Sticky"
+msgstr "Sticky"
+
+#: admin-frontend-settings.php:145
+msgid "Inline"
+msgstr "In lijst"
+
+#: admin-frontend-settings.php:148
+msgid "Sticky: Put highlighted jobs at the top of the jobs list."
+msgstr "Sticky: toon geaccentueerde vacatures bovenaan de lijst"
+
+#: admin-frontend-settings.php:149
+msgid "Inline: Leave highlighted jobs in their normal place in the jobs list."
+msgstr "In lijst: Toon geaccentueerde vacatures op hun normale plaats in de vacaturelijst"
+
+#: admin-frontend-settings.php:154
+msgid "Update Sort Settings"
+msgstr "Sorteerinstellingen bijwerken"
+
+#: admin-frontend-settings.php:162
+msgid "These settings allow you to define the templates for displaying lists of jobs, and individual jobs. To do this, you will need to make use of the available shortcodes."
+msgstr "Deze instellingen laten u de sjablonen voor het weergeven van lijsten van vacatures en individuele vacatures kiezen. Om dit te doen, moet u gebruik te maken van de beschikbare shortcodes."
+
+#: admin-frontend-settings.php:164
+#: db.php:243
+#: db.php:692
+msgid "Job Information"
+msgstr "Vacature informatie"
+
+#: admin-frontend-settings.php:165
+msgid "This will loop over a list of all the Jobs, and display the contained HTML and shortcodes for each."
+msgstr "Dit zal over een lijst van alle Vacatures lopen en de opgenomen HTML en shortcodes voor elk tonen."
+
+#: admin-frontend-settings.php:166
+msgid "This will display the ID of the Job currently being displayed, either in a <tt>[job_loop]</tt> or on an Individual Job page."
+msgstr "Dit geeft de ID van de Vacature weer die momenteel wordt weergegeven, hetzij in een <tt>[job_loop]</tt> of op een afzonderlijke Vacature pagina."
+
+#: admin-frontend-settings.php:167
+msgid "This will display the Title of the current Job."
+msgstr "Dit geeft de Titel van de huidige Vacature weer."
+
+#: admin-frontend-settings.php:168
+msgid "While inside a <tt>[job_loop]</tt>, this will display the row number of the job currently being displayed."
+msgstr "Als u binnen een <tt>[job_loop]</tt> zit, zal dit het rijnummer weergeven van de vacature waar u momenteel in zit."
+
+#: admin-frontend-settings.php:169
+msgid "While inside a <tt>[job_loop]</tt>, this will display \"odd\", if the current <tt>[job_row_number]</tt> is odd, or \"even\" if <tt>[job_row_number]</tt> is even."
+msgstr "Wanneer u binnen een <tt>[job_loop]</tt> zit , zal \"oneven\" worden weergegeven, wanneer de huidige <tt>[job_row_number]</tt> oneven is, of \"even\" als <tt>[job_row_number]</tt> even is."
+
+#: admin-frontend-settings.php:170
+msgid "If the current Job has been marked as highlighted, this will display the word \"highlighted\"."
+msgstr "Als de huidige Vacature is gemarkeerd als geaccentueerd, zal dit scherm het woord \"geaccentueerd\" weergeven."
+
+#: admin-frontend-settings.php:171
+msgid "If the current Job has an icon assigned to it, this will display the icon."
+msgstr "Als aan de huidige Vacature een pictogram is toegewezen, dan zal dit het pictogram weergeven."
+
+#: admin-frontend-settings.php:172
+msgid "This will display a link to the current Job, with the contained text as the link text."
+msgstr "Dit zal een link weergeven naar de huidige Vacature, met de ingevulde tekst als de link tekst."
+
+#: admin-frontend-settings.php:173
+msgid "This will display a link to the Application Form for the current Job, with the contained text as the link text. If it is used outside of the <tt>[job_loop]</tt>, it will display a link to the main Application Form."
+msgstr "Er zal een een link worden weergegeven naar het Sollicitatieformulier voor de huidige Vacature, met de ingevulde tekst als de link tekst. Als het wordt gebruikt buiten de <tt>[job_loop]</tt>, dan zal er een link naar het hoofd Sollicitatieformulier worden weergegeven."
+
+#: admin-frontend-settings.php:175
+msgid "Job Category Information"
+msgstr "Vacature categorie informatie"
+
+#: admin-frontend-settings.php:176
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles."
+msgstr "Als de huidige Vacature wordt toegewezen aan welke Categorie dan ook, dan zal dit een komma-gescheiden lijst van de Categorie Titels weergeven."
+
+#: admin-frontend-settings.php:177
+msgid "If the current Job is assigned to any Categories, this will display a comma-separated list of the Category Titles, with each Title as a link to that Category."
+msgstr "Als de huidige Vacature wordt toegewezen aan welke categorie dan ook, dan zal dit een komma-gescheiden lijst van de Categorie Titels, met elke Titel als een link naar die Categorie."
+
+#: admin-frontend-settings.php:178
+msgid "This will display the category name, if the current job list is a category."
+msgstr "Dit geeft de naam van de categorie aan, als de huidige vacature lijst een categorie is."
+
+#: admin-frontend-settings.php:179
+msgid "This will display a link to the current category, with the contained text as the link text."
+msgstr "Dit geeft een link naar de huidige categorie, met de tekst als de link tekst."
+
+#: admin-frontend-settings.php:181
+msgid "Page Navigation"
+msgstr "Pagina Navigatie"
+
+#: admin-frontend-settings.php:182
+msgid "Returns the number of jobs that are being shown per page, or 0 for all of them."
+msgstr "Geeft het aantal vacatures weer die worden getoond per pagina, of 0 voor alles."
+
+#: admin-frontend-settings.php:183
+msgid "This will display a link to the previous page, with the contained text as the link text. If the user is on the first page, it will display nothing."
+msgstr "Dit geeft een link naar de vorige pagina, met de tekst als de link tekst. Als de gebruiker op de eerste pagina is, zal niets worden weer gegeven."
+
+#: admin-frontend-settings.php:184
+msgid "Returns the page number of the previous page."
+msgstr "Geeft het pagina nummer weer van de vorige pagina."
+
+#: admin-frontend-settings.php:185
+msgid "This will display a link to the next page, with the contained text as the link text. If the user is on the last page, it will display nothing."
+msgstr "Dit geeft een link naar de volgende pagina weer, met de tekst als de link tekst. Als de gebruiker op de laatste bladzijde is, zal het niets weergeven."
+
+#: admin-frontend-settings.php:186
+msgid "Returns the page number of the next page."
+msgstr "Geeft het pagina nummer weer van de volgende pagina."
+
+#: admin-frontend-settings.php:187
+msgid "Returns the page number of the current page."
+msgstr "Geeft het pagina nummer weer van de huidige pagina."
+
+#: admin-frontend-settings.php:188
+msgid "The job number of the first job being displayed on the current page."
+msgstr "Het vacature nummer van de eerste taak die wordt weergegeven op de huidige pagina."
+
+#: admin-frontend-settings.php:189
+msgid "The job number of the last job being displayed on the current page."
+msgstr "Het vacature nummer van de laatste vacature dat wordt weergegeven op de huidige pagina."
+
+#: admin-frontend-settings.php:190
+msgid "The total number of jobs over all pages of this list."
+msgstr "Het totaal aantal vacatures in alle pagina's van deze lijst."
+
+#: admin-frontend-settings.php:192
+msgid "Job Field Information"
+msgstr "Vacature veld informatie"
+
+#: admin-frontend-settings.php:193
+msgid "This will loop over all of the defined Job Fields, and display the contained HTML and shortcodes for each. This can be used inside a <tt>[job_loop]</tt>, or on an Individual Job page."
+msgstr "Dit zal over alle gedefinieerde Vacature Velden lopen, en de ingevulde HTML en shortcodes voor elk weergeven. Dit kan gebruikt worden in een <tt>[job_loop]</tt> of op een afzonderlijke Vacature pagina."
+
+#: admin-frontend-settings.php:194
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the label of the current field being displayed."
+msgstr "Als u binnen een <tt>[job_field_loop]</tt> zit, dan zal dit het label weergeven van het huidige veld dat wordt weergegeven."
+
+#: admin-frontend-settings.php:195
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display the data associated with the current field and Job being displayed. If the field is a file, it will obey the <tt>type=\"url\"</tt> attribute, to only return the URL, instead of a link to the file, or the <tt>type=\"image\"</tt> attribute, to return an image. If the field is a large text field, it will obey the <tt>length=\"<em>n</em>\"</tt> attribute, to restrict the output to <em>n</em> characters."
+msgstr "Terwijl in een <tt>[job_field_loop]</tt>, zal deze de gegevens tonen die verband houden met het huidige veld en Vacature die wordt weergegeven. Als het veld een bestand is, zal het zich houden aan het <tt>type=\"url\"</tt>-attribuut, om enkel de URL te geven, in plaats van een link naar het bestand, of het <tt>type=\"image\"</tt>-attribuut, om een afbeelding terug te geven. Als het veld een groot tekstveld is, zal het zich houden aan het <tt>lengte=\"<em>n</em>\"</tt>-attribuut, om de output te beperken tot <em>n</em> karakters."
+
+#: admin-frontend-settings.php:197
+msgid "Custom Job Field Information"
+msgstr "Aangepast Vacature Veld Informatie"
+
+#: admin-frontend-settings.php:198
+msgid "For each of the Custom Job Fields defined, there are two shortcodes defined, one for the Label and one for the Data. Note that these numbers won't change, even if you re-order, add or delete Job Fields."
+msgstr "Voor elk van de gedefinieerde Aangepaste Vacature velden, zijn er twee shortcodes gedefinieerd , een voor de Label en een voor de Gegevens. Let Op! Deze getallen veranderen niet, ook niet als u opnieuw sorteert, of een Vacature veld toevoegt of verwijderd."
+
+#: admin-frontend-settings.php:205
+msgid "As a file field, the <tt>type=\"(url|image)\"</tt> attribute can be used."
+msgstr "Voor een bestand veld, kan het <tt>type=\"(url|image)\"</tt>-attribuut worden gebruikt."
+
+#: admin-frontend-settings.php:207
+msgid "As a large text field, the <tt>length=\"<em>n</em>\"</tt> attribute can be used."
+msgstr "Voor een groot tekstveld, kan het <tt>length=\"<em>n</em>\"</tt>-attribuut worden gebruikt."
+
+#: admin-frontend-settings.php:213
+#: admin-frontend-settings.php:329
+msgid "Conditionals"
+msgstr "Voorwaarden"
+
+#: admin-frontend-settings.php:214
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display the text \"Categories: \", and then a list of the Categories a job is in, but you don't want to display it if there are no categories, you could put in the template:"
+msgstr "Alle hierboven weergegeven shortcodes kunnen worden voorafgegaan door <tt>if_</tt> om ze om te zetten in een conditionele verklaring. Bijvoorbeeld, als je de tekst \"Categorieën:\" wilt weergeven, en vervolgens een lijst wilt laten zien van Categorieën waar de vacature inzit, maar u deze niet wilt laten zien als er geen categorieën zijn, kun je dit in het sjabloon zetten:"
+
+#: admin-frontend-settings.php:220
+msgid "Multi-Applications"
+msgstr "Multi-Sollicitaties"
+
+#: admin-frontend-settings.php:221
+msgid "These shortcodes are only valid if the \"Allow Multi-Applications\" option is checked under Admin Options. If it is not checked, they will not display."
+msgstr "Deze shortcodes zijn slechts geldig indien de \"Sta Multi-Sollicitaties toe\" optie is ingeschakeld onder Admin Opties. Als het niet is ingeschakeld, zullen ze niet worden weergegeven."
+
+#: admin-frontend-settings.php:222
+msgid "While inside a <tt>[job_field_loop]</tt>, this will display a checkbox associated with the current job."
+msgstr "In een <tt>[job_field_loop]</tt>, zal dit een checkbox weergeven gekoppeld met de huidige vacature."
+
+#: admin-frontend-settings.php:223
+msgid "This will display a button to allow the applicant to apply for all checked jobs, with the contained text as the button text."
+msgstr "Dit zal een knop weergeven om de sollicitant voor alle aan gevinkte vacatures te solliciteren, met de tekst als tekst op de knop."
+
+#: admin-frontend-settings.php:232
+msgid "Job List Template"
+msgstr "Vacaturelijst template"
+
+#: admin-frontend-settings.php:236
+msgid "Individual Job Template"
+msgstr "Enkele vacature template"
+
+#: admin-frontend-settings.php:240
+#: admin-frontend-settings.php:339
+msgid "Update Template Settings"
+msgstr "Template instellingen bijwerken"
+
+#: admin-frontend-settings.php:255
+msgid "Category Selector"
+msgstr "Categorie Kiezer"
+
+#: admin-frontend-settings.php:257
+#: admin-frontend-settings.php:272
+msgid "Don't Display"
+msgstr "Niet weergeven"
+
+#: admin-frontend-settings.php:258
+#: admin-frontend-settings.php:273
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: admin-frontend-settings.php:259
+#: admin-frontend-settings.php:274
+msgid "HTML List"
+msgstr "HTML Lijst"
+
+#: admin-frontend-settings.php:260
+#: admin-frontend-settings.php:275
+msgid "Popout"
+msgstr "Popout"
+
+#: admin-frontend-settings.php:263
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job."
+msgstr "Hiermee kan een sollicitant een categorie of meerdere categorieën selecteren om te solliciteren. Dit wordt alleen weergegeven als de sollicitant niet solliciteert voor een specifieke vacature."
+
+#: admin-frontend-settings.php:264
+#: admin-frontend-settings.php:279
+msgid "Dropdown: Shows a normal selector"
+msgstr "Dropdown: Toont een normale kiezer"
+
+#: admin-frontend-settings.php:265
+msgid "HTML List: Shows a list of checkboxes"
+msgstr "HTML Lijst: Laat een lijst van keuzevakken zien"
+
+#: admin-frontend-settings.php:266
+msgid "Popout: Shows a list of checkboxes when the list is clicked on"
+msgstr "Popout: Laat een lijst zijn van keuzevakken als er op de lijst geklikt wordt"
+
+#: admin-frontend-settings.php:270
+msgid "Job Selector"
+msgstr "Vacature Kiezer"
+
+#: admin-frontend-settings.php:278
+msgid "Allows an applicant to select a category or multiple categories to apply for. This will only display if the applicant is not applying for a specific job. On category application forms, it will only list jobs from that category."
+msgstr "Hiermee kan een sollicitant een categorie of meerdere categorieën selecteren om te solliciteren. Dit wordt alleen weergegeven als de sollicitant geen sollicitatie doet voor een specifieke vacature. Op categorie vacature formulieren, het zal alleen vacatures uit die categorie laten zien."
+
+#: admin-frontend-settings.php:280
+msgid "HTML List: Shows a list of radio buttons or checkboxes"
+msgstr "HTML Lijst: Laat een lijst zijn van radio knoppen of keuze vakken"
+
+#: admin-frontend-settings.php:281
+msgid "Popout: Shows a list of radio buttons or checkboxes when the list is clicked on"
+msgstr "Popout: Laat een lijst zijn van radio knoppen of keuze vakken als er op de lijst wordt geklikt"
+
+#: admin-frontend-settings.php:286
+msgid "Update Application Form Options"
+msgstr "Update Sollicitatie Formulier Opties"
+
+#: admin-frontend-settings.php:294
+msgid "This setting allows you to define the template for displaying the application form. If you're happy with the current application form, just leave this blank, as you'll need to update it each time you add a new field to the application form."
+msgstr "Deze instelling laat u de sjabloon voor het weergeven van het sollicitatie formulier instellen. Als u tevreden bent met het huidige sollicitatie formulier, laat dit dan leeg, anders moet je dit elke keer bijwerken wanneer u een nieuw veld aan het sollicitatie formulier toevoegd."
+
+#: admin-frontend-settings.php:295
+msgid "If you do want to do this, you will need to make use of the available shortcodes."
+msgstr "Als u dit toch wilt doen, zul je gebruik moeten maken van de beschikbare shortcodes."
+
+#: admin-frontend-settings.php:297
+msgid "Application Form"
+msgstr "Sollicitatie Formulier"
+
+#: admin-frontend-settings.php:298
+msgid "Display a list of links to the jobs being applied for."
+msgstr "Toon een lijst van links naar de vacatures waarop gesolliciteerd is."
+
+#: admin-frontend-settings.php:299
+msgid "This will display a list of jobs to select from. If a category application form is being used, it will display all the jobs in that category. Otherwise, it will display all jobs. It has one optional attribute:"
+msgstr "Dit geeft een lijst van vacatures weer om uit te kiezen. Als een categorie sollicitatie formulier wordt gebruikt, zal het alle vacatures in deze categorie weergeven. Anders zal het alle vacatures weergeven. Het heeft een optioneel attribuut:"
+
+#: admin-frontend-settings.php:300
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with radio buttons or checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Kan worden ingesteld op een van: \"select\", \"individual\" of \"popout\". \"select\" zal een keuzelijst tonen, \"individual\" zal een lijst met radio buttons of checkboxes weergeven, \"popout\" is hetzelfde als 'individual', maar toont de lijst wanneer deze wordt aangeklikt."
+
+#: admin-frontend-settings.php:301
+msgid "This will display a list of categories to select from. It has one optional attribute:"
+msgstr "Dit geeft een lijst van categorieën om uit te kiezen. Het heeft een optioneel attribuut:"
+
+#: admin-frontend-settings.php:302
+msgid "Can be set to one of: \"select\", \"individual\" or \"popout\". \"select\" will show a dropdown box, \"individual\" will show a list with checkboxes, \"popout\" is the same as \"individual\", but only shows the list when it is clicked on."
+msgstr "Kan worden ingesteld op: \"select\", \"individual\" of \"popout\". \"Select\" zal een keuzelijst tonen, \"individual\" zal een lijst met keuzevakken weergeven, \"popout\" is hetzelfde als 'individual', maar toont de lijst wanneer deze wordt aangeklikt."
+
+#: admin-frontend-settings.php:303
+msgid "Display a submit button for the application form, with the contained text as the button text."
+msgstr "Toon een verzend knop voor het sollicitatie formulier, met de tekst als tekst op de knop."
+
+#: admin-frontend-settings.php:305
+msgid "Custom Application Field Information"
+msgstr "Willekeurig Sollicitatie Veld Informatie"
+
+#: admin-frontend-settings.php:306
+msgid "For each of the Custom Job Fields defined, there are several shortcodes defined. Note that the numbers ('n' in the samples) won't change, even if you re-order, add or delete Application Fields."
+msgstr "Voor elk van de willekeurige gedefinieerde velden, zijn er verschillende shortcodes gedefinieerd. Let op dat de nummers ('n' in de voorbeelden) niet zullen veranderen, zelfs als u de sollicitatie velden her sorteert, toevoegt of verwijderd."
+
+#: admin-frontend-settings.php:307
+msgid "Display the field label"
+msgstr "Toon het veld label"
+
+#: admin-frontend-settings.php:308
+msgid "Display the field input element. "
+msgstr "Toon het veld invoer onderdeel"
+
+#: admin-frontend-settings.php:309
+msgid "If the field has been marked as mandatory, this will display the word \"mandatory\"."
+msgstr "Als het veld is gemarkeerd als verplicht, zal dit het woord \"verplicht\" weergeven."
+
+#: admin-frontend-settings.php:311
+msgid "Custom Application Fields"
+msgstr "Willekeurige Sollicitatie Velden"
+
+#: admin-frontend-settings.php:322
+msgid "No Label"
+msgstr "Geen Label"
+
+#: admin-frontend-settings.php:330
+msgid "All of the shortcodes defined above can be prefixed with <tt>if_</tt> to turn them into a conditional statement. For example, if you wanted to display an asterisk \"*\" next to the label of a mandatory field, you could put in the template:"
+msgstr "Alle shortcodes hierboven omschreven kunnen worden voorafgegaan door een <tt>if_</tt> om deze om te zetten in een voorwaardelijke verklaring. Bijvoorbeeld: als je een sterretje wilt weergeven \"*\" naast het label van een verplicht veld, kun je dit in de template:"
+
+#: admin-frontend-settings.php:347
+msgid "These text options will be displayed in various places around your job listings."
+msgstr "Deze tekst opties worden weergegeven op verschillende plaatsen rond uw vacatures."
+
+#: admin-frontend-settings.php:355
+msgid "Job Title Prefix"
+msgstr "Vacature-naam voorvoegsel"
+
+#: admin-frontend-settings.php:356
+msgid "text"
+msgstr "tekst"
+
+#: admin-frontend-settings.php:357
+msgid "This text is displayed before the Job Name in the page title."
+msgstr "Deze tekst wordt getoond voor de naam van de vacature in de pagina-titel "
+
+#: admin-frontend-settings.php:360
+msgid "Application Acceptance"
+msgstr "Sollicitatie accepteren"
+
+#: admin-frontend-settings.php:362
+msgid "This text is displayed after an application has been accepted. If it is not filled in, the default text will be used."
+msgstr "Deze tekst wordt weergegeven nadat een sollicitatie is aanvaard. Als het niet is ingevuld, zal de standaard tekst worden gebruikt."
+
+#: admin-frontend-settings.php:365
+#: admin-frontend-settings.php:404
+msgid "Update Text Settings"
+msgstr "Tekst instellingen bijwerken"
+
+#: admin-frontend-settings.php:373
+msgid "This text will be displayed before or after the lists/job/forms on the respective pages. You can enter HTML in these boxes."
+msgstr "Deze tekst wordt getoond voor of na de lijst/vacature/formulieren op de respectievelijke pagina's. U kunt HTML gebruiken in deze boxen."
+
+#: admin-frontend-settings.php:382
+msgid "Before the Main Jobs List"
+msgstr "Voor de hoofd vacature-lijst"
+
+#: admin-frontend-settings.php:382
+msgid "After the Main Jobs List"
+msgstr "Na de hoofd vacaturelijst "
+
+#: admin-frontend-settings.php:383
+msgid "Before any Category Jobs Lists"
+msgstr "Voor elke vacaturelijst categorie"
+
+#: admin-frontend-settings.php:383
+msgid "After any Category Jobs Lists"
+msgstr "Na elke vacaturelijst categorie "
+
+#: admin-frontend-settings.php:384
+msgid "Before a Job"
+msgstr "Voor een vacature"
+
+#: admin-frontend-settings.php:384
+msgid "After a Job"
+msgstr "Na een vacature"
+
+#: admin-frontend-settings.php:385
+msgid "Before the Application Form"
+msgstr "Voor het sollicitatieformulier"
+
+#: admin-frontend-settings.php:385
+msgid "After the Application Form"
+msgstr "Na het sollicitatieformulier"
+
+#: admin-frontend-settings.php:386
+msgid "Before the Registration Form"
+msgstr "Voor het Registratie Formulier"
+
+#: admin-frontend-settings.php:386
+msgid "After the Registration Form"
+msgstr "Na het Registratie Formulier"
+
+#: admin-interviews.php:70
+#: admin-interviews.php:161
+#: admin-interviews.php:226
+msgid "Job Manager: %1s Interviews"
+msgstr "Job Manager: %1s intake gesprekken"
+
+#: admin-interviews.php:98
+#: admin-interviews.php:176
+#: admin-interviews.php:265
+msgid "Go"
+msgstr "Ga"
+
+#: admin-interviews.php:277
+msgid "Interview Time"
+msgstr "Intake Gesprek Tijd"
+
+#: admin-interviews.php:278
+#: admin-interviews.php:376
+msgid "Interview Rating"
+msgstr "Intake Gesprek Beoordeling"
+
+#: admin-interviews.php:279
+#: admin-interviews.php:377
+#: admin-interviews.php:388
+msgid "Interview Details"
+msgstr "Intake Gesprek Details"
+
+#: admin-interviews.php:296
+msgid "No applications scheduled for this day."
+msgstr "Geen sollicitaties gepland voor vandaag."
+
+#: admin-interviews.php:307
+msgid "Job Manager: Interview Details"
+msgstr "Job Manager: Intake Gesprek Details"
+
+#: admin-interviews.php:317
+msgid "Interview Comments"
+msgstr "Intake Gesprek Notities"
+
+#: admin-interviews.php:317
+msgid "Previous Interview Comments"
+msgstr "Vorige Intake Gesprek Notities"
+
+#: admin-interviews.php:367
+msgid "Job Manager: Application Interview Summary"
+msgstr "Job Manager: Sollicitatiegesprek Samenvatting"
+
+#: admin-interviews.php:375
+msgid "Interview Date"
+msgstr "Intake Gesprek Datum"
+
+#: admin-interviews.php:396
+msgid "There are no interviews for this application."
+msgstr "Er zijn geen intake gesprekken voor deze vacature."
+
+#: admin-interviews.php:439
+msgid "New Interview"
+msgstr "Nieuwe Intake Gesprek"
+
+#: admin-interviews.php:468
+msgid "Interview"
+msgstr "Intake Gesprek"
+
+#: admin-jobs-settings.php:70
+#: admin-jobs-settings.php:89
+msgid "Show this field in the Admin Job List?"
+msgstr "Toon dit veld in de Admin Job Lijst?"
+
+#: admin-jobs-settings.php:106
+msgid "Update Jobs Form"
+msgstr "Sollicitatieformulier bijwerken"
+
+#: admin-jobs.php:37
+msgid "Job Manager: Jobs List"
+msgstr "Job Manager: Vacaturelijst"
+
+#: admin-jobs.php:40
+msgid "New Job"
+msgstr "Nieuwe vacature"
+
+#: admin-jobs.php:45
+msgid "There is no job associated with that Job ID"
+msgstr "Er is geen vacature verbonden aan deze vacature-ID"
+
+#: admin-jobs.php:48
+msgid "New job created"
+msgstr "Nieuwe vacature aangemaakt"
+
+#: admin-jobs.php:51
+msgid "Job updated"
+msgstr "Vacaturewijzigignen opgeslagen"
+
+#: admin-jobs.php:65
+#: admin-jobs.php:319
+#: admin-settings.php:128
+#: admin-settings.php:141
+#: admin-settings.php:210
+#: admin-settings.php:222
+#: admin-settings.php:433
+#: frontend-application.php:150
+#: setup.php:89
+#: widgets.php:99
+#: widgets.php:276
+#: widgets.php:379
+#: widgets.php:445
+msgid "Title"
+msgstr "Titel"
+
+#: admin-jobs.php:80
+msgid "Display Dates"
+msgstr "Datums weergeven"
+
+#: admin-jobs.php:90
+msgid "Expired jobs"
+msgstr "Verlopen vacatures"
+
+#: admin-jobs.php:100
+msgid "There are currently no jobs in the system."
+msgstr "Er zijn op dit moment geen vacatures in het systeem"
+
+#: admin-jobs.php:110
+msgid "Archive"
+msgstr "Archief"
+
+#: admin-jobs.php:111
+msgid "Unarchive"
+msgstr "De-archiveer"
+
+#: admin-jobs.php:168
+msgid "Edit"
+msgstr "Bewerken"
+
+#: admin-jobs.php:168
+msgid "View"
+msgstr "Weergeven"
+
+#: admin-jobs.php:188
+msgid "End of Time"
+msgstr "Eindtijd"
+
+#: admin-jobs.php:189
+msgid "Future"
+msgstr "Toekomst"
+
+#: admin-jobs.php:189
+msgid "Live"
+msgstr "Live"
+
+#: admin-jobs.php:189
+msgid "Expired"
+msgstr "Verlopen"
+
+#: admin-jobs.php:215
+msgid "Job Manager: New Job"
+msgstr "Job Manager: Nieuwe vacature"
+
+#: admin-jobs.php:216
+msgid "Create Job"
+msgstr "vacature aanmaken"
+
+#: admin-jobs.php:221
+msgid "Job Manager: Edit Job"
+msgstr "Job Manager: Vacature bewerken"
+
+#: admin-jobs.php:222
+msgid "Update Job"
+msgstr "Vacature opslaan"
+
+#: admin-jobs.php:289
+msgid "Categories that this job belongs to. It will be displayed in the job list for each category selected."
+msgstr "Catogoriën waar deze vacature bij hoort. Het zal worden weergegeven in de vacaturelijst voor elke geselecteerde categorie"
+
+#: admin-jobs.php:292
+#: admin-settings.php:209
+#: admin-settings.php:221
+msgid "Icon"
+msgstr "Pictogram"
+
+#: admin-jobs.php:314
+msgid "No Icon"
+msgstr "Geen pictogram"
+
+#: admin-jobs.php:316
+msgid "Icon to display for this job in the Job List"
+msgstr "Pictogram dat wordt weergegeven bij deze facature in de vacaturelijst"
+
+#: admin-jobs.php:429
+msgid "Delete File?"
+msgstr "Bestand verwijderen?"
+
+#: admin-jobs.php:456
+msgid "Display Start Date"
+msgstr "Startdatum weergeven"
+
+#: admin-jobs.php:458
+msgid "The date this job should start being displayed on the site. To start displaying immediately, leave blank."
+msgstr "De datum waarop deze vacature weergegeven zal worden. Indien hij direct moet worden weergegeven, kunt u dit vak leeg laten."
+
+#: admin-jobs.php:461
+msgid "Display End Date"
+msgstr "Einddatum weergeven"
+
+#: admin-jobs.php:463
+msgid "The date this job should stop being displayed on the site. To display indefinitely, leave blank."
+msgstr "De datum waarop deze vacature niet meer weergegeven zal worden. Indien hij altijd moet worden weergegeven, kunt u dit vak leeg laten."
+
+#: admin-jobs.php:466
+msgid "Application Email"
+msgstr "Sollicitatie e-mail"
+
+#: admin-jobs.php:468
+msgid "The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank."
+msgstr "Het e-mailadres waar meldingen van sollicitaties voor deze vacature heen worden verzonden. Om het standaard catagorie e-mailadres te gebruiken kunt u het vak leeg laten."
+
+#: admin-jobs.php:476
+msgid "Highlighted?"
+msgstr "Geaccentueerd?"
+
+#: admin-jobs.php:478
+msgid "Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page."
+msgstr "Deze vacature als geaccentueerd weergeven? Voor de instellingen van geaccentueerde vacatures zie de Weergave Instellingen Admin pagina"
+
+#: admin-jobs.php:639
+msgid "Job Manager: Jobs"
+msgstr "Job Manager: Vacatures"
+
+#: admin-jobs.php:640
+msgid "This will permanently delete all of the selected jobs. Please confirm that you want to continue."
+msgstr "De geselecteerde vacatures zullen permanent worden verwijderd. Bevestig alstublieft dat u wilt doorgaan."
+
+#: admin-jobs.php:641
+msgid "Delete Jobs"
+msgstr "Vacatures verwijderen"
+
+#: admin-settings.php:46
+msgid "Job Manager: Admin Settings"
+msgstr "Job Manager: Admin instellingen"
+
+#: admin-settings.php:55
+#: admin-settings.php:71
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin-settings.php:55
+#: admin-settings.php:72
+msgid "Icons"
+msgstr "Pictogrammen"
+
+#: admin-settings.php:55
+#: admin-settings.php:72
+msgid "User Settings"
+msgstr "Gebruikersinstellingen"
+
+#: admin-settings.php:55
+#: admin-settings.php:72
+msgid "Application Email Settings"
+msgstr "Applicatie e-mailinstellingen"
+
+#: admin-settings.php:55
+#: admin-settings.php:71
+msgid "API Keys"
+msgstr "API Keys"
+
+#: admin-settings.php:55
+#: admin-settings.php:71
+msgid "Other Plugins"
+msgstr "Andere Plugins"
+
+#: admin-settings.php:55
+#: admin-settings.php:72
+msgid "Uninstall Settings"
+msgstr "Instellingen voor programma verwijdering"
+
+#: admin-settings.php:56
+msgid "Translators"
+msgstr "Vertalers"
+
+#: admin-settings.php:61
+#: admin-settings.php:77
+msgid "Interview Settings"
+msgstr "Intake Gesprek Instellingen"
+
+#: admin-settings.php:96
+msgid "URL path"
+msgstr "URL pad"
+
+#: admin-settings.php:99
+msgid "edit"
+msgstr "bewerken"
+
+#: admin-settings.php:103
+msgid "Allow Multi-Applications"
+msgstr "Sta Multi-Sollicitaties toe"
+
+#: admin-settings.php:105
+msgid "This will allow applicants to send through a single application for multiple jobs."
+msgstr "Hierdoor kunnen sollicitanten door middel van een enkele sollicitatie, solliciteren voor meerdere vacatures."
+
+#: admin-settings.php:108
+msgid "Enable Interview Scheduling"
+msgstr "Activeer Intake Gesprek Plannign"
+
+#: admin-settings.php:110
+msgid "This will enable interview scheduling functionality."
+msgstr "Dit zal de Intake Gesprek planning functie activeren."
+
+#: admin-settings.php:113
+msgid "Default email"
+msgstr "Standaard e-mail"
+
+#: admin-settings.php:118
+msgid "Update Settings"
+msgstr "Instellingen opslaan"
+
+#: admin-settings.php:126
+msgid "Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories."
+msgstr "Net als bij de normale WordPress Categorieën, kunnen Job Manager categorieën wordengebruikt om vacatures te splitsen in verschillende groepen. Ze kunnen ook worden gebruikt om aan te passenhoe het sollicitatieformulier verschijnt voor de vacatures in verschillende categorieën."
+
+#: admin-settings.php:128
+msgid "The display name of the category"
+msgstr "Weergavenaam voor de categorië"
+
+#: admin-settings.php:129
+#: admin-settings.php:142
+msgid "Slug"
+msgstr "Slug"
+
+#: admin-settings.php:129
+msgid "The URL of the category"
+msgstr "De URL van de categorië"
+
+#: admin-settings.php:130
+msgid "The address to notify when new applications are submitted in this category"
+msgstr "Het adres waar gemeld wordt wanneer er nieuwe sollicitaties zijn ingestuurd in deze categorië"
+
+#: admin-settings.php:131
+#: admin-settings.php:144
+#: admin-settings.php:162
+msgid "Link"
+msgstr "Link"
+
+#: admin-settings.php:131
+msgid "The URL of the list of jobs in this category"
+msgstr "De URL van de lijst met vacatures in deze categorië"
+
+#: admin-settings.php:183
+msgid "Add New Category"
+msgstr "Nieuwe categorie toevoegen"
+
+#: admin-settings.php:189
+msgid "Show related categories?"
+msgstr "Verwante categorieën tonen?"
+
+#: admin-settings.php:191
+msgid "This will show a list of categories that any jobs in a given job list belong to."
+msgstr "Hiermee wordt een lijst van categorieën waar een vacature onder valt getoond"
+
+#: admin-settings.php:194
+msgid "Update Categories"
+msgstr "Categoriën opslaan"
+
+#: admin-settings.php:207
+msgid "Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the \"Summary\" jobs list type."
+msgstr "De pictogrammen kunnen worden toegewezen aan de vacatures die u wilt laten opvallen. Deze pictogramman worden alleen wergegeven als de \"Samenvatting\" vacaturelijst gebruikt word."
+
+#: admin-settings.php:209
+msgid "The current icon"
+msgstr "Huidig pictogram"
+
+#: admin-settings.php:210
+msgid "The display name of the icon"
+msgstr "De weergavenaam voor het pictogram"
+
+#: admin-settings.php:211
+#: admin-settings.php:223
+msgid "File"
+msgstr "Bestand"
+
+#: admin-settings.php:211
+msgid "The icon file"
+msgstr "Het pictogram-bestand"
+
+#: admin-settings.php:257
+msgid "Add New Icon"
+msgstr "Nieuw pictogram toevoegen"
+
+#: admin-settings.php:260
+msgid "Update Icons"
+msgstr "Pictogrammen opslaan"
+
+#: admin-settings.php:273
+msgid "Allowing users to register means that they and you can more easily keep track of jobs they've applied for."
+msgstr "Het toestaan van registraties zorgt er voor dat gebruikers gemakkelijker de vacatures waarvoor zij gesolliciteerd hebben kunnen volgen."
+
+#: admin-settings.php:281
+msgid "Enable User Registration"
+msgstr "Gebruikersregistratie toestaan"
+
+#: admin-settings.php:283
+msgid "This will allow users to register for the Jobs system, even if user registration is disabled for your blog."
+msgstr "Toestaan dat gebruikers zich kunnnen registreren voor het Vacaturesysteem, zelfs als registratie niet is toegestaan voor de blog."
+
+#: admin-settings.php:286
+msgid "Require User Registration"
+msgstr "Gebruikersregistratie verplicht"
+
+#: admin-settings.php:288
+msgid "If the previous option is checked, this option will require users to login before they can complete the application form."
+msgstr "Als de vorige optie geselecteerd is, zorgt deze optie ervoor dat gebruikersmoeten inloggen om het sollicitatieformulier te voltooien."
+
+#: admin-settings.php:291
+msgid "Which pages should the login form be displayed on?"
+msgstr "De pagina's waarop het inlogformulier moet worden weergegeven."
+
+#: admin-settings.php:293
+msgid "The main jobs list"
+msgstr "De hoofd-vacaturelijst"
+
+#: admin-settings.php:294
+msgid "Category jobs lists"
+msgstr "Categorie vacaturelijsten"
+
+#: admin-settings.php:295
+msgid "Individual jobs"
+msgstr "Individuele vacatures"
+
+#: admin-settings.php:296
+msgid "The application form"
+msgstr "Het sollicitatiefomulier"
+
+#: admin-settings.php:300
+msgid "Update User Settings"
+msgstr "Gebruikersinstellingen opslaan"
+
+#: admin-settings.php:310
+msgid "When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email."
+msgstr "Wanneer een sollicitant succesvol een sollicitatie instuurt, zal er een e-mail verstuurd worden naar de betreffende gebruiker. Deze opties zorgen dat u deze e-mail kunt aanpassen."
+
+#: admin-settings.php:318
+#: db.php:43
+#: frontend-user.php:104
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: admin-settings.php:320
+#: admin-settings.php:344
+#: admin-settings.php:370
+#: admin-settings.php:437
+#: frontend-application.php:339
+#: frontend-application.php:385
+msgid "None"
+msgstr "Geen"
+
+#: admin-settings.php:338
+msgid "The application field to use as the email address. This will be the \"From\" address in the initial application, and the field used for emailing applicants."
+msgstr "Het e-mail adres waarmee de sollicitanten worden geïnformeerd. Dit zal het adres worden waarmee bij de eerste sollicitatie e-mails naar de sollicitanten zal worden gestuurd. (de afzender)"
+
+#: admin-settings.php:341
+msgid "From Name"
+msgstr "Afzender naam"
+
+#: admin-settings.php:363
+msgid "The name that will appear with the \"From\" email address."
+msgstr "De naam die wordt getoond als \"Afzender\" adres."
+
+#: admin-settings.php:389
+msgid "The email subject, and any fields to include in the subject."
+msgstr "Het onderwerp van de e-mail, en enkele velden om bij het onderwerp te voegen."
+
+#: admin-settings.php:393
+msgid "Update Email Settings"
+msgstr "E-mail instellingen opslaan"
+
+#: admin-settings.php:410
+msgid "Default View"
+msgstr "Standaard Weergave"
+
+#: admin-settings.php:415
+msgid "Day"
+msgstr "Dag"
+
+#: admin-settings.php:416
+msgid "Month"
+msgstr "Maand"
+
+#: admin-settings.php:417
+msgid "Year"
+msgstr "Jaar"
+
+#: admin-settings.php:430
+msgid "The default calendar view on the \"Interviews\" page."
+msgstr "De standaard agenda op de \"Intake Gesprekken\" pagina."
+
+#: admin-settings.php:456
+msgid "The Interview title, and any fields to include in the title, as displayed on the \"Interviews\" page."
+msgstr "De Intake Gesprek titel en de velden die op te nemen zijn in de titel, zoals aangegeven op de \"Intake Gesprekken\" pagina."
+
+#: admin-settings.php:460
+msgid "Update Interview Settings"
+msgstr "Update Intake Gesprek Instellingen"
+
+#: admin-settings.php:475
+msgid "Google Maps API"
+msgstr "Google Maps API"
+
+#: admin-settings.php:477
+msgid "Job Manager uses Google Maps for the Geolocation application field. Functionality of this field will be severely hampered without a Google Maps key. You can register for a Google Maps key <a href=\"%1s\">here</a>."
+msgstr "Job Manager maakt gebruik van Google Maps voor het Geolocatie sollicitatie veld. Functionaliteit van dit veld zal ernstig worden belemmerd zonder een Google Maps key. U kunt zich aanmelden voor een Google Maps key <a href=\"%1s\">hier</a>."
+
+#: admin-settings.php:481
+msgid "Update API Keys"
+msgstr "Update API Keys"
+
+#: admin-settings.php:489
+msgid "Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements."
+msgstr "Job Manager levert extra functionalitijd door het gebruik van andere pluginsdie beschikbaar zijn voor WordPress. Deze plugins zijn niet nodig voor een goede werking van Job Manager, maar bieden verbeteringen. "
+
+#: admin-settings.php:497
+#: admin-settings.php:528
+#: admin-settings.php:533
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: admin-settings.php:502
+msgid "Not Installed"
+msgstr "Niet geïnstalleerd"
+
+#: admin-settings.php:505
+msgid "Google XML Sitemaps"
+msgstr "Google XML Sitemaps"
+
+#: admin-settings.php:506
+msgid "Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added."
+msgstr "Zorgt er voor dat alle vacaturelijsten en vacature-detail pagina's worden toegevoegd aaan de sitemap. Standaard is alleen de hoofdvacaturelijst toegevoegd"
+
+#: admin-settings.php:509
+#: admin-settings.php:540
+msgid "Status"
+msgstr "Status"
+
+#: admin-settings.php:510
+msgid "Version"
+msgstr "Versie"
+
+#: admin-settings.php:511
+msgid "Job Manager requires Google XML Sitemaps version 3.2 or later."
+msgstr "Job Manager vereist Google XML Sitemaps versie 3.2 of nieuwer."
+
+#: admin-settings.php:516
+#: admin-settings.php:545
+#: admin-settings.php:571
+msgid "Options"
+msgstr "Opties"
+
+#: admin-settings.php:519
+msgid "Add Job pages to your Sitemap?"
+msgstr "Vacatures toevoegen aan de sitemap?"
+
+#: admin-settings.php:536
+msgid "SI Captcha"
+msgstr "SI Captcha"
+
+#: admin-settings.php:537
+msgid "Allows you to add a Captcha to your Application submission form."
+msgstr "Maakt het mogelijk om een Captcha aan het sollicitatieformulier toe te voegen."
+
+#: admin-settings.php:548
+msgid "Add a captcha to the application form?"
+msgstr "Captcha aan het sollicitatieformulier toevoegen?"
+
+#: admin-settings.php:555
+msgid "Update Plugin Settings"
+msgstr "Plugin-instellingen opslaan"
+
+#: admin-settings.php:563
+msgid "If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database."
+msgstr "Wanneer u er ooit voor kiest om Job Manager te verwijderen kunt u hier kiezen welke onderdelen uit de database worden verwijderd."
+
+#: admin-settings.php:573
+msgid "The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded."
+msgstr "De gekozen opties op de Beheer en Weergave instellingen pagina's. Dit is inclusief geuploade pictogrammen!"
+
+#: admin-settings.php:578
+msgid "Jobs that have been created."
+msgstr "Aangemaakte vacatures"
+
+#: admin-settings.php:583
+msgid "Applications that have been submitted. This includes any files uploaded (resumes, etc)."
+msgstr "Ingezonden sollicitaties. Dit is inclusief geuploade bestanden (CV's, etc.)"
+
+#: admin-settings.php:588
+msgid "Job Manager Categories that have been created."
+msgstr "Categorieën die voor Job Manager zijn gemaakt"
+
+#: admin-settings.php:591
+msgid "Update Uninstall Settings"
+msgstr "Verwijder-instellingen opslaan"
+
+#: admin.php:26
+#: admin.php:27
+#: admin.php:28
+#: admin.php:29
+#: admin.php:30
+#: admin.php:31
+#: admin.php:32
+#: admin.php:33
+#: admin.php:34
+#: admin.php:37
+msgid "Job Manager"
+msgstr "Job Manager"
+
+#: admin.php:27
+msgid "Admin Settings"
+msgstr "Admin instellingen"
+
+#: admin.php:29
+msgid "App. Form Settings"
+msgstr "Sollicitatieformulier instellingen"
+
+#: admin.php:30
+msgid "Job Form Settings"
+msgstr "Vacature invoer instellingen"
+
+#: admin.php:31
+msgid "Add Job"
+msgstr "Vacature toevoegen"
+
+#: admin.php:32
+msgid "List Jobs"
+msgstr "Vacatures weergeven"
+
+#: admin.php:33
+msgid "List Applications"
+msgstr "Solicitaties bekijken"
+
+#: admin.php:34
+msgid "List Emails"
+msgstr "E-mails bekijken"
+
+#: admin.php:49
+#: admin.php:139
+msgid "My Amazon Wish List"
+msgstr "My Amazon Wensenlijst"
+
+#: admin.php:50
+#: admin.php:140
+msgid "Donate with PayPal"
+msgstr "Doneren met PayPal"
+
+#: admin.php:137
+msgid "If this plugin helps you find that perfect new employee, I'd appreciate it if you shared the love, by way of my Donate or Amazon Wish List links below."
+msgstr "Als deze plugin je helpt om die perfecte werknemer te vinden, zal ik het waarderen als u het er mee eens bent kunt u doneren via onderstaande links."
+
+#: admin.php:148
+msgid "Gary Pendergast's Blog"
+msgstr "Blog van Gary Pendergast"
+
+#: admin.php:149
+msgid "Follow me on Twitter!"
+msgstr "Volg mij op Twitter!"
+
+#: admin.php:150
+msgid "Plugin Homepage"
+msgstr "Plugin startpagina"
+
+#: admin.php:151
+msgid "Submit a Bug/Feature Request"
+msgstr "Een Bug/Functie-aanvraag insturen"
+
+#: admin.php:158
+msgid "If you're using Job Manager in a language other than English, you have some of my wonderful translators to thank for it!"
+msgstr "Als u Job Manager in een andere taal gebruikt dan Engels, dan heb je een aantal van mijn # schitterende vertalers te danken voor het vertalen!"
+
+#: admin.php:159
+msgid "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact me</a>!"
+msgstr "Als je vloeiend bent in een taal die hier niet genoemd is, en je zou graag op deze lijst willen voorkomen, neem dan contact met mij op <a href='%1s'>contact me</a>!"
+
+#: admin.php:161
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: admin.php:162
+msgid "French"
+msgstr "Frans"
+
+#: admin.php:163
+msgid "German"
+msgstr "Duits"
+
+#: db.php:223
+#: db.php:672
+msgid "The date that the job starts. For positions available immediately, leave blank."
+msgstr "De datum waarop deze vacature begint. Indien er opdit moment plek is, leeg laten."
+
+#: db.php:231
+#: db.php:680
+msgid "The date that the job finishes. For ongoing positions, leave blank."
+msgstr "De einddatum van de vacature. Voor doorlopende vacatures leeg laten."
+
+#: db.php:258
+#: db.php:332
+#: frontend-jobs.php:17
+msgid "Jobs Listing"
+msgstr "Vacaturelijsten"
+
+#: db.php:259
+#: db.php:333
+msgid "Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site."
+msgstr "Hoi! Deze pagina wordt gebruikt door de Job Manager plugin als basis. U kunt hier instellingen wijzigen, maar verwijder deze pagina niet. Let er ook op dat de inhoud niet zal worden weergegeven als deze pagina wordt weergegeven op uw site."
+
+#: db.php:274
+#: db.php:545
+#: frontend-application.php:53
+#: frontend-application.php:85
+#: frontend-application.php:97
+#: frontend-application.php:861
+#: frontend.php:321
+#: setup.php:41
+msgid "Job Application"
+msgstr "Vacature sollicitatie"
+
+#: db.php:288
+#: db.php:605
+#: frontend-user.php:32
+#: frontend-user.php:109
+msgid "Register"
+msgstr "Registreren"
+
+#: frontend-application.php:35
+msgid "It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly."
+msgstr "Het lijkt erop dat u onlangs gesolliciteerd heeft op deze vacature. Wilt u meer informatie toe voegen aan uw sollicitatie, neem dan contact met ons op."
+
+#: frontend-application.php:39
+msgid "There was an error uploading your application. Please contact us directly, and quote the information below:"
+msgstr "Er was een fout met het uploaden van uw sollicitatie. Neem direct contact met ons op en geef de informatie hieronder:"
+
+#: frontend-application.php:48
+msgid "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available."
+msgstr "Bedankt voor uw sollicitatie. Uw aanvraag voldoet niet aan onze huidige eisen, u kunt  contact met ons op nemen om te kijken of er andere functies beschikbaar zijn."
+
+#: frontend-application.php:65
+msgid "Before completing your application, please login using the form above, or register using the form below."
+msgstr "Om uw sollicitatie te voltooien, kunt u inloggen met het formulier bovenaan, of registreren via het formulier onderaan."
+
+#: frontend-application.php:154
+msgid "Select the jobs you would like to apply for"
+msgstr "Selecteer de vacature waarvoor u wilt solliciteren"
+
+#: frontend-application.php:156
+msgid "Select the categories that you are interested in"
+msgstr "Selecteer de categorieën waarin u geïnteresseerd bent"
+
+#: frontend-application.php:163
+msgid "Fields marked with an asterisk (*) must be filled out before submitting."
+msgstr "Velden gemarkeerd met een sterretje (*) moeten ingevuld zijn om te kunnen verzenden."
+
+#: frontend-application.php:247
+msgid "Submit Your Application"
+msgstr "Sollicitatie versturen"
+
+#: frontend-application.php:865
+msgid "Application Link"
+msgstr "Sollicitatielink"
+
+#: frontend-jobs.php:111
+#: frontend-shortcodes.php:128
+msgid "Jobs for %s"
+msgstr "vacatures voor %s"
+
+#: frontend-jobs.php:114
+msgid "Related Categories"
+msgstr "Verwante categorieën"
+
+#: frontend-jobs.php:153
+msgid "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file."
+msgstr "We hebben momenteel nog geen vacatures. Kom nog eens terug, we plaatsen vaak nieuwe vacatures. In de tussentijd kunt u ook <a href='%s'>uw cv verzenden</a>, die we zullen bewaren voor later gebruik."
+
+#: frontend-jobs.php:167
+msgid "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>."
+msgstr "We hebben momenteel nog geen vacatures op dit gebied. Kom nog eens terug, we plaatsen vaak nieuwe vacatures. In de tussentijd kunt u ook <a href='%s'>uw cv verzenden</a>, deze bewaren wij dan, u kunt hier ook kijken naar de <a href='%s'>vacatures die we beschikbaar hebben in andere gebieden</a>."
+
+#: frontend-jobs.php:226
+msgid "This job doesn't exist"
+msgstr "Deze vacature bestaat niet"
+
+#: frontend-jobs.php:228
+msgid "Perhaps you followed an out-of-date link? Please check out the <a href=\"%s\">jobs we have currently available</a>."
+msgstr "Waarschijnlijk heeft u een verlopen link gebruikt. U kunt de <a href=\"%s\">vacatures bekijken die op dit moment beschikbaar zijn</a>."
+
+#: frontend-shortcodes.php:157
+#: frontend-shortcodes.php:351
+msgid "more"
+msgstr "meer"
+
+#: frontend-user.php:15
+msgid "Welcome, %1s!"
+msgstr "Welkom, %1s!"
+
+#: frontend-user.php:25
+msgid "If you've registered with us previously, please login now. If you'd like to register, please click the 'Register' link below."
+msgstr "Als u zich eerder geregisteerd heeft bij ons, kunt u nu inloggen. Als u zich wilt registreren, klik dan op de 'Registreren' link onderaan."
+
+#: frontend-user.php:27
+#: frontend-user.php:87
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: frontend-user.php:29
+#: frontend-user.php:95
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: frontend-user.php:31
+msgid "Login"
+msgstr "Inloggen"
+
+#: frontend-user.php:32
+msgid "Forgot your password?"
+msgstr "Wachtwoord vergeten?"
+
+#: frontend-user.php:82
+msgid "Please fill in all fields."
+msgstr "Alle velden invullen alstublieft."
+
+#: frontend-user.php:85
+msgid "This username has already been registered."
+msgstr "Deze gebruikersnaam is al geregistreerd"
+
+#: frontend-user.php:93
+msgid "Passwords do not match."
+msgstr "Wachtwoorden komen niet overeen."
+
+#: frontend-user.php:98
+msgid "Password Again"
+msgstr "Wachtwoord herhalen"
+
+#: frontend-user.php:102
+msgid "This email address has already been registered. If you've previously registered but don't remember your password, please visit the <a href='%1s'>password reset page</a>."
+msgstr "Dit e-mailadres is al geregistreerd. Als u zich al eerder geregistreerd heeft maar uw wachtwoord kwijt bent, ga dan naar de <a href='%1s'>wachtwoord-herstelpagina</a>."
+
+#: frontend.php:237
+msgid "This job listing was created using <a href=\"%s\" title=\"%s\">Job Manager</a> for WordPress, by <a href=\"%s\">Gary Pendergast</a>."
+msgstr "Deze vacaturelijst is gegenereerd met <a href=\"%s\" title=\"%s\">Job Manager</a> for WordPress, door <a href=\"%s\">Gary Pendergast</a>."
+
+#: frontend.php:237
+msgid "WordPress Job Manager"
+msgstr "WordPress Job Manager"
+
+#: frontend.php:324
+#: frontend.php:327
+msgid "Job Listing"
+msgstr "Vacaturelijst"
+
+#: frontend.php:371
+msgid "Latest Jobs"
+msgstr "Meest recente vacatures"
+
+#: frontend.php:447
+msgid "The following fields must be filled out before submitting"
+msgstr "De volgende velden moeten ingevuld worden voor u kunt verzenden"
+
+#: frontend.php:448
+#: frontend.php:449
+msgid "click to select"
+msgstr "klik om te selecteren"
+
+#: functions.php:37
+msgid "Click to toggle"
+msgstr "Klik om te schakelen"
+
+#: functions.php:62
+msgid "No rating"
+msgstr "Geen beoordeling"
+
+#: functions.php:98
+msgid "Category"
+msgstr "Categorie"
+
+#: setup.php:75
+#: setup.php:247
+msgid "Thank you for your application! We'll check it out, and get back to you soon!"
+msgstr "Bedankt voor uw sollicitatie! We zullen hem nakijken en snel contact met u opnemen!"
+
+#: setup.php:91
+msgid "Apply Now"
+msgstr "Solliciteer Nu"
+
+#: setup.php:93
+#: setup.php:94
+#: setup.php:353
+#: setup.php:354
+msgid "Page %1s"
+msgstr "Pagina %1s"
+
+#: setup.php:95
+#: setup.php:355
+msgid "Jobs %1s-%2s of %3s"
+msgstr "Vacatures %1s-%2s van %3s"
+
+#: widgets.php:5
+msgid "Job Manager: Recent Jobs"
+msgstr "Job Manager: Recente vacatures"
+
+#: widgets.php:6
+msgid "A list of the most recent jobs posted to your site"
+msgstr "Een lijst van de meest recente vacatures geplaatst op uw website"
+
+#: widgets.php:68
+#: widgets.php:363
+#: widgets.php:429
+msgid "There are no jobs to display at this time."
+msgstr "Momenteel geen vacatures om weer te geven."
+
+#: widgets.php:110
+msgid "Number of Jobs to show"
+msgstr "Aantal weer te geven vacatures"
+
+#: widgets.php:113
+msgid "at most 15"
+msgstr "maximaal 15"
+
+#: widgets.php:122
+msgid "Show Jobs From"
+msgstr "Toon vacatures vanaf"
+
+#: widgets.php:124
+msgid "All Categories"
+msgstr "Alle categorieën"
+
+#: widgets.php:125
+msgid "Selected Categories"
+msgstr "Geselecteerde categorieën"
+
+#: widgets.php:149
+msgid "No categories defined."
+msgstr "Geen categorieën gedefinieerd. "
+
+#: widgets.php:162
+msgid "Job Manager: Categories"
+msgstr "Job Manager: Categorieën"
+
+#: widgets.php:163
+msgid "A list or dropdown of Job Manager categories"
+msgstr "Een lijst of dropdown van Job Manager categorieën"
+
+#: widgets.php:195
+msgid "Select Category"
+msgstr "Selecteer categorie"
+
+#: widgets.php:260
+msgid "There are no categories to display at this time."
+msgstr "Er zijn nu geen categorieën om te tonen."
+
+#: widgets.php:294
+msgid "Show as dropdown"
+msgstr "Toon als dropdown"
+
+#: widgets.php:295
+msgid "Show job counts"
+msgstr "Toon aantal vacatures"
+
+#: widgets.php:296
+msgid "Hide empty categories"
+msgstr "Verberg lege categorieën"
+
+#: widgets.php:307
+msgid "Job Manager: Highlighted Jobs"
+msgstr "Job Manager: geaccentueerde vacatures"
+
+#: widgets.php:308
+msgid "A list jobs that have been marked as highlighted"
+msgstr "Lijst van geaccentueerde vacatures "
+
+#: widgets.php:392
+msgid "Job Manager: Selected Jobs"
+msgstr "Job Manager: Geselecteerde Vacatures"
+
+#: widgets.php:393
+msgid "A customizable list jobs posted to your site"
+msgstr "Een aanpasbare lijst van vacatures geplaatst op uw site"
+
+#: widgets.php:453
+msgid "Comma separated list of Job IDs"
+msgstr "Komma gescheiden lijst van Vacatures IDs"
+
+msgid "http://pento.net/projects/wordpress-job-manager-plugin/"
+msgstr "http://pento.net/projects/wordpress-job-manager-plugin/"
+
+msgid "A job listing and job application management plugin for WordPress."
+msgstr "Een vacaturelijst and sollicatie beheerders plugin voor WordPress."
+
+msgid "Gary Pendergast"
+msgstr "Gary Pendergast"
+
+msgid "http://pento.net/"
+msgstr "http://pento.net/"
+
+msgid "job, jobs, manager, list, listing, employment, employer, career"
+msgstr "vacature, vacatures, beheer, lijst, lijsten, werk, werknemer, carriëre"
+
