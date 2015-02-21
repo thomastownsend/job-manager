@@ -63,7 +63,7 @@ function jobman_conf() {
 	if( ! get_option( 'smb_consulting' ) ) {
 		$widths = array( '78%', '20%' );
 		$functions = array(
-						array( 'jobman_print_settings_box', 'jobman_print_resume_settings_box', 'jobman_print_categories_box', 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_other_plugins_box', 'jobman_print_uninstall_box' ),
+						array( 'jobman_print_settings_box', 'jobman_print_categories_box', 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_other_plugins_box', 'jobman_print_uninstall_box' ),
 						array('jobman_print_survey_box', 'jobman_print_donate_box', 'jobman_print_about_box', 'jobman_print_translators_box' )
 					);
 		$titles = array(
@@ -80,11 +80,11 @@ function jobman_conf() {
 		$widths = array( '49%', '49%' );
 		$functions = array(
 						array( 'jobman_print_settings_box', 'jobman_print_categories_box', 'jobman_print_other_plugins_box' ),
-						array( 'jobman_print_resume_settings_box', 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_uninstall_box' )
+						array( 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_uninstall_box' )
 					);
 		$titles = array(
 					array( __( 'Settings', 'jobman' ), __( 'Categories', 'jobman' ), __( 'Other Plugins', 'jobman' ) ),
-					array( __( 'Resume', 'jobman' ), __( 'Icons', 'jobman' ), __( 'User Settings', 'jobman' ), __( 'Application Email Settings', 'jobman' ), __( 'Uninstall Settings', 'jobman' ) )
+					array( __( 'Icons', 'jobman' ), __( 'User Settings', 'jobman' ), __( 'Application Email Settings', 'jobman' ), __( 'Uninstall Settings', 'jobman' ) )
 				);
 
 		if( $options['interviews'] ) {
