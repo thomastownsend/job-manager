@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: jobs, job, manager, list, listing, job listing, job board, board, employer, application, company, hiring, employment, employees, candidate, applicant tracking , talent, recruiting, recruitment  
 Requires at least: 2.9
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: trunk
 
 A job listing and job application management plugin for WordPress.
@@ -17,7 +17,7 @@ A job listing and job application management plugin for WordPress.
 A plugin for managing job lists and job applications on your WordPress site. It supports all the features you need to manage your organization's job openings.
 
 > <strong>More information on this version of Job Manager</strong><br>
-> [ Read Me - Job Manager 7.21 update details](http://www.wp-jobmanager.com/documentation-jm/job-manager-7-21-update/)
+> [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
 
 
 *    *Job Listing*
@@ -69,7 +69,7 @@ A plugin for managing job lists and job applications on your WordPress site. It 
 Job Manager Requires:
 
 * WordPress 2.9 or later
-* Preferably WordPress 4.1
+* Preferably WordPress 4.1.1
 * PHP 5 or later
 
 There are 3 ways to install this plugin:
@@ -104,7 +104,7 @@ There are 3 ways to install this plugin:
 == Screenshots ==
 
 1. Job Listing Details (admin)
-1. Job LIsting (post)
+1. Job Listing (post)
 1. Job Application - Resume (CVS Submit/Apply)
 1. Custom Completion (submitted message) 
 
@@ -179,6 +179,10 @@ Notice the version number in brackets. This is the version series that the trans
 Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [CC BY-ND](http://creativecommons.org/licenses/by-nd/3.0/) license.
 
 == Changelog ==
+
+= 0.7.22 =
+* FIXED: Warning Fix
+* UPDATED POT Translation File
 
 = 0.7.21 =
 * CHANGED: Print Icon (Job Manager: Application Details)
@@ -624,4 +628,4 @@ Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [C
 == Upgrade Notice ==
 
 = 7.21 =
-For additional details on this update:  (http://www.wp-jobmanager.com/documentation-jm/job-manager-7-21-update/)
+For additional details on this update:  (http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
