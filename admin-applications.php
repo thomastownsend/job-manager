@@ -275,8 +275,10 @@ function jobman_list_applications() {
 					$appdata[$key] = $value;
 			}
 
-			if( array_key_exists( 'jobman-rating', $_REQUEST ) && is_numeric( $_REQUEST['jobman-rating'] ) && $_REQUEST['jobman-rating'] > 0 ) {
-				if( array_key_exists( 'rating', $appdata ) && $appdata['rating'] < $_REQUEST['jobman-rating'] ) {
+			if( array_key_exists( 'jobman-rating', $_REQUEST ) && is_numeric( $_REQUEST['jobman-rating'] ) && $_REQUEST['jobman-rating'] > 0 )
+			{
+				if( array_key_exists( 'rating', $appdata ) && $appdata['rating'] !== $_REQUEST['jobman-rating'] )
+				{
 					// App is underrated. Skip it.
 					continue;
 				}
