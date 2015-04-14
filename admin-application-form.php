@@ -20,7 +20,14 @@ function jobman_application_setup() {
 						'html' => __( 'HTML Code', 'jobman' ),
 						'blank' => __( 'Blank Space', 'jobman' )
 				);
-				
+
+	$field_validation_types = array(
+						0 => __( 'Select Validation', 'jobman' ),
+						1 => __( 'Email Validation', 'jobman' ),
+						//2 => __( 'Phone Validation USA', 'jobman' ),
+						//3 => __( 'Custom Validation', 'jobman' ),
+				);
+
 	$categories = get_terms( 'jobman_category', 'hide_empty=0' );
 ?>
 	<form action="" method="post">
@@ -53,37 +60,73 @@ function jobman_application_setup() {
 ?>
 			<tr class="form-table">
 				<td>
-					<input type="hidden" name="jobman-fieldid[]" value="<?php echo $id ?>" />
-					<input class="regular-text code" type="text" name="jobman-label[]" value="<?php echo $field['label'] ?>" /><br/>
-					<select name="jobman-type[]">
+					<ul class="jobman-form-tabl-field-list">
+					<li><input type="hidden" name="jobman-fieldid[]" value="<?php echo $id ?>" /></li>
+					<li><input class="regular-text code" type="text" name="jobman-label[]" value="<?php echo $field['label'] ?>" /></li>
 <?php
-			foreach( $fieldtypes as $type => $label ) {
+			echo '<li><select name="jobman-type[]" onchange="jobman_toggle_validation_options(this)">';
+
+			foreach( $fieldtypes as $type => $label )
+			{
 				if( $field['type'] == $type )
+				{
 					$selected = ' selected="selected"';
+				}
 				else
+				{
 					$selected = '';
-?>
-						<option value="<?php echo $type ?>"<?php echo $selected ?>><?php echo $label ?></option>
-<?php
+				}
+
+				echo "<option value=\"$type\" $selected >$label</option>";
 			}
-?>
-					</select><br />
-<?php
+
+			echo '</select></li>';
+
+			$field_validation_display = 'none';
+
+			switch($field['type'])
+			{
+				case 'text':
+				case 'textarea':
+					$field_validation_display = 'block';
+				break;
+			}
+
+			echo '<li><select name="jobman-validation[]" class="jobman-validation-select" style="display:'.$field_validation_display.'">';
+
+			foreach( $field_validation_types as $type => $label )
+			{
+				if( $field['validation'] == $type )
+				{
+					$selected = ' selected="selected"';
+				}
+				else
+				{
+					$selected = '';
+				}
+
+				echo "<option value=\"$type\" $selected >$label</option>";
+			}
+
+			echo '</select></li>';
+
 			if( 1 == $field['listdisplay'] )
 				$checked = ' checked="checked"';
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-listdisplay[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Show this field in the Application List?', 'jobman' ) ?><br/>
+					<li><input type="checkbox" name="jobman-listdisplay[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Show this field in the Application List?', 'jobman' ) ?></li>
 <?php
 			if( 1 == $field['emailblock'] )
 				$checked = ' checked="checked"';
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-emailblock[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Block this field from application emails?', 'jobman' ) ?>
+					<li><input type="checkbox" name="jobman-emailblock[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Block this field from application emails?', 'jobman' ) ?></li>
+					</ul>
 				</td>
-				<td><div class="jobman-categories-list">
+				<td>
+					<div class="jobman-categories-list">
 <?php
 			if( count( $categories ) > 0 ) {
 				foreach( $categories as $cat ) {
@@ -96,8 +139,15 @@ function jobman_application_setup() {
 				}
 			}
 ?>
-				</div></td>
-				<td><textarea class="large-text code" name="jobman-data[]"><?php echo $field['data'] ?></textarea></td>
+					</div>
+				</td>
+				<td>
+					<ul class="jobman-form-tabl-field-list">
+						<li>
+							<textarea class="large-text code jobman-data-textarea" name="jobman-data[]"><?php echo $field['data'] ?></textarea>
+						</li>
+					</ul>
+				</td>
 				<td>
 <?php
 			if( 1 == $field['mandatory'] )
@@ -105,12 +155,32 @@ function jobman_application_setup() {
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-mandatory[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Mandatory field?', 'jobman' ) ?><br/>
-					<textarea class="large-text code" name="jobman-filter[]"><?php echo $field['filter'] ?></textarea><br/>
-					<input class="regular-text code" type="text" name="jobman-error[]" value="<?php echo esc_attr( $field['error'] ) ?>" />
+					<ul class="jobman-form-tabl-field-list">
+						<li>
+							<input type="checkbox" name="jobman-mandatory[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Mandatory field?', 'jobman' ) ?>
+						</li>
+						<li>
+							<textarea class="large-text code" name="jobman-filter[]"><?php echo $field['filter'] ?></textarea>
+						</li>
+						<li>
+							<input class="regular-text code" type="text" name="jobman-error[]" value="<?php echo esc_attr( $field['error'] ) ?>" />
+						</li>
+					</ul>
 				</td>
-				<td><a href="#" onclick="jobman_sort_field_up( this ); return false;"><?php _e( 'Up', 'jobman' ) ?></a> <a href="#" onclick="jobman_sort_field_down( this ); return false;"><?php _e( 'Down', 'jobman' ) ?></a></td>
-				<td><a href="#" onclick="jobman_delete( this, 'jobman-fieldid', 'jobman-delete-list' ); return false;"><?php _e( 'Delete', 'jobman' ) ?></a></td>
+				<td>
+					<ul class="jobman-form-tabl-field-list">
+						<li>
+							<a href="#" onclick="jobman_sort_field_up( this ); return false;"><?php _e( 'Up', 'jobman' ) ?></a> <a href="#" onclick="jobman_sort_field_down( this ); return false;"><?php _e( 'Down', 'jobman' ) ?></a>
+						</li>
+					</ul>
+				</td>
+				<td>
+					<ul class="jobman-form-tabl-field-list">
+						<li>
+							<a href="#" onclick="jobman_delete( this, 'jobman-fieldid', 'jobman-delete-list' ); return false;"><?php _e( 'Delete', 'jobman' ) ?></a>
+						</li>
+					</ul>
+				</td>
 			</tr>
 <?php
 		}
@@ -227,6 +297,7 @@ function jobman_application_setup_updatedb() {
 				$options['fields'][$id]['mandatory'] = $mandatory;
 				$options['fields'][$id]['filter'] = stripslashes( $_REQUEST['jobman-filter'][$ii] );
 				$options['fields'][$id]['error'] = stripslashes( $_REQUEST['jobman-error'][$ii] );
+				$options['fields'][$id]['validation'] = intval( $_REQUEST['jobman-validation'][$ii] );
 				$options['fields'][$id]['sortorder'] = $ii;
 			}
 		}
