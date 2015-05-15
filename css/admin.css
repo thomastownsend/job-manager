@@ -272,13 +272,3 @@ img.jobman-gravatar {
 table.jobman-form-table {
 	clear: none;
 }
-ul.jobman-form-tabl-field-list {
-	list-style: none;
-}
-ul.jobman-form-tabl-field-list li {
-	padding:2px;
-}
-#jobman-application-setup tr:nth-child(even) {
-    background-color:#F9F9F9;
-}
-.jobman-data-textarea {height:160px !important;}

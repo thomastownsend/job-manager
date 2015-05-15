@@ -601,7 +601,6 @@ function jobman_store_application( $jobid, $cat ) {
 
 	if( count( $fields ) > 0 ) {
 		foreach( $fields as $fid => $field ) {
-
 			if($field['type'] != 'file' && ( ! array_key_exists( "jobman-field-$fid", $_REQUEST ) || '' == $_REQUEST["jobman-field-$fid"] ) )
 				continue;
 
@@ -664,7 +663,7 @@ function jobman_check_filters( $jobid, $cat ) {
 	$matches = array();
 	if( count( $fields ) > 0 ) {
 		foreach( $fields as $id => $field ) {
-			if( '' == $field['filter'] && ! $field['mandatory'] && empty($field['validation']))
+			if( '' == $field['filter'] && ! $field['mandatory'] )
 				// No filter for this field, not mandatory
 				continue;
 
@@ -700,31 +699,6 @@ function jobman_check_filters( $jobid, $cat ) {
 				}
 				else if( '' == $data || ( is_array( $data ) && count( $data ) == 0 ) )
 					return $id;
-			}
-
-			switch($field['type'])
-			{
-				case 'text':
-					if(! empty($field['validation']))
-					{
-						$regex = '';
-
-						switch($field['validation'])
-						{
-							case 1:
-								$regex = '/^(?!(?:(?:\\x22?\\x5C[\\x00-\\x7E]\\x22?)|(?:\\x22?[^\\x5C\\x22]\\x22?)){255,})(?!(?:(?:\\x22?\\x5C[\\x00-\\x7E]\\x22?)|(?:\\x22?[^\\x5C\\x22]\\x22?)){65,}@)(?:(?:[\\x21\\x23-\\x27\\x2A\\x2B\\x2D\\x2F-\\x39\\x3D\\x3F\\x5E-\\x7E]+)|(?:\\x22(?:[\\x01-\\x08\\x0B\\x0C\\x0E-\\x1F\\x21\\x23-\\x5B\\x5D-\\x7F]|(?:\\x5C[\\x00-\\x7F]))*\\x22))(?:\\.(?:(?:[\\x21\\x23-\\x27\\x2A\\x2B\\x2D\\x2F-\\x39\\x3D\\x3F\\x5E-\\x7E]+)|(?:\\x22(?:[\\x01-\\x08\\x0B\\x0C\\x0E-\\x1F\\x21\\x23-\\x5B\\x5D-\\x7F]|(?:\\x5C[\\x00-\\x7F]))*\\x22)))*@(?:(?:(?!.*[^.]{64,})(?:(?:(?:xn--)?[a-z0-9]+(?:-+[a-z0-9]+)*\\.){1,126}){1,}(?:(?:[a-z][a-z0-9]*)|(?:(?:xn--)[a-z0-9]+))(?:-+[a-z0-9]+)*)|(?:\\[(?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){7})|(?:(?!(?:.*[a-f0-9][:\\]]){7,})(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,5})?::(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,5})?)))|(?:(?:IPv6:(?:(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){5}:)|(?:(?!(?:.*[a-f0-9]:){5,})(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3})?::(?:[a-f0-9]{1,4}(?::[a-f0-9]{1,4}){0,3}:)?)))?(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))(?:\\.(?:(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9]{2})|(?:[1-9]?[0-9]))){3}))\\]))$/iD';
-							break;
-						}
-
-						//apply the validation
-						$test = preg_match($regex, $data);
-
-						if(empty($test))
-						{
-							return $id;
-						}
-					}
-				break;
 			}
 
 			if( '' == $field['filter'] )

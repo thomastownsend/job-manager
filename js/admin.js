@@ -72,16 +72,3 @@ jobman_nameFilter = function (i, el) {
 		}
 	}
 }
-
-function jobman_toggle_validation_options(e)
-{
-	switch(e.value)
-	{
-		case 'text':
-		case 'textarea':
-			jQuery(e).closest('li').next('li').find('select.jobman-validation-select').show();
-		break;
-		default:
-			jQuery(e).closest('li').next('li').find('select.jobman-validation-select').hide();
-	}
-}
