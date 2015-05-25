@@ -3,12 +3,14 @@
 Plugin Name: Job Manager
 Plugin URI: http://wp-jobmanager.com/
 Description: A job listing and job application management plugin for WordPress.
-Version: 0.7.22
+Version: 0.7.23
 Author: Tom Townsend
 Author URI: http://www.linkedin.com/in/thomastownsend
 Text Domain: jobman
-Tags: jobs, job, manager, list, listing, job listing, job board, board, employer, application, company, hiring, employment, employees, candidate, applicant tracking , talent, recruiting, recruitment
-*/
+Tags: application, applicant tracking, ats, board, candidate, candidates, career, company, current opportunities, direct hire, employee, employer, employees, employment, freelance,
+hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search,  list, listing, manager, opportunities,
+placement, position, positions, recruiter, recruiting, recruitment, talent
+/*
 
 /*
 	Copyright 2009, 2010 Gary Pendergast (http://pento.net/)
@@ -31,7 +33,7 @@ Tags: jobs, job, manager, list, listing, job listing, job board, board, employer
 */
 
 // Version
-define( 'JOBMAN_VERSION', '0.7.22' );
+define( 'JOBMAN_VERSION', '0.7.23' );
 define( 'JOBMAN_DB_VERSION', 19 );
 
 // Define the URL to the plugin folder

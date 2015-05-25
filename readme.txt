@@ -4,9 +4,11 @@ Donate link: http://www.wp-jobmanager.com/donate/
 Plugin URI: http://www.wp-jobmanager.com
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-Tags: jobs, job, manager, list, listing, job listing, job board, board, employer, application, company, hiring, employment, employees, candidate, applicant tracking , talent, recruiting, recruitment  
+Tags: application, applicant tracking, ats, board, candidate, candidates, career, company, current opportunities, direct hire, employee, employer, employees, employment, freelance,
+      hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search,  list, listing, manager, opportunities,
+      placement, position, positions, recruiter, recruiting, recruitment, talent
 Requires at least: 2.9
-Tested up to: 4.1.1
+Tested up to: 4.2.2
 Stable tag: trunk
 
 A job listing and job application management plugin for WordPress.
@@ -14,11 +16,10 @@ A job listing and job application management plugin for WordPress.
 
 == Description ==
 
-A plugin for managing job lists and job applications on your WordPress site. It supports all the features you need to manage your organization's job openings.
+Job Manager is a plugin for managing job lists and job applications on your WordPress site.  From posting job details to accepting resumes and applicant tracking and all the way through
+the interview process, Job Manager supports all the features you need to manage your organization's hiring process.
 
-> <strong>More information on this version of Job Manager</strong><br>
-> [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
-
+> <strong>Features</strong><br>
 
 *    *Job Listing*
     *    Categories to create multiple job boards
@@ -41,6 +42,10 @@ A plugin for managing job lists and job applications on your WordPress site. It 
     *    Email individuals or groups of candidates, to keep them updated on new job opportunities in your organisation
 	*    Interview scheduling, linked directly to jobs and applications
 	*    Internal comments, for easy reference when you need to decide
+
+
+> <strong>More information on this version of Job Manager</strong><br>
+> [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
 
 
 > <strong>Support</strong><br>
@@ -69,20 +74,27 @@ A plugin for managing job lists and job applications on your WordPress site. It 
 Job Manager Requires:
 
 * WordPress 2.9 or later
-* Preferably WordPress 4.1.1
+* Preferably WordPress 4.2.2
 * PHP 5 or later
 
 There are 3 ways to install this plugin:
 
-= 1. The super easy way =
-1. In your Admin, go to menu Plugins > Add New
-1. Search for: `job manager`
-1. Job Manager should be the first result
-1. Click the Install link
-1. Activate the plugin
-1. A new menu `Job Manager` will appear in your Admin
+= 1. Automatic installation =
+Automatic installation is recommended, it’s the easiest option as WordPress natively handles the file
+transfers and you don't even need to leave your web browser. An automatic install is really a simple 4 step process.
 
-= 2. The easy way =
+1. Log in to your WordPress admin panel
+2. Select and click on Plugins
+3. Top of page – click > Add New.
+4. Search – (Select and Install)
+
+In the search field type "Job Manager" and then “ENTER” from your keyboard. Job Manager will be the
+first result on the far left top of the Search Results page. Once you've found the plugin you can view
+“More Details” or simply click the “Install Now” button.
+
+Once activated a new menu “Job Manager” will appear in your Admin
+
+= 2. Manual installation (easy way) =
 1. Download the plugin (.zip file) on the right column of this page
 1. In your Admin, go to menu Plugins > Add New
 1. Select the tab "Upload Plugin"
@@ -90,7 +102,11 @@ There are 3 ways to install this plugin:
 1. Activate the plugin
 1. A new menu `Job Manager` will appear in your Admin
 
-= 3. The old and reliable way (FTP) =
+= 3. Manual installation (FTP) =
+The manual installation method involves downloading the plugin and uploading it to your web server
+via your favorite File Transfer Protocol (FTP) application/program.
+
+1. Download the plugin file to your computer and unzip it
 1. Upload `job-manager` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. A new menu `Job Manager` will appear in your Admin
@@ -179,6 +195,11 @@ Notice the version number in brackets. This is the version series that the trans
 Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [CC BY-ND](http://creativecommons.org/licenses/by-nd/3.0/) license.
 
 == Changelog ==
+
+= 0.7.23 =
+* FIXED: Star filter fix (Filter Applications by Rating)
+* Security check
+* Compatibility with WordPress 4.2.2
 
 = 0.7.22 =
 * FIXED: Warning Fix
