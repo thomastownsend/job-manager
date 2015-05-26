@@ -19,7 +19,7 @@ A job listing and job application management plugin for WordPress.
 Job Manager is a plugin for managing job lists and job applications on your WordPress site.  From posting job details to accepting resumes and applicant tracking and all the way through
 the interview process, Job Manager supports all the features you need to manage your organization's hiring process.
 
-> <strong>Features</strong><br>
+= Features =
 
 *    *Job Listing*
     *    Categories to create multiple job boards
@@ -44,8 +44,10 @@ the interview process, Job Manager supports all the features you need to manage 
 	*    Internal comments, for easy reference when you need to decide
 
 
-> <strong>More information on this version of Job Manager</strong><br>
-> [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
+= More information on this version of Job Manager =
+ [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
+
+
 
 
 > <strong>Support</strong><br>
@@ -71,49 +73,43 @@ the interview process, Job Manager supports all the features you need to manage 
 
 == Installation ==
 
-Job Manager Requires:
-
-* WordPress 2.9 or later
-* Preferably WordPress 4.2.2
-* PHP 5 or later
-
-There are 3 ways to install this plugin:
+There are 3 ways to install Job Manager:
 
 = 1. Automatic installation =
-Automatic installation is recommended, it’s the easiest option as WordPress natively handles the file
+Automatic installation is recommended. This is the easiest option as WordPress natively handles the file
 transfers and you don't even need to leave your web browser. An automatic install is really a simple 4 step process.
 
 1. Log in to your WordPress admin panel
 2. Select and click on Plugins
-3. Top of page – click > Add New.
-4. Search – (Select and Install)
+3. Top of page click > Add New.
+4. Search (Select and Install)
 
-In the search field type "Job Manager" and then “ENTER” from your keyboard. Job Manager will be the
+In the search field type "Job Manager" and then "ENTER" from your keyboard. Job Manager will be the
 first result on the far left top of the Search Results page. Once you've found the plugin you can view
-“More Details” or simply click the “Install Now” button.
+"More Details" or simply click the "Install Now" button.
 
-Once activated a new menu “Job Manager” will appear in your Admin
+Once activated a new menu "Job Manager" will appear in your Admin
 
 = 2. Manual installation (easy way) =
-1. Download the plugin (.zip file) on the right column of this page
-1. In your Admin, go to menu Plugins > Add New
-1. Select the tab "Upload Plugin"
-1. Upload the .zip file you just downloaded
-1. Activate the plugin
-1. A new menu `Job Manager` will appear in your Admin
+* Download the plugin (.zip file) on the right column of this page
+* In your Admin, go to menu Plugins > Add New
+* Select the tab "Upload Plugin"
+* Upload the .zip file you just downloaded
+* Activate the plugin
+* A new menu `Job Manager` will appear in your Admin
 
 = 3. Manual installation (FTP) =
 The manual installation method involves downloading the plugin and uploading it to your web server
 via your favorite File Transfer Protocol (FTP) application/program.
 
-1. Download the plugin file to your computer and unzip it
-1. Upload `job-manager` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. A new menu `Job Manager` will appear in your Admin
+* Download the plugin file to your computer and unzip it
+* Upload `job-manager` folder to the `/wp-content/plugins/` directory
+* Activate the plugin through the 'Plugins' menu in WordPress
+* A new menu `Job Manager` will appear in your Admin
 
 
-1. Checkout the current development version from https://bitbucket.org/jobmanager_hp/job-manager
-1. Subscribe to the [update feed](https://bitbucket.org/jobmanager_hp) to be notified of changes
+* Checkout the current development version from https://bitbucket.org/jobmanager_hp/job-manager
+* Subscribe to the [update feed](https://bitbucket.org/jobmanager_hp) to be notified of changes
 
 
 
