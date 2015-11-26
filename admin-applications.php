@@ -75,7 +75,7 @@ function jobman_list_applications() {
 			if( array_key_exists( 'jobman-categories', $_REQUEST ) && is_array( $_REQUEST['jobman-categories'] ) && in_array( $cat->term_id, $_REQUEST['jobman-categories'] ) )
 				$checked = ' checked="checked"';
 ?>
-							<input type="checkbox" name="jobman-categories[]" value="<?php echo $cat->term_id ?>"<?php echo $checked ?> /> <?php echo $cat->name ?><br/>
+							<input type="checkbox" name="jobman-categories[]" value="<?php echo esc_attr( $cat->term_id ) ?>"<?php echo $checked ?> /> <?php echo $cat->name ?><br/>
 <?php
 		}
 ?>

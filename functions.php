@@ -8,7 +8,7 @@ function jobman_create_dashboard( $widths, $functions, $titles, $params = array(
 	$ii = 0;
 	foreach( $widths as $width ) {
 ?>
-		<div id='postbox-container-<?php echo $ii + 1; ?>' class='postbox-container' style='width:<?php echo $width ?>'>
+		<div id='postbox-container-<?php echo esc_attr( $ii + 1 ); ?>' class='postbox-container' style='width:<?php echo esc_attr( $width ) ?>'>
 			<div id='normal-sortables' class='meta-box-sortables'>
 <?php
 		$jj = 0;
@@ -34,9 +34,9 @@ function jobman_create_dashboard( $widths, $functions, $titles, $params = array(
 
 function jobman_create_widget( $function, $title, $params = array() ) {
 ?>
-				<div id="jobman-<?php echo $function ?>" class="postbox jobman-postbox">
-					<div class="handlediv" title="<?php _e( 'Click to toggle' ) ?>"><br /></div>
-					<h3 class='hndle'><span><?php echo $title ?></span></h3>
+				<div id="jobman-<?php echo esc_attr( $function ) ?>" class="postbox jobman-postbox">
+					<div class="handlediv" title="<?php esc_attr_e( 'Click to toggle' ) ?>"><br /></div>
+					<h3 class='hndle'><span><?php echo esc_html( $title ) ?></span></h3>
 					<div class="inside">
 <?php
 	call_user_func_array( $function, $params );
@@ -53,22 +53,22 @@ function jobman_print_rating_stars( $id, $rating, $callback = 'jobman_rate_appli
 	else
 		$class = "star-holder";
 ?>
-			        <div class="<?php echo $class ?>">
+			        <div class="<?php echo esc_attr( $class ) ?>">
 <?php
 	if( ! $readonly ) {
 ?>
-						<input type="hidden" id="jobman-rating-<?php echo $id ?>" name="jobman-rating" value="<?php echo $rating ?>" />
-						<input type="hidden" name="callbackid" value="<?php echo $id ?>" />
-						<input type="hidden" name="callbackfunction" value="<?php echo $callback ?>" />
-						<a href="#" onclick="jobman_reset_rating('<?php echo $id ?>', '<?php echo $callback ?>'); return false;"><?php _e( 'No rating', 'jobman' ) ?></a>
+						<input type="hidden" id="jobman-rating-<?php echo esc_attr( $id ) ?>" name="jobman-rating" value="<?php echo esc_attr( $rating ) ?>" />
+						<input type="hidden" name="callbackid" value="<?php echo esc_attr( $id ) ?>" />
+						<input type="hidden" name="callbackfunction" value="<?php echo esc_attr( $callback ) ?>" />
+						<a href="#" onclick="jobman_reset_rating('<?php echo esc_js( $id ) ?>', '<?php echo esc_js( $callback ) ?>'); return false;"><?php _e( 'No rating', 'jobman' ) ?></a>
 <?php
 	}
 ?>
-						<div id="jobman-star-rating-<?php echo $id ?>" class="star-rating" style="width: <?php echo $rating * 19 ?>px"></div>
+						<div id="jobman-star-rating-<?php echo esc_attr( $id ) ?>" class="star-rating" style="width: <?php echo esc_attr( $rating * 19 ) ?>px"></div>
 <?php
 	for( $ii = 1; $ii <= 5; $ii++) {
 ?>
-						<div class="star star<?php echo $ii ?>"><img src="<?php echo JOBMAN_URL ?>/images/star.gif" alt="<?php echo $ii ?>" /></div>
+						<div class="star star<?php echo esc_attr( $ii ) ?>"><img src="<?php echo esc_url( JOBMAN_URL ) ?>/images/star.gif" alt="<?php echo esc_attr( $ii ) ?>" /></div>
 <?php
 	}
 ?>

@@ -8,8 +8,8 @@ Tags: application, applicant tracking, ats, board, candidate, candidates, career
       hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search,  list, listing, manager, opportunities,
       placement, position, positions, recruiter, recruiting, recruitment, talent
 Requires at least: 2.9
-Tested up to: 4.2.2
-Stable tag: trunk
+Tested up to: 4.3
+Stable tag: 7.2.5
 
 A job listing and job application management plugin for WordPress.
 
@@ -42,17 +42,17 @@ the interview process, Job Manager supports all the features you need to manage 
     *    Email individuals or groups of candidates, to keep them updated on new job opportunities in your organisation
 	*    Interview scheduling, linked directly to jobs and applications
 	*    Internal comments, for easy reference when you need to decide
+*    *Sidekick Walkthroughs*
+    *    Overview of Settings
+    *    Overview of Basic Admin Settings, more walkthrough tutorials to be added in coming weeks
 
 
 = More information on this version of Job Manager =
- [ Read Me - Job Manager UPDATING from version 7.20 details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
-
-
+ [ Read Me - Job Manager UPDATING from version 7.20 or earlier details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
 
 
 > <strong>Support</strong><br>
-> 
-> Limited support for the Job Manager plugin is provided on the WordPress forums. Please note: that it is free support, hence it is not always possible to answer all questions on a timely manner, although we do try.
+> Limited support for the Job Manager plugin is provided on the WordPress forums. Please note: That it is free support, hence it is not always possible to answer all questions on a timely manner, although we do try.
 > Personalized premium support may be available via email in the near future.
 
 
@@ -156,14 +156,21 @@ If you want a [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA) on your Applicatio
 
 = Translations =
 
-If you would like to do a translation for the plugin, you can do so via Transifex.  
+New for July 2015:
+
+* Italian Translation (0.7..24),provided by Criss Seregni
+* Job Manager is now Sidekick enabled with Walkthroughs
+* Job Manager is now CSS Hero Ready
+
+We need help with translations for the Job Manager plugin, you can HELP via Transifex.
 [Transifex](https://www.transifex.com/projects/p/job-manager-hp/)
 
 Simply select or add a language you want to translate in and I will attach the language in the next version release. You will need an account on Transifex to do this.
 
-If you have done a translation via JobManager, then you are welcome to send that also. To send your translation files contact me. (http://www.wp-jobmanager.com/contact-us/) Select Translations via options.
+Not sure how to get started? Contact me. (http://www.wp-jobmanager.com/contact-us/) Select Translations via options, and let me know the language you want to help with?
+I will email you back super easy instructions. It is really not difficult at all.
 
-I'll acknowledge your contribution here with either your full name or username given.
+= I'll acknowledge your contribution here with either your full name or username given.=
 
 
 NOTE:The information below has been maintained for continuity purposes and applies to the plugin up to release 7.20 
@@ -182,15 +189,30 @@ Notice the version number in brackets. This is the version series that the trans
 
 = Special Thanks =
 
-* Matt Wild of [Gobble Logic] (http://gobblelogic.com/), for his insurmoutable help in keeping this project alive!
-* Amy Shanks of [Strategic Recruitment Solutions] (http://www.strategicrecruitmentsolutions.com/), for her enouragement and continuing support to Job Manager.     
+* George Stephanis - For his quick assist to get a fix out for the Cross-Site Scripting (XSS) bug.
+* [CSS Hero] (https://www.csshero.org),for for their support of Open Source projects by providing development tools and resources like CSS Hero.
+* Vladimir Garagulya [User Role Editor] (https://www.role-editor.com), for his support on user roles and options for Job Manager.
+* Matt Wild of [Gobble Logic] (http://gobblelogic.com/), for his insurmoutable help in keeping this project alive.
+* Amy Shanks of [Strategic Recruitment Solutions] (http://www.strategicrecruitmentsolutions.com/), for her encouragement and continuing support to Job Manager.
 * [Jet Brains](https://www.jetbrains.com/phpstorm/), for their support of Open Source projects by providing development tools and resources like PhpStorm.     
-* [Automattic](http://automattic.com/), for their support and feedback on features, design and usability.
+* [Automattic](http://automattic.com/),for their support and feedback on features, design and usability.
 * All the wonderful people who've submitted bugs, feedback and feature requests - you're the people who keep us on our toes and help give this project life!
 
 Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [CC BY-ND](http://creativecommons.org/licenses/by-nd/3.0/) license.
 
 == Changelog ==
+
+= 0.7.25 =
+* FIXED Cross-Site Scripting exploit (XSS)
+* Tested for WordPress 4.3
+
+= 0.7.24 =
+* Filter fix - update
+* ADDED: Support for [CSS Hero] (https://www.csshero.org/plugins/job-manager)
+* ADDED: Italian Translation, provided by Criss Seregni
+* ADDED: Support for [Sidekick] Walkthroughs (https://wordpress.org/plugins/sidekick)
+* Tested for WordPress 4.2.3
+
 
 = 0.7.23 =
 * FIXED: Star filter fix (Filter Applications by Rating)
@@ -644,5 +666,8 @@ Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [C
 
 == Upgrade Notice ==
 
-= 7.21 =
+= 7.21 > =
+If your updating from an older version of Job Manager 7.20 or earlier to any newer version from 7.21 and above
+please ensure you read the important information about updating.
+
 For additional details on this update:  (http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)

@@ -3,12 +3,12 @@
 Plugin Name: Job Manager
 Plugin URI: http://wp-jobmanager.com/
 Description: A job listing and job application management plugin for WordPress.
-Version: 0.7.23
+Version: 0.7.25
 Author: Tom Townsend
 Author URI: http://www.linkedin.com/in/thomastownsend
 Text Domain: jobman
 Tags: application, applicant tracking, ats, board, candidate, candidates, career, company, current opportunities, direct hire, employee, employer, employees, employment, freelance,
-hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search,  list, listing, manager, opportunities,
+hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search, list, listing, manager, opportunities,
 placement, position, positions, recruiter, recruiting, recruitment, talent
 /*
 
@@ -33,7 +33,7 @@ placement, position, positions, recruiter, recruiting, recruitment, talent
 */
 
 // Version
-define( 'JOBMAN_VERSION', '0.7.23' );
+define( 'JOBMAN_VERSION', '0.7.25' );
 define( 'JOBMAN_DB_VERSION', 19 );
 
 // Define the URL to the plugin folder
@@ -92,11 +92,11 @@ if ( current_user_can( 'install_plugins' ) )
         echo '<div class="updated"><p>';   
         printf(__('Thanks! We hope you enjoy using <a href="http://www.wp-jobmanager.com/go/jobman/" 
 
-target="_blank"><b>Job Manager</b></a>, consider <a href="http://www.wp-jobmanager.com/go/rating/" 
+target="_blank"><b>Job Manager</b></a>.Please consider<a href="http://www.wp-jobmanager.com/go/rating/" 
 
-target="_blank"><b>Rating</b></a> us. Please take our <a href="http://www.wp-jobmanager.com/go/survey/"
+target="_blank"><b>Rating</b></a> us. You can also check-out and contribute to our<a href="http://www.wp-jobmanager.com/go/kb/"
 
-target="_blank"><b>SURVEY</b></a>. Tell us how you use Job Manager and what features you need? | <a 
+target="_blank"><b>Knowledge Base</b></a>. Thanks for your help and rating. | <a 
 
 href="%1$s">Hide Notice</a>'), '?jobman_nag_ignore=0');
         echo "</p></div>";

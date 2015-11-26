@@ -123,6 +123,7 @@ addLoadEvent(function() {
 
 	jQuery("div.star-holder img").mouseleave(function() {
 		var count = jQuery(this).parent().parent().find('input[name="jobman-rating"]').attr("value");
+		count = parseInt( count, 10 );
 		jQuery(this).parent().parent().find("div.star-rating").css("width", (count * 19) + "px");
 	});
 
