@@ -22,7 +22,7 @@ This repository on GitHub is NOT suitable for support. Please don't use the issu
 Support requests for issues on this repository will be closed on sight.
 
 ## Contributing to Job Manager
-If you have a patch, or you have stumbled upon an issue with Job Manager core, you can contribute this back to the code. Please read the [contributor guidelines](https://github.com/thomastownsend/Job Manager/blob/master/CONTRIBUTING.md) for more information how you can do this.
+If you have a patch, or you have stumbled upon an issue with Job Manager core, you can contribute this back to the code. Please read the [contributor guidelines](https://github.com/thomastownsend/job-manager/blob/master/CONTRIBUTING.md) for more information how you can do this.
 
 If you have an idea for Job Manager, feel free to suggest it in an issue on this repo.
 
