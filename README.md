@@ -9,7 +9,7 @@
 
 Welcome to the Job Manager repository on GitHub. Here you can browse the source, look at open issues and keep track of development.
 
-[Job Manager](http://www.wp-jobmanager.com/) Job Manager is a plugin for managing job lists and job applications on your WordPress site. From posting job details to accepting resumes and applicant tracking and all the way throughthe interview process, Job Manager supports all the features you need to manage your organization's hiring process. It is developed and maintained by Thomas Townsend and is neither owned nor run by any team or company. If you would like to know more about the plugin you can get in touch with [Tom on Twitter](https://twitter.com/thomasrtownsend) or follow [@SMBsocl](https://twitter.com/SMBsocl) directly.
+[Job Manager](http://www.wp-jobmanager.com/) Job Manager is a plugin for managing job lists and job applications on your WordPress site. From posting job details to accepting resumes and applicant tracking and all the way through the interview process, Job Manager supports all the features you need to manage your organization's hiring process. It is developed and maintained by Thomas Townsend and is neither owned nor run by any team or company. If you would like to know more about the plugin you can get in touch with [Tom on Twitter](https://twitter.com/thomasrtownsend) or follow [@SMBsocl](https://twitter.com/SMBsocl) directly.
 
 If you are not a developer, please visit the [Job Manager plugin page](https://wordpress.org/plugins/job-manager/) on WordPress.org where you can download the plugin and find more info.
 
