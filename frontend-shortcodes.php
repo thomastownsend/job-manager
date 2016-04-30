@@ -125,7 +125,7 @@ function jobman_shortcode( $atts, $content, $tag ) {
 
 			$cats = array();
 			foreach( $categories as $cat )
-				$cats[] = '<a href="'. get_term_link( $cat->slug, 'jobman_category' ) . '" title="' . sprintf( __( 'Jobs for %s', 'jobman' ), $cat->name ) . '">' . $cat->name . '</a>';;
+				$cats[] = '<a href="'. get_term_link( $cat->slug, 'jobman_category' ) . '" title="' . sprintf( __( 'Jobs for %s', 'job-manager' ), $cat->name ) . '">' . $cat->name . '</a>';;
 
 			return implode( ', ', $cats );
 		case 'job_field_loop':
@@ -157,7 +157,7 @@ function jobman_shortcode( $atts, $content, $tag ) {
 					$atts = shortcode_atts( array( 'length' => 0 ), $atts );
 
 					if( $atts['length'] > 0 && $atts['length'] < strlen( $data ))
-						$data = substr( $data, 0, $atts['length'] ) . '... ' . do_shortcode( '[job_link]' . __( 'more', 'jobman' ) . '[/job_link]' );
+						$data = substr( $data, 0, $atts['length'] ) . '... ' . do_shortcode( '[job_link]' . __( 'more', 'job-manager' ) . '[/job_link]' );
 
 					return wpautop( $data );
 				case 'file':
@@ -169,7 +169,7 @@ function jobman_shortcode( $atts, $content, $tag ) {
 						case 'img':
 							return '<img src="' . wp_get_attachment_url( $data ) . '" />';
 						default:
-							return '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'jobman' ) . '</a>';
+							return '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'job-manager' ) . '</a>';
 					}
 				default:
 					return $data;
@@ -358,7 +358,7 @@ function jobman_field_shortcode( $atts, $content, $tag ) {
 			$atts = shortcode_atts( array( 'length' => 0 ), $atts );
 
 			if( $atts['length'] > 0 && $atts['length'] < strlen( $data ))
-				$data = substr( $data, 0, $atts['length'] ) . '... ' . do_shortcode( '[job_link]' . __( 'more', 'jobman' ) . '[/job_link]' );
+				$data = substr( $data, 0, $atts['length'] ) . '... ' . do_shortcode( '[job_link]' . __( 'more', 'job-manager' ) . '[/job_link]' );
 
 			return wpautop( $data );
 		case 'file':
@@ -370,7 +370,7 @@ function jobman_field_shortcode( $atts, $content, $tag ) {
 				case 'img':
 					return '<img src="' . wp_get_attachment_url( $data ) . '" />';
 				default:
-					return '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'jobman' ) . '</a>';
+					return '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'job-manager' ) . '</a>';
 			}
 		default:
 			return $data;

@@ -60,7 +60,7 @@ function jobman_print_rating_stars( $id, $rating, $callback = 'jobman_rate_appli
 						<input type="hidden" id="jobman-rating-<?php echo esc_attr( $id ) ?>" name="jobman-rating" value="<?php echo esc_attr( $rating ) ?>" />
 						<input type="hidden" name="callbackid" value="<?php echo esc_attr( $id ) ?>" />
 						<input type="hidden" name="callbackfunction" value="<?php echo esc_attr( $callback ) ?>" />
-						<a href="#" onclick="jobman_reset_rating('<?php echo esc_js( $id ) ?>', '<?php echo esc_js( $callback ) ?>'); return false;"><?php _e( 'No rating', 'jobman' ) ?></a>
+						<a href="#" onclick="jobman_reset_rating('<?php echo esc_js( $id ) ?>', '<?php echo esc_js( $callback ) ?>'); return false;"><?php _e( 'No rating', 'job-manager' ) ?></a>
 <?php
 	}
 ?>
@@ -77,12 +77,12 @@ function jobman_print_rating_stars( $id, $rating, $callback = 'jobman_rate_appli
 }
 
 function jobman_load_translation_file() {
-	load_plugin_textdomain( 'jobman', '', JOBMAN_FOLDER . '/translations' );
+	load_plugin_textdomain( 'job-manager', '', JOBMAN_FOLDER . '/translations' );
 }
 
 function jobman_page_taxonomy_setup() {
 	// Create our new page types
-	register_post_type( 'jobman_job', array( 'exclude_from_search' => false, 'public' => true, 'show_ui' => false, 'singular_name' => __( 'Job', 'jobman' ), 'label' => __( 'Jobs', 'jobman' ) ) );
+	register_post_type( 'jobman_job', array( 'exclude_from_search' => false, 'public' => true, 'show_ui' => false, 'singular_name' => __( 'Job', 'job-manager' ), 'label' => __( 'Jobs', 'job-manager' ) ) );
 	register_post_type( 'jobman_joblist', array( 'exclude_from_search' => true ) );
 	register_post_type( 'jobman_app_form', array( 'exclude_from_search' => true ) );
 	register_post_type( 'jobman_app', array( 'exclude_from_search' => true ) );
@@ -92,13 +92,13 @@ function jobman_page_taxonomy_setup() {
 
 	// Create our new taxonomy thing
 	$options = get_option( 'jobman_options' );
-	
+
 	$root = get_page( $options['main_page'] );
 	$url = get_page_uri( $root->ID );
-	
+
 	if( substr( $url, 0, 1 ) != '/' )
 		$url = "/$url";
-	
+
 	register_taxonomy( 'jobman_category', array( 'jobman_job', 'jobman_app' ), array( 'hierarchical' => false, 'label' => __( 'Category', 'series' ), 'query_var' => 'jcat', 'rewrite' => array( 'slug' => $url ) ) );
 }
 
@@ -114,18 +114,18 @@ function jobman_page_hierarchical_setup( $types ) {
 function jobman_sort_fields( $a, $b ) {
 	if($a['sortorder'] == $b['sortorder'])
 		return 0;
-	
+
 	return ( $a['sortorder'] < $b['sortorder'] ) ? -1 : 1;
 }
 
 function jobman_current_url() {
 		$pageURL = 'http';
-		
+
 		if( is_ssl() )
 			$pageURL .= 's';
-		
+
 		$pageURL .= '://';
-		
+
 		if( '80' != $_SERVER['SERVER_PORT'] )
 			$pageURL .= $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . $_SERVER['REQUEST_URI'];
 		else
@@ -155,7 +155,7 @@ if( ! function_exists( 'array_insert' ) ) {
 		$array2 = array_splice( $array, $pos );
 		$array[] = $val;
 		$array = array_merge( $array, $array2 );
-	   
+
 		return $array;
 	}
 }

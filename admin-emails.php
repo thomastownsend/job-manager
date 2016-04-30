@@ -7,24 +7,24 @@ function jobman_list_emails() {
 	}
 ?>
 	<div class="wrap">
-	    <h2><?php _e( 'Job Manager: Emails', 'jobman' ) ?></h2>
+	    <h2><?php _e( 'Job Manager: Emails', 'job-manager' ) ?></h2>
 	    
-	    <p><?php _e( 'In the "Applications Sent To" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application.', 'jobman' ) ?></p>
+	    <p><?php _e( 'In the "Applications Sent To" column, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application.', 'job-manager' ) ?></p>
 	    
 		<table id="jobman-emails-list" class="widefat page fixed" cellspacing="0">
 			<thead>
 			<tr>
-				<th scope="col"><?php _e( 'Date', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Subject', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Applications Sent To', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Date', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Subject', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Applications Sent To', 'job-manager' ) ?></th>
 			</tr>
 			</thead>
 
 			<tfoot>
 			<tr>
-				<th scope="col"><?php _e( 'Date', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Subject', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Applications Sent To', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Date', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Subject', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Applications Sent To', 'job-manager' ) ?></th>
 			</tr>
 			</tfoot>
 <?php
@@ -65,7 +65,7 @@ function jobman_list_emails() {
 	else {
 ?>
 			<tr>
-				<td colspan="3"><?php _e( 'There are currently no emails in the system.', 'jobman' ) ?></td>
+				<td colspan="3"><?php _e( 'There are currently no emails in the system.', 'job-manager' ) ?></td>
 			</tr>
 <?php
 	}
@@ -82,18 +82,18 @@ function jobman_email_display( $emailid ) {
 	$email = get_post( $emailid );
 	
 	if( NULL == $email ) {
-	    echo '<p class="error">' . __( 'No such email.', 'jobman' ) . '</p>';
+	    echo '<p class="error">' . __( 'No such email.', 'job-manager' ) . '</p>';
 	    return;
 	}
 ?>
 	<div class="wrap">
-	    <h2><?php _e( 'Job Manager: Email', 'jobman' ) ?></h2>
+	    <h2><?php _e( 'Job Manager: Email', 'job-manager' ) ?></h2>
 
-	    <p><?php _e( 'In the "Applications" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application.', 'jobman' ) ?></p>
+	    <p><?php _e( 'In the "Applications" field, click the number to go to that application, or click the asterisk (*) next to it to see other emails sent to that application.', 'job-manager' ) ?></p>
 
 		<table id="jobman-email" class="form-table">
 		    <tr>
-		        <th scope="row"><?php _e( 'Subject', 'jobman' ) ?></th>
+		        <th scope="row"><?php _e( 'Subject', 'job-manager' ) ?></th>
 		        <td><?php echo $email->post_title ?></td>
 		    </tr>
 <?php
@@ -109,7 +109,7 @@ function jobman_email_display( $emailid ) {
 	}
 ?>
 			<tr>
-			    <th scope="row"><?php _e( 'Applications', 'jobman' ) ?></th>
+			    <th scope="row"><?php _e( 'Applications', 'job-manager' ) ?></th>
 			    <td>
 <?php
 	echo implode( ', ', $appstrings );
@@ -117,7 +117,7 @@ function jobman_email_display( $emailid ) {
 				</td>
 			</tr>
 			<tr>
-			    <th scope="row"><?php _e( 'Emails', 'jobman' ) ?></th>
+			    <th scope="row"><?php _e( 'Emails', 'job-manager' ) ?></th>
 			    <td>
 <?php
 	echo implode( ', ', $emails );
@@ -125,7 +125,7 @@ function jobman_email_display( $emailid ) {
 				</td>
 			</tr>
 		    <tr>
-		        <th scope="row"><?php _e( 'Message', 'jobman' ) ?></th>
+		        <th scope="row"><?php _e( 'Message', 'job-manager' ) ?></th>
 		        <td><?php echo wpautop( $email->post_content ) ?></td>
 		    </tr>
 		</table>
@@ -156,7 +156,7 @@ function jobman_application_mailout() {
 	$email_str = implode( ', ', array_unique( $emails ) );
 ?>
 	<div class="wrap">
-		<h2><?php _e( 'Job Manager: Application Email', 'jobman' ) ?></h2>
+		<h2><?php _e( 'Job Manager: Application Email', 'job-manager' ) ?></h2>
 
 		<form action="" method="post">
 		<input type="hidden" name="jobman-mailout-send" value="1" />
@@ -166,24 +166,24 @@ function jobman_application_mailout() {
 ?>
 		<table id="jobman-email-edit" class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'From', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'From', 'job-manager' ) ?></th>
 				<td><input class="regular-text code" type="text" name="jobman-from" value="<?php echo '&quot;' . $current_user->display_name . '&quot; <' . $current_user->user_email . '>' ?>" /></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'To', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'To', 'job-manager' ) ?></th>
 				<td><?php echo $email_str ?></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Subject', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Subject', 'job-manager' ) ?></th>
 				<td><input class="regular-text code" type="text" name="jobman-subject" /></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Message', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Message', 'job-manager' ) ?></th>
 				<td><textarea class="large-text code" name="jobman-message" rows="15"></textarea></td>
 			</tr>
 		</table>
 		
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Send Email', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Send Email', 'job-manager' ) ?>" /></p>
 		</form>
 	</div>
 <?php

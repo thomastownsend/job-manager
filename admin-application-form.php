@@ -4,29 +4,29 @@ function jobman_application_setup() {
 		check_admin_referer( 'jobman-application-setup' );
 		jobman_application_setup_updatedb();
 	}
-	
+
 	$options = get_option( 'jobman_options' );
-	
+
 	$fieldtypes = array(
-						'text' => __( 'Text Input', 'jobman' ),
-						'radio' => __( 'Radio Buttons', 'jobman' ),
-						'select' => __( 'Select Dropdown', 'jobman' ),
-						'checkbox' => __( 'Checkboxes', 'jobman' ),
-						'textarea' => __( 'Large Text Input (textarea)', 'jobman' ),
-						'date' => __( 'Date Selector', 'jobman' ),
-						'file' => __( 'File Upload', 'jobman' ),
-						'geoloc' => __( 'Geolocation', 'jobman' ),
-						'heading' => __( 'Heading', 'jobman' ),
-						'html' => __( 'HTML Code', 'jobman' ),
-						'blank' => __( 'Blank Space', 'jobman' )
+						'text' => __( 'Text Input', 'job-manager' ),
+						'radio' => __( 'Radio Buttons', 'job-manager' ),
+						'select' => __( 'Select Dropdown', 'job-manager' ),
+						'checkbox' => __( 'Checkboxes', 'job-manager' ),
+						'textarea' => __( 'Large Text Input (textarea)', 'job-manager' ),
+						'date' => __( 'Date Selector', 'job-manager' ),
+						'file' => __( 'File Upload', 'job-manager' ),
+						'geoloc' => __( 'Geolocation', 'job-manager' ),
+						'heading' => __( 'Heading', 'job-manager' ),
+						'html' => __( 'HTML Code', 'job-manager' ),
+						'blank' => __( 'Blank Space', 'job-manager' )
 				);
-				
+
 	$categories = get_terms( 'jobman_category', 'hide_empty=0' );
 ?>
 	<form action="" method="post">
 	<input type="hidden" name="jobmansubmit" value="1" />
-<?php 
-	wp_nonce_field( 'jobman-application-setup' ); 
+<?php
+	wp_nonce_field( 'jobman-application-setup' );
 ?>
 	<div class="wrap">
 <?php
@@ -36,12 +36,12 @@ function jobman_application_setup() {
 		<table id="jobman-application-setup" class="widefat page fixed">
 			<thead>
 			<tr>
-				<th scope="col"><?php _e( 'Field Label/Type', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Categories', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Data', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Submit Filter/Filter Error Message', 'jobman' ) ?></th>
-				<th scope="col" class="jobman-fieldsortorder"><?php _e('Sort Order', 'jobman' ) ?></th>
-				<th scope="col" class="jobman-fielddelete"><?php _e('Delete', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Field Label/Type', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Categories', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Data', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Submit Filter/Filter Error Message', 'job-manager' ) ?></th>
+				<th scope="col" class="jobman-fieldsortorder"><?php _e( 'Sort Order', 'job-manager' ) ?></th>
+				<th scope="col" class="jobman-fielddelete"><?php _e( 'Delete', 'job-manager' ) ?></th>
 			</tr>
 			</thead>
 <?php
@@ -74,14 +74,14 @@ function jobman_application_setup() {
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-listdisplay[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Show this field in the Application List?', 'jobman' ) ?><br/>
+					<input type="checkbox" name="jobman-listdisplay[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Show this field in the Application List?', 'job-manager' ) ?><br/>
 <?php
 			if( 1 == $field['emailblock'] )
 				$checked = ' checked="checked"';
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-emailblock[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Block this field from application emails?', 'jobman' ) ?>
+					<input type="checkbox" name="jobman-emailblock[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Block this field from application emails?', 'job-manager' ) ?>
 				</td>
 				<td><div class="jobman-categories-list">
 <?php
@@ -105,12 +105,12 @@ function jobman_application_setup() {
 			else
 				$checked = '';
 ?>
-					<input type="checkbox" name="jobman-mandatory[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Mandatory field?', 'jobman' ) ?><br/>
+					<input type="checkbox" name="jobman-mandatory[<?php echo $id ?>]" value="1"<?php echo $checked ?> /> <?php _e( 'Mandatory field?', 'job-manager' ) ?><br/>
 					<textarea class="large-text code" name="jobman-filter[]"><?php echo $field['filter'] ?></textarea><br/>
 					<input class="regular-text code" type="text" name="jobman-error[]" value="<?php echo esc_attr( $field['error'] ) ?>" />
 				</td>
-				<td><a href="#" onclick="jobman_sort_field_up( this ); return false;"><?php _e( 'Up', 'jobman' ) ?></a> <a href="#" onclick="jobman_sort_field_down( this ); return false;"><?php _e( 'Down', 'jobman' ) ?></a></td>
-				<td><a href="#" onclick="jobman_delete( this, 'jobman-fieldid', 'jobman-delete-list' ); return false;"><?php _e( 'Delete', 'jobman' ) ?></a></td>
+				<td><a href="#" onclick="jobman_sort_field_up( this ); return false;"><?php _e( 'Up', 'job-manager' ) ?></a> <a href="#" onclick="jobman_sort_field_down( this ); return false;"><?php _e( 'Down', 'job-manager' ) ?></a></td>
+				<td><a href="#" onclick="jobman_delete( this, 'jobman-fieldid', 'jobman-delete-list' ); return false;"><?php _e( 'Delete', 'job-manager' ) ?></a></td>
 			</tr>
 <?php
 		}
@@ -124,8 +124,8 @@ function jobman_application_setup() {
 		$template .= '<option value="' . $type . '">' . $label . '</option>';
 	}
 	$template .= '</select><br/>';
-	$template .= '<input type="checkbox" name="jobman-listdisplay" value="1" />' . __( 'Show this field in the Application List?', 'jobman' ) . '<br/>';
-	$template .= '<input type="checkbox" name="jobman-emailblock" value="1" />' . __( 'Block this field from application emails?', 'jobman' ) . '</td>';
+	$template .= '<input type="checkbox" name="jobman-listdisplay" value="1" />' . __( 'Show this field in the Application List?', 'job-manager' ) . '<br/>';
+	$template .= '<input type="checkbox" name="jobman-emailblock" value="1" />' . __( 'Block this field from application emails?', 'job-manager' ) . '</td>';
 	$template .= '<td>';
 	if( count( $categories ) > 0 ) {
 		foreach( $categories as $cat ) {
@@ -134,34 +134,34 @@ function jobman_application_setup() {
 	}
 	$template .= '</td>';
 	$template .= '<td><textarea class="large-text code" name="jobman-data[]"></textarea></td>';
-	$template .= '<td><input type="checkbox" name="jobman-mandatory" value="1" />' . __( 'Mandatory field?', 'jobman' ) . '<br/>';
+	$template .= '<td><input type="checkbox" name="jobman-mandatory" value="1" />' . __( 'Mandatory field?', 'job-manager' ) . '<br/>';
 	$template .= '<textarea class="large-text code" name="jobman-filter[]"></textarea><br/>';
 	$template .= '<input class="regular-text code" type="text" name="jobman-error[]" /></td>';
-	$template .= '<td><a href="#" onclick="jobman_sort_field_up( this ); return false;">' . __( 'Up', 'jobman' ) . '</a> <a href="#" onclick="jobman_sort_field_down( this ); return false;">' . __( 'Down', 'jobman' ) . '</a></td>';
-	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'jobman-fieldid\\\', \\\'jobman-delete-list\\\' ); return false;">' . __( 'Delete', 'jobman' ) . '</a></td></tr>';
-	
+	$template .= '<td><a href="#" onclick="jobman_sort_field_up( this ); return false;">' . __( 'Up', 'job-manager' ) . '</a> <a href="#" onclick="jobman_sort_field_down( this ); return false;">' . __( 'Down', 'job-manager' ) . '</a></td>';
+	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'jobman-fieldid\\\', \\\'jobman-delete-list\\\' ); return false;">' . __( 'Delete', 'job-manager' ) . '</a></td></tr>';
+
 	// Replace names for the empty version being displayed
 	$display_template = str_replace( 'jobman-categories', 'jobman-categories[new][0][]', $template );
 	$display_template = str_replace( 'jobman-listdisplay', 'jobman-listdisplay[new][0][]', $display_template );
 	$display_template = str_replace( 'jobman-emailblock', 'jobman-emailblock[new][0][]', $display_template );
 	$display_template = str_replace( 'jobman-mandatory', 'jobman-mandatory[new][0][]', $display_template );
 	$display_template = str_replace( "\\'", "'", $display_template );
-	
+
 	echo $display_template;
 ?>
 		<tr id="jobman-fieldnew">
 				<td colspan="6" style="text-align: right;">
 					<input type="hidden" name="jobman-delete-list" id="jobman-delete-list" value="" />
-					<a href="#" onclick="jobman_new( 'jobman-fieldnew', 'field' ); return false;"><?php _e( 'Add New Field', 'jobman' ) ?></a>
+					<a href="#" onclick="jobman_new( 'jobman-fieldnew', 'field' ); return false;"><?php _e( 'Add New Field', 'job-manager' ) ?></a>
 				</td>
 		</tr>
 		</table>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Application Form', 'jobman' ) ?>" /></p>
-<script type="text/javascript"> 
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Application Form', 'job-manager' ) ?>" /></p>
+<script type="text/javascript">
 //<![CDATA[
 	jobman_templates['field'] = '<?php echo $template ?>';
 //]]>
-</script> 
+</script>
 	</div>
 	</form>
 <?php
@@ -169,7 +169,7 @@ function jobman_application_setup() {
 
 function jobman_application_setup_updatedb() {
 	$options = get_option( 'jobman_options' );
-	
+
 	$ii = 0;
 	$newcount = -1;
 
@@ -255,10 +255,10 @@ function jobman_application_setup_updatedb() {
 		else if( array_key_exists( $id, $options['fields'] ) ) {
 			$options['fields'][$id]['categories'] = array();
 		}
-		
+
 		$ii++;
 	}
-	
+
 	$deletes = explode( ',', $_REQUEST['jobman-delete-list'] );
 	foreach( $deletes as $delete ) {
 		unset( $options['fields'][$delete] );

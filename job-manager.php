@@ -3,19 +3,18 @@
 Plugin Name: Job Manager
 Plugin URI: http://wp-jobmanager.com/
 Description: A job listing and job application management plugin for WordPress.
-Version: 0.7.25
+Version: 0.7.27Beta04/30/2016_01
 Author: Tom Townsend
 Author URI: http://www.linkedin.com/in/thomastownsend
 Text Domain: jobman
-Tags: application, applicant tracking, ats, board, candidate, candidates, career, company, current opportunities, direct hire, employee, employer, employees, employment, freelance,
-hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search, list, listing, manager, opportunities,
-placement, position, positions, recruiter, recruiting, recruitment, talent
+Tags: job applications, applicant tracking, ats, employment, hiring, job board, job list, job manager, job management,
+recruiting, recruitment, talent acquisition , talent management
 /*
 
 /*
 	Copyright 2009, 2010 Gary Pendergast (http://pento.net/)
 	Copyright 2010 Automattic (http://automattic.com/)
-    Copyright 2015 Tom Townsend - SMBsocial (http://smbsocial.com/)
+    Copyright 2014 - 2016 Tom Townsend - SMBsocial (http://smbsocial.com/)
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -33,8 +32,8 @@ placement, position, positions, recruiter, recruiting, recruitment, talent
 */
 
 // Version
-define( 'JOBMAN_VERSION', '0.7.25' );
-define( 'JOBMAN_DB_VERSION', 19 );
+define( 'JOBMAN_VERSION', '0.7.27' );
+define( 'JOBMAN_DB_VERSION', 20 );
 
 // Define the URL to the plugin folder
 define( 'JOBMAN_FOLDER', 'job-manager' );
@@ -46,6 +45,9 @@ define( 'JOBMAN_BASENAME', plugin_basename( __FILE__ ) );
 
 // Define the complete directory path
 define( 'JOBMAN_DIR', dirname( __FILE__ ) );
+
+// Define the complete directory path
+define( 'JOBMAN_UPLOAD_DIR', JOBMAN_DIR . '/resumes' );
 
 // Some Global vars
 
@@ -89,14 +91,14 @@ if ( current_user_can( 'install_plugins' ) )
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'jobman_ignore_notice') ) {
-        echo '<div class="updated"><p>';   
-        printf(__('Thanks! We hope you enjoy using <a href="http://www.wp-jobmanager.com/go/jobman/" 
+        echo '<div class="updated"><p>';
+        printf(__('Thanks! We hope you enjoy using <a href="http://www.wp-jobmanager.com/go/jobman/"
 
-target="_blank"><b>Job Manager</b></a>.Please consider<a href="http://www.wp-jobmanager.com/go/rating/" 
+target="_blank"><b>Job Manager</b></a>.Please consider<a href="http://www.wp-jobmanager.com/go/rating/"
 
 target="_blank"><b>Rating</b></a> us. You can also check-out and contribute to our<a href="http://www.wp-jobmanager.com/go/kb/"
 
-target="_blank"><b>Knowledge Base</b></a>. Thanks for your help and rating. | <a 
+target="_blank"><b>Knowledge Base</b></a>. Thanks for your help and rating. | <a
 
 href="%1$s">Hide Notice</a>'), '?jobman_nag_ignore=0');
         echo "</p></div>";
@@ -114,7 +116,7 @@ function jobman_nag_ignore() {
              add_user_meta($user_id, 'jobman_ignore_notice', 'true', true);
 	}
 }
-    
+
 //
 // Load Jobman
 //

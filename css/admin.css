@@ -272,3 +272,6 @@ img.jobman-gravatar {
 table.jobman-form-table {
 	clear: none;
 }
+input#input_name_override {
+	width:350px !important;
+}

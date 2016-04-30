@@ -7,9 +7,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: application, applicant tracking, ats, board, candidate, candidates, career, company, current opportunities, direct hire, employee, employer, employees, employment, freelance,
       hiring, hire, interview, interviews, job, jobs, job board, job list, job lists ,job listing, job manager, job management, job role, job search,  list, listing, manager, opportunities,
       placement, position, positions, recruiter, recruiting, recruitment, talent
-Requires at least: 2.9
-Tested up to: 4.3
-Stable tag: 7.2.5
+Requires at least: 4.0
+Tested up to: 4.5.1
+Stable tag: Trunk
 
 A job listing and job application management plugin for WordPress.
 
@@ -18,6 +18,9 @@ A job listing and job application management plugin for WordPress.
 
 Job Manager is a plugin for managing job lists and job applications on your WordPress site.  From posting job details to accepting resumes and applicant tracking and all the way through
 the interview process, Job Manager supports all the features you need to manage your organization's hiring process.
+
+= More information on this version of Job Manager =
+ [ READ ME - Job Manager Resume/CV - Custom Upload - IMPORTANT](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
 
 = Features =
 
@@ -44,15 +47,12 @@ the interview process, Job Manager supports all the features you need to manage 
 	*    Internal comments, for easy reference when you need to decide
 *    *Sidekick Walkthroughs*
     *    Overview of Settings
-    *    Overview of Basic Admin Settings, more walkthrough tutorials to be added in coming weeks
-
-
-= More information on this version of Job Manager =
- [ Read Me - Job Manager UPDATING from version 7.20 or earlier details](http://www.wp-jobmanager.com/documentation-jm/job-manager-update-from-7-20/)
+    *    Overview of Basic Admin Settings, more walkthrough tutorials to be added in coming weeks 
 
 
 > <strong>Support</strong><br>
 > Limited support for the Job Manager plugin is provided on the WordPress forums. Please note: That it is free support, hence it is not always possible to answer all questions on a timely manner, although we do try.
+> GitHub is for *bug reports and contributions only* - if you have a support question don't post here. Use [the plugin's support forum](http://wordpress.org/support/plugin/job-manager) instead for general support, but make sure to read through the [documentation](http://www.wp-jobmanager.com/) first.
 > Personalized premium support may be available via email in the near future.
 
 
@@ -60,14 +60,15 @@ the interview process, Job Manager supports all the features you need to manage 
 
 * [Plugin Homepage](http://www.wp-jobmanager.com/)
 * [Support Forum](http://wordpress.org/tags/job-manager?forum_id=10)
-* [Report Bugs and Request Enhancments](https://bitbucket.org/jobmanager_hp/job-manager/issues)
+* [Report Bugs and Request Enhancments](https://github.com/thomastownsend/job-manager/issues)
 * [Knowledge Base - Documentation](http://www.wp-jobmanager/documentation)
 
 
 = Get involved =
 
-* Developers can contribute to the source code on our [Bitbucket repository](https://bitbucket.org/jobmanager_hp/job-manager).
-* Translators can contribute through [Transifex](https://www.transifex.com/projects/p/job-manager-hp/).
+* Developers can contribute to the source code on our [GitHub repository](https://github.com/thomastownsend/job-manager).
+* Code Contributors please review (https://github.com/thomastownsend/job-manager/blob/master/CONTRIBUTING.md).
+* Translators can contribute through [Translate WordPress](https://translate.wordpress.org/projects/wp-plugins/job-manager/).
 * Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/job-manager#postform) or making a [donation](http://www.wp-jobmanager.com/donate/).
 
 
@@ -108,13 +109,12 @@ via your favorite File Transfer Protocol (FTP) application/program.
 * A new menu `Job Manager` will appear in your Admin
 
 
-* Checkout the current development version from https://bitbucket.org/jobmanager_hp/job-manager
-* Subscribe to the [update feed](https://bitbucket.org/jobmanager_hp) to be notified of changes
-
+* Checkout the current development version from https://github.com/thomastownsend/job-manager
 
 
 == Screenshots ==
 
+1. Admin Tutorials (w/SIDEKICK plugin)
 1. Job Listing Details (admin)
 1. Job Listing (post)
 1. Job Application - Resume (CVS Submit/Apply)
@@ -122,6 +122,18 @@ via your favorite File Transfer Protocol (FTP) application/program.
 
 
 == Frequently Asked Questions ==
+
+= Why am I not reciving emails from Job Manager upon application submission ? =
+
+This has become the most common question for Job Manger over the last 6 months. 99.99% of the time it's a hosting or configuration issue. 
+Please reference these threads for more details.(https://wordpress.org/support/topic/applications-not-received-by-email?) 
+
+= How can I add language support? =
+
+Contact me. (http://www.wp-jobmanager.com/contact-us/), and let me know the language you want to help with?
+I will email you back and submit your name via polyglot team on WordPress Slack channel [#polyglot] (https://wordpress.slack.com/) to allows you access as a Contributor. It is really very easy process. 
+[Translate WordPress Details](https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/)
+[Project # job-manager] (https://translate.wordpress.org/projects/wp-plugins/job-manager).
 
 = How do I setup a custom application form? =
 
@@ -137,8 +149,8 @@ In your WordPress MultiSite admin, go to Site Admin->Options. Update the "Upload
 
 == Other Plugin Support ==
 
-Job Manager supports added functionality when other plugins are installed. If you think your plugin could add some functionality to Job Manager, please [submit an enhancment request](https://bitbucket.org/jobmanager_hp/wordpress-job-manager/issues/new).
-Select (KIND) as Enhancment
+Job Manager supports added functionality when other plugins are installed. If you think your plugin could add some functionality to Job Manager, please [submit an enhancment request](https://github.com/thomastownsend/job-manager/issues).
+
 
 = Google XML Sitemaps =
 
@@ -152,23 +164,20 @@ If you want a [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA) on your Applicatio
 
 [Other Plugins we recommend for use with Job Manager] (http://www.jobmanager.com/recommended-plugins).
 
+
+* [Sidekick] Walkthroughs (https://wordpress.org/plugins/sidekick) Job Manager is now Sidekick enabled with Walkthroughs.
+* [CSS Hero] (https://www.csshero.org/plugins/job-manager) Job Manager is now CSS Hero Ready. 
+
 == Credits ==
 
-= Translations =
+= Translations =        
 
-New for July 2015:
+We need help with translations for the Job Manager plugin, you can HELP via Translate WordPress.
+[Translate WordPress Details](https://make.wordpress.org/polyglots/handbook/tools/glotpress-translate-wordpress-org/)
+[Project # job-manager] (https://translate.wordpress.org/projects/wp-plugins/job-manager).
 
-* Italian Translation (0.7..24),provided by Criss Seregni
-* Job Manager is now Sidekick enabled with Walkthroughs
-* Job Manager is now CSS Hero Ready
-
-We need help with translations for the Job Manager plugin, you can HELP via Transifex.
-[Transifex](https://www.transifex.com/projects/p/job-manager-hp/)
-
-Simply select or add a language you want to translate in and I will attach the language in the next version release. You will need an account on Transifex to do this.
-
-Not sure how to get started? Contact me. (http://www.wp-jobmanager.com/contact-us/) Select Translations via options, and let me know the language you want to help with?
-I will email you back super easy instructions. It is really not difficult at all.
+Not sure how to get started? Contact me. (http://www.wp-jobmanager.com/contact-us/), and let me know the language you want to help with?
+I will email you back and submit your name via polyglot team on WordPress Slack channel [#polyglot] (https://wordpress.slack.com/) to allows you access as a Contributor. It is really very easy process.
 
 = I'll acknowledge your contribution here with either your full name or username given.=
 
@@ -201,6 +210,13 @@ Notice the version number in brackets. This is the version series that the trans
 Print Icon by [Piotr Kwiatkowski](http://www.piotrkwiatkowski.co.uk), under a [CC BY-ND](http://creativecommons.org/licenses/by-nd/3.0/) license.
 
 == Changelog ==
+
+= 0.7.27 =
+* Updated: preparation for translate.wordpress.org
+* FIXED: Resume/CV uploads are now in hidden directory [Check out the READ ME] (http://www.wp-jobmanager.com/xxxxxxx/)
+* FIXED: Category Widget constructor syntax - Thanks to Mike Crantea
+* Compatibility with WordPress 4.5
+
 
 = 0.7.25 =
 * FIXED Cross-Site Scripting exploit (XSS)
