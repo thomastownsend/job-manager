@@ -35,11 +35,11 @@ function jobman_display_apply( $jobid, $cat = NULL ) {
 				break;
 			case -2:
 				// Recent application form same job
-				$msg = __( 'It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly.', 'jobman' );
+				$msg = __( 'It seems you recently applied for this job. If you would like to add further information to your application, please contact us directly.', 'job-manager' );
 				break;
 			default:
 				if( is_array( $err ) ) {
-					$msg = __( 'There was an error uploading your application. Please contact us directly, and quote the information below:', 'jobman' );
+					$msg = __( 'There was an error uploading your application. Please contact us directly, and quote the information below:', 'job-manager' );
 					foreach( $err as $e )
 						$msg .= '<div class="jobman-error">' . esc_html( $e->get_error_message() ) . '</div>';
 				}
@@ -48,12 +48,12 @@ function jobman_display_apply( $jobid, $cat = NULL ) {
 					$msg = $options['fields'][$err]['error'];
 
 					if( NULL == $msg || '' == $msg )
-						$msg = __( "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available.", 'jobman' );
+						$msg = __( "Thank you for your application. While your application doesn't fit our current requirements, please contact us directly to see if we have other positions available.", 'job-manager' );
 				}
 				break;
 		}
 
-		$page->post_title = __( 'Job Application', 'jobman' );
+		$page->post_title = __( 'Job Application', 'job-manager' );
 		$page->post_content .= "<div class='jobman-message'>$msg</div>";
 
 		return array( $page );
@@ -65,7 +65,7 @@ function jobman_display_apply( $jobid, $cat = NULL ) {
 	if( $options['user_registration'] && $options['user_registration_required'] && ! is_user_logged_in() ) {
 		// Skip the application form if the user hasn't registered yet, and we're enforcing registration.
 
-		$pleaseregister = '<p>' . __( 'Before completing your application, please login using the form above, or register using the form below.', 'jobman' ) . '</p>';
+		$pleaseregister = '<p>' . __( 'Before completing your application, please login using the form above, or register using the form below.', 'job-manager' ) . '</p>';
 
 		$content .= apply_filters( 'jobman_pleaseregister_html', $pleaseregister );
 
@@ -85,7 +85,7 @@ function jobman_display_apply( $jobid, $cat = NULL ) {
 	$cat_arr = array();
 
 	if( NULL != $job ) {
-		$page->post_title = __( 'Job Application', 'jobman' ) . ': ' . $job->post_title;
+		$page->post_title = __( 'Job Application', 'job-manager' ) . ': ' . $job->post_title;
 		$foundjob = true;
 		$jobid = $job->ID;
 
@@ -97,7 +97,7 @@ function jobman_display_apply( $jobid, $cat = NULL ) {
 		}
 	}
 	else {
-		$page->post_title = __( 'Job Application', 'jobman' );
+		$page->post_title = __( 'Job Application', 'job-manager' );
 		$foundjob = false;
 		$jobid = -1;
 		if( NULL != $cat ) {
@@ -154,20 +154,20 @@ function jobman_display_apply_generated( $foundjob = false, $job = NULL, $cat = 
 		$cat = get_term_by( 'slug', $cat, 'jobman_category' );
 
 	if( $foundjob )
-		$content .= '<p>' . __( 'Title', 'jobman' ) . ': <a href="'. get_page_link( $job->ID ) . '">' . $job->post_title . '</a></p>';
+		$content .= '<p>' . __( 'Title', 'job-manager' ) . ': <a href="'. get_page_link( $job->ID ) . '">' . $job->post_title . '</a></p>';
 
 	if( ! $foundjob ) {
 		if( ! empty( $options['app_job_select'] ) )
-			$content .= '<p><strong>' . __( 'Select the jobs you would like to apply for', 'jobman' ) . '</strong>: ' . jobman_generate_job_select( $cat, $options['app_job_select'] ) . '</p>';
+			$content .= '<p><strong>' . __( 'Select the jobs you would like to apply for', 'job-manager' ) . '</strong>: ' . jobman_generate_job_select( $cat, $options['app_job_select'] ) . '</p>';
 		if( ! empty( $options['app_cat_select'] ) )
-			$content .= '<p><strong>' . __( 'Select the categories that you are interested in', 'jobman' ) . '</strong>: ' . jobman_generate_cat_select( $cat, $options['app_cat_select'] ) . '</p>';
+			$content .= '<p><strong>' . __( 'Select the categories that you are interested in', 'job-manager' ) . '</strong>: ' . jobman_generate_cat_select( $cat, $options['app_cat_select'] ) . '</p>';
 	}
 
 	$fields = $options['fields'];
 
 	$start = true;
 
-	$content .= '<p>' . __( 'Fields marked with an asterisk (*) must be filled out before submitting.', 'jobman' ) . '</p>';
+	$content .= '<p>' . __( 'Fields marked with an asterisk (*) must be filled out before submitting.', 'job-manager' ) . '</p>';
 
 	if( count( $fields ) > 0 ) {
 		uasort( $fields, 'jobman_sort_fields' );
@@ -255,7 +255,7 @@ function jobman_display_apply_generated( $foundjob = false, $job = NULL, $cat = 
 		ob_end_clean();
 	}
 
-	$content .= '<tr><td colspan="2" class="submit"><input type="submit" name="submit"  class="button-primary" value="' . __( 'Submit Your Application', 'jobman' ) . '" /></td></tr>';
+	$content .= '<tr><td colspan="2" class="submit"><input type="submit" name="submit"  class="button-primary" value="' . __( 'Submit Your Application', 'job-manager' ) . '" /></td></tr>';
 	$content .= '</table>';
 
 	return $content;
@@ -356,7 +356,7 @@ function jobman_generate_job_select( $cat, $type = 'select' ) {
 		case 'select':
 		default:
 			$content .= "<select name='jobman-jobselect$inputarray'$selectmultiple>";
-			$content .= '<option value="">' . __( 'None', 'jobman' ) . '</option>';
+			$content .= '<option value="">' . __( 'None', 'job-manager' ) . '</option>';
 			foreach( $jobs as $job ) {
 				$selected = '';
 				if( array_key_exists( 'jobman-joblist', $_REQUEST ) && in_array( $job->ID, $_REQUEST['jobman-joblist'] ) )
@@ -404,7 +404,7 @@ function jobman_generate_cat_select( $cat, $type ) {
 		case 'select':
 		default:
 			$content .= "<select name='jobman-catselect[]' multiple='multiple'>";
-			$content .= '<option value="">' . __( 'None', 'jobman' ) . '</option>';
+			$content .= '<option value="">' . __( 'None', 'job-manager' ) . '</option>';
 			foreach( $categories as $category ) {
 				$selected = '';
 				if( $category->slug == $cat )
@@ -539,7 +539,7 @@ function jobman_store_application( $jobid, $cat ) {
 				'post_status' => 'private',
 				'post_type' => 'jobman_app',
 				'post_content' => '',
-				'post_title' => __( 'Application', 'jobman' ),
+				'post_title' => __( 'Application', 'job-manager' ),
 				'post_parent' => $options['main_page']
 			);
 
@@ -914,24 +914,24 @@ function jobman_email_application( $appid, $sendto = '' ) {
 	trim( $subject );
 
 	if( empty( $subject ) )
-		$subject = __( 'Job Application', 'jobman' );
+		$subject = __( 'Job Application', 'job-manager' );
 
 	$msg = '';
 
-	$msg .= __( 'Application Link', 'jobman' ) . ': ' . admin_url( 'admin.php?page=jobman-list-applications&appid=' . $app->ID ) . PHP_EOL;
+	$msg .= __( 'Application Link', 'job-manager' ) . ': ' . admin_url( 'admin.php?page=jobman-list-applications&appid=' . $app->ID ) . PHP_EOL;
 
 	$parents = get_post_meta( $app->ID, 'job', false );
 	if( ! empty( $parents ) ) {
 		$msg .= PHP_EOL;
 		foreach( $parents as $parent ) {
 			$data = get_post( $parent );
-			$msg .= __( 'Job', 'jobman' ) . ': ' . $data->ID . ' - ' . $data->post_title . PHP_EOL;
+			$msg .= __( 'Job', 'job-manager' ) . ': ' . $data->ID . ' - ' . $data->post_title . PHP_EOL;
 			$msg .= get_page_link( $data->ID ) . PHP_EOL;
 		}
 		$msg .= PHP_EOL;
 	}
 
-	$msg .= __( 'Timestamp', 'jobman' ) . ': ' . $app->post_date . PHP_EOL . PHP_EOL;
+	$msg .= __( 'Timestamp', 'job-manager' ) . ': ' . $app->post_date . PHP_EOL . PHP_EOL;
 
 	$fields = $options['fields'];
 
@@ -976,4 +976,256 @@ function jobman_email_application( $appid, $sendto = '' ) {
 	wp_mail( $to, $subject, $msg, $header );
 }
 
+function jobman_filter_upload_resume_name($file)
+{
+	//only allow application form
+	if(! array_key_exists('jobman-apply', $_REQUEST) || empty($_REQUEST['jobman-apply']))
+	{
+		return $file;
+	}
+
+	$options = get_option('jobman_options');
+
+	//ensure functionality exists
+	if(! array_key_exists('upload', $options))
+	{
+		return $file;
+	}
+
+	$template = $options['upload']['text_custom_resume_name_tpl'];
+
+	//ensure a name template exists
+	if(empty($template))
+	{
+		return $file;
+	}
+
+	$file_info = pathinfo($file['name']);
+
+	$pieces = array();
+	$pieces['{original_name}'] = strtolower(preg_replace('~[^0-9a-z]~i', '', $file_info['filename']));
+	$pieces['{timestamp}'] = date('Y-m-d-H-i-s');
+	$pieces['{date}'] = date('Y-m-d');
+	$pieces['{original_name_hash}'] = md5($pieces['{original_name}']);
+
+	$file['name'] = str_replace(array_keys($pieces), array_values($pieces), $template) . ".$ext";
+	return $file;
+}
+
+/**
+* filter_jobman_upload_dir
+*
+* @mcfw 2014-09
+*
+* @param mixed $param
+*/
+function jobman_filter_upload_dir($param)
+{
+	global $post;
+
+	//ensure this is the correct action -- this has many flaws
+	$valid = 0;
+	$valid += (array_key_exists('page', $_REQUEST) && $_REQUEST['page'] == 'jobman-list-applications') ? 1:0;
+	$valid += (array_key_exists('jobman-apply', $_REQUEST) && ! empty($_REQUEST['jobman-apply'])) ? 1:0;
+
+	if($valid <= 0)
+	{
+		return $param;
+	}
+
+    $options = get_option('jobman_options');
+
+    //need these values initialised
+    if(! array_key_exists('upload', $options))
+    {
+        return $param;
+    }
+
+    //if not enabled
+    if(empty($options['upload']['bool_custom_upload_dir']))
+    {
+        return $param;
+    }
+
+    $upload_path = JOBMAN_UPLOAD_DIR;
+
+    //custom directory override
+    if(! empty($options['upload']['text_custom_upload_dir']))
+    {
+        $upload_path = $options['upload']['text_custom_upload_dir'];
+    }
+
+    if(! file_exists($upload_path))
+    {
+        if(! wp_mkdir_p($upload_path))
+        {
+            error_log(__FUNCTION__ . " failed creating custom upload path");
+
+            return $param;
+        }
+    }
+
+    $path_parts = pathinfo($upload_path);
+
+    $param['path'] = $upload_path;
+    $param['url'] = JOBMAN_URL . '/' . $path_parts['basename'];
+    $param['subdir'] = $upload_path;
+    $param['basedir'] = $upload_path;
+    $param['baseurl'] = JOBMAN_URL . '/' . $path_parts['basename'];
+
+    return $param;
+}
+
+//get_post_metadata
+function jobman_fix_upload_directory($metadata, $object_id, $meta_key, $single)
+{
+	$valid = false;
+
+	return $metadata;
+}
+
+/**
+* jobman_hook_get_attachment_url
+*
+* Adds overhead for media link path detail. Pieces together from the stored path
+*
+* @see hook: wp_get_attachment_url
+*
+* @param mixed $current_url
+*/
+function jobman_hook_get_attachment_url($current_url, $post_id)
+{
+	$new_url = $current_url;
+
+	if(defined('JOBMAN_UPLOAD_DIR'))
+	{
+		$current_url_info = pathinfo($current_url);
+		$file_name = $current_url_info['basename'];
+
+		$current_url_parsed = parse_url($current_url);
+		$file_name_path = $current_url_parsed['path'];
+
+		$file_name_uri = str_replace($file_name, '', $file_name_path);
+		$file_name_uri = trim($file_name_uri, '/');
+
+		if(! empty($file_name))
+		{
+			if(is_readable(JOBMAN_UPLOAD_DIR . "/" . $file_name))
+			{
+				$new_url = home_url() . "/download-resume/?p=$post_id";
+			}
+		}
+	}
+
+	return $new_url;
+}
+
+function jobman_hook_download_file($asd)
+{
+
+
+	if(stristr($_SERVER['REQUEST_URI'], 'download-resume'))
+	{
+		$asd = ob_get_clean();
+
+		if (! current_user_can('view_content'))
+		{
+		   //wp_die(__('You do not have sufficient permissions.'));
+		}
+
+		$post_id = intval($_GET['p']);
+
+		if(! empty($post_id))
+		{
+		    $attachment_dir = get_attached_file($post_id);
+		    $mime_type = get_post_mime_type($post_id);
+
+			$current_url_info = pathinfo($attachment_dir);
+			$file_name = $current_url_info['basename'];
+
+			$current_url_parsed = parse_url($attachment_dir);
+			$file_name_path = $current_url_parsed['path'];
+
+			$file_name_uri = str_replace($file_name, '', $file_name_path);
+			$file_name_uri = trim($file_name_uri, '/');
+
+			if(! empty($file_name))
+			{
+				if(is_readable(JOBMAN_UPLOAD_DIR . "/" . $file_name))
+				{
+					$attachment_dir = JOBMAN_UPLOAD_DIR . "/" . $file_name;
+				}
+			}
+
+			$asd = filesize($attachment_dir);
+
+			$contens = file_get_contents($attachment_dir);
+
+			header('Content-Description: File Transfer');
+			header("Content-Type: $mime_type");
+			header('Content-Disposition: attachment; filename="'.basename($attachment_dir) . '"');
+			header('Expires: 0');
+			header('Cache-Control: must-revalidate');
+			header('Pragma: public');
+			header('Content-Length: ' . filesize($attachment_dir));
+			readfile($attachment_dir);
+			exit;
+		}
+	}
+
+}
+
+function jobman_hook_download_file_template($asd)
+{
+	if(stristr($_SERVER['REQUEST_URI'], 'download-resume'))
+	{
+		ob_get_clean();
+
+		if (! current_user_can('view_content'))
+		{
+		   //wp_die(__('You do not have sufficient permissions.'));
+		}
+
+		$post_id = intval($_GET['p']);
+
+		if(! empty($post_id))
+		{
+		    $attachment_dir = get_attached_file($post_id);
+		    $mime_type = get_post_mime_type($post_id);
+
+			$current_url_info = pathinfo($attachment_dir);
+			$file_name = $current_url_info['basename'];
+
+			$current_url_parsed = parse_url($attachment_dir);
+			$file_name_path = $current_url_parsed['path'];
+
+			$file_name_uri = str_replace($file_name, '', $file_name_path);
+			$file_name_uri = trim($file_name_uri, '/');
+
+			if(! empty($file_name))
+			{
+				if(is_readable(JOBMAN_UPLOAD_DIR . "/" . $file_name))
+				{
+					$attachment_dir = JOBMAN_UPLOAD_DIR . "/" . $file_name;
+				}
+			}
+
+			header("Content-Disposition: attachment; filename=" . basename($attachment_dir));
+			header("Content-Length: " . filesize($attachment_dir));
+			header("Content-Type: application/octet-stream;");
+			readfile($attachment_dir);
+			exit;
+/*
+		    header('Content-Description: File Transfer');
+		    header("Content-Type: $mime_type");
+		    header('Content-Disposition: attachment; filename="'.basename($attachment_dir) . '"');
+		    header('Expires: 0');
+		    header('Cache-Control: must-revalidate');
+		    header('Pragma: public');
+		    header('Content-Length: ' . filesize($attachment_dir));
+		    readfile($attachment_dir);
+		    exit;*/
+		}
+	}
+}
 ?>

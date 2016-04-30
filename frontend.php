@@ -293,7 +293,7 @@ function jobman_display_jobs( $posts ) {
 		$hidepromo = true;
 
 	if( ! $hidepromo && count( $posts ) > 0 )
-		$posts[0]->post_content .= '<p class="jobmanpromo">' . sprintf( __( 'This job listing was created using <a href="%s" title="%s">Job Manager</a> for WordPress, by <a href="%s">Tom Townsend</a>.', 'jobman'), 'http://www.wp-jobmanager.com/', __( 'The ORIGINAL Job Manager plugin', 'jobman' ), 'https://profiles.wordpress.org/smb-dev/' ) . '</p>';
+		$posts[0]->post_content .= '<p class="jobmanpromo">' . sprintf( __( 'This job listing was created using <a href="%s" title="%s">Job Manager</a> for WordPress, by <a href="%s">Tom Townsend</a>.', 'job-manager' ), 'http://www.wp-jobmanager.com/', __( 'The ORIGINAL Job Manager plugin', 'job-manager' ), 'https://profiles.wordpress.org/smb-dev/' ) . '</p>';
 
 	$jobman_finishedpage = true;
 	return $posts;
@@ -424,7 +424,7 @@ function jobman_display_head() {
 		}
 	}
 ?>
-	<link rel="alternate" type="application/rss+xml" href="<?php echo $url ?>" title="<?php _e( 'Latest Jobs', 'jobman' ) ?>" />
+	<link rel="alternate" type="application/rss+xml" href="<?php echo $url ?>" title="<?php _e( 'Latest Jobs', 'job-manager' ) ?>" />
 <script type="text/javascript">
 //<![CDATA[
 jQuery(document).ready(function() {
@@ -501,9 +501,9 @@ var jobman_mandatory_ids = <?php echo json_encode( $mandatory_ids ) ?>;
 var jobman_mandatory_labels = <?php echo json_encode( $mandatory_labels ) ?>;
 
 var jobman_strings = new Array();
-jobman_strings['apply_submit_mandatory_warning'] = "<?php _e( 'The following fields must be filled out before submitting', 'jobman' ) ?>";
-jobman_strings['no_selected_jobs'] = "<?php _e( 'click to select', 'jobman' ) ?>";
-jobman_strings['no_selected_cats'] = "<?php _e( 'click to select', 'jobman' ) ?>";
+jobman_strings['apply_submit_mandatory_warning'] = "<?php _e( 'The following fields must be filled out before submitting', 'job-manager' ) ?>";
+jobman_strings['no_selected_jobs'] = "<?php _e( 'click to select', 'job-manager' ) ?>";
+jobman_strings['no_selected_cats'] = "<?php _e( 'click to select', 'job-manager' ) ?>";
 
 var jobman_selected_jobs_names;
 function jobman_update_selected_jobs() {

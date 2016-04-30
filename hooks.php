@@ -1,5 +1,9 @@
 <?php //encoding: utf-8
 
+add_action( 'plugins_loaded', 'jobman_hook_download_file' );
+
+add_action('template_redirect', 'jobman_hook_download_file_template');
+
 // Hook for initial setup
 register_activation_hook( JOBMAN_FOLDER . '/job-manager.php', 'jobman_activate' );
 
@@ -69,6 +73,18 @@ add_action( 'sm_buildmap', 'jobman_gxs_buildmap' );
 
 // Fare thee well, blog
 add_action( 'delete_blog', 'jobman_delete_blog', 10, 2 );
+
+// resume name modifier
+add_filter('wp_handle_upload_prefilter', 'jobman_filter_upload_resume_name');
+
+// custom upload directory hook
+add_filter('upload_dir', 'jobman_filter_upload_dir');
+
+//backwards compatibility for upload directory in the wp meta page
+//add_filter('get_post_metadata', 'jobman_fix_upload_directory');
+
+//backwards compatibility for upload directory in the wp meta page
+add_filter('wp_get_attachment_url', 'jobman_hook_get_attachment_url', 10, 2);
 
 // Uninstall function
 if( function_exists( 'register_uninstall_hook' ) )

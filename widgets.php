@@ -1,19 +1,24 @@
 <?php
 class JobmanLatestJobsWidget extends WP_Widget {
-    /** constructor */
-    function JobmanLatestJobsWidget() {
-		$name = __( 'Job Manager: Recent Jobs', 'jobman');
-		$options = array( 'description' => __( 'A list of the most recent jobs posted to your site', 'jobman' ) );
-		
-        parent::WP_Widget( false, $name, $options );	
-    }
+    /**
+		 * Function __construct
+		 *
+		 * Initialises the widget.
+		 */
+		function __construct() {
+			parent::__construct(
+				'job-managerlatestjobs_widget',
+				__( 'Job Manager: Recent Jobs', 'job-manager'),
+				array( 'description' => __( 'A list of the most recent jobs posted to your site', 'job-manager' ) )
+			);
+		}
 
-    function widget( $args, $instance ) {		
+    function widget( $args, $instance ) {
         extract( $args );
         $title = apply_filters( 'widget_title', $instance['title'] );
-        
+
 		echo $before_widget;
-		
+
 		if ( $title )
 			echo $before_title . $title . $after_title;
 
@@ -22,13 +27,13 @@ class JobmanLatestJobsWidget extends WP_Widget {
 					'numberposts' => -1,
 					'suppress_filters' => false
 				);
-					
+
 		add_filter( 'posts_where', 'jobman_job_live_where' );
 		add_filter( 'posts_join', 'jobman_job_live_join' );
 		add_filter( 'posts_distinct', 'jobman_job_live_distinct' );
-		
+
 		$jobs = get_posts( $args );
-		
+
 		remove_filter( 'posts_where', 'jobman_job_live_where' );
 		remove_filter( 'posts_join', 'jobman_job_live_join' );
 		remove_filter( 'posts_distinct', 'jobman_job_live_distinct' );
@@ -43,7 +48,7 @@ class JobmanLatestJobsWidget extends WP_Widget {
 							// Job is in a selected category. Move to next job.
 							continue 2;
 					}
-					
+
 					// Job wasn't in a selected category. Remove it.
 					unset( $jobs[$id] );
 				}
@@ -52,7 +57,7 @@ class JobmanLatestJobsWidget extends WP_Widget {
 				}
 			}
 		}
-		
+
 		if( count( $jobs ) > 0 ) {
 			echo '<ul>';
 			$jobcount = 0;
@@ -61,13 +66,13 @@ class JobmanLatestJobsWidget extends WP_Widget {
 					break;
 
 				echo '<li><a href="' . get_page_link( $job->ID ) . '">' . $job->post_title . '</a></li>';
-				
+
 				$jobcount++;
 			}
 			echo '</ul>';
 		}
 		else {
-			echo '<p>' . __( 'There are no jobs to display at this time.', 'jobman' ) . '</p>';
+			echo '<p>' . __( 'There are no jobs to display at this time.', 'job-manager' ) . '</p>';
 		}
 
 		echo $after_widget;
@@ -80,15 +85,15 @@ class JobmanLatestJobsWidget extends WP_Widget {
 			$new_instance['jobslimit'] = 0;
 		else if( $new_instance['jobslimit'] > 15 )
 			$new_instance['jobslimit'] = 15;
-		
+
 		$new_instance['selected_cats'] = array();
-		
+
 		if( array_key_exists( $this->get_field_id( 'selected_cats' ), $_REQUEST ) && is_array( $_REQUEST[$this->get_field_id( 'selected_cats' )] ) ) {
 			foreach( $_REQUEST[$this->get_field_id( 'selected_cats' )] as $catid ) {
 				$new_instance['selected_cats'][] = $catid;
 			}
 		}
-		
+
 		return $new_instance;
     }
 
@@ -98,37 +103,37 @@ class JobmanLatestJobsWidget extends WP_Widget {
 			$title = esc_attr( $instance['title'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'job-manager' ); ?>:
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 				</label>
 			</p>
-<?php 
+<?php
 
 		$jobslimit = 5;
 		if( array_key_exists( 'jobslimit', $instance ) )
 			$jobslimit = esc_attr( $instance['jobslimit'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'jobslimit' ); ?>"><?php _e( 'Number of Jobs to show', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'jobslimit' ); ?>"><?php _e( 'Number of Jobs to show', 'job-manager' ); ?>:
 					<input id="<?php echo $this->get_field_id( 'jobslimit' ); ?>" name="<?php echo $this->get_field_name( 'jobslimit' ); ?>" type="text" size="3" value="<?php echo $jobslimit; ?>" />
 				</label>
-				<small>(<?php _e( 'at most 15', 'jobman' ) ?>)</small>
+				<small>(<?php _e( 'at most 15', 'job-manager' ) ?>)</small>
 			</p>
-<?php 
+<?php
 
 		$jobsfrom = 'all';
 		if( array_key_exists( 'jobsfrom', $instance ) )
 			$jobsfrom = esc_attr( $instance['jobsfrom'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'jobsfrom' ); ?>"><?php _e( 'Show Jobs From', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'jobsfrom' ); ?>"><?php _e( 'Show Jobs From', 'job-manager' ); ?>:
 					<select id="<?php echo $this->get_field_id( 'jobsfrom' ); ?>" name="<?php echo $this->get_field_name( 'jobsfrom' ); ?>">
-						<option value="all"<?php echo ( 'all' == $jobsfrom )?( ' selected="selected"' ):( '' ) ?>><?php _e( 'All Categories', 'jobman' ) ?></option>
-						<option value="selected"<?php echo ( 'selected' == $jobsfrom )?( ' selected="selected"' ):( '' ) ?>><?php _e( 'Selected Categories', 'jobman' ) ?></option>
+						<option value="all"<?php echo ( 'all' == $jobsfrom )?( ' selected="selected"' ):( '' ) ?>><?php _e( 'All Categories', 'job-manager' ) ?></option>
+						<option value="selected"<?php echo ( 'selected' == $jobsfrom )?( ' selected="selected"' ):( '' ) ?>><?php _e( 'Selected Categories', 'job-manager' ) ?></option>
 					</select>
 				</label>
 			</p>
-<?php 
+<?php
 
 		$selected_cats = array();
 		if( array_key_exists( 'selected_cats', $instance ) )
@@ -137,7 +142,7 @@ class JobmanLatestJobsWidget extends WP_Widget {
 		$categories = get_terms( 'jobman_category', 'hide_empty=0' );
 ?>
             <p>
-				<label><?php _e( 'Categories', 'jobman' ); ?>: </label><br/>
+				<label><?php _e( 'Categories', 'job-manager' ); ?>: </label><br/>
 <?php
 		if( count( $categories ) > 0 ) {
 			foreach( $categories as $cat ) {
@@ -148,40 +153,45 @@ class JobmanLatestJobsWidget extends WP_Widget {
 			}
 		}
 		else {
-			echo '<p>' . __( 'No categories defined.', 'jobman' ) . '</p>';
+			echo '<p>' . __( 'No categories defined.', 'job-manager' ) . '</p>';
 		}
 ?>
 			</p>
-<?php 
+<?php
 	}
 
 }
 
 
 class JobmanCategoriesWidget extends WP_Widget {
-    /** constructor */
-    function JobmanCategoriesWidget() {
-		$name = __( 'Job Manager: Categories', 'jobman');
-		$options = array( 'description' => __( 'A list or dropdown of Job Manager categories', 'jobman' ) );
-		
-        parent::WP_Widget( false, $name, $options );	
-    }
+    /**
+		 * Function __construct
+		 *
+		 * Initialises the widget.
+		 */
+		function __construct() {
+			parent::__construct(
+				'jobmancategories_widget',
+				__( 'Job Manager: Categories', 'job-manager'),
+				array( 'description' => __( 'A list or dropdown of Job Manager categories', 'job-manager' ) )
+			);
+		}
 
     function widget( $args, $instance ) {
 		global $wp_query;
-		
+
         extract( $args );
         $title = apply_filters( 'widget_title', $instance['title'] );
-        
+
 		echo $before_widget;
-		
+
 		if ( $title )
 			echo $before_title . $title . $after_title;
-			
+
 		$dropdown = 0;
 		if( array_key_exists( 'dropdown', $instance ) )
 			$dropdown = $instance['dropdown'];
-		
+
 		$show_counts = 0;
 		if( array_key_exists( 'show_counts', $instance ) )
 			$show_counts = $instance['show_counts'];
@@ -194,13 +204,13 @@ class JobmanCategoriesWidget extends WP_Widget {
 		if( count( $categories ) > 0 ) {
 			if( $dropdown ) {
 				echo '<select id="jobman-catlist">';
-				echo '<option value="">' . __( 'Select Category', 'jobman' ) . '</option>';
+				echo '<option value="">' . __( 'Select Category', 'job-manager' ) . '</option>';
 			}
 			else {
 				echo '<ul>';
 			}
-			
-			$count_args = array( 
+
+			$count_args = array(
 							'post_type' => 'jobman_job',
 							'numberposts' => -1,
 							'suppress_filters' => false
@@ -210,29 +220,29 @@ class JobmanCategoriesWidget extends WP_Widget {
 				$selected = '';
 				if( array_key_exists( 'jcat', $wp_query->query_vars ) && $wp_query->query_vars['jcat'] == $cat->slug )
 					$selected = ' selected="selected"';
-				
+
 				$jobs = array();
 				if( $hide_empty || $show_counts ) {
 					$count_args['jcat'] = $cat->slug;
 					add_filter( 'posts_where', 'jobman_job_live_where' );
 					add_filter( 'posts_join', 'jobman_job_live_join' );
 					add_filter( 'posts_distinct', 'jobman_job_live_distinct' );
-					
+
 					$jobs = get_posts( $count_args );
-					
+
 					remove_filter( 'posts_where', 'jobman_job_live_where' );
 					remove_filter( 'posts_join', 'jobman_job_live_join' );
 					remove_filter( 'posts_distinct', 'jobman_job_live_distinct' );
 				}
-				
+
 				if( $hide_empty && empty( $jobs ) )
 					continue;
-				
+
 				$count = '';
 				if( $show_counts ) {
 					$count = ' (' . count( $jobs ) . ')';
 				}
-				
+
 				if( $dropdown )
 					echo "<option value='$cat->slug'$selected>$cat->name$count</option>";
 				else
@@ -242,8 +252,8 @@ class JobmanCategoriesWidget extends WP_Widget {
 			if( $dropdown ) {
 ?>
 		</select>
-		
-<script type='text/javascript'> 
+
+<script type='text/javascript'>
 /* <![CDATA[ */
 	var jobman_dropdown = document.getElementById("jobman-catlist");
 	function onJobmanCatChange() {
@@ -253,7 +263,7 @@ class JobmanCategoriesWidget extends WP_Widget {
 	}
 	jobman_dropdown.onchange = onJobmanCatChange;
 /* ]]> */
-</script> 
+</script>
 <?php
 			}
 			else {
@@ -261,9 +271,9 @@ class JobmanCategoriesWidget extends WP_Widget {
 			}
 		}
 		else {
-			echo '<p>' . __( 'There are no categories to display at this time.', 'jobman' ) . '</p>';
+			echo '<p>' . __( 'There are no categories to display at this time.', 'job-manager' ) . '</p>';
 		}
-					
+
 		echo $after_widget;
     }
 
@@ -277,7 +287,7 @@ class JobmanCategoriesWidget extends WP_Widget {
 			$title = esc_attr( $instance['title'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'job-manager' ); ?>:
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 				</label>
 			</p>
@@ -285,7 +295,7 @@ class JobmanCategoriesWidget extends WP_Widget {
 		$dropdown = 0;
 		if( array_key_exists( 'dropdown', $instance ) )
 			$dropdown = $instance['dropdown'];
-		
+
 		$show_counts = 0;
 		if( array_key_exists( 'show_counts', $instance ) )
 			$show_counts = $instance['show_counts'];
@@ -295,37 +305,42 @@ class JobmanCategoriesWidget extends WP_Widget {
 			$hide_empty = $instance['hide_empty'];
 ?>
             <p>
-				<input id="<?php echo $this->get_field_id( 'dropdown' ); ?>" name="<?php echo $this->get_field_name( 'dropdown' ); ?>" type="checkbox" value="1" <?php echo ( $dropdown )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Show as dropdown', 'jobman' ) ?><br/>
-				<input id="<?php echo $this->get_field_id( 'show_counts' ); ?>" name="<?php echo $this->get_field_name( 'show_counts' ); ?>" type="checkbox" value="1" <?php echo ( $show_counts )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Show job counts', 'jobman' ); ?><br/>
-				<input id="<?php echo $this->get_field_id( 'hide_empty' ); ?>" name="<?php echo $this->get_field_name( 'hide_empty' ); ?>" type="checkbox" value="1" <?php echo ( $hide_empty )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Hide empty categories', 'jobman' ); ?>
+				<input id="<?php echo $this->get_field_id( 'dropdown' ); ?>" name="<?php echo $this->get_field_name( 'dropdown' ); ?>" type="checkbox" value="1" <?php echo ( $dropdown )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Show as dropdown', 'job-manager' ) ?><br/>
+				<input id="<?php echo $this->get_field_id( 'show_counts' ); ?>" name="<?php echo $this->get_field_name( 'show_counts' ); ?>" type="checkbox" value="1" <?php echo ( $show_counts )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Show job counts', 'job-manager' ); ?><br/>
+				<input id="<?php echo $this->get_field_id( 'hide_empty' ); ?>" name="<?php echo $this->get_field_name( 'hide_empty' ); ?>" type="checkbox" value="1" <?php echo ( $hide_empty )?( 'checked="checked" ' ):( '' )?>/> <?php _e( 'Hide empty categories', 'job-manager' ); ?>
 			</p>
-<?php 
+<?php
 	}
 
 }
 
 
 class JobmanHighlightedJobsWidget extends WP_Widget {
-    /** constructor */
-    function JobmanHighlightedJobsWidget() {
-		$name = __( 'Job Manager: Highlighted Jobs', 'jobman');
-		$options = array( 'description' => __( 'A list jobs that have been marked as highlighted', 'jobman' ) );
-		
-        parent::WP_Widget( false, $name, $options );	
-    }
+    /**
+		 * Function __construct
+		 *
+		 * Initialises the widget.
+		 */
+		function __construct() {
+			parent::__construct(
+				'jobmanhighlightedjobs_widget',
+				__( 'Job Manager: Highlighted Jobs', 'job-manager'),
+				array( 'description' => __( 'A list jobs that have been marked as highlighted', 'job-manager' ) )
+			);
+		}
 
     function widget( $args, $instance ) {
 		global $wp_query;
-		
+
         extract( $args );
         $title = apply_filters( 'widget_title', $instance['title'] );
-        
+
 		echo $before_widget;
-		
+
 		if ( $title )
 			echo $before_title . $title . $after_title;
-			
-		$args = array( 
+
+		$args = array(
 					'post_type' => 'jobman_job',
 					'numberposts' => -1,
 					'suppress_filters' => false,
@@ -335,9 +350,9 @@ class JobmanHighlightedJobsWidget extends WP_Widget {
 		add_filter( 'posts_where', 'jobman_job_live_where' );
 		add_filter( 'posts_join', 'jobman_job_live_join' );
 		add_filter( 'posts_distinct', 'jobman_job_live_distinct' );
-		
+
 		$jobs = get_posts( $args );
-		
+
 		remove_filter( 'posts_where', 'jobman_job_live_where' );
 		remove_filter( 'posts_join', 'jobman_job_live_join' );
 		remove_filter( 'posts_distinct', 'jobman_job_live_distinct' );
@@ -357,7 +372,7 @@ class JobmanHighlightedJobsWidget extends WP_Widget {
 				continue;
 			}
 		}
-		
+
 		if( count( $jobs ) > 0 ) {
 			echo '<ul>';
 			foreach( $jobs as $job ) {
@@ -366,9 +381,9 @@ class JobmanHighlightedJobsWidget extends WP_Widget {
 			echo '</ul>';
 		}
 		else {
-			echo '<p>' . __( 'There are no jobs to display at this time.', 'jobman' ) . '</p>';
+			echo '<p>' . __( 'There are no jobs to display at this time.', 'job-manager' ) . '</p>';
 		}
-					
+
 		echo $after_widget;
     }
 
@@ -382,35 +397,41 @@ class JobmanHighlightedJobsWidget extends WP_Widget {
 			$title = esc_attr( $instance['title'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'job-manager' ); ?>:
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 				</label>
 			</p>
-<?php 
+<?php
 	}
 
 }
 
 
 class JobmanJobsWidget extends WP_Widget {
-    /** constructor */
-    function JobmanJobsWidget() {
-		$name = __( 'Job Manager: Selected Jobs', 'jobman');
-		$options = array( 'description' => __( 'A customizable list jobs posted to your site', 'jobman' ) );
-		
-        parent::WP_Widget( false, $name, $options );	
-    }
+    /**
+		 * Function __construct
+		 *
+		 * Initialises the widget.
+		 */
+		function __construct() {
+			parent::__construct(
+				'jobmanjobs_widget',
+				__( 'Job Manager: Selected Jobs', 'job-manager'),
+				array( 'description' => __( 'A customizable list jobs posted to your site', 'job-manager' ) )
+			);
+		}
 
-    function widget( $args, $instance ) {		
+
+    function widget( $args, $instance ) {
         extract( $args );
         $title = apply_filters( 'widget_title', $instance['title'] );
-        
+
 		echo $before_widget;
-		
+
 		if ( $title )
 			echo $before_title . $title . $after_title;
 
-		$args = array( 
+		$args = array(
 					'post_type' => 'jobman_job',
 					'numberposts' => -1,
 					'suppress_filters' => false,
@@ -419,9 +440,9 @@ class JobmanJobsWidget extends WP_Widget {
 		add_filter( 'posts_where', 'jobman_job_live_where' );
 		add_filter( 'posts_join', 'jobman_job_live_join' );
 		add_filter( 'posts_distinct', 'jobman_job_live_distinct' );
-		
+
 		$jobs = get_posts( $args );
-		
+
 		remove_filter( 'posts_where', 'jobman_job_live_where' );
 		remove_filter( 'posts_join', 'jobman_job_live_join' );
 		remove_filter( 'posts_distinct', 'jobman_job_live_distinct' );
@@ -434,7 +455,7 @@ class JobmanJobsWidget extends WP_Widget {
 			echo '</ul>';
 		}
 		else {
-			echo '<p>' . __( 'There are no jobs to display at this time.', 'jobman' ) . '</p>';
+			echo '<p>' . __( 'There are no jobs to display at this time.', 'job-manager' ) . '</p>';
 		}
 
 		echo $after_widget;
@@ -450,7 +471,7 @@ class JobmanJobsWidget extends WP_Widget {
 			$title = esc_attr( $instance['title'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'job-manager' ); ?>:
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 				</label>
 			</p>
@@ -458,7 +479,7 @@ class JobmanJobsWidget extends WP_Widget {
 			$jobs = esc_attr( $instance['jobs'] );
 ?>
             <p>
-				<label for="<?php echo $this->get_field_id( 'jobs' ); ?>"><?php _e( 'Comma separated list of Job IDs', 'jobman' ); ?>: 
+				<label for="<?php echo $this->get_field_id( 'jobs' ); ?>"><?php _e( 'Comma separated list of Job IDs', 'job-manager' ); ?>:
 					<input class="widefat" id="<?php echo $this->get_field_id( 'jobs' ); ?>" name="<?php echo $this->get_field_name( 'jobs' ); ?>" type="text" value="<?php echo $jobs; ?>" />
 				</label>
 			</p>

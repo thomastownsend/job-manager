@@ -67,7 +67,7 @@ function jobman_interview_month( $filter, $caltype = 'full' ) {
 <?php
 	if( 'full' == $caltype ) {
 ?>
-		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'jobman' ), date_i18n( 'F Y', strtotime( $filter ) ) ) ?></h2>
+		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'job-manager' ), date_i18n( 'F Y', strtotime( $filter ) ) ) ?></h2>
 		<form action="" method="post">
 		<div class="jobman-interview-nav">
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=month&amp;filter=' . date( 'Y-m', strtotime( "$filter -1 month" ) ) ) ?>">&lt;&lt;-- <?php echo date_i18n( 'F Y', strtotime( "$filter -1 month" ) ) ?></a>
@@ -95,7 +95,7 @@ function jobman_interview_month( $filter, $caltype = 'full' ) {
 		}
 ?>
 			</select>
-			<input type="submit" name="submit" value="<?php _e( 'Go', 'jobman' ) ?>" />
+			<input type="submit" name="submit" value="<?php _e( 'Go', 'job-manager' ) ?>" />
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=month&amp;filter=' . date( 'Y-m', strtotime( "$filter +1 month" ) ) ) ?>"><?php echo date_i18n( 'F Y', strtotime( "$filter +1 month" ) ) ?> --&gt;&gt;</a>
 		</div>
 		</form>
@@ -158,7 +158,7 @@ function jobman_interview_year( $filter ) {
 	$year = $filter;
 ?>
 	<div class="wrap">
-		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'jobman' ), $year ) ?></h2>
+		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'job-manager' ), $year ) ?></h2>
 		<form action="" method="post">
 		<div class="jobman-interview-nav">
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=year&amp;filter=' . ( $year - 1 ) ) ?>">&lt;&lt;-- <?php echo $year - 1 ?></a>
@@ -173,7 +173,7 @@ function jobman_interview_year( $filter ) {
 		}
 ?>
 			</select>
-			<input type="submit" name="submit" value="<?php _e( 'Go', 'jobman' ) ?>" />
+			<input type="submit" name="submit" value="<?php _e( 'Go', 'job-manager' ) ?>" />
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=year&amp;filter=' . ( $year + 1 ) ) ?>"><?php echo $year + 1 ?> --&gt;&gt;</a>
 		</div>
 		</form>
@@ -223,7 +223,7 @@ function jobman_interview_day( $filter ) {
 	$day = date( 'j', strtotime( $filter ) );
 ?>
 	<div class="wrap">
-		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'jobman' ), date_i18n( 'l jS F Y', strtotime( $filter ) ) ) ?></h2>
+		<h2><?php printf( __( 'Job Manager: %1s Interviews', 'job-manager' ), date_i18n( 'l jS F Y', strtotime( $filter ) ) ) ?></h2>
 		<form action="" method="post">
 		<div class="jobman-interview-nav">
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=day&amp;filter=' . date( 'Y-m-d', strtotime( "$filter -1 day" ) ) ) ?>">&lt;&lt;-- <?php echo date_i18n( 'l jS F Y', strtotime( "$filter -1 day" ) ) ?></a>
@@ -262,7 +262,7 @@ function jobman_interview_day( $filter ) {
 		}
 ?>
 			</select>
-			<input type="submit" name="submit" value="<?php _e( 'Go', 'jobman' ) ?>" />
+			<input type="submit" name="submit" value="<?php _e( 'Go', 'job-manager' ) ?>" />
 			<a href="<?php echo admin_url( 'admin.php?page=jobman-interviews&amp;display=day&amp;filter=' . date( 'Y-m-d', strtotime( "$filter +1 day" ) ) ) ?>"><?php echo date_i18n( 'l jS F Y', strtotime( "$filter +1 day" ) ) ?> --&gt;&gt;</a>
 		</div>
 		</form>
@@ -274,9 +274,9 @@ function jobman_interview_day( $filter ) {
 		<table class="widefat page fixed">
 			<thead>
 			<tr>
-				<th><?php _e( 'Interview Time', 'jobman' ) ?></th>
-				<th><?php _e( 'Interview Rating', 'jobman' ) ?></th>
-				<th><?php _e( 'Interview Details', 'jobman' ) ?></th>
+				<th><?php _e( 'Interview Time', 'job-manager' ) ?></th>
+				<th><?php _e( 'Interview Rating', 'job-manager' ) ?></th>
+				<th><?php _e( 'Interview Details', 'job-manager' ) ?></th>
 			<tr>
 			</thead>
 <?php
@@ -293,7 +293,7 @@ function jobman_interview_day( $filter ) {
 		echo '</table>';
 	}
 	else {
-		echo '<p class="error">' . __( 'No applications scheduled for this day.', 'jobman' ) . '</p>';
+		echo '<p class="error">' . __( 'No applications scheduled for this day.', 'job-manager' ) . '</p>';
 	}
 ?>
 	</div>
@@ -304,7 +304,7 @@ function jobman_interview_details( $iid ) {
 	$interview = get_post( $iid );
 ?>
 	<div class="wrap">
-	<h2><?php _e( 'Job Manager: Interview Details', 'jobman' ) ?></h2>
+	<h2><?php _e( 'Job Manager: Interview Details', 'job-manager' ) ?></h2>
 <?php
 	$aid = get_post_meta( $iid, 'application', true );
 	$widths = array( '49%', '49%' );
@@ -313,8 +313,8 @@ function jobman_interview_details( $iid ) {
 					array( 'jobman_comments', 'jobman_interview_past_comments', 'jobman_comments' )
 				);
 	$titles = array(
-				array( __( 'Application', 'jobman' ) ),
-				array( __( 'Interview Comments', 'jobman' ), __( 'Previous Interview Comments', 'jobman' ), __( 'Application Comments', 'jobman' ) )
+				array( __( 'Application', 'job-manager' ) ),
+				array( __( 'Interview Comments', 'job-manager' ), __( 'Previous Interview Comments', 'job-manager' ), __( 'Application Comments', 'job-manager' ) )
 			);
 	$params = array(
 					array( array( $aid ) ),
@@ -364,7 +364,7 @@ function jobman_interview_application( $aid, $display = 'full' ) {
 <?php
 	if( 'full' == $display ) {
 ?>
-	<h2><?php _e( 'Job Manager: Application Interview Summary', 'jobman' ) ?></h2>
+	<h2><?php _e( 'Job Manager: Application Interview Summary', 'job-manager' ) ?></h2>
 <?php
 	}
 	jobman_interview_new_form( date( 'Y-m-d' ), $aid );
@@ -372,9 +372,9 @@ function jobman_interview_application( $aid, $display = 'full' ) {
 	<table class="widefat page fixed">
 		<thead>
 		<tr>
-			<th><?php _e( 'Interview Date', 'jobman' ) ?></th>
-			<th><?php _e( 'Interview Rating', 'jobman' ) ?></th>
-			<th><?php _e( 'Interview Details', 'jobman' ) ?></th>
+			<th><?php _e( 'Interview Date', 'job-manager' ) ?></th>
+			<th><?php _e( 'Interview Rating', 'job-manager' ) ?></th>
+			<th><?php _e( 'Interview Details', 'job-manager' ) ?></th>
 		</tr>
 		</thead>
 <?php
@@ -385,7 +385,7 @@ function jobman_interview_application( $aid, $display = 'full' ) {
 		<tr>
 			<td><?php echo date( 'Y-m-d H:i', strtotime( $interview->post_date ) ) ?></td>
 			<td><?php jobman_print_rating_stars( $interview->ID, $rating ) ?></td>
-			<td><a href="<?php echo admin_url( "admin.php?page=jobman-interviews&amp;display=interview&amp;filter=$interview->ID" ) ?>"><?php _e( 'Interview Details', 'jobman' ) ?></a></td>
+			<td><a href="<?php echo admin_url( "admin.php?page=jobman-interviews&amp;display=interview&amp;filter=$interview->ID" ) ?>"><?php _e( 'Interview Details', 'job-manager' ) ?></a></td>
 		</tr>
 <?php
 		}
@@ -393,7 +393,7 @@ function jobman_interview_application( $aid, $display = 'full' ) {
 	else {
 ?>
 		<tr>
-			<td colspan="3"><?php _e( 'There are no interviews for this application.', 'jobman' ) ?></td>
+			<td colspan="3"><?php _e( 'There are no interviews for this application.', 'job-manager' ) ?></td>
 		</tr>
 <?php
 	}
@@ -436,7 +436,7 @@ function jobman_interview_new_form( $date, $aid ) {
 	}
 ?>
 		</select>
-		<input type="submit" name="submit" value="<?php _e( 'New Interview', 'jobman' ) ?>" />
+		<input type="submit" name="submit" value="<?php _e( 'New Interview', 'job-manager' ) ?>" />
 	</form>
 	</div>
 <?php
@@ -465,7 +465,7 @@ function jobman_interview_new() {
 	trim( $title );
 	
 	if( empty( $title ) )
-		$title = __( 'Interview', 'jobman' );
+		$title = __( 'Interview', 'job-manager' );
 
 	$interview = array(
 					'post_type' => 'jobman_interview',

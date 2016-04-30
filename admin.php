@@ -24,15 +24,15 @@ function jobman_admin_setup() {
 
 	// Setup the admin menu item
 	$pages = array();
-	add_menu_page( __( 'Job Manager', 'jobman' ), __( 'Job Manager', 'jobman' ), 'publish_posts', 'jobman-conf', 'jobman_conf' );
-   	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Settings', 'jobman' ), 'manage_options', 'jobman-conf', 'jobman_conf' );
-	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Add Job', 'jobman' ), 'publish_posts', 'jobman-add-job', 'jobman_add_job' );
-	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Jobs', 'jobman' ), 'publish_posts', 'jobman-list-jobs', 'jobman_list_jobs' );
-	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Applications', 'jobman' ), 'read_private_pages', 'jobman-list-applications', 'jobman_list_applications' );
-	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Emails', 'jobman' ), 'read_private_pages', 'jobman-list-emails', 'jobman_list_emails' );
+	add_menu_page( __( 'Job Manager', 'job-manager' ), __( 'Job Manager', 'job-manager' ), 'publish_posts', 'jobman-conf', 'jobman_conf','dashicons-businessman' );	
+   	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Settings', 'job-manager' ), 'manage_options', 'jobman-conf', 'jobman_conf' );
+	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Add Job', 'job-manager' ), 'publish_posts', 'jobman-add-job', 'jobman_add_job' );
+	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Jobs', 'job-manager' ), 'publish_posts', 'jobman-list-jobs', 'jobman_list_jobs' );
+	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Applications', 'job-manager' ), 'read_private_pages', 'jobman-list-applications', 'jobman_list_applications' );
+	$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Emails', 'job-manager' ), 'read_private_pages', 'jobman-list-emails', 'jobman_list_emails' );
 
 	if( $options['interviews'] )
-		$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'jobman' ), __( 'Interviews', 'jobman' ), 'read_private_pages', 'jobman-interviews', 'jobman_interviews' );
+		$pages[] = add_submenu_page( 'jobman-conf', __( 'Job Manager', 'job-manager' ), __( 'Interviews', 'job-manager' ), 'read_private_pages', 'jobman-interviews', 'jobman_interviews' );
 
 
 	// Load our header info
@@ -45,7 +45,7 @@ function jobman_admin_setup() {
 
 function jobman_plugin_row_meta( $links, $file ) {
 	if( JOBMAN_BASENAME == $file && ! get_option( 'smb_consulting' ) ) {
-		$links[] = '<a href="http://www.wp-jobmanager.com/">' . __( 'Visit plugin site', 'jobman' ) . '</a>';
+		$links[] = '<a href="http://www.wp-jobmanager.com/">' . __( 'Visit plugin site', 'job-manager' ) . '</a>';
 	}
 
 	return $links;
@@ -174,10 +174,10 @@ function jobman_reset_rating( id, func ) {
 
 function jobman_print_settings_tabs() {
 	$tabs = array(
-				'admin' => __( 'Admin Settings', 'jobman' ),
-				'display' => __('Display Settings', 'jobman'),
-				'appform' => __('App. Form Settings', 'jobman'),
-				'jobform' => __('Job Form Settings', 'jobman'),
+				'admin' => __( 'Admin Settings', 'job-manager' ),
+				'display' => __( 'Display Settings', 'job-manager' ),
+				'appform' => __( 'App. Form Settings', 'job-manager' ),
+				'jobform' => __( 'Job Form Settings', 'job-manager' ),
 			);
 
 	if( ! array_key_exists( 'tab', $_REQUEST ) )
@@ -196,20 +196,20 @@ function jobman_print_settings_tabs() {
 <?php
 }
 
-function jobman_print_survey_box() {
+function jobman_print_add1_box() {
 ?>
-    <p><?php _e("Help us to IMPROVE Job Manager - Please consider taking our Survey and tell us how you use Job Manager and what features you need most?", 'jobman') ?></p>
+   <div><p style="text-align:center;"><a title="check out CSS HERO in action " href= "http://www.wp-jobmanager.com/go/hero2/"><img src="<?php echo JOBMAN_URL ?>/images/CSS_Hero_JM_300x300.png" width="300" height="300" /></a></div></p>
     <ul>
-        <li><a href="http://www.wp-jobmanager.com/go/survey/"><?php _e('Thanks for taking our Survey', 'jobman') ?></a></li>
+        <li><a href= "http://www.wp-jobmanager.com/recommended-plugins/"><?php _e( 'CSS HERO is Job Manager Recommended', 'job-manager' ) ?></a></li>
     </ul>
 <?php
 }
 
 function jobman_print_donate_box() {
 ?>
-		<p><?php _e( "If this plugin helps you find that perfect new employee, we would appreciate it if you shared the love, by way of our Donate link below.", 'jobman' ) ?></p>
+		<p><?php _e( "If this plugin helps you find that perfect new employee, we would appreciate it if you shared the love, by way of our Donate link below.", 'job-manager' ) ?></p>
 		<ul>
-			<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2M4T86RCKSFGC"><?php _e( 'Donate with PayPal', 'jobman' ) ?></a></li>
+			<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2M4T86RCKSFGC"><?php _e( 'Donate with PayPal', 'job-manager' ) ?></a></li>
 		</ul>
 <?php
 }
@@ -217,30 +217,31 @@ function jobman_print_donate_box() {
 function jobman_print_about_box() {
 ?>
 		<ul>
-			<li><a href="http://www.wp-jobmanager.com/blog"><?php _e( "Job Manager Blog", 'jobman' ) ?></a></li>
-            <li><a href="http://www.linkedin.com/in/thomastownsend"><?php _e( 'View LinkedIn Profile', 'jobman' ) ?></a></li>
-			<li><a href="https://twitter.com/thomasrtownsend"><?php _e( 'Follow me on Twitter!', 'jobman' ) ?></a></li>
-			<li><a href="http://www.wp-jobmanager.com/"><?php _e( 'Plugin Homepage', 'jobman' ) ?></a></li>
-			<li><a href="https://bitbucket.org/jobmanager_hp/job-manager/issues/new/"><?php _e( 'Submit a Bug/Enhancement Request', 'jobman' ) ?></a></li>
+			<li><a href="http://www.wp-jobmanager.com/blog"><?php _e( "Job Manager Blog", 'job-manager' ) ?></a></li>
+            <li><a href="http://www.linkedin.com/in/thomastownsend"><?php _e( 'View LinkedIn Profile', 'job-manager' ) ?></a></li>
+			<li><a href="https://twitter.com/thomasrtownsend"><?php _e( 'Follow me on Twitter!', 'job-manager' ) ?></a></li>
+			<li><a href="http://www.wp-jobmanager.com/"><?php _e( 'Plugin Homepage', 'job-manager' ) ?></a></li>
+			<li><a href="https://github.com/thomastownsend/job-manager/issues/"><?php _e( 'Submit a Bug/Enhancement Request', 'job-manager' ) ?></a></li>
+			<li><a href="http://www.wp-jobmanager.com/recommended-plugins/"><?php _e( 'View Job Manager Recommeneded Plugins', 'job-manager' ) ?></a></li>
 		</ul>
 <?php
 }
 
 function jobman_print_translators_box() {
 ?>
-    <p><?php _e( "If you're using Job Manager in a language other than English, you have some of our wonderful translators to thank for it!", 'jobman' ) ?></p>
-    <p><?php printf( __( "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact us</a>!", 'jobman' ), 'http://wp-jobmanager.com/contact-us/' ) ?>
+    <p><?php _e( "If you're using Job Manager in a language other than English, you have some of our wonderful translators to thank for it!", 'job-manager' ) ?></p>
+    <p><?php printf( __( "If you're fluent in a language not listed here, and would like to appear on this list, please <a href='%1s'>contact us</a>!", 'job-manager' ), 'http://wp-jobmanager.com/contact-us/' ) ?>
     <ul>
-        <li><strong><?php _e( 'Arabic', 'jobman' ) ?></strong> - <a href="http://www.ghalebi.info/">Ali Al-Ghalebi</a></li>
-        <li><strong><?php _e( 'Czech', 'jobman' ) ?></strong> - <a href="mailto:prdlik@centrum.cz">Lukas</a></li>
-        <li><strong><?php _e( 'Danish', 'jobman' ) ?></strong> - <a href="http://www.lithin.com/">Christian Olesen</a>, <a href="http://www.lithin.com/">Caspar Lange</a></li>
-        <li><strong><?php _e( 'Dutch', 'jobman' ) ?></strong> - <a href="http://www.centrologic.nl/">Patrick Tessels</a>, <a href="http://webtaurus.nl/">Henk van den Bor</a></li>
-        <li><strong><?php _e( 'Estonian', 'jobman' ) ?></strong> - Robert Jakobson</li>
-        <li><strong><?php _e( 'French', 'jobman' ) ?></strong> - <a href="http://www.procure-smart.com/">Fabrice Fotso</a>, Vincent Clady</li>
-        <li><strong><?php _e( 'German', 'jobman' ) ?></strong> - <a href="http://www.tolingo.com/">tolingo translations</a>, <a href="http://www.la-palma-diving.com/">Joachim Richter</a></li>
-        <li><strong><?php _e( 'Portuguese (Brazil)', 'jobman' ) ?></strong> - <a href="http://www.alexfj.com.br/">Alex Ferreira</a></li>
-        <li><strong><?php _e( 'Spanish', 'jobman' ) ?></strong> - <a href="http://www.tradiart.com">TradiArt</a></li>
-        <li><strong><?php _e( 'Swedish', 'jobman' ) ?></strong> - <a href="http://www.saxekon.se/">Berndt Axelsson</a></li>
+        <li><strong><?php _e( 'Arabic', 'job-manager' ) ?></strong> - <a href="http://www.ghalebi.info/">Ali Al-Ghalebi</a></li>
+        <li><strong><?php _e( 'Czech', 'job-manager' ) ?></strong> - <a href="mailto:prdlik@centrum.cz">Lukas</a></li>
+        <li><strong><?php _e( 'Danish', 'job-manager' ) ?></strong> - <a href="http://www.lithin.com/">Christian Olesen</a>, <a href="http://www.lithin.com/">Caspar Lange</a></li>
+        <li><strong><?php _e( 'Dutch', 'job-manager' ) ?></strong> - <a href="http://www.centrologic.nl/">Patrick Tessels</a>, <a href="http://webtaurus.nl/">Henk van den Bor</a></li>
+        <li><strong><?php _e( 'Estonian', 'job-manager' ) ?></strong> - Robert Jakobson</li>
+        <li><strong><?php _e( 'French', 'job-manager' ) ?></strong> - <a href="http://www.procure-smart.com/">Fabrice Fotso</a>, Vincent Clady</li>
+        <li><strong><?php _e( 'German', 'job-manager' ) ?></strong> - <a href="http://www.tolingo.com/">tolingo translations</a>, <a href="http://www.la-palma-diving.com/">Joachim Richter</a></li>
+        <li><strong><?php _e( 'Portuguese (Brazil)', 'job-manager' ) ?></strong> - <a href="http://www.alexfj.com.br/">Alex Ferreira</a></li>
+        <li><strong><?php _e( 'Spanish', 'job-manager' ) ?></strong> - <a href="http://www.tradiart.com">TradiArt</a></li>
+        <li><strong><?php _e( 'Swedish', 'job-manager' ) ?></strong> - <a href="http://www.saxekon.se/">Berndt Axelsson</a></li>
     </ul>
 <?php
 }

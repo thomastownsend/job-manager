@@ -69,7 +69,7 @@ function jobman_create_default_settings() {
 					'app_job_select' => '',
 					'application_email_from' => 4,
 					'application_email_from_fields' => array( 2, 3 ),
-					'application_email_subject_text' => __( 'Job Application', 'jobman' ) . ':',
+					'application_email_subject_text' => __( 'Job Application', 'job-manager' ) . ':',
 					'application_email_subject_fields' => array( 2, 3 ),
 					'date_format' => '',
 					'default_email' => get_option( 'admin_email' ),
@@ -85,9 +85,12 @@ function jobman_create_default_settings() {
 					'loginform_main' => 1,
 					'multi_applications' => 0,
 					'plugins' => array(
-									'gxs' => 1,
-									'sicaptcha' => 0
-								),
+						'gxs' => 1,
+						'sicaptcha' => 0),
+					'upload' => array(
+						'bool_custom_upload_dir' => 0,
+						'text_custom_upload_dir' => '',
+						'bool_custom_resume_name' => 0),
 					'promo_link' => 1,
 					'related_categories' => 1,
 					'rewrite_rules' => array(),
@@ -107,8 +110,8 @@ function jobman_create_default_settings() {
 								'apply_after' => '',
 								'registration_before' => '',
 								'registration_after' => '',
-								'job_title_prefix' => __( 'Job', 'jobman' ) . ': ',
-								'application_acceptance' => __( 'Thank you for your application! We\'ll check it out, and get back to you soon!', 'jobman' )
+								'job_title_prefix' => __( 'Job', 'job-manager' ) . ': ',
+								'application_acceptance' => __( 'Thank you for your application! We\'ll check it out, and get back to you soon!', 'job-manager' )
 							),
 					'uninstall' => array(
 									'options' => 1,
@@ -120,13 +123,13 @@ function jobman_create_default_settings() {
 					'user_registration_required' => 0,
 				);
 
-	$titletext = __( 'Title', 'jobman' );
-	$cattext = __( 'Categories', 'jobman' );
-	$applynowtext = __( 'Apply Now', 'jobman' );
+	$titletext = __( 'Title', 'job-manager' );
+	$cattext = __( 'Categories', 'job-manager' );
+	$applynowtext = __( 'Apply Now', 'job-manager' );
 
-	$navprevious = sprintf( __( 'Page %1s', 'jobman' ), '[job_page_previous_number]' );
-	$navnext = sprintf( __( 'Page %1s', 'jobman' ), '[job_page_next_number]' );
-	$navdesc = sprintf( __( 'Jobs %1s-%2s of %3s', 'jobman' ), '[job_page_minimum]', '[job_page_maximum]', '[job_total]' );
+	$navprevious = sprintf( __( 'Page %1s', 'job-manager' ), '[job_page_previous_number]' );
+	$navnext = sprintf( __( 'Page %1s', 'job-manager' ), '[job_page_next_number]' );
+	$navdesc = sprintf( __( 'Jobs %1s-%2s of %3s', 'job-manager' ), '[job_page_minimum]', '[job_page_maximum]', '[job_total]' );
 
 	$options['templates']['job'] = <<<EOT
 <table class="job-table[if_job_highlighted] highlighted[/if_job_highlighted]">
@@ -277,8 +280,8 @@ function jobman_upgrade_settings( $oldversion ) {
 								'job_after' => '',
 								'apply_before' => '',
 								'apply_after' => '',
-								'job_title_prefix' => __( 'Job', 'jobman' ) . ': ',
-								'application_acceptance' => __( 'Thank you for your application! We\'ll check it out, and get back to you soon!', 'jobman' )
+								'job_title_prefix' => __( 'Job', 'job-manager' ) . ': ',
+								'application_acceptance' => __( 'Thank you for your application! We\'ll check it out, and get back to you soon!', 'job-manager' )
 							);
 
 		$options['application_email_from_fields'] = array();
@@ -384,9 +387,9 @@ EOT;
 		$options['interview_title_fields'] = array();
 		$options['date_format'] = '';
 
-		$navprevious = sprintf( __( 'Page %1s', 'jobman' ), '[job_page_previous_number]' );
-		$navnext = sprintf( __( 'Page %1s', 'jobman' ), '[job_page_next_number]' );
-		$navdesc = sprintf( __( 'Jobs %1s-%2s of %3s', 'jobman' ), '[job_page_minimum]', '[job_page_maximum]', '[job_total]' );
+		$navprevious = sprintf( __( 'Page %1s', 'job-manager' ), '[job_page_previous_number]' );
+		$navnext = sprintf( __( 'Page %1s', 'job-manager' ), '[job_page_next_number]' );
+		$navdesc = sprintf( __( 'Jobs %1s-%2s of %3s', 'job-manager' ), '[job_page_minimum]', '[job_page_maximum]', '[job_total]' );
 
 		$options['templates']['job_list'] .= <<<EOT
 
@@ -411,12 +414,26 @@ EOT;
 		update_option( 'jobman_options', $options );
 	}
 
-    if( $oldversion < 19 ) {
-        $options = get_option( 'jobman_options' );
+	if( $oldversion < 19 ) {
+		$options = get_option( 'jobman_options' );
 
 		if( ! array_key_exists( 'rewrite_rules', $options ) )
 			$options['rewrite_rules'] = array();
-		
+
+		update_option( 'jobman_options', $options );
+	}
+
+	if( $oldversion < 20 )
+	{
+		$options = get_option( 'jobman_options' );
+
+		if( ! array_key_exists( 'upload', $options ) )
+		{
+			$options['upload']['bool_custom_upload_dir'] = 0;
+			$options['upload']['text_custom_upload_dir'] = '';
+			$options['upload']['text_custom_resume_name_tpl'] = '';
+		}
+
 		update_option( 'jobman_options', $options );
 	}
 }

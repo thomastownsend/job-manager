@@ -7,7 +7,7 @@ function jobman_create_db() {
 	$options['fields'] = array();
 
 	$options['fields'][1] = array(
-								'label' => __( 'Personal Details', 'jobman' ),
+								'label' => __( 'Personal Details', 'job-manager' ),
 								'type' => 'heading',
 								'listdisplay' => 0,
 								'data' => '',
@@ -18,7 +18,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][2] = array(
-								'label' => __( 'Name', 'jobman' ),
+								'label' => __( 'Name', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 1,
 								'data' => '',
@@ -29,7 +29,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][3] = array(
-								'label' => __( 'Surname', 'jobman' ),
+								'label' => __( 'Surname', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 1,
 								'data' => '',
@@ -40,7 +40,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][4] = array(
-								'label' => __( 'Email Address', 'jobman' ),
+								'label' => __( 'Email Address', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -51,7 +51,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][5] = array(
-								'label' => __( 'Contact Details', 'jobman' ),
+								'label' => __( 'Contact Details', 'job-manager' ),
 								'type' => 'heading',
 								'listdisplay' => 0,
 								'data' => '',
@@ -62,7 +62,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][6] = array(
-								'label' => __( 'Address', 'jobman' ),
+								'label' => __( 'Address', 'job-manager' ),
 								'type' => 'textarea',
 								'listdisplay' => 0,
 								'data' => '',
@@ -73,7 +73,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][7] = array(
-								'label' => __( 'City', 'jobman' ),
+								'label' => __( 'City', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -84,7 +84,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][8] = array(
-								'label' => __( 'Post code', 'jobman' ),
+								'label' => __( 'Post code', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -95,7 +95,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][9] = array(
-								'label' => __( 'Country', 'jobman' ),
+								'label' => __( 'Country', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 1,
 								'data' => '',
@@ -106,7 +106,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][10] = array(
-								'label' => __( 'Telephone', 'jobman' ),
+								'label' => __( 'Telephone', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -117,7 +117,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][11] = array(
-								'label' => __( 'Cell phone', 'jobman' ),
+								'label' => __( 'Cell phone', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -128,7 +128,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][12] = array(
-								'label' => __( 'Qualifications', 'jobman' ),
+								'label' => __( 'Qualifications', 'job-manager' ),
 								'type' => 'heading',
 								'listdisplay' => 0,
 								'data' => '',
@@ -139,10 +139,10 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][13] = array(
-								'label' => __( 'Do you have a degree?', 'jobman' ),
+								'label' => __( 'Do you have a degree?', 'job-manager' ),
 								'type' => 'radio',
 								'listdisplay' => 1,
-								'data' => __( 'Yes', 'jobman' ) . "\r\n" . __( 'No', 'jobman' ),
+								'data' => __( 'Yes', 'job-manager' ) . "\r\n" . __( 'No', 'job-manager' ),
 								'mandatory' => 0,
 								'filter' => '',
 								'error' => '',
@@ -150,7 +150,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][14] = array(
-								'label' => __( 'Where did you complete your degree?', 'jobman' ),
+								'label' => __( 'Where did you complete your degree?', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -161,7 +161,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][15] = array(
-								'label' => __( 'Title of your degree', 'jobman' ),
+								'label' => __( 'Title of your degree', 'job-manager' ),
 								'type' => 'text',
 								'listdisplay' => 0,
 								'data' => '',
@@ -172,7 +172,7 @@ function jobman_create_db() {
 								'categories' => array()
 							);
 	$options['fields'][16] = array(
-								'label' => __( 'Upload your CV', 'jobman' ),
+								'label' => __( 'Upload your CV', 'job-manager' ),
 								'type' => 'file',
 								'listdisplay' => 1,
 								'data' => '',
@@ -197,10 +197,10 @@ function jobman_create_db() {
 								'label' => '',
 								'type' => 'checkbox',
 								'listdisplay' => 0,
-								'data' => __( 'I have read and understood the privacy policy.', 'jobman' ),
+								'data' => __( 'I have read and understood the privacy policy.', 'job-manager' ),
 								'mandatory' => 1,
-								'filter' => __( 'I have read and understood the privacy policy.', 'jobman' ),
-								'error' => __( "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept.", 'jobman' ),
+								'filter' => __( 'I have read and understood the privacy policy.', 'job-manager' ),
+								'error' => __( "You need to read and agree to our privacy policy before we can accept your application. Please click the 'Back' button in your browser, read our privacy policy, and confirm that you accept.", 'job-manager' ),
 								'sortorder' => 17,
 								'categories' => array()
 							);
@@ -208,7 +208,7 @@ function jobman_create_db() {
 	$options['job_fields'] = array();
 
 	$options['job_fields'][1] = array(
-								'label' => __( 'Salary', 'jobman' ),
+								'label' => __( 'Salary', 'job-manager' ),
 								'type' => 'text',
 								'data' => '',
 								'sortorder' => 0,
@@ -216,23 +216,23 @@ function jobman_create_db() {
 							);
 
 	$options['job_fields'][2] = array(
-								'label' => __( 'Start Date', 'jobman' ),
+								'label' => __( 'Start Date', 'job-manager' ),
 								'type' => 'date',
 								'data' => '',
 								'sortorder' => 1,
-								'description' => __( 'The date that the job starts. For positions available immediately, leave blank.', 'jobman' )
+								'description' => __( 'The date that the job starts. For positions available immediately, leave blank.', 'job-manager' )
 							);
 
 	$options['job_fields'][3] = array(
-								'label' => __( 'End Date', 'jobman' ),
+								'label' => __( 'End Date', 'job-manager' ),
 								'type' => 'date',
 								'data' => '',
 								'sortorder' => 2,
-								'description' =>  __( 'The date that the job finishes. For ongoing positions, leave blank.', 'jobman' )
+								'description' =>  __( 'The date that the job finishes. For ongoing positions, leave blank.', 'job-manager' )
 							);
 
 	$options['job_fields'][4] = array(
-								'label' => __( 'Location', 'jobman' ),
+								'label' => __( 'Location', 'job-manager' ),
 								'type' => 'text',
 								'data' => '',
 								'sortorder' => 3,
@@ -240,7 +240,7 @@ function jobman_create_db() {
 							);
 
 	$options['job_fields'][5] = array(
-								'label' => __( 'Job Information', 'jobman' ),
+								'label' => __( 'Job Information', 'job-manager' ),
 								'type' => 'textarea',
 								'data' => '',
 								'sortorder' => 4,
@@ -254,8 +254,8 @@ function jobman_create_db() {
 				'post_status' => 'publish',
 				'post_content' => '',
 				'post_name' => 'jobs',
-				'post_title' => __( 'Jobs Listing', 'jobman' ),
-				'post_content' => __( 'Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site.', 'jobman' ),
+				'post_title' => __( 'Jobs Listing', 'job-manager' ),
+				'post_content' => __( 'Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site.', 'job-manager' ),
 				'post_type' => 'page'
 			);
 	$mainid = wp_insert_post( $page );
@@ -269,7 +269,7 @@ function jobman_create_db() {
 				'post_status' => 'publish',
 				'post_content' => '',
 				'post_name' => 'apply',
-				'post_title' => __( 'Job Application', 'jobman' ),
+				'post_title' => __( 'Job Application', 'job-manager' ),
 				'post_type' => 'jobman_app_form',
 				'post_parent' => $mainid
 			);
@@ -282,7 +282,7 @@ function jobman_create_db() {
 				'post_status' => 'publish',
 				'post_content' => '',
 				'post_name' => 'register',
-				'post_title' => __( 'Register', 'jobman' ),
+				'post_title' => __( 'Register', 'job-manager' ),
 				'post_type' => 'jobman_register',
 				'post_parent' => $mainid
 			);
@@ -326,8 +326,8 @@ function jobman_upgrade_db( $oldversion ) {
 					'post_author' => 1,
 					'post_content' => '',
 					'post_name' => $options['page_name'],
-					'post_title' => __( 'Jobs Listing', 'jobman' ),
-					'post_content' => __( 'Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site.', 'jobman' ),
+					'post_title' => __( 'Jobs Listing', 'job-manager' ),
+					'post_content' => __( 'Hi! This page is used by your Job Manager plugin as a base. Feel free to change settings here, but please do not delete this page. Also note that any content you enter here will not show up when this page is displayed on your site.', 'job-manager' ),
 					'post_type' => 'page'
 				);
 		$mainid = wp_insert_post( $page );
@@ -481,7 +481,7 @@ function jobman_upgrade_db( $oldversion ) {
 								'post_author' => 1,
 								'post_type' => 'jobman_app',
 								'post_content' => '',
-								'post_title' => __( 'Application', 'jobman' ),
+								'post_title' => __( 'Application', 'job-manager' ),
 								'post_date' => $app['submitted']
 							);
 
@@ -539,7 +539,7 @@ function jobman_upgrade_db( $oldversion ) {
 					'post_author' => 1,
 					'post_content' => '',
 					'post_name' => 'apply',
-					'post_title' => __( 'Job Application', 'jobman' ),
+					'post_title' => __( 'Job Application', 'job-manager' ),
 					'post_type' => 'jobman_app_form',
 					'post_parent' => $mainid
 				);
@@ -599,7 +599,7 @@ function jobman_upgrade_db( $oldversion ) {
 					'post_author' => 1,
 					'post_content' => '',
 					'post_name' => 'register',
-					'post_title' => __( 'Register', 'jobman' ),
+					'post_title' => __( 'Register', 'job-manager' ),
 					'post_type' => 'jobman_register',
 					'post_parent' => $options['main_page']
 				);
@@ -654,7 +654,7 @@ function jobman_upgrade_db( $oldversion ) {
 		$options['job_fields'] = array();
 
 		$options['job_fields'][1] = array(
-									'label' => __( 'Salary', 'jobman' ),
+									'label' => __( 'Salary', 'job-manager' ),
 									'type' => 'text',
 									'data' => '',
 									'sortorder' => 0,
@@ -662,23 +662,23 @@ function jobman_upgrade_db( $oldversion ) {
 								);
 
 		$options['job_fields'][2] = array(
-									'label' => __( 'Start Date', 'jobman' ),
+									'label' => __( 'Start Date', 'job-manager' ),
 									'type' => 'date',
 									'data' => '',
 									'sortorder' => 1,
-									'description' => __( 'The date that the job starts. For positions available immediately, leave blank.', 'jobman' )
+									'description' => __( 'The date that the job starts. For positions available immediately, leave blank.', 'job-manager' )
 								);
 
 		$options['job_fields'][3] = array(
-									'label' => __( 'End Date', 'jobman' ),
+									'label' => __( 'End Date', 'job-manager' ),
 									'type' => 'date',
 									'data' => '',
 									'sortorder' => 2,
-									'description' =>  __( 'The date that the job finishes. For ongoing positions, leave blank.', 'jobman' )
+									'description' =>  __( 'The date that the job finishes. For ongoing positions, leave blank.', 'job-manager' )
 								);
 
 		$options['job_fields'][4] = array(
-									'label' => __( 'Location', 'jobman' ),
+									'label' => __( 'Location', 'job-manager' ),
 									'type' => 'text',
 									'data' => '',
 									'sortorder' => 3,
@@ -686,7 +686,7 @@ function jobman_upgrade_db( $oldversion ) {
 								);
 
 		$options['job_fields'][5] = array(
-									'label' => __( 'Job Information', 'jobman' ),
+									'label' => __( 'Job Information', 'job-manager' ),
 									'type' => 'textarea',
 									'data' => '',
 									'sortorder' => 4,

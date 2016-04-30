@@ -63,33 +63,70 @@ function jobman_conf() {
 	if( ! get_option( 'smb_consulting' ) ) {
 		$widths = array( '78%', '20%' );
 		$functions = array(
-						array( 'jobman_print_settings_box', 'jobman_print_categories_box', 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_other_plugins_box', 'jobman_print_uninstall_box' ),
-						array('jobman_print_survey_box', 'jobman_print_donate_box', 'jobman_print_about_box', 'jobman_print_translators_box' )
-					);
+			array(
+				'jobman_print_settings_box',
+				'jobman_print_categories_box',
+				'jobman_print_icons_box',
+				'jobman_print_user_box',
+				'jobman_print_application_email_box',
+				'jobman_print_other_plugins_box',
+				'jobman_print_uninstall_box',
+				'jobman_print_resume_settings_box'),
+			array(
+				'jobman_print_add1_box',
+				'jobman_print_donate_box',
+				'jobman_print_about_box',
+				'jobman_print_translators_box'));
 		$titles = array(
-					array( __( 'Settings', 'jobman' ),  __( 'Categories', 'jobman' ), __( 'Icons', 'jobman' ), __( 'User Settings', 'jobman' ), __( 'Application Email Settings', 'jobman' ), __( 'Other Plugins', 'jobman' ), __( 'Uninstall Settings', 'jobman' ) ),
-					array( __( 'Job Manager - SURVEY -', 'jobman' ), __( 'Donate', 'jobman' ), __( 'About This Plugin', 'jobman' ), __( 'Translators', 'jobman' ) )
-				);
+			array(
+				__( 'Settings', 'job-manager' ),
+				__( 'Categories', 'job-manager' ),
+				__( 'Icons', 'job-manager' ),
+				__( 'User Settings', 'job-manager' ),
+				__( 'Application Email Settings', 'job-manager' ),
+				__( 'Other Plugins', 'job-manager' ),
+				__( 'Uninstall Settings', 'job-manager' ),
+				__( 'Resume', 'job-manager' )),
+			array(
+				__( 'Job Manager Styling - CSS Hero -', 'job-manager' ),
+				__( 'Donate', 'job-manager' ),
+				__( 'About This Plugin', 'job-manager' ),
+				__( 'Translators', 'job-manager' )));
 
 		if( $options['interviews'] ) {
 			$functions[0] = array_insert( $functions[0], 5, 'jobman_print_interview_box' );
-			$titles[0] = array_insert( $titles[0], 5, __( 'Interview Settings', 'jobman' ) );
+			$titles[0] = array_insert( $titles[0], 5, __( 'Interview Settings', 'job-manager' ) );
 		}
 	}
-	else {
+	else
+	{
 		$widths = array( '49%', '49%' );
 		$functions = array(
-						array( 'jobman_print_settings_box', 'jobman_print_categories_box', 'jobman_print_other_plugins_box' ),
-						array( 'jobman_print_icons_box', 'jobman_print_user_box', 'jobman_print_application_email_box', 'jobman_print_uninstall_box' )
-					);
+			array(
+				'jobman_print_settings_box',
+				'jobman_print_categories_box',
+				'jobman_print_other_plugins_box',
+				'jobman_print_resume_settings_box'),
+			array(
+				'jobman_print_icons_box',
+				'jobman_print_user_box',
+				'jobman_print_application_email_box',
+				'jobman_print_uninstall_box',));
 		$titles = array(
-					array( __( 'Settings', 'jobman' ), __( 'Categories', 'jobman' ), __( 'Other Plugins', 'jobman' ) ),
-					array( __( 'Icons', 'jobman' ), __( 'User Settings', 'jobman' ), __( 'Application Email Settings', 'jobman' ), __( 'Uninstall Settings', 'jobman' ) )
-				);
+			array(
+				__( 'Settings', 'job-manager' ),
+				__( 'Categories', 'job-manager' ),
+				__( 'Other Plugins', 'job-manager' ),
+				__( 'Resume', 'job-manager' )),
+			array(
+				__( 'Icons', 'job-manager' ),
+				__( 'User Settings', 'job-manager' ),
+				__( 'Application Email Settings', 'job-manager' ),
+				__( 'Uninstall Settings', 'job-manager' )));
 
 		if( $options['interviews'] ) {
 			$functions[1] = array_insert( $functions[1], 3, 'jobman_print_interview_box' );
-			$titles[1] = array_insert( $titles[1], 3, __( 'Interview Settings', 'jobman' ) );
+			$titles[1] = array_insert( $titles[1], 3, __( 'Interview Settings', 'job-manager' ) );
 		}
 	}
 	jobman_create_dashboard( $widths, $functions, $titles );
@@ -103,47 +140,81 @@ function jobman_print_settings_box() {
 ?>
 		<form action="" method="post">
 		<input type="hidden" name="jobmanconfsubmit" value="1" />
-<?php 
-	wp_nonce_field( 'jobman-conf-updatedb' ); 
+<?php
+	wp_nonce_field( 'jobman-conf-updatedb' );
 ?>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'URL path', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'URL path', 'job-manager' ) ?></th>
 				<td colspan="2">
-					<a href="<?php echo get_page_link( $options['main_page'] ) ?>"><?php echo get_page_link( $options['main_page'] ) ?></a> 
-					(<a href="<?php echo get_edit_post_link( $options['main_page'] ) ?>"><?php _e( 'edit', 'jobman' ) ?></a>)
+					<a href="<?php echo get_page_link( $options['main_page'] ) ?>"><?php echo get_page_link( $options['main_page'] ) ?></a>
+					(<a href="<?php echo get_edit_post_link( $options['main_page'] ) ?>"><?php _e( 'edit', 'job-manager' ) ?></a>)
 				</td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Allow Multi-Applications', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Allow Multi-Applications', 'job-manager' ) ?></th>
 				<td><input type="checkbox" name="multi-applications" value="1" <?php echo ( $options['multi_applications'] )?( 'checked="checked" ' ):( '' )?> /></td>
-				<td><span class="description"><?php _e( 'This will allow applicants to send through a single application for multiple jobs.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'This will allow applicants to send through a single application for multiple jobs.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Enable Interview Scheduling', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Enable Interview Scheduling', 'job-manager' ) ?></th>
 				<td><input type="checkbox" name="interviews" value="1" <?php echo ( $options['interviews'] )?( 'checked="checked" ' ):( '' )?> /></td>
-				<td><span class="description"><?php _e( 'This will enable interview scheduling functionality.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'This will enable interview scheduling functionality.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Default email', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Default email', 'job-manager' ) ?></th>
 				<td colspan="2"><input class="regular-text code" type="text" name="default-email" value="<?php echo $options['default_email'] ?>" /></td>
 			</tr>
 		</table>
-		
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Settings', 'jobman' ) ?>" /></p>
-		</form>
+
+        <p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Settings', 'job-manager' ) ?>" /></p>
+        </form>
+<?php
+}
+
+
+function jobman_print_resume_settings_box() {
+    $options = get_option( 'jobman_options' );
+?>
+        <form action="" method="post">
+        <input type="hidden" name="jobmanresumesubmit" value="1" />
+<?php
+	/**
+	*	{
+	    $upload_path = JOBMAN_UPLOAD_DIR;
+
+	    //custom directory
+	    if(! empty($options['upload']['text_custom_upload_dir']))
+	*/
+    wp_nonce_field( 'jobman-resume-settings-updatedb' );
+?>
+        <table class="form-table">
+	<!--<tr>
+                <th scope="row"><?php _e( 'Name Override ', 'job-manager' ) ?></th>
+                <td><input type="input" name="input_name_override" id="input_name_override" value="<?php echo (! empty($options['upload']['text_custom_resume_name_tpl']) )?__( $options['upload']['text_custom_resume_name_tpl'] ):__( '' )?>" placeholder="jobman-resume-{original_name}-{timestamp}"/></td>
+                <td><span class="description"><?php _e( 'This will override the uploaded resume file name using the format defined here.<br>Accepted: -_a-z0-9{}<br> Tags: {original_name} {date} {timestamp} {original_name_hash}', 'job-manager' ) ?></span></td>
+            </tr>-->
+            <tr>
+                <th scope="row"><?php _e( 'Custom Upload', 'job-manager' ) ?></th>
+                <td><input type="checkbox" name="bool_custom_upload_dir" value="1" <?php echo (! empty($options['upload']['bool_custom_upload_dir']))?( 'checked="checked" ' ):( '' )?> /></td>
+                <td colspan="2"><span class="description"><?php _e( 'IMPORTANT - Please Read this before you apply this change.  This will upload the resumes into a separate folder. <br>' . JOBMAN_UPLOAD_DIR, 'job-manager' ) ?></span></td>
+            </tr>
+        </table>
+
+        <p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Resume/CV Settings', 'job-manager' ) ?>" /></p>
+        </form>
 <?php
 }
 
 function jobman_print_categories_box() {
 	$options = get_option( 'jobman_options' );
 ?>
-		<p><?php _e( 'Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories.', 'jobman' ) ?></p>
+		<p><?php _e( 'Similar to the normal WordPress Categories, Job Manager categories can be used to split jobs into different groups. They can also be used to customise how the Application Form appears for jobs in different categories.', 'job-manager' ) ?></p>
 		<p>
-			<strong><?php _e( 'Title', 'jobman' ) ?></strong> - <?php _e( 'The display name of the category', 'jobman' ) ?><br/>
-			<strong><?php _e( 'Slug', 'jobman' ) ?></strong> - <?php _e( 'The URL of the category', 'jobman' ) ?><br/>
-			<strong><?php _e( 'Email', 'jobman' ) ?></strong> - <?php _e( 'The address to notify when new applications are submitted in this category', 'jobman' ) ?><br/>
-			<strong><?php _e( 'Link', 'jobman' ) ?></strong> - <?php _e( 'The URL of the list of jobs in this category', 'jobman' ) ?>
+			<strong><?php _e( 'Title', 'job-manager' ) ?></strong> - <?php _e( 'The display name of the category', 'job-manager' ) ?><br/>
+			<strong><?php _e( 'Slug', 'job-manager' ) ?></strong> - <?php _e( 'The URL of the category', 'job-manager' ) ?><br/>
+			<strong><?php _e( 'Email', 'job-manager' ) ?></strong> - <?php _e( 'The address to notify when new applications are submitted in this category', 'job-manager' ) ?><br/>
+			<strong><?php _e( 'Link', 'job-manager' ) ?></strong> - <?php _e( 'The URL of the list of jobs in this category', 'job-manager' ) ?>
 		</p>
 		<form action="" method="post">
 		<input type="hidden" name="jobmancatsubmit" value="1" />
@@ -153,11 +224,11 @@ function jobman_print_categories_box() {
 		<table class="widefat page fixed" cellspacing="0">
 			<thead>
 			<tr>
-				<th scope="col"><?php _e( 'Title', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Slug', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Email', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Link', 'jobman' ) ?></th>
-				<th scope="col" class="jobman-fielddelete"><?php _e( 'Delete', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Title', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Slug', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Email', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Link', 'job-manager' ) ?></th>
+				<th scope="col" class="jobman-fielddelete"><?php _e( 'Delete', 'job-manager' ) ?></th>
 			</tr>
 			</thead>
 <?php
@@ -174,8 +245,8 @@ function jobman_print_categories_box() {
 				</td>
 				<td><input class="regular-text code" type="text" name="slug[]" value="<?php echo $cat->slug ?>" /></td>
 				<td><input class="regular-text code" type="text" name="email[]" value="<?php echo $cat->description ?>" /></td>
-				<td><a href="<?php echo $url ?>"><?php _e( 'Link', 'jobman' ) ?></a></td>
-				<td><a href="#" onclick="jobman_delete( this, 'id', 'jobman-delete-category-list' ); return false;"><?php _e( 'Delete', 'jobman' ) ?></a></td>
+				<td><a href="<?php echo $url ?>"><?php _e( 'Link', 'job-manager' ) ?></a></td>
+				<td><a href="#" onclick="jobman_delete( this, 'id', 'jobman-delete-category-list' ); return false;"><?php _e( 'Delete', 'job-manager' ) ?></a></td>
 			</tr>
 <?php
 		}
@@ -186,7 +257,7 @@ function jobman_print_categories_box() {
 	$template .= '<td><input class="regular-text code" type="text" name="slug[]" /></td>';
 	$template .= '<td><input class="regular-text code" type="text" name="email[]" /></td>';
 	$template .= '<td>&nbsp;</td>';
-	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'id\\\', \\\'jobman-delete-category-list\\\' ); return false;">' . __( 'Delete', 'jobman' ) . '</a></td></tr>';
+	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'id\\\', \\\'jobman-delete-category-list\\\' ); return false;">' . __( 'Delete', 'job-manager' ) . '</a></td></tr>';
 
 	$display_template = str_replace( "\\'", "'", $template );
 
@@ -195,18 +266,18 @@ function jobman_print_categories_box() {
 			<tr id="jobman-catnew">
 					<td colspan="5" style="text-align: right;">
 						<input type="hidden" name="jobman-delete-list" id="jobman-delete-category-list" value="" />
-						<a href="#" onclick="jobman_new( 'jobman-catnew', 'category' ); return false;"><?php _e( 'Add New Category', 'jobman' ) ?></a>
+						<a href="#" onclick="jobman_new( 'jobman-catnew', 'category' ); return false;"><?php _e( 'Add New Category', 'job-manager' ) ?></a>
 					</td>
 			</tr>
 		</table>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Show related categories?', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Show related categories?', 'job-manager' ) ?></th>
 				<td><input type="checkbox" name="related-categories" <?php echo ( $options['related_categories'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'This will show a list of categories that any jobs in a given job list belong to.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'This will show a list of categories that any jobs in a given job list belong to.', 'job-manager' ) ?></span></td>
 			</tr>
 		</table>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Categories', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Categories', 'job-manager' ) ?>" /></p>
 <script type="text/javascript">
 //<![CDATA[
 	jobman_templates['category'] = '<?php echo $template ?>';
@@ -219,11 +290,11 @@ function jobman_print_categories_box() {
 function jobman_print_icons_box() {
 	$options = get_option( 'jobman_options' );
 ?>
-		<p><?php _e( 'Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the "Summary" jobs list type. Optimal size 32 x 32 px', 'jobman' ) ?></p>
+		<p><?php _e( 'Icons can be assigned to jobs that you want to draw attention to. These icons will only be displayed when using the "Summary" jobs list type. Optimal size 32 x 32 px', 'job-manager' ) ?></p>
 		<p>
-			<strong><?php _e( 'Icon', 'jobman' ) ?></strong> - <?php _e( 'The current icon', 'jobman' ) ?><br/>
-			<strong><?php _e( 'Title', 'jobman' ) ?></strong> - <?php _e( 'The display name of the icon', 'jobman' ) ?><br/>
-			<strong><?php _e( 'File', 'jobman' ) ?></strong> - <?php _e( 'The icon file', 'jobman' ) ?><br/>
+			<strong><?php _e( 'Icon', 'job-manager' ) ?></strong> - <?php _e( 'The current icon', 'job-manager' ) ?><br/>
+			<strong><?php _e( 'Title', 'job-manager' ) ?></strong> - <?php _e( 'The display name of the icon', 'job-manager' ) ?><br/>
+			<strong><?php _e( 'File', 'job-manager' ) ?></strong> - <?php _e( 'The icon file', 'job-manager' ) ?><br/>
 		</p>
 		<form action="" enctype="multipart/form-data" method="post">
 		<input type="hidden" name="jobmaniconsubmit" value="1" />
@@ -233,10 +304,10 @@ function jobman_print_icons_box() {
 		<table class="widefat page fixed" cellspacing="0">
 			<thead>
 			<tr>
-				<th scope="col" class="jobman-icon"><?php _e( 'Icon', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Title', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'File', 'jobman' ) ?></th>
-				<th scope="col" class="jobman-fielddelete"><?php _e( 'Delete', 'jobman' ) ?></th>
+				<th scope="col" class="jobman-icon"><?php _e( 'Icon', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Title', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'File', 'job-manager' ) ?></th>
+				<th scope="col" class="jobman-fielddelete"><?php _e( 'Delete', 'job-manager' ) ?></th>
 			</tr>
 			</thead>
 <?php
@@ -253,7 +324,7 @@ function jobman_print_icons_box() {
 				</td>
 				<td><input class="regular-text code" type="text" name="title[]" value="<?php echo $post->post_title ?>" /></td>
 				<td><input class="regular-text code" type="file" name="icon[]" /></td>
-				<td><a href="#" onclick="jobman_delete( this, 'id', 'jobman-delete-icon-list' ); return false;"><?php _e( 'Delete', 'jobman' ) ?></a></td>
+				<td><a href="#" onclick="jobman_delete( this, 'id', 'jobman-delete-icon-list' ); return false;"><?php _e( 'Delete', 'job-manager' ) ?></a></td>
 			</tr>
 <?php
 		}
@@ -262,7 +333,7 @@ function jobman_print_icons_box() {
 	$template = '<tr><td><input type="hidden" name="id[]" value="-1" /></td>';
 	$template .= '<td><input class="regular-text code" type="text" name="title[]" /></td>';
 	$template .= '<td><input class="regular-text code" type="file" name="icon[]" /></td>';
-	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'id\\\', \\\'jobman-delete-icon-list\\\' ); return false;">' . __( 'Delete', 'jobman' ) . '</a></td></tr>';
+	$template .= '<td><a href="#" onclick="jobman_delete( this, \\\'id\\\', \\\'jobman-delete-icon-list\\\' ); return false;">' . __( 'Delete', 'job-manager' ) . '</a></td></tr>';
 
 	$print_template = str_replace( "\\'", "'", $template );
 	echo $print_template;
@@ -270,10 +341,10 @@ function jobman_print_icons_box() {
 		<tr id="jobman-iconnew">
 				<td colspan="4" style="text-align: right;">
 					<input type="hidden" name="jobman-delete-list" id="jobman-delete-icon-list" value="" />
-					<a href="#" onclick="jobman_new( 'jobman-iconnew', 'icon' ); return false;"><?php _e( 'Add New Icon', 'jobman' ) ?></a>
+					<a href="#" onclick="jobman_new( 'jobman-iconnew', 'icon' ); return false;"><?php _e( 'Add New Icon', 'job-manager' ) ?></a>
 				</td>
 		</table>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Icons', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Icons', 'job-manager' ) ?>" /></p>
 <script type="text/javascript">
 //<![CDATA[
 	jobman_templates['icon'] = '<?php echo $template ?>';
@@ -286,7 +357,7 @@ function jobman_print_icons_box() {
 function jobman_print_user_box() {
 	$options = get_option( 'jobman_options' );
 ?>
-		<p><?php _e( "Allowing users to register means that they and you can more easily keep track of jobs they've applied for.", 'jobman' ) ?></p>
+		<p><?php _e( "Allowing users to register means that they and you can more easily keep track of jobs they've applied for.", 'job-manager' ) ?></p>
 		<form action="" method="post">
 		<input type="hidden" name="jobmanusersubmit" value="1" />
 <?php
@@ -294,26 +365,26 @@ function jobman_print_user_box() {
 ?>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Enable User Registration', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Enable User Registration', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="user-registration" <?php echo ( $options['user_registration'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'This will allow users to register for the Jobs system, even if user registration is disabled for your blog.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'This will allow users to register for the Jobs system, even if user registration is disabled for your blog.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Require User Registration', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Require User Registration', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="user-registration-required" <?php echo ( $options['user_registration_required'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'If the previous option is checked, this option will require users to login before they can complete the application form.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'If the previous option is checked, this option will require users to login before they can complete the application form.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Which pages should the login form be displayed on?', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Which pages should the login form be displayed on?', 'job-manager' ) ?></th>
 				<td colspan="2">
-					<input type="checkbox" value="1" name="loginform-main" <?php echo ( $options['loginform_main'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'The main jobs list', 'jobman' ) ?><br />
-					<input type="checkbox" value="1" name="loginform-category" <?php echo ( $options['loginform_category'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'Category jobs lists', 'jobman' ) ?><br />
-					<input type="checkbox" value="1" name="loginform-job" <?php echo ( $options['loginform_job'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'Individual jobs', 'jobman' ) ?><br />
-					<input type="checkbox" value="1" name="loginform-apply" <?php echo ( $options['loginform_apply'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'The application form', 'jobman' ) ?><br />
+					<input type="checkbox" value="1" name="loginform-main" <?php echo ( $options['loginform_main'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'The main jobs list', 'job-manager' ) ?><br />
+					<input type="checkbox" value="1" name="loginform-category" <?php echo ( $options['loginform_category'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'Category jobs lists', 'job-manager' ) ?><br />
+					<input type="checkbox" value="1" name="loginform-job" <?php echo ( $options['loginform_job'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'Individual jobs', 'job-manager' ) ?><br />
+					<input type="checkbox" value="1" name="loginform-apply" <?php echo ( $options['loginform_apply'] )?( 'checked="checked" ' ):( '' ) ?>/> <?php _e( 'The application form', 'job-manager' ) ?><br />
 				</td>
 			</tr>
 		</table>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update User Settings', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update User Settings', 'job-manager' ) ?>" /></p>
 		</form>
 <?php
 }
@@ -323,7 +394,7 @@ function jobman_print_application_email_box() {
 
 	$fields = $options['fields'];
 ?>
-		<p><?php _e( 'When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email.', 'jobman' ) ?></p>
+		<p><?php _e( 'When an applicant successfully submits an application, an email will be sent to the appropriate user. These options allow you to customise that email.', 'job-manager' ) ?></p>
 		<form action="" method="post">
 		<input type="hidden" name="jobmanappemailsubmit" value="1" />
 <?php
@@ -331,9 +402,9 @@ function jobman_print_application_email_box() {
 ?>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Email Address', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Email Address', 'job-manager' ) ?></th>
 				<td><select name="jobman-from">
-					<option value=""><?php _e( 'None', 'jobman' ) ?></option>
+					<option value=""><?php _e( 'None', 'job-manager' ) ?></option>
 <?php
 	$fid = $options['application_email_from'];
 	if( count( $fields ) > 0 ) {
@@ -351,13 +422,13 @@ function jobman_print_application_email_box() {
 	}
 ?>
 				</select></td>
-				<td><span class="description"><?php _e( 'The application field to use as the email address. This will be the "From" address in the initial application, and the field used for emailing applicants.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The application field to use as the email address. This will be the "From" address in the initial application, and the field used for emailing applicants.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'From Name', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'From Name', 'job-manager' ) ?></th>
 				<td>
 					<select name="jobman-from-fields[]" multiple="multiple" size="5" class="multiselect">
-					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'jobman' ) ?></option>
+					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'job-manager' ) ?></option>
 <?php
 	$fids = $options['application_email_from_fields'];
 	if( count( $fields ) > 0 ) {
@@ -376,14 +447,14 @@ function jobman_print_application_email_box() {
 ?>
 					</select>
 				</td>
-				<td><span class="description"><?php _e( 'The name that will appear with the "From" email address.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The name that will appear with the "From" email address.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Subject', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Subject', 'job-manager' ) ?></th>
 				<td>
 					<input class="regular-text code" type="text" name="jobman-subject-text" value="<?php echo $options['application_email_subject_text'] ?>" /><br/>
 					<select name="jobman-subject-fields[]" multiple="multiple" size="5" class="multiselect">
-					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'jobman' ) ?></option>
+					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'job-manager' ) ?></option>
 <?php
 	$fids = $options['application_email_subject_fields'];
 	if( count( $fields ) > 0 ) {
@@ -402,11 +473,11 @@ function jobman_print_application_email_box() {
 ?>
 					</select>
 				</td>
-				<td><span class="description"><?php _e( 'The email subject, and any fields to include in the subject.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The email subject, and any fields to include in the subject.', 'job-manager' ) ?></span></td>
 			</tr>
 		</table>
 
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Email Settings', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Email Settings', 'job-manager' ) ?>" /></p>
 		</form>
 <?php
 }
@@ -423,14 +494,14 @@ function jobman_print_interview_box() {
 ?>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Default View', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Default View', 'job-manager' ) ?></th>
 				<td>
 					<select name="jobman-default-view">
 <?php
 	$views = array(
-					'day' => __( 'Day', 'jobman' ),
-					'month' => __( 'Month', 'jobman' ),
-					'year' => __( 'Year', 'jobman' )
+					'day' => __( 'Day', 'job-manager' ),
+					'month' => __( 'Month', 'job-manager' ),
+					'year' => __( 'Year', 'job-manager' )
 				);
 	foreach( $views as $value => $text ) {
 		$selected = '';
@@ -443,14 +514,14 @@ function jobman_print_interview_box() {
 	}
 ?>
 					</select>
-				<td><span class="description"><?php _e( 'The default calendar view on the "Interviews" page.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The default calendar view on the "Interviews" page.', 'job-manager' ) ?></span></td>
 				</td>
 			<tr>
-				<th scope="row"><?php _e( 'Title', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Title', 'job-manager' ) ?></th>
 				<td>
 					<input class="regular-text code" type="text" name="jobman-title-text" value="<?php echo $options['interview_title_text'] ?>" /><br/>
 					<select name="jobman-title-fields[]" multiple="multiple" size="5" class="multiselect">
-					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'jobman' ) ?></option>
+					<option value="" style="font-weight: bold; border-bottom: 1px solid black;"><?php _e( 'None', 'job-manager' ) ?></option>
 <?php
 	$fids = $options['interview_title_fields'];
 	if( count( $fields ) > 0 ) {
@@ -469,11 +540,11 @@ function jobman_print_interview_box() {
 ?>
 					</select>
 				</td>
-				<td><span class="description"><?php _e( 'The Interview title, and any fields to include in the title, as displayed on the "Interviews" page.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The Interview title, and any fields to include in the title, as displayed on the "Interviews" page.', 'job-manager' ) ?></span></td>
 			</tr>
 		</table>
 
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Interview Settings', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Interview Settings', 'job-manager' ) ?>" /></p>
 		</form>
 <?php
 }
@@ -481,7 +552,7 @@ function jobman_print_interview_box() {
 function jobman_print_other_plugins_box() {
 	$options = get_option( 'jobman_options' );
 ?>
-	<p><?php _e( 'Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements.', 'jobman' ) ?></p>
+	<p><?php _e( 'Job Manager provides extra functionality through the use of other plugins available for WordPress. These plugins are not required for Job Manager to function, but do provide enhancements.', 'job-manager' ) ?></p>
 	<form action="" method="post">
 	<input type="hidden" name="jobmanotherpluginssubmit" value="1" />
 <?php
@@ -489,29 +560,29 @@ function jobman_print_other_plugins_box() {
 
 	if( class_exists( 'GoogleSitemapGeneratorLoader' ) ) {
 		$gxs = true;
-		$gxs_status = __( 'Installed', 'jobman' );
+		$gxs_status = __( 'Installed', 'job-manager' );
 		$gxs_version = GoogleSitemapGeneratorLoader::GetVersion();
 	}
 	else {
 		$gxs = false;
-		$gxs_status = __( 'Not Installed', 'jobman' );
+		$gxs_status = __( 'Not Installed', 'job-manager' );
 	}
 ?>
-		<h4><?php _e( 'Google XML Sitemaps', 'jobman' ) ?></h4>
-		<p><?php _e( 'Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added.', 'jobman' ) ?></p>
+		<h4><?php _e( 'Google XML Sitemaps', 'job-manager' ) ?></h4>
+		<p><?php _e( 'Allows you to automatically add all your job listing and job detail pages to your sitemap. By default, only the main job list is added.', 'job-manager' ) ?></p>
 		<p>
-			<a href="http://wordpress.org/extend/plugins/google-sitemap-generator/"><?php _e( 'Download', 'jobman' ) ?></a><br/>
-			<?php _e( 'Status', 'jobman' ) ?>: <span class="<?php echo ( $gxs )?( 'pluginokay' ):( 'pluginwarning' ) ?>"><?php echo $gxs_status ?></span><br/>
-			<?php echo ( $gxs )?( __( 'Version', 'jobman' ) . ": $gxs_version" ):( '' ) ?>
-			<?php echo ( ! $gxs || version_compare( $gxs_version, '3.2', '<' ) )?( ' <span class="pluginwarning">' . __( 'Job Manager requires Google XML Sitemaps version 3.2 or later.', 'jobman' ) . '</span>' ):( '' ) ?>
+			<a href="http://wordpress.org/extend/plugins/google-sitemap-generator/"><?php _e( 'Download', 'job-manager' ) ?></a><br/>
+			<?php _e( 'Status', 'job-manager' ) ?>: <span class="<?php echo ( $gxs )?( 'pluginokay' ):( 'pluginwarning' ) ?>"><?php echo $gxs_status ?></span><br/>
+			<?php echo ( $gxs )?( __( 'Version', 'job-manager' ) . ": $gxs_version" ):( '' ) ?>
+			<?php echo ( ! $gxs || version_compare( $gxs_version, '3.2', '<' ) )?( ' <span class="pluginwarning">' . __( 'Job Manager requires Google XML Sitemaps version 3.2 or later.', 'job-manager' ) . '</span>' ):( '' ) ?>
 		</p>
 <?php
 	if( $gxs && version_compare( $gxs_version, '3.2', '>=' ) ) {
 ?>
-		<strong><?php _e( 'Options', 'jobman' ) ?></strong>
+		<strong><?php _e( 'Options', 'job-manager' ) ?></strong>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Add Job pages to your Sitemap?', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Add Job pages to your Sitemap?', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="plugin-gxs"<?php echo ( $options['plugins']['gxs'] )?( ' checked="checked"' ):( '' ) ?> /></td>
 			</tr>
 		</table>
@@ -520,34 +591,34 @@ function jobman_print_other_plugins_box() {
 
 	$sicaptcha = false;
 	$class = 'pluginwarning';
-	$sistatus = __( 'Not Installed', 'jobman' );
+	$sistatus = __( 'Not Installed', 'job-manager' );
 
 	if( class_exists( 'siCaptcha' ) ) {
 		$sicaptcha = true;
 		$class = 'pluginokay';
-		$sistatus = __( 'Installed', 'jobman' );
+		$sistatus = __( 'Installed', 'job-manager' );
 	}
 ?>
-		<h4><?php _e( 'SI Captcha', 'jobman' ) ?></h4>
-		<p><?php _e( 'Allows you to add a Captcha to your Application submission form.', 'jobman' ) ?></p>
+		<h4><?php _e( 'SI Captcha', 'job-manager' ) ?></h4>
+		<p><?php _e( 'Allows you to add a Captcha to your Application submission form.', 'job-manager' ) ?></p>
 		<p>
-			<a href="http://wordpress.org/extend/plugins/si-captcha-for-wordpress/"><?php _e( 'Download', 'jobman' ) ?></a><br/>
-			<?php _e( 'Status', 'jobman' ) ?>: <span class="<?php echo $class ?>"><?php echo $sistatus ?></span>
+			<a href="http://wordpress.org/extend/plugins/si-captcha-for-wordpress/"><?php _e( 'Download', 'job-manager' ) ?></a><br/>
+			<?php _e( 'Status', 'job-manager' ) ?>: <span class="<?php echo $class ?>"><?php echo $sistatus ?></span>
 		</p>
 <?php
 	if( $sicaptcha ) {
 ?>
-		<strong><?php _e( 'Options', 'jobman' ) ?></strong>
+		<strong><?php _e( 'Options', 'job-manager' ) ?></strong>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Add a captcha to the application form?', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Add a captcha to the application form?', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="plugin-sicaptcha"<?php echo ( $options['plugins']['sicaptcha'] )?( ' checked="checked"' ):( '' ) ?> /></td>
 			</tr>
 		</table>
 <?php
 	}
 ?>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Plugin Settings', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Plugin Settings', 'job-manager' ) ?>" /></p>
 	</form>
 <?php
 }
@@ -555,7 +626,7 @@ function jobman_print_other_plugins_box() {
 function jobman_print_uninstall_box() {
 	$options = get_option( 'jobman_options' );
 ?>
-		<p><?php _e( 'If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database.', 'jobman' ) ?></p>
+		<p><?php _e( 'If you ever choose to uninstall Job Manager, you can select what parts should be deleted from the database.', 'job-manager' ) ?></p>
 		<form action="" method="post">
 		<input type="hidden" name="jobmanuninstallsubmit" value="1" />
 <?php
@@ -563,34 +634,34 @@ function jobman_print_uninstall_box() {
 ?>
 		<table class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Options', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Options', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="options" <?php echo ( $options['uninstall']['options'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The options selected on the Admin Settings and Display Settings pages. This includes any icons uploaded.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Jobs', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Jobs', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="jobs" <?php echo ( $options['uninstall']['jobs'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'Jobs that have been created.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Jobs that have been created.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Applications', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Applications', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="applications" <?php echo ( $options['uninstall']['applications'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'Applications that have been submitted. This includes any files uploaded (resumes, etc).', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Applications that have been submitted. This includes any files uploaded (resumes, etc).', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Categories', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Categories', 'job-manager' ) ?></th>
 				<td><input type="checkbox" value="1" name="categories" <?php echo ( $options['uninstall']['categories'] )?( 'checked="checked" ' ):( '' ) ?>/></td>
-				<td><span class="description"><?php _e( 'Job Manager Categories that have been created.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Job Manager Categories that have been created.', 'job-manager' ) ?></span></td>
 			</tr>
 		</table>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Uninstall Settings', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Update Uninstall Settings', 'job-manager' ) ?>" /></p>
 		</form>
 <?php
 }
 
 function jobman_conf_updatedb() {
 	$options = get_option( 'jobman_options' );
-	
+
 	$options['default_email'] = $_REQUEST['default-email'];
 
 	if( array_key_exists( 'multi-applications', $_REQUEST ) && $_REQUEST['multi-applications'] )
@@ -602,6 +673,46 @@ function jobman_conf_updatedb() {
 		$options['interviews'] = 1;
 	else
 		$options['interviews'] = 0;
+
+	update_option( 'jobman_options', $options );
+}
+
+function jobman_resume_settings_updatedb() {
+
+	$options = get_option( 'jobman_options' );
+
+	//resume name template override
+	$input_name_override = strip_tags(preg_replace('~[^\-\{\}\_A-Za-z0-9]~', '', $_REQUEST['input_name_override']));
+
+	if(! empty($input_name_override))
+	{
+		$options['upload']['text_custom_resume_name_tpl'] = $input_name_override;
+	}
+
+	//set the custom upload directory flag from the post
+	$options['upload']['bool_custom_upload_dir'] = (bool) (! empty($_REQUEST['bool_custom_upload_dir']));
+
+	if($options['upload']['bool_custom_upload_dir'])
+	{
+		$upload_path = JOBMAN_UPLOAD_DIR;
+
+		//future scaling, in addition to the default constant, allow a text field for custom folder selection
+		//if(! empty($options['upload']['text_custom_upload_dir']))
+		//{
+		//	$upload_path = $options['upload']['text_custom_upload_dir'];
+		//}
+
+		if(! file_exists($upload_path))
+		{
+			//create the upload folder if it doesnt already exist
+			if(! wp_mkdir_p($upload_path))
+			{
+				$options['upload']['bool_custom_upload_dir'] = false;
+
+				error_log(__FUNCTION__ . " failed creating custom upload path $upload_path");
+			}
+		}
+	}
 
 	update_option( 'jobman_options', $options );
 }

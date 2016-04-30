@@ -10,7 +10,7 @@ function jobman_display_jobs_list( $cat ) {
 	if( 'all' != $cat ) {
 		$page->ID = -1;
 		$page->post_type = 'jobman_joblist';
-		$page->post_title = __( 'Jobs Listing', 'jobman' );
+		$page->post_title = __( 'Jobs Listing', 'job-manager' );
 	}
 
 	if( 'all' != $cat ) {
@@ -108,10 +108,10 @@ function jobman_display_jobs_list( $cat ) {
 		$links = array();
 		foreach( $related_cats as $rc ) {
 			$cat = get_term_by( 'slug', $rc, 'jobman_category' );
-			$links[] = '<a href="'. get_term_link( $cat->slug, 'jobman_category' ) . '" title="' . sprintf( __( 'Jobs for %s', 'jobman' ), $cat->name ) . '">' . $cat->name . '</a>';
+			$links[] = '<a href="'. get_term_link( $cat->slug, 'jobman_category' ) . '" title="' . sprintf( __( 'Jobs for %s', 'job-manager' ), $cat->name ) . '">' . $cat->name . '</a>';
 		}
 
-		$content .= '<h3>' . __( 'Related Categories', 'jobman' ) . '</h3>';
+		$content .= '<h3>' . __( 'Related Categories', 'job-manager' ) . '</h3>';
 		$content .= implode(', ', $links) . '<br>';
 	}
 
@@ -150,7 +150,7 @@ function jobman_display_jobs_list( $cat ) {
 
 		$content .= '<p>';
 		if( 'all' == $cat ||  ! isset( $category->term_id ) ) {
-			$content .= sprintf( __( "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file.", 'jobman' ), get_page_link( $applypage->ID ) );
+			$content .= sprintf( __( "We currently don't have any jobs available. Please check back regularly, as we frequently post new jobs. In the meantime, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file.", 'job-manager' ), get_page_link( $applypage->ID ) );
 		}
 		else {
 			$url = get_page_link( $applypage->ID );
@@ -164,7 +164,7 @@ function jobman_display_jobs_list( $cat ) {
 				else
 					$url .= '/' . $category->slug;
 			}
-			$content .= sprintf( __( "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>.", 'jobman' ), $url, get_page_link( $options['main_page'] ) );
+			$content .= sprintf( __( "We currently don't have any jobs available in this area. Please check back regularly, as we frequently post new jobs. In the mean time, you can also <a href='%s'>send through your résumé</a>, which we'll keep on file, and you can check out the <a href='%s'>jobs we have available in other areas</a>.", 'job-manager' ), $url, get_page_link( $options['main_page'] ) );
 		}
 	}
 	$content .= '</p>';
@@ -224,9 +224,9 @@ function jobman_display_job( $job ) {
 	if( NULL == $job ) {
 		$page = get_post( $options['main_page'] );
 		$page->post_type = 'jobman_job';
-		$page->post_title = __( 'This job doesn\'t exist', 'jobman' );
+		$page->post_title = __( 'This job doesn\'t exist', 'job-manager' );
 
-		$content .= '<p>' . sprintf( __( 'Perhaps you followed an out-of-date link? Please check out the <a href="%s">jobs we have currently available</a>.', 'jobman' ), get_page_link( $options['main_page'] ) ) . '</p>';
+		$content .= '<p>' . sprintf( __( 'Perhaps you followed an out-of-date link? Please check out the <a href="%s">jobs we have currently available</a>.', 'job-manager' ), get_page_link( $options['main_page'] ) ) . '</p>';
 
 		$page->post_content = $content;
 

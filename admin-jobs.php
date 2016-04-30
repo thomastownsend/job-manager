@@ -31,27 +31,26 @@ function jobman_list_jobs() {
 			return;
 	}
 
-
 ?>
 	<div class="wrap">
-		<h2><?php _e( 'Job Manager: Jobs List', 'jobman' ) ?></h2>
+		<h2><?php _e( 'Job Manager: Jobs List', 'job-manager' ) ?></h2>
 		<form action="" method="post">
 		<input type="hidden" name="jobman-jobid" value="new" />
-		<p class="submit"><input type="submit" name="submit" class="button-primary" value="<?php _e( 'New Job', 'jobman' ) ?>" /></p>
+		<p class="submit"><input type="submit" name="submit" class="button-primary" value="<?php _e( 'New Job', 'job-manager' ) ?>" /></p>
 		</form>
 <?php
 	switch($displayed) {
 		case 0:
-			echo '<div class="error">' . __( 'There is no job associated with that Job ID', 'jobman' ) . '</div>';
+			echo '<div class="error">' . __( 'There is no job associated with that Job ID', 'job-manager' ) . '</div>';
 			break;
 		case 2:
-			echo '<div class="updated">' . __( 'New job created', 'jobman' ) . '</div>';
+			echo '<div class="updated">' . __( 'New job created', 'job-manager' ) . '</div>';
 			break;
 		case 3:
-			echo '<div class="updated">' . __( 'Job updated', 'jobman' ) . '</div>';
+			echo '<div class="updated">' . __( 'Job updated', 'job-manager' ) . '</div>';
 			break;
 		case 4:
-			echo '<div class="error">' . __( 'You do not have permission to edit that Job', 'jobman' ) . '</div>';
+			echo '<div class="error">' . __( 'You do not have permission to edit that Job', 'job-manager' ) . '</div>';
 			break;
 	}
 
@@ -65,8 +64,8 @@ function jobman_list_jobs() {
 			<thead>
 			<tr>
 				<th scope="col" id="cb" class="column-cb check-column"><input type="checkbox"></th>
-				<th scope="col"><?php _e( 'Title', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Categories', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Title', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Categories', 'job-manager' ) ?></th>
 <?php
 	$fieldcount = 0;
 	if( count( $fields ) > 0 ) {
@@ -80,8 +79,8 @@ function jobman_list_jobs() {
 		}
 	}
 ?>
-				<th scope="col"><?php _e( 'Display Dates', 'jobman' ) ?></th>
-				<th scope="col"><?php _e( 'Applications', 'jobman' ) ?></th>
+				<th scope="col"><?php _e( 'Display Dates', 'job-manager' ) ?></th>
+				<th scope="col"><?php _e( 'Applications', 'job-manager' ) ?></th>
 			</tr>
 			</thead>
 <?php
@@ -90,7 +89,7 @@ function jobman_list_jobs() {
 		if( count( $expired ) ) {
 ?>
 		<tr class="jobman-expired-jobs">
-			<td colspan="<?php echo $fieldcount + 5 ?>"><?php _e( 'Expired jobs', 'jobman' ) ?></td>
+			<td colspan="<?php echo $fieldcount + 5 ?>"><?php _e( 'Expired jobs', 'job-manager' ) ?></td>
 		</tr>
 <?php
 		}
@@ -100,7 +99,7 @@ function jobman_list_jobs() {
 		$fieldcount += 5;
 ?>
 			<tr>
-				<td colspan="<?php echo $fieldcount ?>"><?php _e( 'There are currently no jobs in the system.', 'jobman' ) ?></td>
+				<td colspan="<?php echo $fieldcount ?>"><?php _e( 'There are currently no jobs in the system.', 'job-manager' ) ?></td>
 			</tr>
 <?php
 	}
@@ -108,12 +107,12 @@ function jobman_list_jobs() {
 		</table>
 		<div class="alignleft actions">
 			<select name="jobman-mass-edit-jobs">
-				<option value=""><?php _e( 'Bulk Actions', 'jobman' ) ?></option>
-				<option value="delete"><?php _e( 'Delete', 'jobman' ) ?></option>
-				<option value="archive"><?php _e( 'Archive', 'jobman' ) ?></option>
-				<option value="unarchive"><?php _e( 'Unarchive', 'jobman' ) ?></option>
+				<option value=""><?php _e( 'Bulk Actions', 'job-manager' ) ?></option>
+				<option value="delete"><?php _e( 'Delete', 'job-manager' ) ?></option>
+				<option value="archive"><?php _e( 'Archive', 'job-manager' ) ?></option>
+				<option value="unarchive"><?php _e( 'Unarchive', 'job-manager' ) ?></option>
 			</select>
-			<input type="submit" value="<?php _e( 'Apply', 'jobman' ) ?>" name="submit" class="button-secondary action" />
+			<input type="submit" value="<?php _e( 'Apply', 'job-manager' ) ?>" name="submit" class="button-secondary action" />
 		</div>
 		</form>
 	</div>
@@ -184,21 +183,21 @@ function jobman_list_jobs_data( $jobs, $showexpired = false ) {
 <?php
 			if( current_user_can( 'edit_others_posts' ) || $job->post_author == $current_user->ID ) {
 ?>
-				<a href="?page=jobman-list-jobs&amp;jobman-jobid=<?php echo $job->ID ?>"><?php _e( 'Edit', 'jobman' ) ?></a> |
+				<a href="?page=jobman-list-jobs&amp;jobman-jobid=<?php echo $job->ID ?>"><?php _e( 'Edit', 'job-manager' ) ?></a> |
 <?php
 			}
 ?>
-				<a href="<?php echo get_page_link( $job->ID ) ?>"><?php _e( 'View', 'jobman' ) ?></a>
+				<a href="<?php echo get_page_link( $job->ID ) ?>"><?php _e( 'View', 'job-manager' ) ?></a>
 <?php
 			if( current_user_can( 'edit_others_posts' ) || $job->post_author == $current_user->ID ) {
 				if( $display ) {
 ?>
-				| <a href="<?php echo wp_nonce_url( admin_url( "admin.php?page=jobman-list-jobs&amp;jobman-mass-edit-jobs=archive&amp;job[]=$job->ID" ), 'jobman-mass-edit-jobs' ) ?>"><?php _e( 'Archive', 'jobman' ) ?></a>
+				| <a href="<?php echo wp_nonce_url( admin_url( "admin.php?page=jobman-list-jobs&amp;jobman-mass-edit-jobs=archive&amp;job[]=$job->ID" ), 'jobman-mass-edit-jobs' ) ?>"><?php _e( 'Archive', 'job-manager' ) ?></a>
 <?php
 				}
 				else {
 ?>
-				| <a href="<?php echo wp_nonce_url( admin_url( "admin.php?page=jobman-list-jobs&amp;jobman-mass-edit-jobs=unarchive&amp;job[]=$job->ID" ), 'jobman-mass-edit-jobs' ) ?>"><?php _e( 'Unarchive', 'jobman' ) ?></a>
+				| <a href="<?php echo wp_nonce_url( admin_url( "admin.php?page=jobman-list-jobs&amp;jobman-mass-edit-jobs=unarchive&amp;job[]=$job->ID" ), 'jobman-mass-edit-jobs' ) ?>"><?php _e( 'Unarchive', 'job-manager' ) ?></a>
 <?php
 				}
 			}
@@ -212,7 +211,7 @@ function jobman_list_jobs_data( $jobs, $showexpired = false ) {
 						$data = get_post_meta( $job->ID, "data$id", true );
 						if( ! empty( $data ) ) {
 							if( 'file' == $field['type'] )
-								$data = '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'jobman' ) . '</a>';
+								$data = '<a href="' . wp_get_attachment_url( $data ) . '">' . __( 'Download', 'job-manager' ) . '</a>';
 							else if( is_array( $data ) )
 								$data = implode( ', ', $data );
 						}
@@ -222,13 +221,13 @@ function jobman_list_jobs_data( $jobs, $showexpired = false ) {
 					}
 				}
 			}
-			$status = __( 'Live', 'jobman' );
+			$status = __( 'Live', 'job-manager' );
 			if( $future )
-				$status = __( 'Future', 'jobman' );
+				$status = __( 'Future', 'job-manager' );
 			else if( ! $display )
-				$status = __( 'Expired', 'jobman' );
+				$status = __( 'Expired', 'job-manager' );
 ?>
-				<td><?php echo date( 'Y-m-d', strtotime( $job->post_date ) ) ?> - <?php echo ( '' == $displayenddate )?( __( 'End of Time', 'jobman' ) ):( $displayenddate ) ?><br/>
+				<td><?php echo date( 'Y-m-d', strtotime( $job->post_date ) ) ?> - <?php echo ( '' == $displayenddate )?( __( 'End of Time', 'job-manager' ) ):( $displayenddate ) ?><br/>
 				<?php echo $status ?></td>
 				<td><?php echo $applications ?></td>
 			</tr>
@@ -259,14 +258,14 @@ function jobman_edit_job( $jobid ) {
 	}
 
 	if( 'new' == $jobid ) {
-		$title = __( 'Job Manager: New Job', 'jobman' );
-		$submit = __( 'Create Job', 'jobman' );
+		$title = __( 'Job Manager: New Job', 'job-manager' );
+		$submit = __( 'Create Job', 'job-manager' );
 		$job = array();
-		$display_jobid = __( 'New', 'jobman' );
+		$display_jobid = __( 'New', 'job-manager' );
 	}
 	else {
-		$title = __( 'Job Manager: Edit Job', 'jobman' );
-		$submit = __( 'Update Job', 'jobman' );
+		$title = __( 'Job Manager: Edit Job', 'job-manager' );
+		$submit = __( 'Update Job', 'job-manager' );
 
 		$job = get_post( $jobid );
 		if( NULL == $job )
@@ -310,12 +309,12 @@ function jobman_edit_job( $jobid ) {
 		<h2><?php echo $title ?></h2>
 		<table id="jobman-job-edit" class="form-table">
 			<tr>
-				<th scope="row"><?php _e( 'Job ID', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Job ID', 'job-manager' ) ?></th>
 				<td><?php echo $display_jobid ?></td>
 				<td></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Categories', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Categories', 'job-manager' ) ?></th>
 				<td><div class="jobman-categories-list">
 <?php
 	$categories = get_terms( 'jobman_category', 'hide_empty=0' );
@@ -337,10 +336,10 @@ function jobman_edit_job( $jobid ) {
 	}
 ?>
 				</div></td>
-				<td><span class="description"><?php _e( 'Categories that this job belongs to. It will be displayed in the job list for each category selected.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Categories that this job belongs to. It will be displayed in the job list for each category selected.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Icon', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Icon', 'job-manager' ) ?></th>
 				<td><div class="jobman-icons-list">
 <?php
 	if( count( $icons ) > 0 ) {
@@ -362,12 +361,12 @@ function jobman_edit_job( $jobid ) {
 	else
 		$checked = '';
 ?>
-					<input type="radio" name="jobman-icon"<?php echo $checked ?> value="" /> <?php _e( 'No Icon', 'jobman' ) ?><br/>
+					<input type="radio" name="jobman-icon"<?php echo $checked ?> value="" /> <?php _e( 'No Icon', 'job-manager' ) ?><br/>
 				</div></td>
-				<td><span class="description"><?php _e( 'Icon to display for this job in the Job List', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Icon to display for this job in the Job List', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Title', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Title', 'job-manager' ) ?></th>
 				<td><input class="regular-text code" type="text" name="jobman-title" value="<?php echo ( isset( $job->post_title ) )?( $job->post_title ):( '' ) ?>" /></td>
 				<td></td>
 			</tr>
@@ -454,7 +453,7 @@ function jobman_edit_job( $jobid ) {
 						echo '<td>';
 
 					if( user_can_richedit() && version_compare( $wp_version, '3.3-aortic-dissection', '<' )) {
-						echo "<p id='field-toolbar-$id' class='jobman-editor-toolbar'><a class='toggleHTML'>" . __( 'HTML', 'jobman' ) . '</a><a class="active toggleVisual">' . __( 'Visual', 'jobman' ) . '</a></p>';
+						echo "<p id='field-toolbar-$id' class='jobman-editor-toolbar'><a class='toggleHTML'>" . __( 'HTML', 'job-manager' ) . '</a><a class="active toggleVisual">' . __( 'Visual', 'job-manager' ) . '</a></p>';
 						echo "<textarea class='large-text code jobman-editor jobman-field-$id' name='jobman-field-$id' id='jobman-field-$id' rows='7'>$data</textarea></td>";
 					}
 					else {
@@ -491,7 +490,7 @@ function jobman_edit_job( $jobid ) {
 					if( ! empty( $data ) ) {
 						echo '<br/><a href="' . wp_get_attachment_url( $data ) . '">' . wp_get_attachment_url( $data ) . '</a>';
 						echo "<input type='hidden' name='jobman-field-current-$id' value='$data' />";
-						echo "<br/><input type='checkbox' name='jobman-field-delete-$id' value='1' />" . __( 'Delete File?', 'jobman' );
+						echo "<br/><input type='checkbox' name='jobman-field-delete-$id' value='1' />" . __( 'Delete File?', 'job-manager' );
 					}
 
 					echo "</td>";
@@ -518,19 +517,19 @@ function jobman_edit_job( $jobid ) {
 	}
 ?>
 			<tr>
-				<th scope="row"><?php _e( 'Display Start Date', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Display Start Date', 'job-manager' ) ?></th>
 				<td><input class="datepicker" type="text" name="jobman-displaystartdate" value="<?php echo ( 'new' != $jobid )?( date( 'Y-m-d', strtotime( $job->post_date ) ) ):( '' ) ?>" /></td>
-				<td><span class="description"><?php _e( 'The date this job should start being displayed on the site. To start displaying immediately, leave blank.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The date this job should start being displayed on the site. To start displaying immediately, leave blank.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Display End Date', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Display End Date', 'job-manager' ) ?></th>
 				<td><input class="datepicker" type="text" name="jobman-displayenddate" value="<?php echo ( array_key_exists( 'displayenddate', $jobdata ) )?( $jobdata['displayenddate'] ):( '' ) ?>" /></td>
-				<td><span class="description"><?php _e( 'The date this job should stop being displayed on the site. To display indefinitely, leave blank.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The date this job should stop being displayed on the site. To display indefinitely, leave blank.', 'job-manager' ) ?></span></td>
 			</tr>
 			<tr>
-				<th scope="row"><?php _e( 'Application Email', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Application Email', 'job-manager' ) ?></th>
 				<td><input class="regular-text" type="text" name="jobman-email" value="<?php echo ( array_key_exists( 'email', $jobdata ) )?( $jobdata['email'] ):( '' ) ?>" /></td>
-				<td><span class="description"><?php _e( 'The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'The email address to notify when an application is submitted for this job. For default behaviour (category email or global email), leave blank.', 'job-manager' ) ?></span></td>
 			</tr>
 <?php
 	$checked = '';
@@ -538,9 +537,9 @@ function jobman_edit_job( $jobid ) {
 		$checked = ' checked="checked"';
 ?>
 			<tr>
-				<th scope="row"><?php _e( 'Highlighted?', 'jobman' ) ?></th>
+				<th scope="row"><?php _e( 'Highlighted?', 'job-manager' ) ?></th>
 				<td><input type="checkbox" name="jobman-highlighted" value="1" <?php echo $checked ?>/></td>
-				<td><span class="description"><?php _e( 'Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page.', 'jobman' ) ?></span></td>
+				<td><span class="description"><?php _e( 'Mark this job as highlighted? For the behaviour of highlighted jobs, see the Display Settings admin page.', 'job-manager' ) ?></span></td>
 			</tr>
 		</table>
 		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php echo $submit ?>" /></p>
@@ -713,9 +712,9 @@ function jobman_job_delete_confirm() {
 <?php
 	wp_nonce_field( 'jobman-mass-delete-jobs' );
 ?>
-		<h2><?php _e( 'Job Manager: Jobs', 'jobman' ) ?></h2>
-		<p class="error"><?php _e( 'This will permanently delete all of the selected jobs. Please confirm that you want to continue.', 'jobman' ) ?></p>
-		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Delete Jobs', 'jobman' ) ?>" /></p>
+		<h2><?php _e( 'Job Manager: Jobs', 'job-manager' ) ?></h2>
+		<p class="error"><?php _e( 'This will permanently delete all of the selected jobs. Please confirm that you want to continue.', 'job-manager' ) ?></p>
+		<p class="submit"><input type="submit" name="submit"  class="button-primary" value="<?php _e( 'Delete Jobs', 'job-manager' ) ?>" /></p>
 	</form>
 	</div>
 <?php

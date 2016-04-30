@@ -5,7 +5,7 @@ function jobman_comments( $iid, $editable = false ) {
 	<form action="" method="post">
 		<input type="hidden" name="interview" value="<?php echo $iid ?>" />
 		<textarea class="large-text code" name="comment"></textarea>
-		<input type="submit" name="submit" value="<?php _e( 'Comment', 'jobman' )?>" />
+		<input type="submit" name="submit" value="<?php _e( 'Comment', 'job-manager' )?>" />
 	</form>
 <?php
 	}
@@ -16,7 +16,7 @@ function jobman_comments( $iid, $editable = false ) {
 
 function jobman_display_comments( $comments ) {
 	if( empty( $comments ) ) {
-		echo '<p class="error">' . __( 'No comments found', 'jobman' ) . '</p>';
+		echo '<p class="error">' . __( 'No comments found', 'job-manager' ) . '</p>';
 		return;
 	}
 	
